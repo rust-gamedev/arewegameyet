@@ -219,7 +219,12 @@
                     </a>
                     <div class="header">gfx</div>
                     <div class="description">
-                      <p>A high-performance, bindless graphics API</p>
+                      <p>A high-performance, bindless graphics API, supporting:<ul>
+                      <li>OpenGL 2/3, including GLES 2
+                      <li>Direct3D 11
+                      <li>(incomplete) Metal
+                      <li>(incomplete) Vulkan
+                      </ul></p>
                       <img src="https://raw.githubusercontent.com/gfx-rs/gfx/master/info/logo.png" class="ui image small floated right">
                     </div>
                   </div>
@@ -276,7 +281,7 @@
                     </a>
                     <div class="header">luminance</div>
                     <div class="description">
-                      <p>Stateless and type-safe graphics framework</p>
+                      <p>Stateless and type-safe graphics framework, supporting OpenGL</p>
                     </div>
                   </div>
                   <div class="extra content">
@@ -299,58 +304,6 @@
                         <div class="content">
                           <a href="https://crates.io/crates/luminance">
                             <img src="https://img.shields.io/crates/l/luminance.svg?maxAge=2592000">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="right floated star">No gitter</span>
-                  </div>
-                </div>
-              </div>
-              <div class="ui one stackable cards">
-                <a name="luminance-gl"></a>
-                <div class="ui card">
-                  <div class="content">
-                    <a href="http://www.arewegameyet.com/categories/3drendering.html#luminance-gl" title="permanent link">
-                      <i class="right floated hashtag icon"></i>
-                    </a>
-                    <a href="https://github.com/phaazon/luminance-gl-rs" title="github">
-                      <i class="right floated github icon"></i>
-                    </a>
-                    <a href="http://phaazon.github.io/luminance-gl-rs" title="docs">
-                      <i class="right floated book icon"></i>
-                    </a>
-                    <a href="https://crates.io/crates/luminance-gl" title="crate">
-                      <i class="right floated cube icon"></i>
-                    </a>
-                    <a href="https://github.com/phaazon/luminance-gl-rs" title="home">
-                      <i class="right floated home icon"></i>
-                    </a>
-                    <div class="header">luminance-gl</div>
-                    <div class="description">
-                      <p>OpenGL backends for luminance</p>
-                    </div>
-                  </div>
-                  <div class="extra content">
-                    <div class="ui left floated  horizontal list">
-                      <div class="item">
-                        <div class="content">
-                          <a href="https://crates.io/crates/luminance-gl">
-                            <img src="https://img.shields.io/crates/v/luminance-gl.svg?maxAge=2592000">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="content">
-                          <a href="https://crates.io/crates/luminance-gl">
-                            <img src="https://img.shields.io/crates/d/luminance-gl.svg?maxAge=2592000">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="content">
-                          <a href="https://crates.io/crates/luminance-gl">
-                            <img src="https://img.shields.io/crates/l/luminance-gl.svg?maxAge=2592000">
                           </a>
                         </div>
                       </div>
@@ -426,7 +379,13 @@
                     </a>
                     <div class="header">glium</div>
                     <div class="description">
-                      <p>Elegant and safe OpenGL wrapper. Glium is an intermediate layer between OpenGL and your application. You still need to manually handle the graphics pipeline, but without having to use OpenGL's old and error-prone API. Its objectives: - Be safe to use. Many aspects of OpenGL that can trigger a crash if misused are automatically handled by glium. - Provide an API that enforces good pratices such as RAII or stateless function calls. - Be compatible with all OpenGL versions that support shaders, providing unified API when things diverge. - Avoid all OpenGL errors beforehand. - Produce optimized OpenGL function calls, and allow the user to easily use modern OpenGL techniques.</p>
+                      <p>Elegant and safe OpenGL wrapper. Glium is an intermediate layer between OpenGL and your application. You still need to manually handle the graphics pipeline, but without having to use OpenGL's old and error-prone API. Its objectives:<ul>
+                        <li>Be safe to use. Many aspects of OpenGL that can trigger a crash if misused are automatically handled by glium.
+                        <li>Provide an API that enforces good pratices such as RAII or stateless function calls.
+                        <li>Be compatible with all OpenGL versions that support shaders, providing unified API when things diverge.
+                        <li>Avoid all OpenGL errors beforehand.
+                        <li>Produce optimized OpenGL function calls, and allow the user to easily use modern OpenGL techniques.
+                      </ul></p>
                     </div>
                   </div>
                   <div class="extra content">
