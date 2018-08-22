@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Standard Meta -->
   <meta charset="utf-8" />
@@ -9,17 +10,13 @@
   <!-- Site Properties -->
   <title>Are we game yet? - Rust</title>
   <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
-  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"
-           integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-           crossorigin="anonymous"></script>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"></script>
   <script src="assets/js/semantic.min.js"></script>
   <style type="text/css">
-
-
   </style>
-   <style type="text/css">
-
+  <style type="text/css">
     .hidden.menu {
       display: none;
     }
@@ -28,18 +25,22 @@
       min-height: 700px;
       padding: 1em 0em;
     }
+
     .masthead .logo.item img {
       margin-right: 1em;
     }
+
     .masthead .ui.menu .ui.button {
       margin-left: 0.5em;
     }
+
     .masthead h1.ui.header {
       margin-top: 3em;
       margin-bottom: 0em;
       font-size: 4em;
       font-weight: normal;
     }
+
     .masthead h2 {
       font-size: 1.7em;
       font-weight: normal;
@@ -48,19 +49,24 @@
     .ui.vertical.stripe {
       padding: 8em 0em;
     }
+
     .ui.vertical.stripe h3 {
       font-size: 2em;
     }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
+
+    .ui.vertical.stripe .button+h3,
+    .ui.vertical.stripe p+h3 {
       margin-top: 3em;
     }
+
     .ui.vertical.stripe .floated.image {
       clear: both;
     }
+
     .ui.vertical.stripe p {
       font-size: 1.33em;
     }
+
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
     }
@@ -68,6 +74,7 @@
     .quote.stripe.segment {
       padding: 0em;
     }
+
     .quote.stripe.segment .grid .column {
       padding-top: 5em;
       padding-bottom: 5em;
@@ -104,611 +111,667 @@
         font-size: 1.5em;
       }
     }
-
-
   </style>
   <script src="//load.sumome.com/" data-sumo-site-id="665c1f3e0219632a366981f4bd60c50461ccd7f2c0f661658eccb4097d20c2bc" async="async"></script>
-   <script>
-  $(document)
-    .ready(function() {
+  <script>
+    $(document)
+      .ready(function () {
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function () {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+              $('.fixed.menu').transition('fade out');
+            }
+          })
+          ;
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+          ;
+
+      })
       ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
   </script>
   <script type="text/javascript">
-    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-      heap.load("3611386023");
+    window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+    heap.load("3611386023");
   </script>
-  </head>
-  <body>
+</head>
+
+<body>
 
   <div class="ui large top fixed hidden menu">
-  <div class="ui container">
+    <div class="ui container">
+      <a class="active item" href="http://www.arewegameyet.org">Home</a>
+      <a class="item" href="#chat">Chat</a>
+      <a class="item" href="#eco">Ecosystem</a>
+      <a class="item" href="#games">Games</a>
+      <a class="item" href="#curators">Curators</a>
+      <a class="item" href="#about">About</a>
+      <div class="right menu">
+        <div class="item">
+          <a class="ui button" href="#res">Resources</a>
+        </div>
+        <div class="item">
+          <a class="ui primary button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
     <a class="active item" href="http://www.arewegameyet.org">Home</a>
     <a class="item" href="#chat">Chat</a>
     <a class="item" href="#eco">Ecosystem</a>
     <a class="item" href="#games">Games</a>
     <a class="item" href="#curators">Curators</a>
     <a class="item" href="#about">About</a>
-    <div class="right menu">
-      <div class="item">
-        <a class="ui button" href="#res">Resources</a>
-      </div>
-      <div class="item">
-        <a class="ui primary button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
-      </div>
-    </div>
   </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item" href="http://www.arewegameyet.org">Home</a>
-  <a class="item" href="#chat">Chat</a>
-  <a class="item" href="#eco">Ecosystem</a>
-  <a class="item" href="#games">Games</a>
-  <a class="item" href="#curators">Curators</a>
-  <a class="item" href="#about">About</a>
-</div>
 
 
-<!-- Page Contents -->
-<div class="pusher">
+  <!-- Page Contents -->
+  <div class="pusher">
     <div class="ui inverted vertical masthead center aligned segment">
-        <div class="ui container">
-            <div class="ui large secondary inverted pointing menu">
-                <a class="toc item">
-                  <i class="sidebar icon"></i>
-                </a>
-                <a class="active item" href="http://www.arewegameyet.org">Home</a>
-                <a class="item" href="#chat">Chat</a>
-                <a class="item" href="#eco">Ecosystem</a>
-                <a class="item" href="#games">Games</a>
-                <a class="item" href="#curators">Curators</a>
-                <a class="item" href="#about">About</a>
-                <div class="right item">
-                  <a class="ui inverted button" href="#res">Resources</a>
-                  <a class="ui inverted button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
-                </div>
-              </div>
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <a class="active item" href="http://www.arewegameyet.org">Home</a>
+          <a class="item" href="#chat">Chat</a>
+          <a class="item" href="#eco">Ecosystem</a>
+          <a class="item" href="#games">Games</a>
+          <a class="item" href="#curators">Curators</a>
+          <a class="item" href="#about">About</a>
+          <div class="right item">
+            <a class="ui inverted button" href="#res">Resources</a>
+            <a class="ui inverted button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
+          </div>
         </div>
+      </div>
 
-        <div class="ui text container">
-            <a href="https://github.com/doppioslash/arewegameyet" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-            <h1 class="ui inverted header">
-                <div>
-                    <img class="ui centered image" src="assets/img/rust-logo-128x128-blk-v2-invert.png">
-                </div>
-                Are we game yet?
-            </h1>
-            <h2>Almost. We have the blocks, bring your own glue.</h2>
-            <a class="ui huge primary button" href="#get">Get Started <i class="right arrow icon"></i></a>
-        </div>
+      <div class="ui text container">
+        <a href="https://github.com/doppioslash/arewegameyet" class="github-corner" aria-label="View source on Github"><svg
+            width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;"
+            aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path></svg></a>
+        <style>
+          .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+          }
+
+          @keyframes octocat-wave {
+            0%,
+            100% {
+              transform: rotate(0)
+            }
+            20%,
+            60% {
+              transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+              transform: rotate(10deg)
+            }
+          }
+
+          @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+              animation: none
+            }
+            .github-corner .octo-arm {
+              animation: octocat-wave 560ms ease-in-out
+            }
+          }
+        </style>
+        <h1 class="ui inverted header">
+          <div>
+            <img class="ui centered image" src="assets/img/rust-logo-128x128-blk-v2-invert.png">
+          </div>
+          Are we game yet?
+        </h1>
+        <h2>Almost. We have the blocks, bring your own glue.</h2>
+        <a class="ui huge primary button" href="#get">Get Started <i class="right arrow icon"></i></a>
+      </div>
     </div>
 
     <a name="get"></a>
     <div class="ui vertical stripe">
-        <h2 class="ui center aligned icon header">
-            <i class="circular game icon"></i>
-            Get Started
-        </h2>
-        <div class="ui text container">
-            <p>Since you ended up here, you probably agree that Rust is potentially an ideal language for Game Development.</p>
-            <p> Its emphasis on low-level memory safe programming promise a better development process, less debugging time, and better end result.</p>
-            <p>While the ecosystem is still very young, you can find enough libraries and game engines to sink your teeth into doing some slightly experimental gamedev.</p>
-            <p>If you haven't learned Rust yet, maybe take a look at <a href="#res"><i class="icon list small"></i>Resources</a> first. If you are already proficient with Rust you might want to start with <a href="#eco"><i class="icon grid layout small"></i>Ecosystem</a>, or <a href="#chat"><i class="icon chat small"></i>Chat</a>.</p>
-        </div>
+      <h2 class="ui center aligned icon header">
+        <i class="circular game icon"></i>
+        Get Started
+      </h2>
+      <div class="ui text container">
+        <p>Since you ended up here, you probably agree that Rust is potentially an ideal language for Game Development.</p>
+        <p> Its emphasis on low-level memory safe programming promise a better development process, less debugging time,
+          and better end result.</p>
+        <p>While the ecosystem is still very young, you can find enough libraries and game engines to sink your teeth into
+          doing some slightly experimental gamedev.</p>
+        <p>If you haven't learned Rust yet, maybe take a look at <a href="#res"><i class="icon list small"></i>Resources</a>
+          first. If you are already proficient with Rust you might want to start with <a href="#eco"><i class="icon grid layout small"></i>Ecosystem</a>,
+          or <a href="#chat"><i class="icon chat small"></i>Chat</a>.</p>
+      </div>
     </div>
 
     <a href="#" name="chat">
-        <h4 class="ui horizontal divider header">
-             <i class="chat icon big"></i>
-             Chat</a>
-        </h4>
+      <h4 class="ui horizontal divider header">
+        <i class="chat icon big"></i>
+        Chat</a>
+    </h4>
 
-        <div class="ui vertical stripe">
-            <div class="ui text container">
-              <p>The main meeting place for people doing gamedev in Rust is on the IRC channel <a href="https://www.irccloud.com/#!/ircs://irc.mozilla.org:6697/%23rust-gamedev"> #rust-gamedev@irc.mozilla.org</a>.</p>
-              <p>Many libraries have their own lively gitter chats, which you can find in their descriptions.</p>
-              <p>Also see the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>.</p>
-            </div>
-        </div>
+    <div class="ui vertical stripe">
+      <div class="ui text container">
+        <p>The main meeting place for people doing gamedev in Rust is on the IRC channel <a href="https://www.irccloud.com/#!/ircs://irc.mozilla.org:6697/%23rust-gamedev">
+            #rust-gamedev@irc.mozilla.org</a>.</p>
+        <p>Many libraries have their own lively gitter chats, which you can find in their descriptions.</p>
+        <p>Also see the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>.</p>
+      </div>
+    </div>
 
-        <a href="#" name="eco">
-             <h4 class="ui horizontal divider header">
-             <i class="icon grid layout big"></i>
-             Ecosystem
-             </h4>
-        </a>
+    <a href="#" name="eco">
+      <h4 class="ui horizontal divider header">
+        <i class="icon grid layout big"></i>
+        Ecosystem
+      </h4>
+    </a>
 
-        <div class="ui vertical stripe">
-            <div class="ui grid">
-                <div class="row">
-                <div class="three wide column"></div>
-                <div class="ten wide column">
-                  <div class="ui four stackable cards">
-                    <a class="ui card" href="categories/engines.html">
-                      <div class="content">
-                        <div class="header">Game Engines</div>
-                        <div class="description">All game engines.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        9 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/physics.html">
-                      <div class="content">
-                        <div class="header">Physics</div>
-                        <div class="description">Physics engines and collision detection.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        6 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/audio.html">
-                      <div class="content">
-                        <div class="header">Audio</div>
-                        <div class="description">Audio engines, music, and sound effects.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        9 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/2drendering.html">
-                      <div class="content">
-                        <div class="header">2D Rendering</div>
-                        <div class="description">2D graphics and fonts.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        7 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/3drendering.html">
-                      <div class="content">
-                        <div class="header">3D Rendering</div>
-                        <div class="description">OpenGL, Vulkan, higher level APIs.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        8 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/ui.html">
-                      <div class="content">
-                        <div class="header">UI</div>
-                        <div class="description">Graphical user interface libraries.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        3 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/ecs.html">
-                      <div class="content">
-                        <div class="header">ECS</div>
-                        <div class="description">Entity Component System implementations.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        9 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/math.html">
-                      <div class="content">
-                        <div class="header">Math</div>
-                        <div class="description">Vector, matrix, quaternion, color/colour, and more.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        6 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/3dformatloader.html">
-                      <div class="content">
-                        <div class="header">3D Formats Loaders</div>
-                        <div class="description">FBX, OBJ and more.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        7 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/vr.html">
-                      <div class="content">
-                        <div class="header">VR</div>
-                        <div class="description">VR rendering, engines, and other libraries.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        4 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                    <a class="ui card" href="categories/scripting.html">
-                      <div class="content">
-                        <div class="header">Scripting</div>
-                        <div class="description">Scripting languages and DSLs.</div>
-                      </div>
-                      <div class="extra content">
-                        <i class="cube icon"></i>
-                        7 Crates
-                      </div>
-                      <div class="ui bottom teal attached button">
-                        Browse
-                      </div>
-                    </a>
-                  </div>
+    <div class="ui vertical stripe">
+      <div class="ui grid">
+        <div class="row">
+          <div class="three wide column"></div>
+          <div class="ten wide column">
+            <div class="ui four stackable cards">
+              <a class="ui card" href="categories/engines.html">
+                <div class="content">
+                  <div class="header">Game Engines</div>
+                  <div class="description">All game engines.</div>
                 </div>
-                <div class="three wide column">
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  9 Crates
                 </div>
-              </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/physics.html">
+                <div class="content">
+                  <div class="header">Physics</div>
+                  <div class="description">Physics engines and collision detection.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  6 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/audio.html">
+                <div class="content">
+                  <div class="header">Audio</div>
+                  <div class="description">Audio engines, music, and sound effects.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  9 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/2drendering.html">
+                <div class="content">
+                  <div class="header">2D Rendering</div>
+                  <div class="description">2D graphics and fonts.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  7 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/3drendering.html">
+                <div class="content">
+                  <div class="header">3D Rendering</div>
+                  <div class="description">OpenGL, Vulkan, higher level APIs.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  8 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/ui.html">
+                <div class="content">
+                  <div class="header">UI</div>
+                  <div class="description">Graphical user interface libraries.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  3 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/ecs.html">
+                <div class="content">
+                  <div class="header">ECS</div>
+                  <div class="description">Entity Component System implementations.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  9 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/math.html">
+                <div class="content">
+                  <div class="header">Math</div>
+                  <div class="description">Vector, matrix, quaternion, color/colour, and more.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  6 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/3dformatloader.html">
+                <div class="content">
+                  <div class="header">3D Formats Loaders</div>
+                  <div class="description">FBX, OBJ and more.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  7 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/vr.html">
+                <div class="content">
+                  <div class="header">VR</div>
+                  <div class="description">VR rendering, engines, and other libraries.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  5 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
+              <a class="ui card" href="categories/scripting.html">
+                <div class="content">
+                  <div class="header">Scripting</div>
+                  <div class="description">Scripting languages and DSLs.</div>
+                </div>
+                <div class="extra content">
+                  <i class="cube icon"></i>
+                  7 Crates
+                </div>
+                <div class="ui bottom teal attached button">
+                  Browse
+                </div>
+              </a>
             </div>
-        </div>
-
-        <a name="games"></a>
-            <h4 class="ui horizontal divider header">
-                <a href="#">
-                <i class="game icon big"></i>
-                Games
-            </h4>
-        </a>
-
-      <div class="ui vertical stripe">
-        <div class="ui grid">
-          <div class="row">
-            <div class="three wide column">
-            </div>
-            <div class="ten wide column">
-              <div class="ui four stackable cards">
-                <a class="ui card" href="http://sharonos.com/">
-                  <img class="ui image" src="assets/img/sharbringer-icon.jpg">
-                  <div class="content">
-                    <div class="header">SHAR</div>
-                    <div class="description">
-                      Network shooter with physics and destructions.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://users.rust-lang.org/t/this-month-in-zone-of-control/6993">
-                  <img class="ui image" src="assets/img/zone-of-control.png">
-                  <div class="content">
-                    <div class="header">Zone of Control</div>
-                    <div class="description">
-                      A turn-based hexagonal strategy game..
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/itadinanta/rust-oids">
-                  <img class="ui image" src="assets/img/rustoids.png">
-                  <div class="content">
-                    <div class="header">Rust-oids</div>
-                    <div class="description">
-                      A-life simulator sandbox.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/OsnaCS/plantex">
-                  <img class="ui image" src="assets/img/plantex.jpg">
-                  <div class="content">
-                    <div class="header">plantex</div>
-                    <div class="description">
-                      Open-world exploration game with plants. Everything is procedurally generated.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/cristicbz/rust-doom">
-                  <img class="ui image" src="assets/img/rust-doom.png">
-                  <div class="content">
-                    <div class="header">Rust Doom</div>
-                    <div class="description">
-                      A Doom Renderer written in Rust.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/indiv0/colonize">
-                  <img class="ui image" src="assets/img/colonize.png">
-                  <div class="content">
-                    <div class="header">colonize</div>
-                    <div class="description">
-                      A Dwarf Fortress/Rimworld-like game written in Rust
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/tedsta/reforge">
-                  <img class="ui image" src="assets/img/reforge_screeny.png">
-                  <div class="content">
-                    <div class="header">Reforge</div>
-                    <div class="description">
-                      Online multiplayer sandbox space ship combat game
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/PistonDevelopers/hematite">
-                  <img class="ui image" src="assets/img/hematite.png">
-                  <div class="content">
-                    <div class="header">hematite</div>
-                    <div class="description">
-                      A simple Minecraft written in Rust with the Piston game engine.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/Jeaye/q3">
-                  <img class="ui image" src="assets/img/q3.png">
-                  <div class="content">
-                    <div class="header">Q³</div>
-                    <div class="description">
-                      A Quake 3 like game with voxelized destructible maps
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/aochagavia/rocket">
-                  <img class="ui image" src="assets/img/rocket.png">
-                  <div class="content">
-                    <div class="header">Rocket</div>
-                    <div class="description">
-                      A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/rsaarelm/magog">
-                  <img class="ui image" src="assets/img/magog.png">
-                  <div class="content">
-                    <div class="header">magog</div>
-                    <div class="description">
-                      A roguelike game in Rust
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/thiolliere/ruga">
-                  <img class="ui image" src="https://github.com/thiolliere/ruga/raw/master/animation.gif">
-                  <div class="content">
-                    <div class="header">ruga</div>
-                    <div class="description">
-                      a game made in rust
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://m12y.com/a-snakes-tale/">
-                  <img class="ui image" src="assets/img/a-snakes-tale.png">
-                  <div class="content">
-                    <div class="header">A Snake's Tale</div>
-                    <div class="description">
-                      A (100% Rust) puzzle game about snakes in cramped places.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="http://cityboundsim.com/">
-                  <img class="ui image" src="assets/img/Citybound_Cover_art_photo.jpg">
-                  <div class="content">
-                    <div class="header">Citybound</div>
-                    <div class="description">
-                      A new city-building game that dares to go beyond everything in its genre.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://rap2hpoutre.github.io/llamassacre-website/">
-                  <img class="ui image" src="https://rap2hpoutre.github.io/llamassacre-website/screen.png">
-                  <div class="content">
-                    <div class="header">Llamassacre</div>
-                    <div class="description">
-                      A jump and bump game for two players made with ggez.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/ucarion/gaia">
-                  <img class="ui image" src="https://i.imgur.com/95g9wyV.jpg">
-                  <div class="content">
-                    <div class="header">Gaia</div>
-                    <div class="description">
-                      A program that lets you view the world.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/ozkriff/zemeroth/">
-                  <img class="ui image" src="https://i.imgur.com/mTTrWHu.gif">
-                  <div class="content">
-                    <div class="header">Zemeroth</div>
-                    <div class="description">
-                      A small 2D turn-based hexagonal tactical game made with ggez engine.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/">
-                  <img class="ui image" src="https://i.imgur.com/bQX5L6El.jpg">
-                  <div class="content">
-                    <div class="header">Garden</div>
-                    <div class="description">
-                      A game centered around really detailed plant growth simulation.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/kvark/vange-rs">
-                  <img class="ui image" src="https://i.imgur.com/UKKjmx7.png">
-                  <div class="content">
-                    <div class="header">Vange-rs</div>
-                    <div class="description">
-                      Rusty Vangers clone.
-                    </div>
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/Swampsoft/solitaire">
-                  <img class="ui image" src="https://i.imgur.com/6d7PdiE.jpg">
-                  <div class="content">
-                    <div class="header">Solitaire</div>
-                    <div class="description">
-                      A remake of the Shenzhen Solitaire variant.
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+          </div>
           <div class="three wide column">
           </div>
         </div>
+      </div>
+    </div>
+
+    <a name="games"></a>
+    <h4 class="ui horizontal divider header">
+      <a href="#">
+        <i class="game icon big"></i>
+        Games
+    </h4>
+    </a>
+
+    <div class="ui vertical stripe">
+      <div class="ui grid">
+        <div class="row">
+          <div class="three wide column">
+          </div>
+          <div class="ten wide column">
+            <div class="ui four stackable cards">
+              <a class="ui card" href="http://sharonos.com/">
+                <img class="ui image" src="assets/img/sharbringer-icon.jpg">
+                <div class="content">
+                  <div class="header">SHAR</div>
+                  <div class="description">
+                    Network shooter with physics and destructions.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://users.rust-lang.org/t/this-month-in-zone-of-control/6993">
+                <img class="ui image" src="assets/img/zone-of-control.png">
+                <div class="content">
+                  <div class="header">Zone of Control</div>
+                  <div class="description">
+                    A turn-based hexagonal strategy game..
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/itadinanta/rust-oids">
+                <img class="ui image" src="assets/img/rustoids.png">
+                <div class="content">
+                  <div class="header">Rust-oids</div>
+                  <div class="description">
+                    A-life simulator sandbox.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/OsnaCS/plantex">
+                <img class="ui image" src="assets/img/plantex.jpg">
+                <div class="content">
+                  <div class="header">plantex</div>
+                  <div class="description">
+                    Open-world exploration game with plants. Everything is procedurally generated.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/cristicbz/rust-doom">
+                <img class="ui image" src="assets/img/rust-doom.png">
+                <div class="content">
+                  <div class="header">Rust Doom</div>
+                  <div class="description">
+                    A Doom Renderer written in Rust.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/indiv0/colonize">
+                <img class="ui image" src="assets/img/colonize.png">
+                <div class="content">
+                  <div class="header">colonize</div>
+                  <div class="description">
+                    A Dwarf Fortress/Rimworld-like game written in Rust
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/tedsta/reforge">
+                <img class="ui image" src="assets/img/reforge_screeny.png">
+                <div class="content">
+                  <div class="header">Reforge</div>
+                  <div class="description">
+                    Online multiplayer sandbox space ship combat game
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/PistonDevelopers/hematite">
+                <img class="ui image" src="assets/img/hematite.png">
+                <div class="content">
+                  <div class="header">hematite</div>
+                  <div class="description">
+                    A simple Minecraft written in Rust with the Piston game engine.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/Jeaye/q3">
+                <img class="ui image" src="assets/img/q3.png">
+                <div class="content">
+                  <div class="header">Q³</div>
+                  <div class="description">
+                    A Quake 3 like game with voxelized destructible maps
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/aochagavia/rocket">
+                <img class="ui image" src="assets/img/rocket.png">
+                <div class="content">
+                  <div class="header">Rocket</div>
+                  <div class="description">
+                    A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/rsaarelm/magog">
+                <img class="ui image" src="assets/img/magog.png">
+                <div class="content">
+                  <div class="header">magog</div>
+                  <div class="description">
+                    A roguelike game in Rust
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/thiolliere/ruga">
+                <img class="ui image" src="https://github.com/thiolliere/ruga/raw/master/animation.gif">
+                <div class="content">
+                  <div class="header">ruga</div>
+                  <div class="description">
+                    a game made in rust
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://m12y.com/a-snakes-tale/">
+                <img class="ui image" src="assets/img/a-snakes-tale.png">
+                <div class="content">
+                  <div class="header">A Snake's Tale</div>
+                  <div class="description">
+                    A (100% Rust) puzzle game about snakes in cramped places.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="http://cityboundsim.com/">
+                <img class="ui image" src="assets/img/Citybound_Cover_art_photo.jpg">
+                <div class="content">
+                  <div class="header">Citybound</div>
+                  <div class="description">
+                    A new city-building game that dares to go beyond everything in its genre.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://rap2hpoutre.github.io/llamassacre-website/">
+                <img class="ui image" src="https://rap2hpoutre.github.io/llamassacre-website/screen.png">
+                <div class="content">
+                  <div class="header">Llamassacre</div>
+                  <div class="description">
+                    A jump and bump game for two players made with ggez.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/ucarion/gaia">
+                <img class="ui image" src="https://i.imgur.com/95g9wyV.jpg">
+                <div class="content">
+                  <div class="header">Gaia</div>
+                  <div class="description">
+                    A program that lets you view the world.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/ozkriff/zemeroth/">
+                <img class="ui image" src="https://i.imgur.com/mTTrWHu.gif">
+                <div class="content">
+                  <div class="header">Zemeroth</div>
+                  <div class="description">
+                    A small 2D turn-based hexagonal tactical game made with ggez engine.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/">
+                <img class="ui image" src="https://i.imgur.com/bQX5L6El.jpg">
+                <div class="content">
+                  <div class="header">Garden</div>
+                  <div class="description">
+                    A game centered around really detailed plant growth simulation.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/kvark/vange-rs">
+                <img class="ui image" src="https://i.imgur.com/UKKjmx7.png">
+                <div class="content">
+                  <div class="header">Vange-rs</div>
+                  <div class="description">
+                    Rusty Vangers clone.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/Swampsoft/solitaire">
+                <img class="ui image" src="https://i.imgur.com/6d7PdiE.jpg">
+                <div class="content">
+                  <div class="header">Solitaire</div>
+                  <div class="description">
+                    A remake of the Shenzhen Solitaire variant.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/Dooskington/Rostige-Schlange">
+                <img class="ui image" src="assets/img/rostigeschlange.png">
+                <div class="content">
+                  <div class="header">Rostige Schlange</div>
+                  <div class="description">
+                    Rostige Schlange ("Rusty Snake" in German apparently) is a small snake clone, using OpenGL for rendering.
+                  </div>
+                </div>
+              </a>
+              <a class="ui card" href="https://store.steampowered.com/app/884160/HyperZen_Training/">
+                <img class="ui image" src="assets/img/hyperzentraining.png">
+                <div class="content">
+                  <div class="header">HyperZen Training</div>
+                  <div class="description">
+                    Experimental minimalist game with a special graphical mecanic.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="three wide column">
+          </div>
         </div>
       </div>
+    </div>
 
-      <a name="res"></a>
-      <h4 class="ui horizontal divider header">
-        <a href="#">
+    <a name="res"></a>
+    <h4 class="ui horizontal divider header">
+      <a href="#">
         <i class="list icon big"></i>
         Resources</a>
-      </h4>
+    </h4>
 
-      <div class="ui vertical stripe">
-        <div class="ui grid">
-          <div class="row">
-            <div class="three wide column"></div>
-            <div class="ten wide column">
-              <div class="ui four stackable cards">
-                <a class="ui card" href="http://rustbyexample.com/">
-                  <div class="content">
-                    <div class="header">Rust by Example</div>
-                    <div class="meta">Book</div>
-                    <div class="description">
-                      A collection of runnable examples that illustrate various Rust concepts and standard libraries.
-                    </div>
+    <div class="ui vertical stripe">
+      <div class="ui grid">
+        <div class="row">
+          <div class="three wide column"></div>
+          <div class="ten wide column">
+            <div class="ui four stackable cards">
+              <a class="ui card" href="http://rustbyexample.com/">
+                <div class="content">
+                  <div class="header">Rust by Example</div>
+                  <div class="meta">Book</div>
+                  <div class="description">
+                    A collection of runnable examples that illustrate various Rust concepts and standard libraries.
                   </div>
-                  <div class="ui bottom teal attached button">
-                    Read
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="https://doc.rust-lang.org/book/">
+                <div class="content">
+                  <div class="header">The Rust Book</div>
+                  <div class="meta">Book</div>
+                  <div class="description">
+                    The Rust language official book.
                   </div>
-                </a>
-                <a class="ui card" href="https://doc.rust-lang.org/book/">
-                  <div class="content">
-                    <div class="header">The Rust Book</div>
-                    <div class="meta">Book</div>
-                    <div class="description">
-                      The Rust language official book.
-                    </div>
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/kud1ing/awesome-rust">
+                <div class="content">
+                  <div class="header">Awesome Rust</div>
+                  <div class="meta">List</div>
+                  <div class="description">
+                    A curated list of Rust code and resources, inspired by other awesome lists.
                   </div>
-                  <div class="ui bottom teal attached button">
-                    Read
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="http://www.shadercat.com/overview-of-open-source-game-engines-in-rust/">
+                <div class="content">
+                  <div class="header">Overview of Open Source Game Engines in Rust</div>
+                  <div class="meta">Article</div>
+                  <div class="description">
+                    An overview of what engines/libraries to use.
                   </div>
-                </a>
-                <a class="ui card" href="https://github.com/kud1ing/awesome-rust">
-                  <div class="content">
-                    <div class="header">Awesome Rust</div>
-                    <div class="meta">List</div>
-                    <div class="description">
-                      A curated list of Rust code and resources, inspired by other awesome lists.
-                    </div>
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="http://lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html">
+                <div class="content">
+                  <div class="header">Developing a game with Rust beginners</div>
+                  <div class="meta">Article</div>
+                  <div class="description">
+                    Some thoughts on tools and libraries
                   </div>
-                  <div class="ui bottom teal attached button">
-                    Read
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="https://thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html">
+                <div class="content">
+                  <div class="header">A game in Rust</div>
+                  <div class="meta">Article</div>
+                  <div class="description">
+                    Post-mortem
                   </div>
-                </a>
-                <a class="ui card" href="http://www.shadercat.com/overview-of-open-source-game-engines-in-rust/">
-                  <div class="content">
-                    <div class="header">Overview of Open Source Game Engines in Rust</div>
-                    <div class="meta">Article</div>
-                    <div class="description">
-                       An overview of what engines/libraries to use.
-                    </div>
+                </div>
+                <div class="ui bottom teal attached button">
+                  Read
+                </div>
+              </a>
+              <a class="ui card" href="https://github.com/bwasty/learn-opengl-rs">
+                <div class="content">
+                  <div class="header">Learn OpenGL with Rust</div>
+                  <div class="meta">Tutorial Series</div>
+                  <div class="description">
+                    A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com
                   </div>
-                  <div class="ui bottom teal attached button">
-                    Read
+                </div>
+                <div class="ui bottom teal attached button">
+                  Open
+                </div>
+              </a>
+              <a class="ui card" href="https://bheisler.github.io/post/writing-raytracer-in-rust-part-1/">
+                <div class="content">
+                  <div class="header">Writing a Raytracer in Rust</div>
+                  <div class="meta">Article</div>
+                  <div class="description">
+                    3-part series of posts on writing a simple raytracer in Rust.
                   </div>
-                </a>
-                <a class="ui card" href="http://lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html">
-                  <div class="content">
-                    <div class="header">Developing a game with Rust beginners</div>
-                    <div class="meta">Article</div>
-                    <div class="description">
-                       Some thoughts on tools and libraries
-                    </div>
-                  </div>
-                  <div class="ui bottom teal attached button">
-                    Read
-                  </div>
-                </a>
-                <a class="ui card" href="https://thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html">
-                  <div class="content">
-                    <div class="header">A game in Rust</div>
-                    <div class="meta">Article</div>
-                    <div class="description">
-                       Post-mortem
-                    </div>
-                  </div>
-                  <div class="ui bottom teal attached button">
-                    Read
-                  </div>
-                </a>
-                <a class="ui card" href="https://github.com/bwasty/learn-opengl-rs">
-                  <div class="content">
-                    <div class="header">Learn OpenGL with Rust</div>
-                    <div class="meta">Tutorial Series</div>
-                    <div class="description">
-                       A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com
-                    </div>
-                  </div>
-                  <div class="ui bottom teal attached button">
-                    Open
-                  </div>
-                </a>
-                <a class="ui card" href="https://bheisler.github.io/post/writing-raytracer-in-rust-part-1/">
-                  <div class="content">
-                    <div class="header">Writing a Raytracer in Rust</div>
-                    <div class="meta">Article</div>
-                    <div class="description">
-                      3-part series of posts on writing a simple raytracer in Rust.
-                    </div>
-                  </div>
-                  <div class="ui bottom teal attached button">
-                    Open
-                  </div>
-                </a
-              </div>
+                </div>
+                <div class="ui bottom teal attached button">
+                  Open
+                </div>
+              </a </div>
             </div>
             <div class="three wide column"></div>
           </div>
@@ -718,98 +781,100 @@
       <a name="curators"></a>
       <h4 class="ui horizontal divider header">
         <a href="#">
-        <i class="users icon big"></i>
-        Curators</a>
+          <i class="users icon big"></i>
+          Curators</a>
       </h4>
 
-    <div class="ui vertical stripe">
+      <div class="ui vertical stripe">
         <div class="ui equal width stackable grid">
-            <div class="center aligned row">
-                <div class="three wide column"></div>
-                <div class="ten wide column">
-                  <div class="ui three cards">
-                    <div class="ui card">
-                      <div class="content">
-                        <div class="header">@doppioslash</div>
-                        <a href="https://twitter.com/doppioslash"><i class="twitter icon large"></i></a>
-                        <a href="https://github.com/doppioslash"><i class="github icon large"></i></a>
-                        <a href="http://www.doppioslash.com"><i class="home icon large"></i></a>
-                        <div class="meta">Game developer and Functional Programmer</div>
-                        <div class="description">Writes on <a href="http://www.shadercat.com">shadercat.com</a> about Physically Based Shading and Rendering with Rust and Unity.</div>
-                      </div>
-                    </div>
-                    <div class="ui card">
-                      <div class="content">
-                        <div class="header">@nxnfufunezn</div>
-                        <a href="https://twitter.com/nxnfufunezn"><i class="twitter icon large"></i></a>
-                        <a href="https://github.com/nxnfufunezn"><i class="github icon large"></i></a>
-                        <div class="meta">Backend developer and FP enthusiast</div>
-                      </div>
-                    </div>
-                    <div class="ui card">
-                      <div class="content">
-                        <div class="header">@bwasty</div>
-                        <a href="https://github.com/bwasty"><i class="github icon large"></i></a>
-                        <div class="meta">Software Engineer</div>
-                      </div>
-                    </div>
+          <div class="center aligned row">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+              <div class="ui three cards">
+                <div class="ui card">
+                  <div class="content">
+                    <div class="header">@doppioslash</div>
+                    <a href="https://twitter.com/doppioslash"><i class="twitter icon large"></i></a>
+                    <a href="https://github.com/doppioslash"><i class="github icon large"></i></a>
+                    <a href="http://www.doppioslash.com"><i class="home icon large"></i></a>
+                    <div class="meta">Game developer and Functional Programmer</div>
+                    <div class="description">Writes on <a href="http://www.shadercat.com">shadercat.com</a> about Physically
+                      Based Shading and Rendering with Rust and Unity.</div>
                   </div>
-               </div>
-            </div>
-            <div class="center aligned row">
-                <div class="six wide column"></div>
-                <div class="four wide column">
-                    <h3>Contribute</h3>
-                        <p>And put your name here.</p>
-                        <a href="https://github.com/doppioslash/arewegameyet" class="ui icon button positive">
-                            <i class="add icon large"></i>
-                        </a>
                 </div>
-                <div class="six wide column"></div>
+                <div class="ui card">
+                  <div class="content">
+                    <div class="header">@nxnfufunezn</div>
+                    <a href="https://twitter.com/nxnfufunezn"><i class="twitter icon large"></i></a>
+                    <a href="https://github.com/nxnfufunezn"><i class="github icon large"></i></a>
+                    <div class="meta">Backend developer and FP enthusiast</div>
+                  </div>
+                </div>
+                <div class="ui card">
+                  <div class="content">
+                    <div class="header">@bwasty</div>
+                    <a href="https://github.com/bwasty"><i class="github icon large"></i></a>
+                    <div class="meta">Software Engineer</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="center aligned row"></div>
+          </div>
+          <div class="center aligned row">
+            <div class="six wide column"></div>
+            <div class="four wide column">
+              <h3>Contribute</h3>
+              <p>And put your name here.</p>
+              <a href="https://github.com/doppioslash/arewegameyet" class="ui icon button positive">
+                <i class="add icon large"></i>
+              </a>
+            </div>
+            <div class="six wide column"></div>
+          </div>
+          <div class="center aligned row"></div>
         </div>
 
 
 
-  <a name="about"></a>
-  <h4 class="ui horizontal divider header">
-    <a href="#">
-    <i class="user icon big"></i>
-    About</a>
-  </h4>
+        <a name="about"></a>
+        <h4 class="ui horizontal divider header">
+          <a href="#">
+            <i class="user icon big"></i>
+            About</a>
+        </h4>
 
-   <div class="ui vertical stripe">
-    <div class="ui text container">
-      <p><b>Arewegameyet?</b> is made by <a href="https://twitter.com/doppioslash"><i class="twitter icon"></i>@doppioslash</a> and powered by <a href="https://github.com/cobalt-org/cobalt.rs">Cobalt.rs</a>, a Rust static site generator.</p>
-      <p>Inspired by <a href="http://www.arewewebyet.org/">arewewebyet</a>, and <a href="http://www.arewelearningyet.com/">arewelearningyet</a>.</p>
-    </div>
-  </div>
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#about" class="item">Contact Us</a>
+        <div class="ui vertical stripe">
+          <div class="ui text container">
+            <p><b>Arewegameyet?</b> is made by <a href="https://twitter.com/doppioslash"><i class="twitter icon"></i>@doppioslash</a>
+              and powered by <a href="https://github.com/cobalt-org/cobalt.rs">Cobalt.rs</a>, a Rust static site generator.</p>
+            <p>Inspired by <a href="http://www.arewewebyet.org/">arewewebyet</a>, and <a href="http://www.arewelearningyet.com/">arewelearningyet</a>.</p>
           </div>
         </div>
-        <div class="ten wide column">
-          <h4 class="ui inverted header">Arewegameyet?</h4>
-          <p>CC-BY 2016</p>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Get involved</h4>
-          <div class="ui inverted link list">
-            <a href="https://github.com/doppioslash/arewegameyet" class="item">Contribute</a>
+
+        <div class="ui inverted vertical footer segment">
+          <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+
+              <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                  <a href="#about" class="item">Contact Us</a>
+                </div>
+              </div>
+              <div class="ten wide column">
+                <h4 class="ui inverted header">Arewegameyet?</h4>
+                <p>CC-BY 2016</p>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui inverted header">Get involved</h4>
+                <div class="ui inverted link list">
+                  <a href="https://github.com/doppioslash/arewegameyet" class="item">Contribute</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
 </body>
 
