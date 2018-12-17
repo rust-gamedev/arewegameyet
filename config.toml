@@ -11,22 +11,5 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-taxonomies = [
-    {name="2drendering",       pretty_name="2D Rendering",       description="Sprites, vectors, splines, hex grids and more."},
-    {name="3dformatloaders",    pretty_name="3D Format Loaders", description="In order to get your assets in common 3D file formats loaded in your game you need these libraries. So far we have FBX, OBJ, COLLADA and glTF."},
-    {name="3drendering",       pretty_name="3D Rendering",       description="Graphics APIs, wrappers for and backends to Vulkan and OpenGL, and more."},
-    {name="ai",                pretty_name="AI",                 description="AI libraries, steering, behaviour trees, planners, etc."},
-    {name="audio",             pretty_name="Audio",              description="Wrappers for FMOD, OpenAL, MIDI and similar, and higher level APIs."},
-    {name="ecs",               pretty_name="ECS",                description="For some reason there are quite a few ECS implemented in Rust, though at this point in time specs is likely the most actively worked on."},
-    {name="engines",           pretty_name="Game Engines",       description="2D and 3D engines and frameworks"},
-    {name="input",             pretty_name="Input",              description="Libraries to handle controllers, gamepads, keyboards, etc."},
-    {name="math",              pretty_name="Math",               description="Linear algebra libraries, quaternions, color conversion and more."},
-    {name="physics",           pretty_name="Physics",            description="2D and 3D physics engines, collision detection libraries."},
-    {name="scripting",         pretty_name="Scripting Languages",description="Scripting languages embeddable in a Rust game"},
-    {name="tools",             pretty_name="Tools",              description="Tools & other gamedev related libraries."},
-    {name="ui",                pretty_name="UI",                 description="Immediate mode UI libraries and more."},
-    {name="vr",                pretty_name="VR",                 description="VR engines and libraries."},
-]
-
 [extra]
 # Put all your custom variables here

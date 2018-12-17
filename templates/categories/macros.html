@@ -1,0 +1,63 @@
+{% macro info(crate) %}
+
+{# setting vars since data source may change #}
+{% if crate.source == 'crates' %}
+    {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ crate.name, format="json") %}
+    {# human readable name #}
+    {% set name = data.crate.name %}
+    {# Github/Gitlab/Etc. repository #}
+{% elif crate.source == 'github' %}
+    {% set data = load_data(url="https://api.github.com/repos/" ~ crate.name, format="json") %}
+    {% set name = data.name %}
+{% endif %}
+
+<div class="ui one stackable cards">
+    <a name="{{ name }}"></a>
+    <div class="ui card">
+        <div class="content">
+            <a href="#{{ name }}" title="permanent link">
+                <i class="right floated hashtag icon"></i>
+            </a>
+            <a href="https://github.com/pistondevelopers/graphics.git" title="github">
+                <i class="right floated github icon"></i>
+            </a>
+            <a href="https://crates.io/crates/piston2d-graphics" title="crate">
+                <i class="right floated cube icon"></i>
+            </a>
+            <a href="https://github.com/pistondevelopers/graphics" title="home">
+                <i class="right floated home icon"></i>
+            </a>
+            <div class="header">{{ name }}</div>
+            <div class="description">
+                <p>A library for 2D graphics that works with multiple back-ends</p>
+            </div>
+        </div>
+        <div class="extra content">
+            <div class="ui left floated  horizontal list">
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/piston2d-graphics">
+                            <img src="https://img.shields.io/crates/v/piston2d-graphics.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/piston2d-graphics">
+                            <img src="https://img.shields.io/crates/d/piston2d-graphics.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/piston2d-graphics">
+                            <img src="https://img.shields.io/crates/l/piston2d-graphics.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span class="right floated star">No gitter</span>
+        </div>
+    </div>
+</div>
+{% endmacro input %}

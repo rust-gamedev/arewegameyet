@@ -92,188 +92,25 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    <a class="ui card" href="categories/engines.html">
+
+
+
+                    {% set categories = get_section(path="categories/_index.md") %}
+                    {% for category in categories.pages %}
+                    <a class="ui card" href="{{category.permalink}}">
                         <div class="content">
-                            <div class="header">Game Engines</div>
-                            <div class="description">All game engines.</div>
+                            <div class="header">{{ category.title }}</div>
+                            <div class="description">{{ category.description }}</div>
                         </div>
                         <div class="extra content">
                             <i class="cube icon"></i>
-                            14 Crates
+                            X Crates
                         </div>
                         <div class="ui bottom teal attached button">
                             Browse
                         </div>
                     </a>
-                    <a class="ui card" href="categories/physics.html">
-                        <div class="content">
-                            <div class="header">Physics</div>
-                            <div class="description">Physics engines and collision detection.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            7 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/audio.html">
-                        <div class="content">
-                            <div class="header">Audio</div>
-                            <div class="description">Audio engines, music, and sound effects.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            9 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/2drendering.html">
-                        <div class="content">
-                            <div class="header">2D Rendering</div>
-                            <div class="description">2D graphics and fonts.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            9 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/3drendering.html">
-                        <div class="content">
-                            <div class="header">3D Rendering</div>
-                            <div class="description">OpenGL, Vulkan, higher level APIs.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            8 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/ui.html">
-                        <div class="content">
-                            <div class="header">UI</div>
-                            <div class="description">Graphical user interface libraries.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            3 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/ecs.html">
-                        <div class="content">
-                            <div class="header">ECS</div>
-                            <div class="description">Entity Component System implementations.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            9 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/math.html">
-                        <div class="content">
-                            <div class="header">Math</div>
-                            <div class="description">Vector, matrix, quaternion, color/colour, and more.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            7 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/3dformatloader.html">
-                        <div class="content">
-                            <div class="header">3D Formats Loaders</div>
-                            <div class="description">FBX, OBJ and more.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            7 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/vr.html">
-                        <div class="content">
-                            <div class="header">VR</div>
-                            <div class="description">VR rendering, engines, and other libraries.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            5 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/scripting.html">
-                        <div class="content">
-                            <div class="header">Scripting</div>
-                            <div class="description">Scripting languages and DSLs.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            7 Crates
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/ai.html">
-                        <div class="content">
-                            <div class="header">AI</div>
-                            <div class="description">AI libraries, steering, behaviour trees, planners, etc.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            1 Crate
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/input.html">
-                        <div class="content">
-                            <div class="header">Input</div>
-                            <div class="description">Libraries to handle controller devices input.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            1 Crate
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
-                    <a class="ui card" href="categories/tools.html">
-                        <div class="content">
-                            <div class="header">Tools</div>
-                            <div class="description">Tools &amp; other gamedev related libraries.</div>
-                        </div>
-                        <div class="extra content">
-                            <i class="cube icon"></i>
-                            1 Crate
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Browse
-                        </div>
-                    </a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="three wide column">

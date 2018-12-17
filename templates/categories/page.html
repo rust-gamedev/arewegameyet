@@ -1,4 +1,50 @@
 {% extends 'master.html' %}
+{% import "categories/macros.html" as macros %}
+
+<!-- a collection of crates, used to be "categories".  However, with Zola, categories implies
+a taxonomy, which isn't completely accurate since it's more like pages with external data loading. -->
+
 
 {% block content %}
+
+    {# Heading #}
+    <div class="ui vertical stripe">
+      <h2 class="ui center aligned icon header">
+        <i class="circular game icon"></i>
+        {{page.title}}
+      </h2>
+      <div class="ui text container">
+        <p>{{page.description}}</p>
+      </div>
+    </div>
+
+    {# list all content #}
+    <a name="crates">
+      <h4 class="ui horizontal divider header">
+        <i class="list icon big"></i>
+        Crates
+      </h4>
+    </a>
+
+    <div class="ui vertical stripe">
+      <div class="ui grid">
+        <div class="row">
+          <div class="three wide column">
+          </div>
+          <div class="ten wide column">
+            {# display each box of content #}
+            {% set config = load_data(path = page.path ~ "data.toml", format="toml") %}
+            {# dynamic data loaded using the crates.io API  #}
+            {% if config.crates %}
+                {% for crate in config.crates %}
+                    {{ macros::info(crate=crate) }}
+                {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
 {% endblock content %}
