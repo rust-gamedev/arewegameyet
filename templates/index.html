@@ -8,7 +8,7 @@
             <a class="toc item">
                 <i class="sidebar icon"></i>
             </a>
-            <a class="active item" href="http://www.arewegameyet.org">Home</a>
+            <a class="active item" href="/">Home</a>
             <a class="item" href="#chat">Chat</a>
             <a class="item" href="#eco">Ecosystem</a>
             <a class="item" href="#games">Games</a>
@@ -97,6 +97,7 @@
 
                     {% set categories = get_section(path="categories/_index.md") %}
                     {% for category in categories.pages %}
+                    {% set data = load_data(path=category.path ~ "data.toml") %}
                     <a class="ui card" href="{{category.permalink}}">
                         <div class="content">
                             <div class="header">{{ category.title }}</div>
@@ -104,7 +105,9 @@
                         </div>
                         <div class="extra content">
                             <i class="cube icon"></i>
-                            X Crates
+                            {% if data.crates %}
+                                {{ data.crates | length }}
+                            {% endif %}
                         </div>
                         <div class="ui bottom teal attached button">
                             Browse
