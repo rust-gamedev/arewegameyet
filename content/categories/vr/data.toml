@@ -1,6 +1,7 @@
 [[crates]]
 name = "rust-openvr/rust-openvr"
 source = "github"
+gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
 
 [[crates]]
 name = 'rust-webvr'

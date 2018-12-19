@@ -59,3 +59,4 @@ homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
 [[crates]]
 name = "Gigoteur/UnicornConsole"
 source = "github"
+gitter_url = "https://gitter.im/UnicornConsole/Lobby"

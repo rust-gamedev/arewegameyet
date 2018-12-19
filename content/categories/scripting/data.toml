@@ -5,6 +5,7 @@ source = "crates"
 [[crates]]
 name = 'gluon'
 source = "crates"
+gitter_url = "https://gitter.im/gluon-lang/gluon"
 
 [[crates]]
 name = 'rhai'
