@@ -1,0 +1,3 @@
+[[crates]]
+name = 'modio'
+source = "crates"

@@ -1,0 +1,44 @@
+[[crates]]
+name = "cgmath"
+source = "crates"
+
+[[crates]]
+name = 'nalgebra'
+source = "crates"
+
+[[crates]]
+name = 'euler'
+source = "crates"
+gitter_url = "https://gitter.im/euler-rs/Lobby"
+
+[[crates]]
+name = "vek"
+source = "crates"
+
+[[crates]]
+name = 'dual_quaternion'
+source = "crates"
+
+[[crates]]
+name = 'quaternion'
+source = "crates"
+
+[[crates]]
+name = "vecmath"
+source = "crates"
+
+[[crates]]
+name = "palette"
+source = "crates"
+
+[[crates]]
+name = "generic-matrix"
+source = "crates"
+
+[[crates]]
+name = "bvh"
+source = "crates"
+
+[[crates]]
+name = "I3ck/rust-3d"
+source = "github"

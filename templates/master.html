@@ -17,8 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <script src="//load.sumome.com/" data-sumo-site-id="665c1f3e0219632a366981f4bd60c50461ccd7f2c0f661658eccb4097d20c2bc"
-        async="async"></script>
+    <script src="//load.sumome.com/" data-sumo-site-id="665c1f3e0219632a366981f4bd60c50461ccd7f2c0f661658eccb4097d20c2bc" async="async"></script>
     <script>
         $(document)
             .ready(function () {
@@ -81,8 +80,31 @@
     </div>
 
     <div class="pusher">
-        {% block content %}
-        {% endblock %}
+        {% block content %} {% endblock %}
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted link list">
+                        <a href="#about" class="item">Contact Us</a>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <h4 class="ui inverted header">Arewegameyet?</h4>
+                    <p>CC-BY 2016</p>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Get involved</h4>
+                    <div class="ui inverted link list">
+                        <a href="https://github.com/doppioslash/arewegameyet" class="item">Contribute</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

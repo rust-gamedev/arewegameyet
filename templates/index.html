@@ -1,6 +1,4 @@
-{% extends 'master.html' %}
-
-{% block content %}
+{% extends 'master.html' %} {% block content %}
 <!-- Page Contents -->
 <div class="ui inverted vertical masthead center aligned segment">
     <div class="ui container">
@@ -49,13 +47,11 @@
         Get Started
     </h2>
     <div class="ui text container">
-        <p>Since you ended up here, you probably agree that Rust is potentially an ideal language for Game
-            Development.</p>
-        <p> Its emphasis on low-level memory safe programming promise a better development process, less
-            debugging time,
+        <p>Since you ended up here, you probably agree that Rust is potentially an ideal language for Game Development.
+        </p>
+        <p> Its emphasis on low-level memory safe programming promise a better development process, less debugging time,
             and better end result.</p>
-        <p>While the ecosystem is still very young, you can find enough libraries and game engines to sink your
-            teeth into
+        <p>While the ecosystem is still very young, you can find enough libraries and game engines to sink your teeth into
             doing some slightly experimental gamedev.</p>
         <p>If you haven't learned Rust yet, maybe take a look at <a href="#res"><i class="icon list small"></i>Resources</a>
             first. If you are already proficient with Rust you might want to start with <a href="#eco"><i class="icon grid layout small"></i>Ecosystem</a>,
@@ -95,9 +91,8 @@
 
 
 
-                    {% set categories = get_section(path="categories/_index.md") %}
-                    {% for category in categories.pages %}
-                    {% set data = load_data(path=category.path ~ "data.toml") %}
+                    {% set categories = get_section(path="categories/_index.md") %} {% for category in categories.pages %} {% set data = load_data(path=category.path
+                    ~ "data.toml") %}
                     <a class="ui card" href="{{category.permalink}}">
                         <div class="content">
                             <div class="header">{{ category.title }}</div>
@@ -105,9 +100,7 @@
                         </div>
                         <div class="extra content">
                             <i class="cube icon"></i>
-                            {% if data.crates %}
-                                {{ data.crates | length }}
-                            {% endif %}
+                            {% if data.crates %} {{ data.crates | length }} {% endif %}
                         </div>
                         <div class="ui bottom teal attached button">
                             Browse
@@ -223,8 +216,7 @@
                         <div class="content">
                             <div class="header">Rocket</div>
                             <div class="description">
-                                A toy game in Rust, using Piston. The code is thoroughly commented in order to
-                                help people to follow it easily.
+                                A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily.
                             </div>
                         </div>
                     </a>
@@ -323,8 +315,7 @@
                         <div class="content">
                             <div class="header">Rostige Schlange</div>
                             <div class="description">
-                                Rostige Schlange ("Rusty Snake" in German apparently) is a small snake clone,
-                                using OpenGL for rendering.
+                                Rostige Schlange ("Rusty Snake" in German apparently) is a small snake clone, using OpenGL for rendering.
                             </div>
                         </div>
                     </a>
@@ -342,8 +333,7 @@
                         <div class="content">
                             <div class="header">Astra Terra</div>
                             <div class="description">
-                                A real-time base-building strategy game with procedurally generated worlds and
-                                an emphasis on simulation and story.
+                                A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story.
                             </div>
                         </div>
                     </a>
@@ -361,8 +351,7 @@
                         <div class="content">
                             <div class="header">carambolage</div>
                             <div class="description">
-                                Cartoonish style racing game using Rust and OpenGL. Highly experimental at its
-                                current state.
+                                Cartoonish style racing game using Rust and OpenGL. Highly experimental at its current state.
                             </div>
                         </div>
                     </a>
@@ -392,8 +381,7 @@
                             <div class="header">Rust by Example</div>
                             <div class="meta">Book</div>
                             <div class="description">
-                                A collection of runnable examples that illustrate various Rust concepts and
-                                standard libraries.
+                                A collection of runnable examples that illustrate various Rust concepts and standard libraries.
                             </div>
                         </div>
                         <div class="ui bottom teal attached button">
@@ -512,8 +500,7 @@
                             <a href="http://www.doppioslash.com"><i class="home icon large"></i></a>
                             <div class="meta">Game developer and Functional Programmer</div>
                             <div class="description">Writes on <a href="http://www.shadercat.com">shadercat.com</a>
-                                about Physically
-                                Based Shading and Rendering with Rust and Unity.</div>
+                                about Physically Based Shading and Rendering with Rust and Unity.</div>
                         </div>
                     </div>
                     <div class="ui card">
@@ -560,33 +547,8 @@
     <div class="ui vertical stripe">
         <div class="ui text container">
             <p><b>Arewegameyet?</b> is made by <a href="https://twitter.com/doppioslash"><i class="twitter icon"></i>@doppioslash</a>
-                and powered by <a href="https://github.com/cobalt-org/cobalt.rs">Cobalt.rs</a>, a Rust
-                static site generator.</p>
+                and powered by <a href="https://github.com/cobalt-org/cobalt.rs">Cobalt.rs</a>, a Rust static site generator.</p>
             <p>Inspired by <a href="http://www.arewewebyet.org/">arewewebyet</a>, and <a href="http://www.arewelearningyet.com/">arewelearningyet</a>.</p>
-        </div>
-    </div>
-
-    <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-
-                <div class="three wide column">
-                    <h4 class="ui inverted header">About</h4>
-                    <div class="ui inverted link list">
-                        <a href="#about" class="item">Contact Us</a>
-                    </div>
-                </div>
-                <div class="ten wide column">
-                    <h4 class="ui inverted header">Arewegameyet?</h4>
-                    <p>CC-BY 2016</p>
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Get involved</h4>
-                    <div class="ui inverted link list">
-                        <a href="https://github.com/doppioslash/arewegameyet" class="item">Contribute</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
