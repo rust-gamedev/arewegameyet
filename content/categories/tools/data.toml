@@ -1,0 +1,4 @@
+[[crates]]
+name = 'modio'
+source = "crates"
+gitter_url = "https://discord.mod.io/"

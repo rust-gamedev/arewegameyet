@@ -1,0 +1,62 @@
+# crates.io
+
+[[crates]]
+name = "amethyst"
+source = "crates"
+
+[[crates]]
+name = 'piston'
+source = "crates"
+
+[[crates]]
+name = 'corange-rs'
+source = "crates"
+
+[[crates]]
+name = 'ggez'
+source = "crates"
+
+[[crates]]
+name = 'darkengine'
+source = "crates"
+
+[[crates]]
+name = 'turbine'
+source = "crates"
+
+[[crates]]
+name = 'caper'
+source = "crates"
+
+[[crates]]
+name = 'mold2d'
+source = "crates"
+
+[[crates]]
+name = 'nitro'
+source = "crates"
+gitter_url = "https://gitter.im/nitro-game-engine/nitro"
+
+[[crates]]
+name = 'sdl2'
+source = "crates"
+
+[[crates]]
+name = 'godot'
+source = "crates"
+
+# github.com
+
+[[crates]]
+name = "ChariotEngine/Chariot"
+source = "github"
+
+[[crates]]
+name = "Siebencorgie/jakar-engine"
+source = "github"
+homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
+
+[[crates]]
+name = "Gigoteur/UnicornConsole"
+source = "github"
+gitter_url = "https://gitter.im/UnicornConsole/Lobby"

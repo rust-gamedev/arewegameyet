@@ -1,0 +1,3 @@
+[[crates]]
+name = 'gilrs'
+source = "crates"

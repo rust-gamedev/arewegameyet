@@ -1,0 +1,117 @@
+{% macro info(crate) %}
+
+{# setting vars since data source may change #}
+{#
+KEY: x = True, Nothing = False
+data
+name
+| ------------ name ---------------| can rewrite | optional |
+| data                             |             |          |
+| name                             |             |          |
+| description                      |      x      |          |
+| repository_url                   |      x      |          |
+| crate_url                        |      x      |    x     |
+| homepage_url                     |      x      |    x     |
+| gitter_url                       |      x      |    x     |
+|----------------------------------|-------------|----------|
+#}
+{% if crate.source == 'crates' %}
+    {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ crate.name, format="json") %}
+    {# human readable name #}
+    {% set name = data.crate.name %}
+    {# Github/Gitlab/Etc. repository #}
+    {% set repository_url = data.crate.repository %}
+    {% set crate_url = 'https://crates.io/crates/' ~ name %}
+    {% set description = data.crate.description %}
+    {% if data.crate.homepage %}
+        {% set homepage_url = data.crate.homepage %}
+    {% endif %}
+{% elif crate.source == 'github' %}
+    {% set data = load_data(url="https://api.github.com/repos/" ~ crate.name, format="json") %}
+    {% set name = data.name %}
+    {% set repository_url = data.html_url %}
+    {% if data.homepage != "" %}
+        {% set homepage_url = data.homepage %}
+    {% endif %}
+    {% set description = data.description %}
+{% endif %}
+
+{# OVERRIDES: If specified in the config file, the above can be rewritten. #}
+{% if crate.repository_url %}   {% set repository_url = crate.repository_url %}         {% endif %}
+{% if crate.crate_url %}        {% set crate_url = crate.crate_url %}                   {% endif %}
+{% if crate.homepage_url %}     {% set homepage_url = crate.homepage_url %}             {% endif %}
+{% if crate.gitter_url %}       {% set gitter_url = crate.gitter_url %}                 {% endif %}
+{% if crate.description %}      {% set description = crate.description %}               {% endif %}
+<div class="ui one stackable cards">
+    <a name="{{ name }}"></a>
+    <div class="ui card">
+        <div class="content">
+
+            <a href="#{{ name }}" title="permanent link">
+                <i class="right floated hashtag icon"></i>
+            </a>
+
+            <a href="{{ repository_url }}" title="github">
+                <i class="right floated github icon"></i>
+            </a>
+
+            {% if crate_url %}
+                <a href="{{ crate_url }}" title="crate">
+                    <i class="right floated cube icon"></i>
+                </a>
+            {% endif %}
+
+            {% if homepage_url %}
+            <a href="{{ homepage_url }}" title="home">
+                <i class="right floated home icon"></i>
+            </a>
+            {% endif %}
+            
+            <div class="header">{{ name }}</div>
+            <div class="description">
+                <p>{{ description }}</p>
+            </div>
+        </div>
+
+        
+        <div class="extra content">
+            {# only projects hosted on crates get badges for now #}
+            {% if crate.source == 'crates' %}
+            <div class="ui left floated  horizontal list">
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000">
+                        </a>
+                    </div>
+                </div>
+            </div>     
+            {% endif %}
+            <span class="right floated star">
+                {% if gitter_url %}
+                    <a href="{{ gitter_url }}" target="_blank">
+                        <img src="/assets/badges/chat.svg"/>
+                    </a>
+                {% else %}
+                    No gitter 
+                {% endif %}
+            </span>
+        </div>
+        
+    </div>
+</div>
+{% endmacro input %}
