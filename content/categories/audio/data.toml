@@ -1,35 +1,35 @@
 [[crates]]
-name="fmod"
-source="crates"
+name = "fmod"
+source = "crates"
 
 [[crates]]
-name="ears"
-source="crates"
+name = "ears"
+source = "crates"
 
 [[crates]]
-name="alto"
-source="crates"
+name = "alto"
+source = "crates"
 
 [[crates]]
-name="cpal"
-source="crates"
+name = "cpal"
+source = "crates"
 
 [[crates]]
-name="portmidi"
-source="crates"
+name = "portmidi"
+source = "crates"
 
 [[crates]]
-name="lewton"
-source="crates"
+name = "lewton"
+source = "crates"
 
 [[crates]]
-name="vorbis"
-source="crates"
+name = "vorbis"
+source = "crates"
 
 [[crates]]
-name="rsoundio"
-source="crates"
+name = "rsoundio"
+source = "crates"
 
 [[crates]]
-name="rodio"
-source="crates"
+name = "rodio"
+source = "crates"

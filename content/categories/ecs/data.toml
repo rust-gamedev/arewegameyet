@@ -1,33 +1,36 @@
 [[crates]]
-name="specs"
-source="crates"
-gitter_url="https://gitter.im/slide-rs/specs"
+name = "specs"
+source = "crates"
+gitter_url = "https://gitter.im/slide-rs/specs"
 
 [[crates]]
-name="ecs"
-source="crates"
+name = "ecs"
+source = "crates"
 
 [[crates]]
-name="recs"
-source="crates"
+name = "recs"
+source = "crates"
 
 [[crates]]
-name="ecs-rs"
-source="crates"
+name = "ecs-rs"
+source = "crates"
 
 [[crates]]
-name="eccles"
-source="crates"
+name = "eccles"
+source = "crates"
 
 [[crates]]
-name="entity_rust"
-source="crates"
+name = "entity_rust"
+source = "crates"
 
 [[crates]]
-name="tinyecs"
-source="crates"
+name = "tinyecs"
+source = "crates"
 
 [[crates]]
-name="trex"
-source="crates"
+name = "trex"
+source = "crates"
 
+[[crates]]
+name = "calx-ecs"
+source = "crates"

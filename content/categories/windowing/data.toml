@@ -1,15 +1,15 @@
 [[crates]]
-name = "conrod"
+name = "glfw"
 source = "crates"
 
 [[crates]]
-name = "imgui"
+name = "sdl2"
 source = "crates"
 
 [[crates]]
-name = "immi"
+name = "glutin"
 source = "crates"
 
 [[crates]]
-name = "rsaarelm/vitral"
-source = "github"
+name = "piston_window"
+source = "crates"

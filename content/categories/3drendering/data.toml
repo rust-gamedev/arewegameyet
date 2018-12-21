@@ -1,35 +1,47 @@
 [[crates]]
-name="gfx"
-source="crates"
-gitter_url="https://gitter.im/gfx-rs/gfx"
+name = "gfx"
+source = "crates"
+gitter_url = "https://gitter.im/gfx-rs/gfx"
 
 [[crates]]
-name="luminance"
-source="crates"
-gitter_url="https://gitter.im/phaazon/luminance-rs"
+name = "luminance"
+source = "crates"
+gitter_url = "https://gitter.im/phaazon/luminance-rs"
 
 [[crates]]
-name="vulkano"
-source="crates"
+name = "vulkano"
+source = "crates"
 
 [[crates]]
-name="glium"
-source="crates"
-gitter_url="https://gitter.im/tomaka/glium"
+name = "glium"
+source = "crates"
+gitter_url = "https://gitter.im/tomaka/glium"
 
 [[crates]]
-name="glutin"
-source="crates"
-gitter_url="https://gitter.im/tomaka/glutin"
+name = "glutin"
+source = "crates"
+gitter_url = "https://gitter.im/tomaka/glutin"
 
 [[crates]]
-name="glfw"
-source="crates"
+name = "glfw"
+source = "crates"
 
 [[crates]]
-name="kiss3d"
-source="crates"
+name = "kiss3d"
+source = "crates"
 
 [[crates]]
-name="three"
-source="crates"
+name = "three"
+source = "crates"
+
+[[crates]]
+name = "vk-sync"
+source = "crates"
+
+[[crates]]
+name = "hephaestus"
+source = "crates"
+
+[[crates]]
+name = "rendy"
+source = "crates"

@@ -1,4 +1,4 @@
 +++
-title="ECS"
-description="Entity Component System implementations"
+title = "ECS"
+description = "Entity Component System implementations"
 +++

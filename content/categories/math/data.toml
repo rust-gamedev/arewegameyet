@@ -3,11 +3,11 @@ name = "cgmath"
 source = "crates"
 
 [[crates]]
-name = 'nalgebra'
+name = "nalgebra"
 source = "crates"
 
 [[crates]]
-name = 'euler'
+name = "euler"
 source = "crates"
 gitter_url = "https://gitter.im/euler-rs/Lobby"
 
@@ -16,11 +16,11 @@ name = "vek"
 source = "crates"
 
 [[crates]]
-name = 'dual_quaternion'
+name = "dual_quaternion"
 source = "crates"
 
 [[crates]]
-name = 'quaternion'
+name = "quaternion"
 source = "crates"
 
 [[crates]]
@@ -42,3 +42,7 @@ source = "crates"
 [[crates]]
 name = "I3ck/rust-3d"
 source = "github"
+
+[[crates]]
+name = "oxygen_quark"
+source = "crates"

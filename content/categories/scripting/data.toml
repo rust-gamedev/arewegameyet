@@ -3,12 +3,12 @@ name = "dyon"
 source = "crates"
 
 [[crates]]
-name = 'gluon'
+name = "gluon"
 source = "crates"
 gitter_url = "https://gitter.im/gluon-lang/gluon"
 
 [[crates]]
-name = 'rhai'
+name = "rhai"
 source = "crates"
 
 [[crates]]
@@ -16,13 +16,13 @@ name = "ketos"
 source = "crates"
 
 [[crates]]
-name = 'hlua'
+name = "hlua"
 source = "crates"
 
 [[crates]]
-name = 'rlua'
+name = "rlua"
 source = "crates"
 
 [[crates]]
-name = 'lichen'
+name = "lichen"
 source = "crates"
