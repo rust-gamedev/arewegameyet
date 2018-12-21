@@ -31,3 +31,6 @@ source="crates"
 name="trex"
 source="crates"
 
+[[crates]]
+name="calx-ecs"
+source="crates"
