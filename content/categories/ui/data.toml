@@ -1,15 +1,15 @@
 [[crates]]
-name="conrod"
-source="crates"
+name = "conrod"
+source = "crates"
 
 [[crates]]
-name='imgui'
-source="crates"
+name = "imgui"
+source = "crates"
 
 [[crates]]
-name='immi'
-source="crates"
+name = "immi"
+source = "crates"
 
 [[crates]]
-name='rsaarelm/vitral'
-source='github'
+name = "rsaarelm/vitral"
+source = "github"

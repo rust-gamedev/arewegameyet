@@ -1,27 +1,27 @@
 [[crates]]
-name="fbx_direct"
-source="crates"
+name = "fbx_direct"
+source = "crates"
 
 [[crates]]
-name="gltf"
-source="crates"
+name = "gltf"
+source = "crates"
 
 [[crates]]
-name="obj"
-source="crates"
+name = "obj"
+source = "crates"
 
 [[crates]]
-name="obj-rs"
-source="crates"
+name = "obj-rs"
+source = "crates"
 
 [[crates]]
-name="wavefront_obj"
-source="crates"
+name = "wavefront_obj"
+source = "crates"
 
 [[crates]]
-name="tobj"
-source="crates"
+name = "tobj"
+source = "crates"
 
 [[crates]]
-name="collada"
-source="crates"
+name = "collada"
+source = "crates"

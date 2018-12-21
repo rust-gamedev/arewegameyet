@@ -1,39 +1,39 @@
 [[crates]]
-name='piston2d-graphics'
-source='crates'
+name = "piston2d-graphics"
+source = "crates"
 
 [[crates]]
-name='inox'
-source='crates'
+name = "inox"
+source = "crates"
 
 [[crates]]
-name='lyon'
-source='crates'
+name = "lyon"
+source = "crates"
 
 [[crates]]
-name='hex2d'
-source='crates'
+name = "hex2d"
+source = "crates"
 
 [[crates]]
-name='elmesque'
-source='crates'
+name = "elmesque"
+source = "crates"
 
 [[crates]]
-name='benzene-2d'
-source='crates'
+name = "benzene-2d"
+source = "crates"
 
 [[crates]]
-name='sfml'
-source='crates'
+name = "sfml"
+source = "crates"
 
 [[crates]]
-name='blit'
-source='crates'
+name = "blit"
+source = "crates"
 
 [[crates]]
-name='rusttype'
-source='crates'
+name = "rusttype"
+source = "crates"
 
 [[crates]]
-name='nuklear-rust'
-source='crates'
+name = "nuklear-rust"
+source = "crates"

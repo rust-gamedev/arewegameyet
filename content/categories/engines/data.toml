@@ -1,68 +1,68 @@
 #crates.io
 [[crates]]
-name='amethyst'
-source='crates'
+name = "amethyst"
+source = "crates"
 
 [[crates]]
-name='piston'
-source='crates'
+name = "piston"
+source = "crates"
 
 [[crates]]
-name='corange-rs'
-source='crates'
+name = "corange-rs"
+source = "crates"
 
 [[crates]]
-name='ggez'
-source='crates'
+name = "ggez"
+source = "crates"
 
 [[crates]]
-name='darkengine'
-source='crates'
+name = "darkengine"
+source = "crates"
 
 [[crates]]
-name='turbine'
-source='crates'
+name = "turbine"
+source = "crates"
 
 [[crates]]
-name='caper'
-source='crates'
+name = "caper"
+source = "crates"
 
 [[crates]]
-name='mold2d'
-source='crates'
+name = "mold2d"
+source = "crates"
 
 [[crates]]
-name='nitro'
-source='crates'
-gitter_url='https://gitter.im/nitro-game-engine/nitro'
+name = "nitro"
+source = "crates"
+gitter_url = "https://gitter.im/nitro-game-engine/nitro"
 
 [[crates]]
-name='sdl2'
-source='crates'
+name = "sdl2"
+source = "crates"
 
 [[crates]]
-name='godot'
-source='crates'
+name = "godot"
+source = "crates"
 
 [[crates]]
-name='tetra'
-source='crates'
+name = "tetra"
+source = "crates"
 
 #github.com
 [[crates]]
-name='ChariotEngine/Chariot'
-source='github'
+name = "ChariotEngine/Chariot"
+source = "github"
 
 [[crates]]
-name='Siebencorgie/jakar-engine'
-source='github'
-homepage='https://gitlab.com/Siebencorgie/jakar-engine'
+name = "Siebencorgie/jakar-engine"
+source = "github"
+homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
 
 [[crates]]
-name='Gigoteur/UnicornConsole'
-source='github'
-gitter_url='https://gitter.im/UnicornConsole/Lobby'
+name = "Gigoteur/UnicornConsole"
+source = "github"
+gitter_url = "https://gitter.im/UnicornConsole/Lobby"
 
 [[crates]]
-name='Hossein-Noroozpour/vulkust'
-source='github'
+name = "Hossein-Noroozpour/vulkust"
+source = "github"

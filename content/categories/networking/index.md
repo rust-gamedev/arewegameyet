@@ -1,4 +1,4 @@
 +++
-title="Networking"
-description="Multiplayer, Protocols, and more"
+title = "Networking"
+description = "Multiplayer, Protocols, and more"
 +++

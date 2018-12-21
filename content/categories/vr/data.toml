@@ -4,11 +4,11 @@ source = "github"
 gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
 
 [[crates]]
-name = 'rust-webvr'
+name = "rust-webvr"
 source = "crates"
 
 [[crates]]
-name = 'openvr'
+name = "openvr"
 source = "crates"
 
 [[crates]]
@@ -16,5 +16,5 @@ name = "rovr"
 source = "crates"
 
 [[crates]]
-name = 'libovr'
+name = "libovr"
 source = "crates"

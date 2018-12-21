@@ -1,12 +1,12 @@
 [[crates]]
-name='modio'
-source='crates'
-gitter_url='https://discord.mod.io/'
+name = "modio"
+source = "crates"
+gitter_url = "https://discord.mod.io/"
 
 [[crates]]
-name='sharecart1000'
-source='crates'
+name = "sharecart1000"
+source = "crates"
 
 [[crates]]
-name='huxingyi/meshlite'
-source='github'
+name = "huxingyi/meshlite"
+source = "github"
