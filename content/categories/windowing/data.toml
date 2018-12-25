@@ -13,3 +13,7 @@ source = "crates"
 [[crates]]
 name = "piston_window"
 source = "crates"
+
+[[crates]]
+name = "winit"
+source = "crates"
