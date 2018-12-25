@@ -1,0 +1,7 @@
+[[crates]]
+name = "spirv-reflect"
+source = "crates"
+
+[[crates]]
+name = "include-merkle"
+source = "crates"
