@@ -36,6 +36,3 @@ source = "crates"
 name = "tiled"
 source = "crates"
 
-[[crates]]
-name = "tcod"
-source = "crates"
