@@ -33,3 +33,15 @@ source = "crates"
 [[crates]]
 name = "rodio"
 source = "crates"
+
+[[crates]]
+name = "claxon"
+source = "crates"
+
+[[crates]]
+name = "hound"
+source = "crates"
+
+[[crates]]
+name = "minimp3"
+source = "crates"
