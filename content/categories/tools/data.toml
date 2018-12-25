@@ -10,3 +10,32 @@ source = "crates"
 [[crates]]
 name = "huxingyi/meshlite"
 source = "github"
+
+[[crates]]
+name = "aseprite"
+source = "crates"
+
+[[crates]]
+name = "ezing"
+source = "crates"
+
+[[crates]]
+name = "noise"
+source = "crates"
+
+[[crates]]
+name = "rusttype"
+source = "crates"
+
+
+[[crates]]
+name = "tcod"
+source = "crates"
+
+[[crates]]
+name = "tiled"
+source = "crates"
+
+[[crates]]
+name = "tcod"
+source = "crates"
