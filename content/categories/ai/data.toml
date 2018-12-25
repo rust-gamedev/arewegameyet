@@ -9,3 +9,7 @@ source = "crates"
 [[crates]]
 name = "piston-ai_behavior"
 source = "crates"
+
+[[crates]]
+name = "pathfinding"
+source = "crates"
