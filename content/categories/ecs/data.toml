@@ -34,3 +34,15 @@ source = "crates"
 [[crates]]
 name = "calx-ecs"
 source = "crates"
+
+[[crates]]
+name = "nitric"
+source = "crates"
+
+[[crates]]
+name = "froggy"
+source = "crates"
+
+[[crates]]
+name = "pyro"
+source = "crates"
