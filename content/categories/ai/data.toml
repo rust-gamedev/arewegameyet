@@ -1,3 +1,11 @@
 [[crates]]
 name = "steering"
 source = "crates"
+
+[[crates]]
+name = "aspen"
+source = "crates"
+
+[[crates]]
+name = "piston-ai_behavior"
+source = "crates"
