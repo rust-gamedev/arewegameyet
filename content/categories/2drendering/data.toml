@@ -37,3 +37,7 @@ source = "crates"
 [[crates]]
 name = "nuklear-rust"
 source = "crates"
+
+[[crates]]
+name = "image"
+source = "crates"
