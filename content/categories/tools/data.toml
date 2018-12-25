@@ -35,3 +35,7 @@ source = "crates"
 [[crates]]
 name = "tiled"
 source = "crates"
+
+[[crates]]
+name = "tcod"
+source = "crates"
