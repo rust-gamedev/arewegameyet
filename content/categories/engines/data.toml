@@ -48,6 +48,14 @@ source = "crates"
 name = "tetra"
 source = "crates"
 
+[[crates]]
+name = "crayon"
+source = "crates"
+
+[[crates]]
+name = "quicksilver"
+source = "crates"
+
 #github.com
 [[crates]]
 name = "ChariotEngine/Chariot"
