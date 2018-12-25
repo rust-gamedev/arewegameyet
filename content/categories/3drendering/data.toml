@@ -45,3 +45,7 @@ source = "crates"
 [[crates]]
 name = "rendy"
 source = "crates"
+
+[[crates]]
+name = "gl"
+source = "crates"
