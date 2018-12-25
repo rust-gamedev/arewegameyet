@@ -46,3 +46,11 @@ source = "github"
 [[crates]]
 name = "oxygen_quark"
 source = "crates"
+
+[[crates]]
+name = "euclid"
+source = "crates"
+
+[[crates]]
+name = "mint"
+source = "crates"
