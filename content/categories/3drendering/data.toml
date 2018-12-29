@@ -1,4 +1,8 @@
 [[crates]]
+name = "gfx-hal"
+source = "crates"
+
+[[crates]]
 name = "gfx"
 source = "crates"
 gitter_url = "https://gitter.im/gfx-rs/gfx"
