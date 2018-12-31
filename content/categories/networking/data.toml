@@ -1,3 +1,11 @@
 [[crates]]
 name = "enet"
 source = "crates"
+
+[[crates]]
+name = "laminar"
+source = "crates"
+
+[[crates]]
+name = "amethyst_network"
+source = "crates"
