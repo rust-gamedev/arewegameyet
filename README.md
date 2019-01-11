@@ -33,9 +33,9 @@ source = "github"
 
 4. At this point your PR is ready to be sent. However there's some optional data fields that could be added if applicable.
 
-`gitter_url = "https://gitter.im/UnicornConsole/Lobby"` takes a full URL. While it's called `gitter_url` feel free to link whichever is the default discussion platform for your project.
+    `gitter_url = "https://gitter.im/UnicornConsole/Lobby"` takes a full URL. While it's called `gitter_url` feel free to link whichever is the default discussion platform for your project.
 
-`homepage = "https://gitlab.com/Siebencorgie/jakar-engine"`takes a full URL. Can be used to link to your homepage or a custom URL not yet supported in our default data entries, e.g. like the GitLab link above.
+    `homepage = "https://gitlab.com/Siebencorgie/jakar-engine"`takes a full URL. Can be used to link to your homepage or a custom URL not yet supported in our default data entries, e.g. like the GitLab link above.
 
 **All done!** We do greatly appreciate PRs, but if you're not comfortable with this process you're welcome to open an issue requesting the addition of your project instead.
 
