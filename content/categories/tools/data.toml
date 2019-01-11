@@ -8,10 +8,6 @@ name = "sharecart1000"
 source = "crates"
 
 [[crates]]
-name = "huxingyi/meshlite"
-source = "github"
-
-[[crates]]
 name = "aseprite"
 source = "crates"
 
@@ -27,7 +23,6 @@ source = "crates"
 name = "rusttype"
 source = "crates"
 
-
 [[crates]]
 name = "tcod"
 source = "crates"
@@ -36,3 +31,8 @@ source = "crates"
 name = "tiled"
 source = "crates"
 
+[[crates]]
+name = "huxingyi/dust3d"
+source = "github"
+gitter_url = "https://dust3d.discourse.group/"
+homepage = "https://dust3d.org/"
