@@ -35,6 +35,10 @@ name = "rodio"
 source = "crates"
 
 [[crates]]
+name = "ambisonic"
+source = "crates"
+
+[[crates]]
 name = "claxon"
 source = "crates"
 
