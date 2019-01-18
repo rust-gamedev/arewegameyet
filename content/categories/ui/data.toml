@@ -7,6 +7,14 @@ name = "imgui"
 source = "crates"
 
 [[crates]]
+name = "fungui"
+source = "crates"
+
+[[crates]]
+name = "nuklear-rust"
+source = "crates"
+
+[[crates]]
 name = "immi"
 source = "crates"
 
