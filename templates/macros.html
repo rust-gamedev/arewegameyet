@@ -1,0 +1,29 @@
+{% macro contributors(contributors) %}
+    {% for c in contributors %}
+        <div class="ui card">
+            <div class="content">
+                <div class="header">@{{ c.name }}</div>
+                {% for name, link in c.links %}
+                    {# special links for social websites with icons #}
+                    {% if name == "twitter" or name == "github" or name == "home" %}
+                        <a href="https://{{name}}.com/{{link}}" title="{{name}} link">
+                            <i class="{{name}} icon large"></i>
+                        </a>
+                    {# any other website #}
+                    {% else %}
+                        <a href="{{link}}" title="{{name}} link">
+                            <i class="world icon large"></i>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+                <div class="meta">{{ c.about }}</div>
+
+                {% if c.description %}
+                    <div class="description">
+                        {{ c.description | safe }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% endmacro contributors %}

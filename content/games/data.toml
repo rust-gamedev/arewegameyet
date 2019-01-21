@@ -1,0 +1,150 @@
+[[games]]
+link = "//sharonos.com/"
+image = "assets/img/sharbringer-icon.jpg"
+name = "SHAR"
+description = "Network shooter with physics and destructions"
+
+[[games]]
+link = "//users.rust-lang.org/t/this-month-in-zone-of-control/6993"
+image = "assets/img/zone-of-control.png"
+name = "Zone of Control"
+description = "A turn-based hexagonal strategy game"
+
+[[games]]
+link = "//github.com/itadinanta/rust-oids"
+image = "assets/img/rustoids.png"
+name = "Rust-oids"
+description = "A-life simulator sandbox"
+
+[[games]]
+link = "//github.com/OsnaCS/plantex"
+image = "assets/img/plantex.jpg"
+name = "plantex"
+description = "Open-world exploration game with plants. Everything is procedurally generated"
+
+[[games]]
+link = "//github.com/cristicbz/rust-doom"
+image = "assets/img/rust-doom.png"
+name = "Rust Doom"
+description = "A Doom Renderer written in Rust"
+
+[[games]]
+link = "//github.com/indiv0/colonize"
+image = "assets/img/colonize.png"
+name = "colonize"
+description = "A Dwarf Fortress/Rimworld-like game written in Rust"
+
+[[games]]
+link = "//github.com/tedsta/reforge"
+image = "assets/img/reforge_screeny.png"
+name = "Reforge"
+description = "Online multiplayer sandbox space ship combat game"
+
+[[games]]
+link = "//github.com/PistonDevelopers/hematite"
+image = "assets/img/hematite.png"
+name = "hematite"
+description = "A simple Minecraft written in Rust with the Piston game engine"
+
+[[games]]
+link = "//github.com/Jeaye/q3"
+image = "assets/img/q3.png"
+name = "Q³"
+description = "A Quake 3 like game with voxelized destructible maps"
+
+[[games]]
+link = "//github.com/aochagavia/rocket"
+image = "assets/img/rocket.png"
+name = "Rocket"
+description = "A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily"
+
+[[games]]
+link = "//github.com/rsaarelm/magog"
+image = "assets/img/magog.png"
+name = "magog"
+description = "A roguelike game in Rust"
+
+[[games]]
+link = "//github.com/thiolliere/ruga"
+image = "//github.com/thiolliere/ruga/raw/master/animation.gif"
+name = "ruga"
+description = "A game made in rust"
+
+[[games]]
+link = "//m12y.com/a-snakes-tale/"
+image = "assets/img/a-snakes-tale.png"
+name = "A Snake's Tale"
+description = "A (100% Rust) puzzle game about snakes in cramped places"
+
+
+[[games]]
+link = "//cityboundsim.com/"
+image = "assets/img/Citybound_Cover_art_photo.jpg"
+name = "Citybound"
+description = "A new city-building game that dares to go beyond everything in its genre"
+
+[[games]]
+link = "//rap2hpoutre.github.io/llamassacre-website/"
+image = "//rap2hpoutre.github.io/llamassacre-website/screen.png"
+name = "Llamassacre"
+description = "A jump and bump game for two players made with ggez"
+
+[[games]]
+link = "//github.com/ucarion/gaia"
+image = "assets/img/gaia.jpg"
+name = "Gaia"
+description = "A program that lets you view the world"
+
+[[games]]
+link = "//github.com/ozkriff/zemeroth/"
+image = "assets/img/zemeroth.gif"
+name = "Zemeroth"
+description = "A small 2D turn-based hexagonal tactical game made with ggez engine"
+
+[[games]]
+link = "//www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/"
+image = "assets/img/garden.jpg"
+name = "Garden"
+description = "A game centered around really detailed plant growth simulation"
+
+[[games]]
+link = "//github.com/kvark/vange-rs"
+image = "assets/img/rustyroad.png"
+name = "Vange-rs"
+description = "Rusty Vangers clone"
+
+[[games]]
+link = "//github.com/Swampsoft/solitaire"
+image = "assets/img/solitaire.jpg"
+name = "Solitaire"
+description = "A remake of the Shenzhen Solitaire variant"
+
+[[games]]
+link = "//github.com/Dooskington/Rostige-Schlange"
+image = "assets/img/rostigeschlange.png"
+name = "Rostige Schlange"
+description = "Rostige Schlange (\"Rusty Snake\" in German apparently) is a small snake clone, using OpenGL for rendering"
+
+[[games]]
+link = "//store.steampowered.com/app/884160/HyperZen_Training/"
+image = "assets/img/hyperzentraining.png"
+name = "HyperZen Training"
+description = "Experimental minimalist game with a special graphical mecanic"
+
+[[games]]
+link = "//christopherdumas.org/astraterra"
+image = "assets/img/AstraTerra-icon.jpg"
+name = "Astra Terra"
+description = "A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story"
+
+[[games]]
+link = "//gitlab.com/remram44/vigilant-steel"
+image = "assets/img/vigilant-steel.png"
+name = "Vigilant Steel"
+description = "A space game using Rust & Piston"
+
+[[games]]
+link = "//github.com/K4ugummi/carambolage"
+image = "assets/img/carambolage.jpg"
+name = "carambolage"
+description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"

@@ -1,4 +1,6 @@
-{% extends 'master.html' %} {% block content %}
+{% extends 'master.html' %} 
+{% import "macros.html" as macros %}
+{% block content %}
 <!-- Page Contents -->
 <div class="ui inverted vertical masthead center aligned segment">
     <div class="ui container">
@@ -88,9 +90,6 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-
-
-
                     {% set categories = get_section(path="categories/_index.md") %} {% for category in categories.pages %} {% set data = load_data(path=category.path
                     ~ "data.toml") %}
                     <a class="ui card" href="{{category.permalink}}">
@@ -130,231 +129,18 @@
             </div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    <a class="ui card" href="http://sharonos.com/">
-                        <img class="ui image" src="assets/img/sharbringer-icon.jpg">
-                        <div class="content">
-                            <div class="header">SHAR</div>
-                            <div class="description">
-                                Network shooter with physics and destructions.
+                    {% set data = load_data(path="games/data.toml") %}
+                    {% for game in data.games %} 
+                        <a class="ui card" href="{{ game.link }}">
+                            <img class="ui image" src="{{ game.image }}">
+                            <div class="content">
+                                <div class="header">{{ game.name }}</div>
+                                <div class="description">
+                                    {{ game.description }}
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://users.rust-lang.org/t/this-month-in-zone-of-control/6993">
-                        <img class="ui image" src="assets/img/zone-of-control.png">
-                        <div class="content">
-                            <div class="header">Zone of Control</div>
-                            <div class="description">
-                                A turn-based hexagonal strategy game..
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/itadinanta/rust-oids">
-                        <img class="ui image" src="assets/img/rustoids.png">
-                        <div class="content">
-                            <div class="header">Rust-oids</div>
-                            <div class="description">
-                                A-life simulator sandbox.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/OsnaCS/plantex">
-                        <img class="ui image" src="assets/img/plantex.jpg">
-                        <div class="content">
-                            <div class="header">plantex</div>
-                            <div class="description">
-                                Open-world exploration game with plants. Everything is procedurally generated.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/cristicbz/rust-doom">
-                        <img class="ui image" src="assets/img/rust-doom.png">
-                        <div class="content">
-                            <div class="header">Rust Doom</div>
-                            <div class="description">
-                                A Doom Renderer written in Rust.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/indiv0/colonize">
-                        <img class="ui image" src="assets/img/colonize.png">
-                        <div class="content">
-                            <div class="header">colonize</div>
-                            <div class="description">
-                                A Dwarf Fortress/Rimworld-like game written in Rust
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/tedsta/reforge">
-                        <img class="ui image" src="assets/img/reforge_screeny.png">
-                        <div class="content">
-                            <div class="header">Reforge</div>
-                            <div class="description">
-                                Online multiplayer sandbox space ship combat game
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/PistonDevelopers/hematite">
-                        <img class="ui image" src="assets/img/hematite.png">
-                        <div class="content">
-                            <div class="header">hematite</div>
-                            <div class="description">
-                                A simple Minecraft written in Rust with the Piston game engine.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/Jeaye/q3">
-                        <img class="ui image" src="assets/img/q3.png">
-                        <div class="content">
-                            <div class="header">Q³</div>
-                            <div class="description">
-                                A Quake 3 like game with voxelized destructible maps
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/aochagavia/rocket">
-                        <img class="ui image" src="assets/img/rocket.png">
-                        <div class="content">
-                            <div class="header">Rocket</div>
-                            <div class="description">
-                                A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/rsaarelm/magog">
-                        <img class="ui image" src="assets/img/magog.png">
-                        <div class="content">
-                            <div class="header">magog</div>
-                            <div class="description">
-                                A roguelike game in Rust
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/thiolliere/ruga">
-                        <img class="ui image" src="https://github.com/thiolliere/ruga/raw/master/animation.gif">
-                        <div class="content">
-                            <div class="header">ruga</div>
-                            <div class="description">
-                                a game made in rust
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://m12y.com/a-snakes-tale/">
-                        <img class="ui image" src="assets/img/a-snakes-tale.png">
-                        <div class="content">
-                            <div class="header">A Snake's Tale</div>
-                            <div class="description">
-                                A (100% Rust) puzzle game about snakes in cramped places.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="http://cityboundsim.com/">
-                        <img class="ui image" src="assets/img/Citybound_Cover_art_photo.jpg">
-                        <div class="content">
-                            <div class="header">Citybound</div>
-                            <div class="description">
-                                A new city-building game that dares to go beyond everything in its genre.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://rap2hpoutre.github.io/llamassacre-website/">
-                        <img class="ui image" src="https://rap2hpoutre.github.io/llamassacre-website/screen.png">
-                        <div class="content">
-                            <div class="header">Llamassacre</div>
-                            <div class="description">
-                                A jump and bump game for two players made with ggez.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/ucarion/gaia">
-                        <img class="ui image" src="/assets/img/gaia.jpg">
-                        <div class="content">
-                            <div class="header">Gaia</div>
-                            <div class="description">
-                                A program that lets you view the world.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/ozkriff/zemeroth/">
-                        <img class="ui image" src="/assets/img/zemeroth.gif">
-                        <div class="content">
-                            <div class="header">Zemeroth</div>
-                            <div class="description">
-                                A small 2D turn-based hexagonal tactical game made with ggez engine.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/">
-                        <img class="ui image" src="/assets/img/garden.jpg">
-                        <div class="content">
-                            <div class="header">Garden</div>
-                            <div class="description">
-                                A game centered around really detailed plant growth simulation.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/kvark/vange-rs">
-                        <img class="ui image" src="/assets/img/rustyroad.png">
-                        <div class="content">
-                            <div class="header">Vange-rs</div>
-                            <div class="description">
-                                Rusty Vangers clone.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/Swampsoft/solitaire">
-                        <img class="ui image" src="/assets/img/solitaire.jpg">
-                        <div class="content">
-                            <div class="header">Solitaire</div>
-                            <div class="description">
-                                A remake of the Shenzhen Solitaire variant.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/Dooskington/Rostige-Schlange">
-                        <img class="ui image" src="assets/img/rostigeschlange.png">
-                        <div class="content">
-                            <div class="header">Rostige Schlange</div>
-                            <div class="description">
-                                Rostige Schlange ("Rusty Snake" in German apparently) is a small snake clone, using OpenGL for rendering.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://store.steampowered.com/app/884160/HyperZen_Training/">
-                        <img class="ui image" src="assets/img/hyperzentraining.png">
-                        <div class="content">
-                            <div class="header">HyperZen Training</div>
-                            <div class="description">
-                                Experimental minimalist game with a special graphical mecanic.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="http://christopherdumas.org/astraterra">
-                        <img class="ui image" src="assets/img/AstraTerra-icon.jpg">
-                        <div class="content">
-                            <div class="header">Astra Terra</div>
-                            <div class="description">
-                                A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://gitlab.com/remram44/vigilant-steel">
-                        <img class="ui image" src="assets/img/vigilant-steel.png">
-                        <div class="content">
-                            <div class="header">Vigilant Steel</div>
-                            <div class="description">
-                                A space game using Rust & Piston.
-                            </div>
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/K4ugummi/carambolage">
-                        <img class="ui image" src="assets/img/carambolage.jpg">
-                        <div class="content">
-                            <div class="header">carambolage</div>
-                            <div class="description">
-                                Cartoonish style racing game using Rust and OpenGL. Highly experimental at its current state.
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="three wide column">
@@ -376,126 +162,21 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    <a class="ui card" href="http://rustbyexample.com/">
-                        <div class="content">
-                            <div class="header">Rust by Example</div>
-                            <div class="meta">Book</div>
-                            <div class="description">
-                                A collection of runnable examples that illustrate various Rust concepts and standard libraries.
+                    {% set data = load_data(path="resources/data.toml") %}
+                    {% for resource in data.resources %} 
+                        <a class="ui card" href="{{ resource.link }}">
+                            <div class="content">
+                                <div class="header">{{ resource.name | title }}</div>
+                                <div class="meta">{{ resource.type | title }}</div>
+                                <div class="description">
+                                    {{ resource.description }}
+                                </div>
                             </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://doc.rust-lang.org/book/">
-                        <div class="content">
-                            <div class="header">The Rust Book</div>
-                            <div class="meta">Book</div>
-                            <div class="description">
-                                The Rust language official book.
+                            <div class="ui bottom teal attached button">
+                                Open
                             </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://kyren.github.io/2018/09/14/rustconf-talk.html">
-                        <div class="content">
-                            <div class="header">"Using Rust For Game Development" by Catherine West</div>
-                            <div class="meta">Article/Video</div>
-                            <div class="description">
-                                Making games using Rust, Lua and the ECS design pattern.
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/sunjay/rust-simple-game-dev-tutorial">
-                        <div class="content">
-                            <div class="header">"Rust game development tutorial with specs ECS and SDL2</div>
-                            <div class="meta">Tutorial</div>
-                            <div class="description">
-                                Each commit in this repo is a step in a game development tutorial.
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/kud1ing/awesome-rust">
-                        <div class="content">
-                            <div class="header">Awesome Rust</div>
-                            <div class="meta">List</div>
-                            <div class="description">
-                                A curated list of Rust code and resources, inspired by other awesome lists.
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="http://www.shadercat.com/overview-of-open-source-game-engines-in-rust/">
-                        <div class="content">
-                            <div class="header">Overview of Open Source Game Engines in Rust</div>
-                            <div class="meta">Article</div>
-                            <div class="description">
-                                An overview of what engines/libraries to use.
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="http://lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html">
-                        <div class="content">
-                            <div class="header">Developing a game with Rust beginners</div>
-                            <div class="meta">Article</div>
-                            <div class="description">
-                                Some thoughts on tools and libraries
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html">
-                        <div class="content">
-                            <div class="header">A game in Rust</div>
-                            <div class="meta">Article</div>
-                            <div class="description">
-                                Post-mortem
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Read
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://github.com/bwasty/learn-opengl-rs">
-                        <div class="content">
-                            <div class="header">Learn OpenGL with Rust</div>
-                            <div class="meta">Tutorial Series</div>
-                            <div class="description">
-                                A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Open
-                        </div>
-                    </a>
-                    <a class="ui card" href="https://bheisler.github.io/post/writing-raytracer-in-rust-part-1/">
-                        <div class="content">
-                            <div class="header">Writing a Raytracer in Rust</div>
-                            <div class="meta">Article</div>
-                            <div class="description">
-                                3-part series of posts on writing a simple raytracer in Rust.
-                            </div>
-                        </div>
-                        <div class="ui bottom teal attached button">
-                            Open
-                        </div>
-                    </a>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="three wide column"></div>
@@ -516,32 +197,8 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui three cards">
-                    <div class="ui card">
-                        <div class="content">
-                            <div class="header">@doppioslash</div>
-                            <a href="https://twitter.com/doppioslash"><i class="twitter icon large"></i></a>
-                            <a href="https://github.com/doppioslash"><i class="github icon large"></i></a>
-                            <a href="http://www.doppioslash.com"><i class="home icon large"></i></a>
-                            <div class="meta">Game developer and Functional Programmer</div>
-                            <div class="description">Writes on <a href="http://www.shadercat.com">shadercat.com</a>
-                                about Physically Based Shading and Rendering with Rust and Unity.</div>
-                        </div>
-                    </div>
-                    <div class="ui card">
-                        <div class="content">
-                            <div class="header">@nxnfufunezn</div>
-                            <a href="https://twitter.com/nxnfufunezn"><i class="twitter icon large"></i></a>
-                            <a href="https://github.com/nxnfufunezn"><i class="github icon large"></i></a>
-                            <div class="meta">Backend developer and FP enthusiast</div>
-                        </div>
-                    </div>
-                    <div class="ui card">
-                        <div class="content">
-                            <div class="header">@bwasty</div>
-                            <a href="https://github.com/bwasty"><i class="github icon large"></i></a>
-                            <div class="meta">Software Engineer</div>
-                        </div>
-                    </div>
+                    {% set data = load_data(path="contributors/data.toml") %}
+                    {{ macros::contributors(contributors=data.contributors) }} 
                 </div>
             </div>
         </div>

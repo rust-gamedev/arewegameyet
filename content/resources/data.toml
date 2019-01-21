@@ -1,0 +1,59 @@
+[[resources]]
+link = "//rustbyexample.com/"
+name = "Rust by Example"
+description = "A collection of runnable examples that illustrate various Rust concepts and standard libraries"
+type = "book"
+
+[[resources]]
+link = "//doc.rust-lang.org/book/"
+name = "The Rust Book"
+description = "The Rust language official book"
+type = "book"
+
+[[resources]]
+link = "//kyren.github.io/2018/09/14/rustconf-talk.html"
+name = "\"Using Rust For Game Development\" by Catherine West"
+description = "Making games using Rust, Lua and the ECS design pattern"
+type = "article, video"
+
+[[resources]]
+link = "//github.com/sunjay/rust-simple-game-dev-tutorial"
+name = "Rust game development tutorial with specs ECS and SDL2"
+description = "Each commit in this repo is a step in a game development tutorial"
+type = "tutorial"
+
+[[resources]]
+link = "//github.com/kud1ing/awesome-rust"
+name = "Awesome Rust"
+description = "A curated list of Rust code and resources, inspired by other awesome lists"
+type = "list"
+
+[[resources]]
+link = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
+name = "Overview of Open Source Game Engines in Rust"
+description = "An overview of which engines and libraries to use"
+type = "article"
+
+[[resources]]
+link = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
+name = "Developing a game with Rust beginners"
+description = "Some thoughts on tools and libraries"
+type = "article"
+
+[[resources]]
+link = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
+name = "A game in Rust"
+description = "Post-mortem"
+type = "article"
+
+[[resources]]
+link = "//github.com/bwasty/learn-opengl-rs"
+name = "Learn OpenGL with Rust"
+description = "A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com"
+type = "tutorial"
+
+[[resources]]
+link = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
+name = "Writing a Raytracer in Rust"
+description = "3-part series of posts on writing a simple raytracer in Rust"
+type = "article"
