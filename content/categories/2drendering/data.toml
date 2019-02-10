@@ -3,10 +3,6 @@ name = "piston2d-graphics"
 source = "crates"
 
 [[crates]]
-name = "inox"
-source = "crates"
-
-[[crates]]
 name = "lyon"
 source = "crates"
 
