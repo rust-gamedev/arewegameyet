@@ -78,3 +78,8 @@ gitter_url = "https://gitter.im/UnicornConsole/Lobby"
 [[crates]]
 name = "Hossein-Noroozpour/vulkust"
 source = "github"
+
+[[crates]]
+name = "slmjkdbtl/DIRTY"
+source = "github"
+
