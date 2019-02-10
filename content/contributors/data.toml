@@ -1,0 +1,21 @@
+[[contributors]]
+name = "doppioslash"
+links = { twitter = "doppioslash", github = "doppioslash", home = "//doppioslash.com" }
+about = "Game developer and Functional Programmer"
+description = "Writes on <a href=\"//shadercat.com\">shadercat.com</a> about Physically Based Shading and Rendering with Rust and Unity."
+
+[[contributors]]
+name = "nxnfufunezn"
+links = { twitter = "nxnfufunezn", github = "nxnfufunezn" }
+about = "Backend developer and FP enthusiast"
+
+[[contributors]]
+name = "bwasty"
+links = { github = "bwasty" }
+about = "Software Engineer"
+
+[[contributors]]
+name = "doomy"
+links = { twitter = "piedoomy", github = "piedoomy", home = "//u9h.design" }
+about = "Designer & Rustacean"
+description = "Working with the <a href=\"//amethyst-engine.org\">Amethyst Engine</a> team."
