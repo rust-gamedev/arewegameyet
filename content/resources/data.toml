@@ -1,5 +1,5 @@
 [[resources]]
-link = "//rustbyexample.com/"
+link = "//doc.rust-lang.org/stable/rust-by-example/"
 name = "Rust by Example"
 description = "A collection of runnable examples that illustrate various Rust concepts and standard libraries"
 type = "book"
@@ -12,7 +12,7 @@ type = "book"
 
 [[resources]]
 link = "//kyren.github.io/2018/09/14/rustconf-talk.html"
-name = "\"Using Rust For Game Development\" by Catherine West"
+name = "Using Rust For Game Development, by Catherine West"
 description = "Making games using Rust, Lua and the ECS design pattern"
 type = "article, video"
 
