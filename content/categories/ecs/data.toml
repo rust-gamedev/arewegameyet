@@ -46,3 +46,7 @@ source = "crates"
 [[crates]]
 name = "pyro"
 source = "crates"
+
+[[crates]]
+name = "dces"
+source = "crates"
