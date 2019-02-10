@@ -60,6 +60,10 @@ source = "crates"
 name = "gate"
 source = "crates"
 
+[[crates]]
+name = "peacock"
+source = "crates"
+
 #github.com
 [[crates]]
 name = "ChariotEngine/Chariot"
