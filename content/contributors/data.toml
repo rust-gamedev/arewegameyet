@@ -2,7 +2,7 @@
 name = "doppioslash"
 links = { twitter = "doppioslash", github = "doppioslash", home = "http://doppioslash.com" }
 about = "Graphics Programmer"
-description = "Writes on <a href=\"//shadercat.com\">shadercat.com</a> about Physically Based Shading and Rendering with Rust and Unity."
+description = "Writes on <a href=\"//www.shadercat.com\">shadercat.com</a> about Physically Based Shading and Rendering with Rust and Unity."
 
 [[contributors]]
 name = "nxnfufunezn"
