@@ -57,3 +57,7 @@ source = "crates"
 [[crates]]
 name="vk-mem"
 source = "crates"
+
+[[crates]]
+name="wgpu"
+source = "crates"
