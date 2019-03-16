@@ -24,6 +24,10 @@ name = "rusttype"
 source = "crates"
 
 [[crates]]
+name = "pyxel"
+source = "crates"
+
+[[crates]]
 name = "tcod"
 source = "crates"
 
