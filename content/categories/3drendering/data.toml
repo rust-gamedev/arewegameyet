@@ -17,6 +17,11 @@ name = "vulkano"
 source = "crates"
 
 [[crates]]
+name = "ash"
+source = "crates"
+gitter_url = "https://gitter.im/MaikKlein/ash"
+
+[[crates]]
 name = "glium"
 source = "crates"
 gitter_url = "https://gitter.im/tomaka/glium"
