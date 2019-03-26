@@ -19,5 +19,9 @@ name = "immi"
 source = "crates"
 
 [[crates]]
+name = "imgui-ext"
+source = "crates"
+
+[[crates]]
 name = "rsaarelm/vitral"
 source = "github"
