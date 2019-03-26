@@ -25,3 +25,7 @@ source = "crates"
 [[crates]]
 name = "collada"
 source = "crates"
+
+[[crates]]
+name = "fbxcel-dom"
+source = "crates"
