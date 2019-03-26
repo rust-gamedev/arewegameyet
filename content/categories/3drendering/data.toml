@@ -66,3 +66,7 @@ source = "crates"
 [[crates]]
 name="wgpu"
 source = "crates"
+
+[[crates]]
+name="euc"
+source = "crates"
