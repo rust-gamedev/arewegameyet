@@ -148,3 +148,9 @@ link = "//github.com/K4ugummi/carambolage"
 image = "assets/img/carambolage.jpg"
 name = "carambolage"
 description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
+
+[[games]]
+link = "//veloren.net"
+image = "assets/img/veloren.png"
+name = "Veloren"
+description = "An open source Voxel RPG game inspired by Cube World and Dwarf Fortress in early development"
