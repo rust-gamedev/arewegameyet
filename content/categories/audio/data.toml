@@ -49,3 +49,7 @@ source = "crates"
 [[crates]]
 name = "minimp3"
 source = "crates"
+
+[[crates]]
+name = "gme"
+source = "crates"
