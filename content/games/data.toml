@@ -148,3 +148,10 @@ link = "//github.com/K4ugummi/carambolage"
 image = "assets/img/carambolage.jpg"
 name = "carambolage"
 description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
+
+[[games]]
+link = "//www.roboinstruct.us/"
+image = "assets/img/roboinstructus.gif"
+name = "Robo Instructus"
+description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
+
