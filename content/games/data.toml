@@ -5,7 +5,7 @@ name = "SHAR"
 description = "Network shooter with physics and destructions"
 
 [[games]]
-link = "//users.rust-lang.org/t/this-month-in-zone-of-control/6993"
+link = "//github.com/ozkriff/zoc/"
 image = "assets/img/zone-of-control.png"
 name = "Zone of Control"
 description = "A turn-based hexagonal strategy game"

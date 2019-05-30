@@ -19,3 +19,9 @@ name = "doomy"
 links = { twitter = "piedoomy", github = "piedoomy", home = "https://u9h.design" }
 about = "Designer & Rustacean"
 description = "Working with the <a href=\"//amethyst-engine.org\">Amethyst Engine</a> team."
+
+[[contributors]]
+name = "ozkriff"
+links = { twitter = "ozkriff", github = "ozkriff", home = "https://ozkriff.github.io" }
+about = "System programmer, hobby game developer"
+description = "Writes turn-based games in Rust (<a href=https://github.com/ozkriff/zemeroth>Zemeroth</a> atm), runs the <a href=https://twitter.com/rust_gamedev>@rust_gamedev</a> twitter account."
