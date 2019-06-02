@@ -16,6 +16,10 @@ name = "ggez"
 source = "crates"
 
 [[crates]]
+name = "coffee"
+source = "crates"
+
+[[crates]]
 name = "darkengine"
 source = "crates"
 
