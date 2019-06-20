@@ -167,3 +167,9 @@ link = "//github.com/SergiusIW/chirperjax"
 image = "assets/img/chirperjax.png"
 name = "chirperjax"
 description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
+
+[[games]]
+link = "//www.luduminis.com/pascal/about/"
+image = "assets/img/pascal_penguin.png"
+name = "Pascal Penguin"
+description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
