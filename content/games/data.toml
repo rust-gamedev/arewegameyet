@@ -163,6 +163,12 @@ name = "Robo Instructus"
 description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
 
 [[games]]
+link = "//tryjumping.com/dose-response-roguelike/"
+image = "assets/img/dose-response.png"
+name = "dose response"
+description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
+
+[[games]]
 link = "//github.com/SergiusIW/chirperjax"
 image = "assets/img/chirperjax.png"
 name = "chirperjax"
