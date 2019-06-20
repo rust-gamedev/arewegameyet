@@ -167,3 +167,21 @@ link = "//github.com/amethyst/evoli/"
 image = "assets/img/evoli-prealpha.gif"
 name = "Evoli"
 description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium." 
+
+[[games]]
+link = "//tryjumping.com/dose-response-roguelike/"
+image = "assets/img/dose-response.png"
+name = "dose response"
+description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
+
+[[games]]
+link = "//github.com/SergiusIW/chirperjax"
+image = "assets/img/chirperjax.png"
+name = "chirperjax"
+description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
+
+[[games]]
+link = "//www.luduminis.com/pascal/about/"
+image = "assets/img/pascal_penguin.png"
+name = "Pascal Penguin"
+description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
