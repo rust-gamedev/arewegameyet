@@ -163,6 +163,12 @@ name = "Robo Instructus"
 description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
 
 [[games]]
+link = "//github.com/SergiusIW/chirperjax"
+image = "assets/img/chirperjax.png"
+name = "chirperjax"
+description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
+
+[[games]]
 link = "//www.luduminis.com/pascal/about/"
 image = "assets/img/pascal_penguin.png"
 name = "Pascal Penguin"
