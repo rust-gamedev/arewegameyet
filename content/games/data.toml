@@ -163,6 +163,12 @@ name = "Robo Instructus"
 description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
 
 [[games]]
+link = "//github.com/amethyst/evoli/"
+image = "assets/img/evoli-prealpha.gif"
+name = "Evoli"
+description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium." 
+
+[[games]]
 link = "//tryjumping.com/dose-response-roguelike/"
 image = "assets/img/dose-response.png"
 name = "dose response"
