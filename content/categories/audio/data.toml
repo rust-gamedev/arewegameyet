@@ -53,3 +53,8 @@ source = "crates"
 [[crates]]
 name = "gme"
 source = "crates"
+
+[[crates]]
+name = "mod_player"
+source = "crates"
+
