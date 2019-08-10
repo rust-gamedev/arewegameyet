@@ -185,3 +185,9 @@ link = "//www.luduminis.com/pascal/about/"
 image = "assets/img/pascal_penguin.png"
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
+
+[[games]]
+link = "//store.steampowered.com/app/1110620/Way_of_Rhea"
+image = "assets/img/way_of_rhea.gif"
+name = "Way of Rhea"
+description = "A puzzle platformer that takes place in a world where you can only interact with objects that match your current color."
