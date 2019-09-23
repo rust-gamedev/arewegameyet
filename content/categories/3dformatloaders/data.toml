@@ -29,3 +29,7 @@ source = "crates"
 [[crates]]
 name = "fbxcel-dom"
 source = "crates"
+
+[[crates]]
+name = "blend"
+source = "crates"
