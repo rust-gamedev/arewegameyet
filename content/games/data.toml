@@ -150,11 +150,10 @@ name = "carambolage"
 description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
 
 [[games]]
-
 link = "//veloren.net"
-image = "assets/img/veloren.png"
+image = "assets/img/veloren.jpg"
 name = "Veloren"
-description = "An open source Voxel RPG game inspired by Cube World and Dwarf Fortress in early development"
+description = "An open source multiplayer voxel RPG game currently in alpha development."
 
 [[games]]
 link = "//www.roboinstruct.us/"
