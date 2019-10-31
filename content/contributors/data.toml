@@ -18,7 +18,7 @@ about = "Software Engineer"
 name = "doomy"
 links = { twitter = "piedoomy", github = "piedoomy", home = "https://u9h.design" }
 about = "Designer & Rustacean"
-description = "Working with the <a href=\"//amethyst-engine.org\">Amethyst Engine</a> team."
+description = "Working with the <a href=\"//amethyst.rs\">Amethyst Engine</a> team."
 
 [[contributors]]
 name = "ozkriff"
