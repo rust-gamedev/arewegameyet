@@ -58,3 +58,6 @@ source = "crates"
 name = "mod_player"
 source = "crates"
 
+[[crates]]
+name = "sdl2"
+source = "crates"
