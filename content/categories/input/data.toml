@@ -1,3 +1,7 @@
 [[crates]]
 name = "gilrs"
 source = "crates"
+
+[[crates]]
+name = "sdl2"
+source = "crates"
