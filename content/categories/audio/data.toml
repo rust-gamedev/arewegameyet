@@ -55,6 +55,9 @@ name = "gme"
 source = "crates"
 
 [[crates]]
-name = "mod_player"
 source = "crates"
+name = "mod_player"
 
+[[crates]]
+name = "rg3d-sound"
+source = "crates"
