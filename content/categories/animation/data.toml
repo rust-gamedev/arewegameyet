@@ -1,4 +1,0 @@
-[[crates]]
-name = "wasm-network/tweek-rust"
-source = "github"
-homepage = "https://medium.com/@hughlang/introducing-tweek-a-tween-animation-kit-for-rust-7d6f1ce7503d"
