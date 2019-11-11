@@ -61,3 +61,7 @@ source = "crates"
 [[crates]]
 name = "rg3d-sound"
 source = "crates"
+
+[[crates]]
+name = "sdl2"
+source = "crates"

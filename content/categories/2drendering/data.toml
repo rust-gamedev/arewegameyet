@@ -37,3 +37,7 @@ source = "crates"
 [[crates]]
 name = "image"
 source = "crates"
+
+[[crates]]
+name = "sdl2"
+source = "crates"
