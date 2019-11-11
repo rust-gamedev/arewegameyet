@@ -1,0 +1,23 @@
+language: generic
+
+env:
+  global
+    - ZOLA_RELEASES=https://github.com/getzola/zola/releases/download
+    - ZOLA_V=v0.5.1
+    - ARCH=x86_64-unknown-linux-gnu
+
+install:
+  - curl -L ${ZOLA_RELEASES}/${ZOLA_V}/zola-${ZOLA_V}-${ARCH}.tar.gz | tar -xz
+  - ./zola --version
+
+script:
+  - ./zola build
+
+deploy:
+  provider: pages
+  local_dir: public
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of the repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
