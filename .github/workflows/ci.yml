@@ -1,0 +1,24 @@
+name: Zola
+
+on: [push, pull_request]
+
+jobs:
+  zola:
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: https://github.com/getzola/zola/releases/download
+      VERS: v0.5.1
+      ARCH: x86_64-unknown-linux-gnu
+      # https://github.com/marketplace/actions/github-pages#warning-limitation
+      GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Zola
+      run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
+    - run: ./zola --version
+    - run: ./zola build
+    - name: Deploy
+      if: github.ref == 'refs/heads/master'
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        build_dir: public
