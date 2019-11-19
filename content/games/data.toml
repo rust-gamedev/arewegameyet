@@ -190,3 +190,9 @@ link = "//store.steampowered.com/app/1110620/Way_of_Rhea"
 image = "assets/img/way_of_rhea.gif"
 name = "Way of Rhea"
 description = "A puzzle platformer that takes place in a world where you can only interact with objects that match your current color."
+
+[[games]]
+link = "//sulisgame.com/"
+image = "assets/img/sulis.png"
+name = "Sulis"
+description = "An RPG with turn based, tactical combat, deep character customization and an engaging storyline."
