@@ -30,3 +30,7 @@ source = "crates"
 [[crates]]
 name = "lichen"
 source = "crates"
+
+[[crates]]
+name = "wlambda"
+source = "crates"
