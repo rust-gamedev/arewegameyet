@@ -45,7 +45,7 @@ name = "sdl2"
 source = "crates"
 
 [[crates]]
-name = "godot"
+name = "gdnative"
 source = "crates"
 
 [[crates]]
