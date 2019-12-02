@@ -37,3 +37,8 @@ source = "crates"
 [[crates]]
 name = "nphysics3d"
 source = "crates"
+
+[[crates]]
+name = "physx"
+source = "crates"
+homepage = "https://github.com/EmbarkStudios/physx-rs"
