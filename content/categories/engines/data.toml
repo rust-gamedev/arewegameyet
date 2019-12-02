@@ -90,3 +90,7 @@ source = "github"
 [[crates]]
 name = "rg3d"
 source = "crates"
+
+[[crates]]
+name = "raylib"
+source = "crates"
