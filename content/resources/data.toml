@@ -57,3 +57,9 @@ link = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
 name = "Writing a Raytracer in Rust"
 description = "3-part series of posts on writing a simple raytracer in Rust"
 type = "article"
+
+[[resources]]
+link = "//tomassedovic.github.io/roguelike-tutorial/"
+name = "Roguelike Tutorial in Rust + tcod"
+description = "This tutorial will show you how to write a roguelike in the Rust programming language and the libtcod library."
+type = "article"
