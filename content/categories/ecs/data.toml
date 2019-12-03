@@ -50,3 +50,7 @@ source = "crates"
 [[crates]]
 name = "dces"
 source = "crates"
+
+[[crates]]
+name = "legion"
+source = "crates"
