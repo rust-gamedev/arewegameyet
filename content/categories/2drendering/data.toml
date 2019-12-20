@@ -41,3 +41,11 @@ source = "crates"
 [[crates]]
 name = "sdl2"
 source = "crates"
+
+[[crates]]
+name = "fermium"
+source = "crates"
+
+[[crates]]
+name = "beryllium"
+source = "crates"
