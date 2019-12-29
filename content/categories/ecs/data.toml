@@ -54,3 +54,8 @@ source = "crates"
 [[crates]]
 name = "legion"
 source = "crates"
+
+[[crates]]
+name = "shipyard"
+source = "crates"
+gitter_url = "https://gitter.im/leudz-shipyard/community"
