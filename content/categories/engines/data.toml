@@ -8,6 +8,11 @@ name = "piston"
 source = "crates"
 
 [[crates]]
+name = "oxygengine"
+source = "crates"
+homepage = "https://github.com/PsichiX/Oxygengine"
+
+[[crates]]
 name = "corange-rs"
 source = "crates"
 
