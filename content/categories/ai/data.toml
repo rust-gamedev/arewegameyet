@@ -3,6 +3,11 @@ name = "steering"
 source = "crates"
 
 [[crates]]
+name = "navmesh"
+source = "crates"
+homepage = "https://github.com/PsichiX/navmesh"
+
+[[crates]]
 name = "aspen"
 source = "crates"
 
