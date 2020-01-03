@@ -99,3 +99,9 @@ source = "crates"
 [[crates]]
 name = "raylib"
 source = "crates"
+
+
+[[crates]]
+name = "sfml"
+source = "crates"
+homepage="https://github.com/jeremyletang/rust-sfml"
