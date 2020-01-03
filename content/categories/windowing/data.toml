@@ -17,3 +17,7 @@ source = "crates"
 [[crates]]
 name = "winit"
 source = "crates"
+
+[[crates]]
+name = "minifb"
+source = "crates"
