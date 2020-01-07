@@ -208,3 +208,9 @@ link = "//github.com/andreivasiliu/stacked-worlds"
 image = "assets/img/stacked_worlds.gif"
 name = "Stacked Worlds"
 description = "A game prototype written in Rust, shows how to use specs and nphysics."
+
+[[games]]
+link = "//github.com/Machine-Hum/realm.one"
+image = "assets/img/realmone.png"
+name = "realm.one"
+description = "A tiled based game written in Rust, uses the Amethyst game engine!"
