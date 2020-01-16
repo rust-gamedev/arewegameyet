@@ -109,7 +109,7 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    {% set categories = get_section(path="categories/_index.md") %} {% for category in categories.pages %} {% set data = load_data(path=category.path
+                    {% set categories = get_section(path="categories/_index.md") %} {% for category in categories.pages %} {% set data = load_data(path="content/" ~ category.path
                     ~ "data.toml") %}
                     <a class="ui card" href="{{category.permalink}}">
                         <div class="content">
@@ -148,7 +148,7 @@
             </div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    {% set data = load_data(path="games/data.toml") %}
+                    {% set data = load_data(path="content/games/data.toml") %}
                     {% for game in data.games %} 
                         <a class="ui card" href="{{ game.link }}">
                             <img class="ui image" src="{{ game.image }}">
@@ -181,7 +181,7 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui four stackable cards">
-                    {% set data = load_data(path="resources/data.toml") %}
+                    {% set data = load_data(path="content/resources/data.toml") %}
                     {% for resource in data.resources %} 
                         <a class="ui card" href="{{ resource.link }}">
                             <div class="content">
@@ -216,7 +216,7 @@
             <div class="three wide column"></div>
             <div class="ten wide column">
                 <div class="ui three cards">
-                    {% set data = load_data(path="contributors/data.toml") %}
+                    {% set data = load_data(path="content/contributors/data.toml") %}
                     {{ macros::contributors(contributors=data.contributors) }} 
                 </div>
             </div>

@@ -186,7 +186,7 @@ a taxonomy, which isn't completely accurate since it's more like pages with exte
       <div class="three wide column">
       </div>
       <div class="ten wide column">
-        {# display each box of content #} {% set config = load_data(path = page.path ~ "data.toml", format="toml") %} {# dynamic
+        {# display each box of content #} {% set config = load_data(path = "content/" ~ page.path ~ "data.toml", format="toml") %} {# dynamic
         data loaded using the crates.io API #} {% if config.crates %} {% for crate in config.crates %} {{ macros::info(crate=crate)
         }} {% endfor %} {% endif %}
       </div>
