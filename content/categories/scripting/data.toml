@@ -8,7 +8,7 @@ source = "crates"
 gitter_url = "https://gitter.im/gluon-lang/gluon"
 
 [[crates]]
-name = "rhai"
+name = "hlua"
 source = "crates"
 
 [[crates]]
@@ -16,11 +16,7 @@ name = "ketos"
 source = "crates"
 
 [[crates]]
-name = "hlua"
-source = "crates"
-
-[[crates]]
-name = "rlua"
+name = "lichen"
 source = "crates"
 
 [[crates]]
@@ -28,7 +24,11 @@ name = "luajit"
 source = "crates"
 
 [[crates]]
-name = "lichen"
+name = "rhai"
+source = "crates"
+
+[[crates]]
+name = "rlua"
 source = "crates"
 
 [[crates]]

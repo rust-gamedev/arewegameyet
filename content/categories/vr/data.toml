@@ -1,10 +1,5 @@
 [[crates]]
-name = "rust-openvr/rust-openvr"
-source = "github"
-gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
-
-[[crates]]
-name = "rust-webvr"
+name = "libovr"
 source = "crates"
 
 [[crates]]
@@ -16,5 +11,10 @@ name = "rovr"
 source = "crates"
 
 [[crates]]
-name = "libovr"
+name = "rust-openvr/rust-openvr"
+source = "github"
+gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
+
+[[crates]]
+name = "rust-webvr"
 source = "crates"

@@ -1,23 +1,27 @@
-#crates.io
+[[crates]]
+name = "ChariotEngine/Chariot"
+source = "github"
+
+[[crates]]
+name = "Gigoteur/UnicornConsole"
+source = "github"
+gitter_url = "https://gitter.im/UnicornConsole/Lobby"
+
+[[crates]]
+name = "Hossein-Noroozpour/vulkust"
+source = "github"
+
+[[crates]]
+name = "Siebencorgie/jakar-engine"
+source = "github"
+homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
+
 [[crates]]
 name = "amethyst"
 source = "crates"
 
 [[crates]]
-name = "piston"
-source = "crates"
-
-[[crates]]
-name = "oxygengine"
-source = "crates"
-homepage = "https://github.com/PsichiX/Oxygengine"
-
-[[crates]]
-name = "corange-rs"
-source = "crates"
-
-[[crates]]
-name = "ggez"
+name = "caper"
 source = "crates"
 
 [[crates]]
@@ -25,15 +29,27 @@ name = "coffee"
 source = "crates"
 
 [[crates]]
+name = "corange-rs"
+source = "crates"
+
+[[crates]]
+name = "crayon"
+source = "crates"
+
+[[crates]]
 name = "darkengine"
 source = "crates"
 
 [[crates]]
-name = "turbine"
+name = "gate"
 source = "crates"
 
 [[crates]]
-name = "caper"
+name = "gdnative"
+source = "crates"
+
+[[crates]]
+name = "ggez"
 source = "crates"
 
 [[crates]]
@@ -46,19 +62,16 @@ source = "crates"
 gitter_url = "https://gitter.im/nitro-game-engine/nitro"
 
 [[crates]]
-name = "sdl2"
+name = "oxygengine"
+source = "crates"
+homepage = "https://github.com/PsichiX/Oxygengine"
+
+[[crates]]
+name = "peacock"
 source = "crates"
 
 [[crates]]
-name = "gdnative"
-source = "crates"
-
-[[crates]]
-name = "tetra"
-source = "crates"
-
-[[crates]]
-name = "crayon"
+name = "piston"
 source = "crates"
 
 [[crates]]
@@ -66,42 +79,26 @@ name = "quicksilver"
 source = "crates"
 
 [[crates]]
-name = "gate"
+name = "raylib"
 source = "crates"
-
-[[crates]]
-name = "peacock"
-source = "crates"
-
-#github.com
-[[crates]]
-name = "ChariotEngine/Chariot"
-source = "github"
-
-[[crates]]
-name = "Siebencorgie/jakar-engine"
-source = "github"
-homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
-
-[[crates]]
-name = "Gigoteur/UnicornConsole"
-source = "github"
-gitter_url = "https://gitter.im/UnicornConsole/Lobby"
-
-[[crates]]
-name = "Hossein-Noroozpour/vulkust"
-source = "github"
 
 [[crates]]
 name = "rg3d"
 source = "crates"
 
 [[crates]]
-name = "raylib"
+name = "sdl2"
 source = "crates"
-
 
 [[crates]]
 name = "sfml"
 source = "crates"
-homepage="https://github.com/jeremyletang/rust-sfml"
+homepage = "https://github.com/jeremyletang/rust-sfml"
+
+[[crates]]
+name = "tetra"
+source = "crates"
+
+[[crates]]
+name = "turbine"
+source = "crates"

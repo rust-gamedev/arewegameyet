@@ -1,21 +1,5 @@
 [[crates]]
-name = "nphysics"
-source = "crates"
-
-[[crates]]
-name = "wrapped2d"
-source = "crates"
-
-[[crates]]
 name = "chipmunk"
-source = "crates"
-
-[[crates]]
-name = "liquidfun"
-source = "crates"
-
-[[crates]]
-name = "ncollide"
 source = "crates"
 
 [[crates]]
@@ -23,11 +7,19 @@ name = "collider"
 source = "crates"
 
 [[crates]]
+name = "liquidfun"
+source = "crates"
+
+[[crates]]
 name = "mgf"
 source = "crates"
 
 [[crates]]
-name = "rhusics"
+name = "ncollide"
+source = "crates"
+
+[[crates]]
+name = "nphysics"
 source = "crates"
 
 [[crates]]
@@ -42,3 +34,11 @@ source = "crates"
 name = "physx"
 source = "crates"
 homepage = "https://github.com/EmbarkStudios/physx-rs"
+
+[[crates]]
+name = "rhusics"
+source = "crates"
+
+[[crates]]
+name = "wrapped2d"
+source = "crates"

@@ -1,5 +1,17 @@
 [[crates]]
+name = "blend"
+source = "crates"
+
+[[crates]]
+name = "collada"
+source = "crates"
+
+[[crates]]
 name = "fbx_direct"
+source = "crates"
+
+[[crates]]
+name = "fbxcel-dom"
 source = "crates"
 
 [[crates]]
@@ -15,21 +27,9 @@ name = "obj-rs"
 source = "crates"
 
 [[crates]]
-name = "wavefront_obj"
-source = "crates"
-
-[[crates]]
 name = "tobj"
 source = "crates"
 
 [[crates]]
-name = "collada"
-source = "crates"
-
-[[crates]]
-name = "fbxcel-dom"
-source = "crates"
-
-[[crates]]
-name = "blend"
+name = "wavefront_obj"
 source = "crates"

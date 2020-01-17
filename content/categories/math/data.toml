@@ -1,9 +1,21 @@
 [[crates]]
+name = "I3ck/rust-3d"
+source = "github"
+
+[[crates]]
+name = "bvh"
+source = "crates"
+
+[[crates]]
 name = "cgmath"
 source = "crates"
 
 [[crates]]
-name = "nalgebra"
+name = "dual_quaternion"
+source = "crates"
+
+[[crates]]
+name = "euclid"
 source = "crates"
 
 [[crates]]
@@ -12,11 +24,27 @@ source = "crates"
 gitter_url = "https://gitter.im/euler-rs/Lobby"
 
 [[crates]]
-name = "vek"
+name = "generic-matrix"
 source = "crates"
 
 [[crates]]
-name = "dual_quaternion"
+name = "glam"
+source = "crates"
+
+[[crates]]
+name = "mint"
+source = "crates"
+
+[[crates]]
+name = "nalgebra"
+source = "crates"
+
+[[crates]]
+name = "oxygen_quark"
+source = "crates"
+
+[[crates]]
+name = "palette"
 source = "crates"
 
 [[crates]]
@@ -28,33 +56,5 @@ name = "vecmath"
 source = "crates"
 
 [[crates]]
-name = "palette"
-source = "crates"
-
-[[crates]]
-name = "generic-matrix"
-source = "crates"
-
-[[crates]]
-name = "bvh"
-source = "crates"
-
-[[crates]]
-name = "I3ck/rust-3d"
-source = "github"
-
-[[crates]]
-name = "oxygen_quark"
-source = "crates"
-
-[[crates]]
-name = "euclid"
-source = "crates"
-
-[[crates]]
-name = "mint"
-source = "crates"
-
-[[crates]]
-name = "glam"
+name = "vek"
 source = "crates"

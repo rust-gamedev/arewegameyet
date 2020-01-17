@@ -1,37 +1,5 @@
 [[crates]]
-name = "fmod"
-source = "crates"
-
-[[crates]]
-name = "ears"
-source = "crates"
-
-[[crates]]
 name = "alto"
-source = "crates"
-
-[[crates]]
-name = "cpal"
-source = "crates"
-
-[[crates]]
-name = "portmidi"
-source = "crates"
-
-[[crates]]
-name = "lewton"
-source = "crates"
-
-[[crates]]
-name = "vorbis"
-source = "crates"
-
-[[crates]]
-name = "rsoundio"
-source = "crates"
-
-[[crates]]
-name = "rodio"
 source = "crates"
 
 [[crates]]
@@ -43,11 +11,15 @@ name = "claxon"
 source = "crates"
 
 [[crates]]
-name = "hound"
+name = "cpal"
 source = "crates"
 
 [[crates]]
-name = "minimp3"
+name = "ears"
+source = "crates"
+
+[[crates]]
+name = "fmod"
 source = "crates"
 
 [[crates]]
@@ -55,7 +27,23 @@ name = "gme"
 source = "crates"
 
 [[crates]]
+name = "hound"
+source = "crates"
+
+[[crates]]
+name = "lewton"
+source = "crates"
+
+[[crates]]
+name = "minimp3"
+source = "crates"
+
+[[crates]]
 name = "mod_player"
+source = "crates"
+
+[[crates]]
+name = "portmidi"
 source = "crates"
 
 [[crates]]
@@ -63,5 +51,17 @@ name = "rg3d-sound"
 source = "crates"
 
 [[crates]]
+name = "rodio"
+source = "crates"
+
+[[crates]]
+name = "rsoundio"
+source = "crates"
+
+[[crates]]
 name = "sdl2"
+source = "crates"
+
+[[crates]]
+name = "vorbis"
 source = "crates"
