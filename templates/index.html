@@ -149,7 +149,7 @@
             <div class="ten wide column">
                 <div class="ui four stackable cards">
                     {% set data = load_data(path="content/games/data.toml") %}
-                    {% for game in data.games %} 
+                    {% for game in data.games | sort(attribute="name") %} 
                         <a class="ui card" href="{{ game.link }}">
                             <img class="ui image" src="{{ game.image }}">
                             <div class="content">
@@ -182,7 +182,7 @@
             <div class="ten wide column">
                 <div class="ui four stackable cards">
                     {% set data = load_data(path="content/resources/data.toml") %}
-                    {% for resource in data.resources %} 
+                    {% for resource in data.resources | sort(attribute="name") %} 
                         <a class="ui card" href="{{ resource.link }}">
                             <div class="content">
                                 <div class="header">{{ resource.name | title }}</div>
