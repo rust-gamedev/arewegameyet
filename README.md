@@ -2,12 +2,13 @@
 
 ## What is this?
 
-The Rust community has a number of websites dedicated to keeping track of the state of the ecosystem for specific purposes. (e.g. [arewewebyet](http://www.arewewebyet.org) and [arewelearningyet](http://www.arewelearningyet.com))
+The Rust community has a number of websites dedicated to keeping track of the state of the ecosystem for specific purposes. (e.g. [arewewebyet](https://www.arewewebyet.org) and [arewelearningyet](https://www.arewelearningyet.com))
 
 This one tracks the state of the ecosystem for Game Development in Rust.
 
 ## Contribute
-Arewegameyet? uses [semantic-ui](http://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator. 
+
+Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
 
 ### Add to the Ecosystem listing
 
@@ -41,7 +42,7 @@ source = "github"
 
 ### Add a Resource or Game
 
-Resources and games don't have support for data files yet, so you'll have to edit raw HTML in order to add a new entry. 
+Resources and games don't have support for data files yet, so you'll have to edit raw HTML in order to add a new entry.
 
 HTML for resource entries:
 
@@ -79,7 +80,7 @@ HTML for game entries:
 If you're comfortable with semantic-ui and Zola please reach out to us in the Issues with your enhancement ideas or just to state your willingness to contribute.
 
 ### Errors
-It's very likely there are mistakes around, if you find one please file an issue.
 
+It's very likely there are mistakes around, if you find one please file an issue.
 
 *Thanks for helping us map the Rust game development ecosystem!*
