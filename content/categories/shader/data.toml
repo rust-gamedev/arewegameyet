@@ -1,7 +1,7 @@
 [[crates]]
-name = "spirv-reflect"
+name = "include-merkle"
 source = "crates"
 
 [[crates]]
-name = "include-merkle"
+name = "spirv-reflect"
 source = "crates"

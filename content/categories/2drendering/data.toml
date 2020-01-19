@@ -1,25 +1,9 @@
 [[crates]]
-name = "piston2d-graphics"
-source = "crates"
-
-[[crates]]
-name = "lyon"
-source = "crates"
-
-[[crates]]
-name = "hex2d"
-source = "crates"
-
-[[crates]]
-name = "elmesque"
-source = "crates"
-
-[[crates]]
 name = "benzene-2d"
 source = "crates"
 
 [[crates]]
-name = "sfml"
+name = "beryllium"
 source = "crates"
 
 [[crates]]
@@ -27,19 +11,7 @@ name = "blit"
 source = "crates"
 
 [[crates]]
-name = "rusttype"
-source = "crates"
-
-[[crates]]
-name = "nuklear-rust"
-source = "crates"
-
-[[crates]]
-name = "image"
-source = "crates"
-
-[[crates]]
-name = "sdl2"
+name = "elmesque"
 source = "crates"
 
 [[crates]]
@@ -47,5 +19,33 @@ name = "fermium"
 source = "crates"
 
 [[crates]]
-name = "beryllium"
+name = "hex2d"
+source = "crates"
+
+[[crates]]
+name = "image"
+source = "crates"
+
+[[crates]]
+name = "lyon"
+source = "crates"
+
+[[crates]]
+name = "nuklear-rust"
+source = "crates"
+
+[[crates]]
+name = "piston2d-graphics"
+source = "crates"
+
+[[crates]]
+name = "rusttype"
+source = "crates"
+
+[[crates]]
+name = "sdl2"
+source = "crates"
+
+[[crates]]
+name = "sfml"
 source = "crates"

@@ -3,15 +3,15 @@ name = "conrod"
 source = "crates"
 
 [[crates]]
-name = "imgui"
-source = "crates"
-
-[[crates]]
 name = "fungui"
 source = "crates"
 
 [[crates]]
-name = "nuklear-rust"
+name = "imgui"
+source = "crates"
+
+[[crates]]
+name = "imgui-ext"
 source = "crates"
 
 [[crates]]
@@ -19,7 +19,7 @@ name = "immi"
 source = "crates"
 
 [[crates]]
-name = "imgui-ext"
+name = "nuklear-rust"
 source = "crates"
 
 [[crates]]

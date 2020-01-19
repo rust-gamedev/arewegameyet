@@ -3,11 +3,11 @@ name = "glfw"
 source = "crates"
 
 [[crates]]
-name = "sdl2"
+name = "glutin"
 source = "crates"
 
 [[crates]]
-name = "glutin"
+name = "minifb"
 source = "crates"
 
 [[crates]]
@@ -15,9 +15,9 @@ name = "piston_window"
 source = "crates"
 
 [[crates]]
-name = "winit"
+name = "sdl2"
 source = "crates"
 
 [[crates]]
-name = "minifb"
+name = "winit"
 source = "crates"

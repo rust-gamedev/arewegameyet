@@ -1,5 +1,5 @@
 [[crates]]
-name = "steering"
+name = "aspen"
 source = "crates"
 
 [[crates]]
@@ -8,7 +8,7 @@ source = "crates"
 homepage = "https://github.com/PsichiX/navmesh"
 
 [[crates]]
-name = "aspen"
+name = "pathfinding"
 source = "crates"
 
 [[crates]]
@@ -16,5 +16,5 @@ name = "piston-ai_behavior"
 source = "crates"
 
 [[crates]]
-name = "pathfinding"
+name = "steering"
 source = "crates"

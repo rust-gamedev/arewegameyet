@@ -1,13 +1,4 @@
 [[crates]]
-name = "modio"
-source = "crates"
-gitter_url = "https://discord.mod.io/"
-
-[[crates]]
-name = "sharecart1000"
-source = "crates"
-
-[[crates]]
 name = "aseprite"
 source = "crates"
 
@@ -16,7 +7,22 @@ name = "ezing"
 source = "crates"
 
 [[crates]]
+name = "huxingyi/dust3d"
+source = "github"
+gitter_url = "https://dust3d.discourse.group/"
+homepage = "https://dust3d.org/"
+
+[[crates]]
+name = "modio"
+source = "crates"
+gitter_url = "https://discord.mod.io/"
+
+[[crates]]
 name = "noise"
+source = "crates"
+
+[[crates]]
+name = "pyxel"
 source = "crates"
 
 [[crates]]
@@ -24,7 +30,7 @@ name = "rusttype"
 source = "crates"
 
 [[crates]]
-name = "pyxel"
+name = "sharecart1000"
 source = "crates"
 
 [[crates]]
@@ -34,9 +40,3 @@ source = "crates"
 [[crates]]
 name = "tiled"
 source = "crates"
-
-[[crates]]
-name = "huxingyi/dust3d"
-source = "github"
-gitter_url = "https://dust3d.discourse.group/"
-homepage = "https://dust3d.org/"
