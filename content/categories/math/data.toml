@@ -58,3 +58,7 @@ source = "crates"
 [[crates]]
 name = "glam"
 source = "crates"
+
+[[crates]]
+name = "ultraviolet"
+source = "crates"
