@@ -143,6 +143,12 @@
 
 <div class="ui vertical stripe">
     <div class="ui grid">
+        <div class="sixteen wide center aligned column">
+            <button id="random-game" class="ui teal button">
+                <i class="icon random"></i>
+                Pick a random game
+            </button>
+        </div>
         <div class="row">
             <div class="three wide column">
             </div>
@@ -150,7 +156,7 @@
                 <div class="ui four stackable cards">
                     {% set data = load_data(path="content/games/data.toml") %}
                     {% for game in data.games %} 
-                        <a class="ui card" href="{{ game.link }}">
+                        <a class="ui card game-card" href="{{ game.link }}">
                             <img class="ui image" src="{{ game.image }}">
                             <div class="content">
                                 <div class="header">{{ game.name }}</div>
@@ -252,4 +258,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $("#random-game").on("click", function () {
+            let games = $(".game-card");
+            let index = Math.floor(Math.random() * games.length);
+            let link = $(games[index]).attr("href");
+
+            window.location.href = link;
+        });
+    });
+</script>
 {% endblock content %}
