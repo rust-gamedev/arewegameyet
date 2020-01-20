@@ -18,7 +18,7 @@ Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://g
 
 3. (a) If your library has been published to [crates.io](https://crates.io/) then all you need to do is enter the exact name of your crate and set the source to `crates`, like this:
 
-```
+```toml
 [[crates]]
 name = "lewton"
 source = "crates"
@@ -26,7 +26,7 @@ source = "crates"
 
 3. (b) If you haven't published to crates you can link directly to your GitHub code repository instead by setting the name to the `user/project` and setting the source to `github`:
 
-```
+```toml
 [[crates]]
 name = "Gigoteur/UnicornConsole"
 source = "github"
@@ -40,39 +40,32 @@ source = "github"
 
 **All done!** We do greatly appreciate PRs, but if you're not comfortable with this process you're welcome to open an issue requesting the addition of your project instead.
 
-### Add a Resource or Game
+### Add a Game
 
-Resources and games don't have support for data files yet, so you'll have to edit raw HTML in order to add a new entry.
+Edit the `content/games/data.toml` file.
+A name, link, image, and description are required:
 
-HTML for resource entries:
-
-```html
-<a class="ui card" href="https://doc.rust-lang.org/book/">
-    <div class="content">
-        <div class="header">The Rust Book</div>
-        <div class="meta">Book</div>
-        <div class="description">
-            The Rust language official book.
-        </div>
-    </div>
-    <div class="ui bottom teal attached button">
-        Read
-    </div>
-</a>
+```toml
+[[games]]
+name = "Llamassacre"
+link = "//rap2hpoutre.github.io/llamassacre-website/"
+image = "//rap2hpoutre.github.io/llamassacre-website/screen.png"
+description = "A jump and bump game for two players made with ggez"
 ```
 
-HTML for game entries:
+Please, don't use heavy images.
 
-```html
-<a class="ui card" href="https://rap2hpoutre.github.io/llamassacre-website/">
-    <img class="ui image" src="https://rap2hpoutre.github.io/llamassacre-website/screen.png">
-    <div class="content">
-        <div class="header">Llamassacre</div>
-        <div class="description">
-            A jump and bump game for two players made with ggez.
-        </div>
-        </div>
-</a>
+### Add a Resource
+
+Edit the `content/resources/data.toml` file.
+A name, link, description, and type are required:
+
+```toml
+[[resources]]
+name = "The Rust Book"
+link = "//doc.rust-lang.org/book/"
+description = "The Rust language official book"
+type = "book"
 ```
 
 ### Enhance this website
