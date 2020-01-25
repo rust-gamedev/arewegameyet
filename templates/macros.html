@@ -1,3 +1,25 @@
+{% macro navigation() %}
+    <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+                <i class="sidebar icon"></i>
+            </a>
+            <a class="active item" href="/">Home</a>
+            <a class="item" href="/#chat">Chat</a>
+            <a class="item" href="/#news">News</a>
+            <a class="item" href="/#eco">Ecosystem</a>
+            <a class="item" href="/#games">Games</a>
+            <a class="item" href="/#curators">Curators</a>
+            <a class="item" href="/#about">About</a>
+            <div class="right item">
+                <a class="ui inverted button" href="/#res">Resources</a>
+                <a class="ui inverted button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
 {% macro contributors(contributors) %}
     {% for c in contributors %}
         <div class="ui card">
@@ -6,16 +28,16 @@
                 {% for name, link in c.links %}
                     {# special links for social websites with icons #}
                     {% if name == "twitter" or name == "github" %}
-                        <a href="https://{{name}}.com/{{link}}" title="{{name}} link">
+                        <a href="https://{{name}}.com/{{link}}" aria-label="{{name}} link for {{ c.name }}">
                             <i class="{{name}} icon large"></i>
                         </a>
                     {% elif name == "home" %}
-                        <a href="{{link}}" title="{{name}} link">
+                        <a href="{{link}}" aria-label="Website link for {{ c.name }}">
                             <i class="{{name}} icon large"></i>
                         </a>
                     {# any other website #}
                     {% else %}
-                        <a href="{{link}}" title="{{name}} link">
+                        <a href="{{link}}" title="{{name}} link for {{ c.name }}">
                             <i class="world icon large"></i>
                         </a>
                     {% endif %}
