@@ -66,7 +66,7 @@ description = "A roguelike game in Rust"
 
 [[games]]
 link = "//github.com/thiolliere/ruga"
-image = "//github.com/thiolliere/ruga/raw/master/animation.gif"
+image = "assets/img/ruga.gif"
 name = "ruga"
 description = "A game made in rust"
 
@@ -76,7 +76,6 @@ image = "assets/img/a-snakes-tale.png"
 name = "A Snake's Tale"
 description = "A (100% Rust) puzzle game about snakes in cramped places"
 
-
 [[games]]
 link = "//cityboundsim.com/"
 image = "assets/img/Citybound_Cover_art_photo.jpg"
@@ -85,7 +84,7 @@ description = "A new city-building game that dares to go beyond everything in it
 
 [[games]]
 link = "//rap2hpoutre.github.io/llamassacre-website/"
-image = "//rap2hpoutre.github.io/llamassacre-website/screen.png"
+image = "assets/img/llamassacre.png"
 name = "Llamassacre"
 description = "A jump and bump game for two players made with ggez"
 

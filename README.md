@@ -49,10 +49,11 @@ A name, link, image, and description are required:
 [[games]]
 name = "Llamassacre"
 link = "//rap2hpoutre.github.io/llamassacre-website/"
-image = "//rap2hpoutre.github.io/llamassacre-website/screen.png"
+image = "assets/img/llamassacre.png"
 description = "A jump and bump game for two players made with ggez"
 ```
 
+Images must be added to the `/static/assets/img/` directory.
 Please, don't use heavy images.
 
 ### Add a Resource
