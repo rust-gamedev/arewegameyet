@@ -43,26 +43,24 @@ name
 {% if crate.gitter_url %}       {% set gitter_url = crate.gitter_url %}                 {% endif %}
 {% if crate.description %}      {% set description = crate.description %}               {% endif %}
 <div class="ui one stackable cards">
-    <a name="{{ name }}"></a>
     <div class="ui card">
         <div class="content">
-
-            <a href="#{{ name }}" title="permanent link">
+            <a href="#{{ name }}" id="{{ name }}" aria-label="Permanent link for {{ name }}">
                 <i class="right floated hashtag icon"></i>
             </a>
 
-            <a href="{{ repository_url }}" title="github">
+            <a href="{{ repository_url }}" aria-label="Github link for {{ name }}">
                 <i class="right floated github icon"></i>
             </a>
 
             {% if crate_url %}
-                <a href="{{ crate_url }}" title="crate">
+                <a href="{{ crate_url }}" aria-label="Crates.io link for {{ name }}">
                     <i class="right floated cube icon"></i>
                 </a>
             {% endif %}
 
             {% if homepage_url %}
-            <a href="{{ homepage_url }}" title="home">
+            <a href="{{ homepage_url }}" aria-label="Website link for {{ name }}">
                 <i class="right floated home icon"></i>
             </a>
             {% endif %}
@@ -81,21 +79,21 @@ name
                 <div class="item">
                     <div class="content">
                         <a href="https://crates.io/crates/{{name}}">
-                            <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000">
+                            <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000" alt="Crates.io link for {{ name }}">
                         </a>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" aria-hidden="true">
                     <div class="content">
                         <a href="https://crates.io/crates/{{name}}">
-                            <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000">
+                            <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000" alt="Download count for {{ name }}">
                         </a>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" aria-hidden="true">
                     <div class="content">
                         <a href="https://crates.io/crates/{{name}}">
-                            <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000">
+                            <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000" alt="License for {{ name }}">
                         </a>
                     </div>
                 </div>

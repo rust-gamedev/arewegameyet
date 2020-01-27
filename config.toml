@@ -1,3 +1,6 @@
+title = "Are we game yet?"
+description = "A guide to the Rust game development ecosystem."
+
 # The URL the site will be built for
 base_url = "https://arewegameyet.com/"
 
