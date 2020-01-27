@@ -5,3 +5,7 @@ source = "crates"
 [[crates]]
 name = "spirv-reflect"
 source = "crates"
+
+[[crates]]
+name = "spirq"
+source = "crates"
