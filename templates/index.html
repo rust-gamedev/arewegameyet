@@ -1,10 +1,18 @@
 {% extends 'master.html' %} 
 {% import "macros.html" as macros %}
 
+{% block masthead %}
+<h1 class="ui inverted header">
+    <div>
+        <img class="ui centered image" src="assets/img/rust-logo-128x128-blk-v2-invert.png" alt="">
+    </div>
+    Are we game yet?
+</h1>
+<h2>Almost. We have the blocks, bring your own glue.</h2>
+<a class="ui huge primary button" href="#get-started">Get Started <i class="right arrow icon"></i></a>
+{% endblock %}
+
 {% block content %}
-
-{{ macros::header(full=true) }} 
-
 <div class="ui vertical stripe">
     <h2 class="ui center aligned icon header">
         <i class="circular game icon"></i>
