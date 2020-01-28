@@ -1,8 +1,4 @@
 [[crates]]
-name = "I3ck/rust-3d"
-source = "github"
-
-[[crates]]
 name = "bvh"
 source = "crates"
 
@@ -32,6 +28,10 @@ name = "glam"
 source = "crates"
 
 [[crates]]
+name = "I3ck/rust-3d"
+source = "github"
+
+[[crates]]
 name = "mint"
 source = "crates"
 
@@ -58,3 +58,4 @@ source = "crates"
 [[crates]]
 name = "vek"
 source = "crates"
+

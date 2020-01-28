@@ -1,134 +1,8 @@
 [[games]]
-link = "//sharonos.com/"
-image = "assets/img/sharbringer-icon.jpg"
-name = "SHAR"
-description = "Network shooter with physics and destructions"
-
-[[games]]
-link = "//github.com/ozkriff/zoc/"
-image = "assets/img/zone-of-control.png"
-name = "Zone of Control"
-description = "A turn-based hexagonal strategy game"
-
-[[games]]
-link = "//github.com/itadinanta/rust-oids"
-image = "assets/img/rustoids.png"
-name = "Rust-oids"
-description = "A-life simulator sandbox"
-
-[[games]]
-link = "//github.com/OsnaCS/plantex"
-image = "assets/img/plantex.jpg"
-name = "plantex"
-description = "Open-world exploration game with plants. Everything is procedurally generated"
-
-[[games]]
-link = "//github.com/cristicbz/rust-doom"
-image = "assets/img/rust-doom.png"
-name = "Rust Doom"
-description = "A Doom Renderer written in Rust"
-
-[[games]]
-link = "//github.com/indiv0/colonize"
-image = "assets/img/colonize.png"
-name = "colonize"
-description = "A Dwarf Fortress/Rimworld-like game written in Rust"
-
-[[games]]
-link = "//github.com/tedsta/reforge"
-image = "assets/img/reforge_screeny.png"
-name = "Reforge"
-description = "Online multiplayer sandbox space ship combat game"
-
-[[games]]
-link = "//github.com/PistonDevelopers/hematite"
-image = "assets/img/hematite.png"
-name = "hematite"
-description = "A simple Minecraft written in Rust with the Piston game engine"
-
-[[games]]
-link = "//github.com/Jeaye/q3"
-image = "assets/img/q3.png"
-name = "Q³"
-description = "A Quake 3 like game with voxelized destructible maps"
-
-[[games]]
-link = "//github.com/aochagavia/rocket"
-image = "assets/img/rocket.png"
-name = "Rocket"
-description = "A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily"
-
-[[games]]
-link = "//github.com/rsaarelm/magog"
-image = "assets/img/magog.png"
-name = "magog"
-description = "A roguelike game in Rust"
-
-[[games]]
-link = "//github.com/thiolliere/ruga"
-image = "assets/img/ruga.gif"
-name = "ruga"
-description = "A game made in rust"
-
-[[games]]
 link = "//m12y.com/a-snakes-tale/"
 image = "assets/img/a-snakes-tale.png"
 name = "A Snake's Tale"
 description = "A (100% Rust) puzzle game about snakes in cramped places"
-
-[[games]]
-link = "//cityboundsim.com/"
-image = "assets/img/Citybound_Cover_art_photo.jpg"
-name = "Citybound"
-description = "A new city-building game that dares to go beyond everything in its genre"
-
-[[games]]
-link = "//rap2hpoutre.github.io/llamassacre-website/"
-image = "assets/img/llamassacre.png"
-name = "Llamassacre"
-description = "A jump and bump game for two players made with ggez"
-
-[[games]]
-link = "//github.com/ucarion/gaia"
-image = "assets/img/gaia.jpg"
-name = "Gaia"
-description = "A program that lets you view the world"
-
-[[games]]
-link = "//github.com/ozkriff/zemeroth/"
-image = "assets/img/zemeroth.gif"
-name = "Zemeroth"
-description = "A small 2D turn-based hexagonal tactical game made with ggez engine"
-
-[[games]]
-link = "//www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/"
-image = "assets/img/garden.jpg"
-name = "Garden"
-description = "A game centered around really detailed plant growth simulation"
-
-[[games]]
-link = "//github.com/kvark/vange-rs"
-image = "assets/img/rustyroad.png"
-name = "Vange-rs"
-description = "Rusty Vangers clone"
-
-[[games]]
-link = "//github.com/Swampsoft/solitaire"
-image = "assets/img/solitaire.jpg"
-name = "Solitaire"
-description = "A remake of the Shenzhen Solitaire variant"
-
-[[games]]
-link = "//github.com/Dooskington/Rostige-Schlange"
-image = "assets/img/rostigeschlange.png"
-name = "Rostige Schlange"
-description = "Rostige Schlange (\"Rusty Snake\" in German apparently) is a small snake clone, using OpenGL for rendering"
-
-[[games]]
-link = "//store.steampowered.com/app/884160/HyperZen_Training/"
-image = "assets/img/hyperzentraining.png"
-name = "HyperZen Training"
-description = "Experimental minimalist game with a special graphical mecanic"
 
 [[games]]
 link = "//christopherdumas.org/astraterra"
@@ -137,40 +11,10 @@ name = "Astra Terra"
 description = "A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story"
 
 [[games]]
-link = "//gitlab.com/remram44/vigilant-steel"
-image = "assets/img/vigilant-steel.png"
-name = "Vigilant Steel"
-description = "A space game using Rust & Piston"
-
-[[games]]
 link = "//github.com/K4ugummi/carambolage"
 image = "assets/img/carambolage.jpg"
 name = "carambolage"
 description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
-
-[[games]]
-link = "//veloren.net"
-image = "assets/img/veloren.jpg"
-name = "Veloren"
-description = "An open source multiplayer voxel RPG game currently in alpha development."
-
-[[games]]
-link = "//www.roboinstruct.us/"
-image = "assets/img/roboinstructus.gif"
-name = "Robo Instructus"
-description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
-
-[[games]]
-link = "//github.com/amethyst/evoli/"
-image = "assets/img/evoli-prealpha.gif"
-name = "Evoli"
-description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium." 
-
-[[games]]
-link = "//tryjumping.com/dose-response-roguelike/"
-image = "assets/img/dose-response.png"
-name = "dose response"
-description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
 
 [[games]]
 link = "//github.com/SergiusIW/chirperjax"
@@ -179,22 +23,130 @@ name = "chirperjax"
 description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
 
 [[games]]
+link = "//cityboundsim.com/"
+image = "assets/img/Citybound_Cover_art_photo.jpg"
+name = "Citybound"
+description = "A new city-building game that dares to go beyond everything in its genre"
+
+[[games]]
+link = "//github.com/indiv0/colonize"
+image = "assets/img/colonize.png"
+name = "colonize"
+description = "A Dwarf Fortress/Rimworld-like game written in Rust"
+
+[[games]]
+link = "//tryjumping.com/dose-response-roguelike/"
+image = "assets/img/dose-response.png"
+name = "dose response"
+description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
+
+[[games]]
+link = "//github.com/amethyst/evoli/"
+image = "assets/img/evoli-prealpha.gif"
+name = "Evoli"
+description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium."
+
+[[games]]
+link = "//github.com/ucarion/gaia"
+image = "assets/img/gaia.jpg"
+name = "Gaia"
+description = "A program that lets you view the world"
+
+[[games]]
+link = "//www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/"
+image = "assets/img/garden.jpg"
+name = "Garden"
+description = "A game centered around really detailed plant growth simulation"
+
+[[games]]
+link = "//github.com/PistonDevelopers/hematite"
+image = "assets/img/hematite.png"
+name = "hematite"
+description = "A simple Minecraft written in Rust with the Piston game engine"
+
+[[games]]
+link = "//store.steampowered.com/app/884160/HyperZen_Training/"
+image = "assets/img/hyperzentraining.png"
+name = "HyperZen Training"
+description = "Experimental minimalist game with a special graphical mecanic"
+
+[[games]]
+link = "//rap2hpoutre.github.io/llamassacre-website/"
+image = "assets/img/llamassacre.png"
+name = "Llamassacre"
+description = "A jump and bump game for two players made with ggez"
+
+[[games]]
+link = "//github.com/rsaarelm/magog"
+image = "assets/img/magog.png"
+name = "magog"
+description = "A roguelike game in Rust"
+
+[[games]]
 link = "//www.luduminis.com/pascal/about/"
 image = "assets/img/pascal_penguin.png"
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
 
 [[games]]
-link = "//store.steampowered.com/app/1110620/Way_of_Rhea"
-image = "assets/img/way_of_rhea.gif"
-name = "Way of Rhea"
-description = "A puzzle platformer that takes place in a world where you can only interact with objects that match your current color."
+link = "//github.com/OsnaCS/plantex"
+image = "assets/img/plantex.jpg"
+name = "plantex"
+description = "Open-world exploration game with plants. Everything is procedurally generated"
 
 [[games]]
-link = "//sulisgame.com/"
-image = "assets/img/sulis.png"
-name = "Sulis"
-description = "An RPG with turn based, tactical combat, deep character customization and an engaging storyline."
+link = "//github.com/Jeaye/q3"
+image = "assets/img/q3.png"
+name = "Q³"
+description = "A Quake 3 like game with voxelized destructible maps"
+
+[[games]]
+link = "//github.com/Machine-Hum/realm.one"
+image = "assets/img/realmone.png"
+name = "realm.one"
+description = "A tiled based game written in Rust, uses the Amethyst game engine!"
+
+[[games]]
+link = "//github.com/tedsta/reforge"
+image = "assets/img/reforge_screeny.png"
+name = "Reforge"
+description = "Online multiplayer sandbox space ship combat game"
+
+[[games]]
+link = "//www.roboinstruct.us/"
+image = "assets/img/roboinstructus.gif"
+name = "Robo Instructus"
+description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
+
+[[games]]
+link = "//github.com/aochagavia/rocket"
+image = "assets/img/rocket.png"
+name = "Rocket"
+description = "A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily"
+
+[[games]]
+link = "//github.com/Dooskington/Rostige-Schlange"
+image = "assets/img/rostigeschlange.png"
+name = "Rostige Schlange"
+description = "Rostige Schlange (\"Rusty Snake\" in German apparently) is a small snake clone, using OpenGL for rendering"
+
+[[games]]
+link = "//github.com/thiolliere/ruga"
+image = "assets/img/ruga.gif"
+name = "ruga"
+description = "A game made in rust"
+
+[[games]]
+link = "//github.com/cristicbz/rust-doom"
+image = "assets/img/rust-doom.png"
+name = "Rust Doom"
+description = "A Doom Renderer written in Rust"
+
+[[games]]
+link = "//github.com/itadinanta/rust-oids"
+image = "assets/img/rustoids.png"
+name = "Rust-oids"
+description = "A-life simulator sandbox"
 
 [[games]]
 link = "//github.com/RustyVolley/RustyVolleySrc"
@@ -203,13 +155,62 @@ name = "RustyVolley"
 description = "A rewrite of Blobby Volley 2 written in Rust, a blazingly fast, memory safe, thread safe language."
 
 [[games]]
+link = "//sharonos.com/"
+image = "assets/img/sharbringer-icon.jpg"
+name = "SHAR"
+description = "Network shooter with physics and destructions"
+
+[[games]]
+link = "//github.com/Swampsoft/solitaire"
+image = "assets/img/solitaire.jpg"
+name = "Solitaire"
+description = "A remake of the Shenzhen Solitaire variant"
+
+[[games]]
 link = "//github.com/andreivasiliu/stacked-worlds"
 image = "assets/img/stacked_worlds.gif"
 name = "Stacked Worlds"
 description = "A game prototype written in Rust, shows how to use specs and nphysics."
 
 [[games]]
-link = "//github.com/Machine-Hum/realm.one"
-image = "assets/img/realmone.png"
-name = "realm.one"
-description = "A tiled based game written in Rust, uses the Amethyst game engine!"
+link = "//sulisgame.com/"
+image = "assets/img/sulis.png"
+name = "Sulis"
+description = "An RPG with turn based, tactical combat, deep character customization and an engaging storyline."
+
+[[games]]
+link = "//github.com/kvark/vange-rs"
+image = "assets/img/rustyroad.png"
+name = "Vange-rs"
+description = "Rusty Vangers clone"
+
+[[games]]
+link = "//veloren.net"
+image = "assets/img/veloren.jpg"
+name = "Veloren"
+description = "An open source multiplayer voxel RPG game currently in alpha development."
+
+[[games]]
+link = "//gitlab.com/remram44/vigilant-steel"
+image = "assets/img/vigilant-steel.png"
+name = "Vigilant Steel"
+description = "A space game using Rust & Piston"
+
+[[games]]
+link = "//store.steampowered.com/app/1110620/Way_of_Rhea"
+image = "assets/img/way_of_rhea.gif"
+name = "Way of Rhea"
+description = "A puzzle platformer that takes place in a world where you can only interact with objects that match your current color."
+
+[[games]]
+link = "//github.com/ozkriff/zemeroth/"
+image = "assets/img/zemeroth.gif"
+name = "Zemeroth"
+description = "A small 2D turn-based hexagonal tactical game made with ggez engine"
+
+[[games]]
+link = "//github.com/ozkriff/zoc/"
+image = "assets/img/zone-of-control.png"
+name = "Zone of Control"
+description = "A turn-based hexagonal strategy game"
+
