@@ -3,6 +3,10 @@ name = "include-merkle"
 source = "crates"
 
 [[crates]]
+name = "spirq"
+source = "crates"
+
+[[crates]]
 name = "spirv-reflect"
 source = "crates"
 
