@@ -1,11 +1,20 @@
 /* used for octocat waving animation */
 
+.github-corner svg {
+    z-index: 999;
+    fill: #fff;
+    color: #151513;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+}
+
 .github-corner:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out
 }
 
 @keyframes octocat-wave {
-
     0%,
     100% {
         transform: rotate(0)
@@ -22,12 +31,8 @@
     }
 }
 
-@media (max-width:500px) {
-    .github-corner:hover .octo-arm {
-        animation: none
-    }
-
-    .github-corner .octo-arm {
-        animation: octocat-wave 560ms ease-in-out
+@media (max-width: 1024px) {
+    .github-corner svg {
+        display: none;
     }
 }
