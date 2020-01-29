@@ -41,15 +41,17 @@
     <div class="ui grid">
         <div class="row">
             <div class="ten wide centered column">
-                {# display each box of content #}
-                {% set config = load_data(path = "content/" ~ page.path ~ "data.toml", format="toml") %}
+                <div class="ui one stackable cards">
+                    {# display each box of content #}
+                    {% set config = load_data(path = "content/" ~ page.path ~ "data.toml", format="toml") %}
 
-                {# dynamic data loaded using the crates.io API #}
-                {% if config.crates %}
-                    {% for crate in config.crates %}
-                        {{ category_macros::info(crate=crate) }}
-                    {% endfor %}
-                {% endif %}
+                    {# dynamic data loaded using the crates.io API #}
+                    {% if config.crates %}
+                        {% for crate in config.crates %}
+                            {{ category_macros::info(crate=crate) }}
+                        {% endfor %}
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
