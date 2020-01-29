@@ -1,28 +1,14 @@
 [[crates]]
-name = "ChariotEngine/Chariot"
-source = "github"
-
-[[crates]]
-name = "Gigoteur/UnicornConsole"
-source = "github"
-gitter_url = "https://gitter.im/UnicornConsole/Lobby"
-
-[[crates]]
-name = "Hossein-Noroozpour/vulkust"
-source = "github"
-
-[[crates]]
-name = "Siebencorgie/jakar-engine"
-source = "github"
-homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
-
-[[crates]]
 name = "amethyst"
 source = "crates"
 
 [[crates]]
 name = "caper"
 source = "crates"
+
+[[crates]]
+name = "ChariotEngine/Chariot"
+source = "github"
 
 [[crates]]
 name = "coffee"
@@ -51,6 +37,15 @@ source = "crates"
 [[crates]]
 name = "ggez"
 source = "crates"
+
+[[crates]]
+name = "Gigoteur/UnicornConsole"
+source = "github"
+gitter_url = "https://gitter.im/UnicornConsole/Lobby"
+
+[[crates]]
+name = "Hossein-Noroozpour/vulkust"
+source = "github"
 
 [[crates]]
 name = "mold2d"
@@ -96,9 +91,15 @@ source = "crates"
 homepage = "https://github.com/jeremyletang/rust-sfml"
 
 [[crates]]
+name = "Siebencorgie/jakar-engine"
+source = "github"
+homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
+
+[[crates]]
 name = "tetra"
 source = "crates"
 
 [[crates]]
 name = "turbine"
 source = "crates"
+

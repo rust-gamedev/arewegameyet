@@ -22,3 +22,11 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v1
       with:
         build_dir: public
+
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: pip3 install toml
+    - run: find . -name data.toml | xargs ./sort_data.py
+    - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
