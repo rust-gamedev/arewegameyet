@@ -10,6 +10,9 @@ This one tracks the state of the ecosystem for Game Development in Rust.
 
 Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
 
+_Note:_ All entries should be sorted alphabetically (by the `name` field, ignoring case).
+It's checked by CI.
+
 ### Add to the Ecosystem listing
 
 1. Navigate to whichever folder in `/content/categories/` best fits your project.
