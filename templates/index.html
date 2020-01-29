@@ -102,7 +102,12 @@
                             </div>
                             <div class="extra content">
                                 <i class="cube icon"></i>
-                                {% if data.crates %} {{ data.crates | length }} Crates {% endif %}
+                                {% if data.crates %}
+                                    {{ data.crates | length }}
+                                {% else %}
+                                    0 
+                                {% endif %}
+                                crates
                             </div>
                             <div class="ui bottom primary attached button">
                                 Browse
