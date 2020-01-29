@@ -52,6 +52,10 @@ name = "quaternion"
 source = "crates"
 
 [[crates]]
+name = "ultraviolet"
+source = "crates"
+
+[[crates]]
 name = "vecmath"
 source = "crates"
 
