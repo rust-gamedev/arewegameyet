@@ -3,7 +3,6 @@
 }
 
 .masthead.segment {
-    min-height: 700px;
     padding: 1em 0em;
 }
 
@@ -15,9 +14,12 @@
     margin-left: 0.5em;
 }
 
+.masthead .text.container {
+    margin: 3em 0;
+}
+
 .masthead h1.ui.header {
-    margin-top: 3em;
-    margin-bottom: 0em;
+    margin: 0;
     font-size: 4em;
     font-weight: normal;
 }
@@ -79,9 +81,6 @@
     }
     .secondary.pointing.menu .toc.item {
         display: block;
-    }
-    .masthead.segment {
-        min-height: 350px;
     }
     .masthead h1.ui.header {
         font-size: 2em;
