@@ -1,25 +1,3 @@
-{% macro navigation() %}
-    <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
-            <a class="toc item">
-                <i class="sidebar icon"></i>
-            </a>
-            <a class="active item" href="/">Home</a>
-            <a class="item" href="/#chat">Chat</a>
-            <a class="item" href="/#news">News</a>
-            <a class="item" href="/#eco">Ecosystem</a>
-            <a class="item" href="/#games">Games</a>
-            <a class="item" href="/#curators">Curators</a>
-            <a class="item" href="/#about">About</a>
-            <div class="right item">
-                <a class="ui inverted button" href="/#res">Resources</a>
-                <a class="ui inverted button" href="https://github.com/doppioslash/arewegameyet">Contribute</a>
-            </div>
-        </div>
-    </div>
-{% endmacro %}
-
-
 {% macro contributors(contributors) %}
     {% for c in contributors %}
         <div class="ui card">
