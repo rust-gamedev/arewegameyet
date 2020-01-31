@@ -11,6 +11,10 @@ name = "blit"
 source = "crates"
 
 [[crates]]
+name = "crow"
+source = "crates"
+
+[[crates]]
 name = "elmesque"
 source = "crates"
 
