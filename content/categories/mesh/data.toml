@@ -1,8 +1,0 @@
-[[crates]]
-name = "huxingyi/meshlite"
-source = "github"
-
-[[crates]]
-name = "meshopt"
-source = "crates"
-

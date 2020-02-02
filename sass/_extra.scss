@@ -21,15 +21,19 @@
 }
 
 .vertical.stripe {
-    padding: 8em 0em;
+    margin: 8em 0em;
 }
 
 .vertical.stripe h3 {
     font-size: 2em;
 }
 
-.vertical.stripe p {
+.vertical.stripe .text.container p {
     font-size: 1.33em;
+}
+
+.vertical.stripe .text.container {
+    margin: 8em 0em;
 }
 
 .footer.segment {
@@ -38,6 +42,17 @@
 
 .secondary.pointing.menu .toc.item {
     display: none;
+}
+
+.ui.card .image {
+    height: 256px;
+}
+
+.ui.card > .image > img, .ui.cards > .card > .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -68,7 +83,9 @@ a {
 .ui.card > .extra,
 .ui.cards > .card > .extra,
 .ui.card .meta,
-.ui.cards > .card .meta {
+.ui.cards > .card .meta,
+.ui.card .meta > a:not(.ui),
+.ui.cards > .card .meta > a:not(.ui) {
     color: #767676;
 }
 

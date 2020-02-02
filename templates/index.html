@@ -4,7 +4,7 @@
 {% block masthead %}
 <h1 class="ui inverted header">
     <div>
-        <img class="ui centered image" src="assets/img/rust-logo-128x128-blk-v2-invert.png" alt="">
+        <img class="ui centered image" src="assets/img/rust-logo-128x128-blk-v2-invert.png" alt="" width="128" height="128">
     </div>
     Are we game yet?
 </h1>
@@ -34,7 +34,7 @@
         </p>
         <p>
             If you haven't learned Rust yet, maybe take a look at <a href="#res"><i class="icon list small"></i>Resources</a>
-            first. If you are already proficient with Rust you might want to start with <a href="#eco"><i class="icon grid layout small"></i>Ecosystem</a>,
+            first. If you are already proficient with Rust you might want to start with <a href="#ecosystem"><i class="icon grid layout small"></i>Ecosystem</a>,
             <a href="#news"><i class="icon newspaper small"></i>News</a>
             or <a href="#chat"><i class="icon chat small"></i>Chat</a>.
         </p>
@@ -80,108 +80,14 @@
     </div>
 </div>
 
-<h4 class="ui horizontal divider header">
-    <a href="#eco" id="eco">
-        <i class="icon grid layout big"></i>
-        Ecosystem
-    </a>
-</h4>
+{% set ecosystem = get_section(path="ecosystem/_index.md") %}
+{{ macros::category_list(section=ecosystem) }}
 
-<div class="ui vertical stripe">
-    <div class="ui grid">
-        <div class="row">
-            <div class="ten wide centered column">
-                <div class="ui four stackable cards">
-                    {% set categories = get_section(path="categories/_index.md") %}
-                    {% for category in categories.pages %}
-                        {% set data = load_data(path="content/" ~ category.path ~ "data.toml") %}
-                        <a class="ui card" href="{{category.permalink}}">
-                            <div class="content">
-                                <div class="header">{{ category.title }}</div>
-                                <div class="description">{{ category.description }}</div>
-                            </div>
-                            <div class="extra content">
-                                <i class="cube icon"></i>
-                                {% if data.crates %}
-                                    {{ data.crates | length }}
-                                {% else %}
-                                    0 
-                                {% endif %}
-                                crates
-                            </div>
-                            <div class="ui bottom primary attached button">
-                                Browse
-                            </div>
-                        </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% set games = get_section(path="games/_index.md") %}
+{{ macros::category_list(section=games) }}
 
-<h4 class="ui horizontal divider header">
-    <a href="#games" id="games">
-        <i class="game icon big"></i>
-        Games
-    </a>
-</h4>
-
-<div class="ui vertical stripe">
-    <div class="ui grid">
-        <div class="row">
-            <div class="ten wide centered column">
-                <div class="ui four stackable cards">
-                    {% set data = load_data(path="content/games/data.toml") %}
-                    {% for game in data.games %} 
-                        <a class="ui card" href="{{ game.link }}">
-                            <img class="ui image" src="{{ game.image }}" alt="Screenshot of {{ game.name }}">
-                            <div class="content">
-                                <div class="header">{{ game.name }}</div>
-                                <div class="description">
-                                    {{ game.description }}
-                                </div>
-                            </div>
-                        </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<h4 class="ui horizontal divider header">
-    <a href="#res" id="res">
-        <i class="list icon big"></i>
-        Resources
-    </a>
-</h4>
-
-<div class="ui vertical stripe">
-    <div class="ui grid">
-        <div class="row">
-            <div class="ten wide centered column">
-                <div class="ui four stackable cards">
-                    {% set data = load_data(path="content/resources/data.toml") %}
-                    {% for resource in data.resources %} 
-                        <a class="ui card" href="{{ resource.link }}">
-                            <div class="content">
-                                <div class="header">{{ resource.name | title }}</div>
-                                <div class="meta">{{ resource.type | title }}</div>
-                                <div class="description">
-                                    {{ resource.description }}
-                                </div>
-                            </div>
-                            <div class="ui bottom primary attached button">
-                                Open
-                            </div>
-                        </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% set resources = get_section(path="resources/_index.md") %}
+{{ macros::category_list(section=resources) }}
 
 <h4 class="ui horizontal divider header">
     <a href="#curators" id="curators">
@@ -191,21 +97,26 @@
 </h4>
 
 <div class="ui vertical stripe">
-    <div class="ui equal width stackable grid">
-        <div class="center aligned row">
-            <div class="ten wide centered column">
-                <div class="ui three cards">
-                    {% set data = load_data(path="content/contributors/data.toml") %}
-                    {{ macros::contributors(contributors=data.contributors) }} 
+    <div class="ui text container">
+        <p>
+            The people that help maintain this site.
+        </p>
+    </div>
+
+    <div class="ui container">
+        <div class="ui three stackable cards">
+            {% set data = load_data(path="content/contributors/data.toml") %}
+            {{ macros::contributors(contributors=data.contributors) }} 
+
+            <div class="ui card">
+                <div class="content">
+                    <div class="center aligned description">
+                        Contribute to the site, and add your name here!
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="center aligned row">
-            <div class="four wide centered column">
-                <h3>Contribute</h3>
-                <p>And put your name here.</p>
-                <a href="https://github.com/rust-gamedev/arewegameyet" class="ui icon button positive" aria-label="Go to Github">
-                    <i class="add icon large"></i>
+                <a href="https://github.com/rust-gamedev/arewegameyet" class="ui bottom primary attached button">
+                    <i class="github icon" aria-hidden="true"></i>
+                    Go to GitHub
                 </a>
             </div>
         </div>

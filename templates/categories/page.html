@@ -16,43 +16,42 @@
     <link rel="canonical" href="{{ page.permalink }}">
 {% endblock seo %}
 
-{% block content %} 
+{% block content %}
+{% set section = get_section(path=page.ancestors[1]) %}
+{% set columns = section.extra.columns | default(value = "one") %}
+
 {# Heading #}
 <div class="ui vertical stripe">
     <h2 class="ui center aligned icon header">
-        <i class="circular game icon"></i>
-        {{page.title}}
+        <i class="circular icon {{ section.extra.icon }}"></i>
+        {{ page.title }}
     </h2>
     <div class="ui text container">
-        <p>{{page.description}}</p>
+        <p>{{ page.description }}</p>
     </div>
 </div>
 
 {# list all content #}
 
 <h4 class="ui horizontal divider header">
-    <a href="#crates" id="crates">
+    <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
         <i class="list icon big"></i>
-        Crates
+        {{ section.extra.plural | title }}
     </a>
 </h4>
 
 <div class="ui vertical stripe">
-    <div class="ui grid">
-        <div class="row">
-            <div class="ten wide centered column">
-                <div class="ui one stackable cards">
-                    {# display each box of content #}
-                    {% set config = load_data(path = "content/" ~ page.path ~ "data.toml", format="toml") %}
+    <div class="ui container">
+        <div class="ui stackable cards {{ columns }}">
+            {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
 
-                    {# dynamic data loaded using the crates.io API #}
-                    {% if config.crates %}
-                        {% for crate in config.crates %}
-                            {{ category_macros::info(crate=crate) }}
-                        {% endfor %}
+            {% if config.items %}
+                {% for item in config.items %}
+                    {% if item.categories is containing(page.slug) %}
+                        {{ category_macros::info(item=item, section=section) }}
                     {% endif %}
-                </div>
-            </div>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
@@ -66,13 +65,13 @@
 
 <div class="ui vertical stripe">
     <div class="ui text container">
-        <p>Do you know about a missing crate? Did you launch a new crate?</p>
+        <p>Do you know about a missing {{ section.extra.single }}? Did you launch a new {{ section.extra.single }}?</p>
         <p>
             Please create
-            <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+crate:+CRATE&amp;body=Please+add+crate+to+category:+{{ page.title }}">an issue</a>
+            <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+{{ section.extra.single }}:+NAME&amp;body=Please+add+{{ section.extra.single }}+to+category:+{{ page.title }}">an issue</a>
             or a pull request.
         </p>
-        <p>Looking for a library you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+        <p>Looking for a {{ section.extra.single }} you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
     </div>
 </div>
 {% endblock content %}

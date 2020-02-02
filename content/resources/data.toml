@@ -1,66 +1,65 @@
-[[resources]]
-link = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
+[[items]]
 name = "A game in Rust"
 description = "Post-mortem"
-type = "article"
+categories = ["article"]
+homepage_url = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
 
-[[resources]]
-link = "//github.com/kud1ing/awesome-rust"
+[[items]]
 name = "Awesome Rust"
 description = "A curated list of Rust code and resources, inspired by other awesome lists"
-type = "list"
+categories = ["lists"]
+homepage_url = "//github.com/kud1ing/awesome-rust"
 
-[[resources]]
-link = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
+[[items]]
 name = "Developing a game with Rust beginners"
 description = "Some thoughts on tools and libraries"
-type = "article"
+categories = ["articles"]
+homepage_url = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
 
-[[resources]]
-link = "//github.com/bwasty/learn-opengl-rs"
+[[items]]
 name = "Learn OpenGL with Rust"
 description = "A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com"
-type = "tutorial"
+categories = ["tutorials"]
+homepage_url = "//github.com/bwasty/learn-opengl-rs"
 
-[[resources]]
-link = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
+[[items]]
 name = "Overview of Open Source Game Engines in Rust"
 description = "An overview of which engines and libraries to use"
-type = "article"
+categories = ["articles"]
+homepage_url = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
 
-[[resources]]
-link = "//tomassedovic.github.io/roguelike-tutorial/"
+[[items]]
 name = "Roguelike Tutorial in Rust + tcod"
 description = "This tutorial will show you how to write a roguelike in the Rust programming language and the libtcod library."
-type = "article"
+categories = ["articles"]
+homepage_url = "//tomassedovic.github.io/roguelike-tutorial/"
 
-[[resources]]
-link = "//doc.rust-lang.org/stable/rust-by-example/"
+[[items]]
 name = "Rust by Example"
 description = "A collection of runnable examples that illustrate various Rust concepts and standard libraries"
-type = "book"
+categories = ["books"]
+homepage_url = "//doc.rust-lang.org/stable/rust-by-example/"
 
-[[resources]]
-link = "//github.com/sunjay/rust-simple-game-dev-tutorial"
+[[items]]
 name = "Rust game development tutorial with specs ECS and SDL2"
 description = "Each commit in this repo is a step in a game development tutorial"
-type = "tutorial"
+categories = ["tutorials"]
+homepage_url = "//github.com/sunjay/rust-simple-game-dev-tutorial"
 
-[[resources]]
-link = "//doc.rust-lang.org/book/"
+[[items]]
 name = "The Rust Book"
 description = "The Rust language official book"
-type = "book"
+categories = ["books"]
+homepage_url = "//doc.rust-lang.org/book/"
 
-[[resources]]
-link = "//kyren.github.io/2018/09/14/rustconf-talk.html"
+[[items]]
 name = "Using Rust For Game Development, by Catherine West"
 description = "Making games using Rust, Lua and the ECS design pattern"
-type = "article, video"
+categories = ["articles", "videos"]
+homepage_url = "//kyren.github.io/2018/09/14/rustconf-talk.html"
 
-[[resources]]
-link = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
+[[items]]
 name = "Writing a Raytracer in Rust"
 description = "3-part series of posts on writing a simple raytracer in Rust"
-type = "article"
-
+categories = ["articles"]
+homepage_url = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
