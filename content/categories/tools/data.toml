@@ -41,3 +41,7 @@ source = "crates"
 name = "tiled"
 source = "crates"
 
+[[crates]]
+name = "weasel"
+source = "crates"
+
