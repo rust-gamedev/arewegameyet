@@ -42,6 +42,10 @@ name = "tiled"
 source = "crates"
 
 [[crates]]
+name = "tuzz/game-loop"
+source = "github"
+
+[[crates]]
 name = "weasel"
 source = "crates"
 
