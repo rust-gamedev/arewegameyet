@@ -27,6 +27,10 @@ name = "darkengine"
 source = "crates"
 
 [[crates]]
+name = "doryen-rs"
+source = "crates"
+
+[[crates]]
 name = "gate"
 source = "crates"
 
