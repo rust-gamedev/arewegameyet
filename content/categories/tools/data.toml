@@ -13,6 +13,10 @@ gitter_url = "https://dust3d.discourse.group/"
 homepage = "https://dust3d.org/"
 
 [[crates]]
+name = "keyframe"
+source = "crates"
+
+[[crates]]
 name = "modio"
 source = "crates"
 gitter_url = "https://discord.mod.io/"
