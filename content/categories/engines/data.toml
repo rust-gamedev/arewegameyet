@@ -82,6 +82,10 @@ name = "rg3d"
 source = "crates"
 
 [[crates]]
+name = "rltk"
+source = "crates"
+
+[[crates]]
 name = "sdl2"
 source = "crates"
 
