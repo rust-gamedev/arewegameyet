@@ -22,6 +22,10 @@ source = "crates"
 gitter_url = "https://discord.mod.io/"
 
 [[crates]]
+name = "modulator"
+source = "crates"
+
+[[crates]]
 name = "noise"
 source = "crates"
 
