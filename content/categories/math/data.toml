@@ -40,6 +40,10 @@ name = "nalgebra"
 source = "crates"
 
 [[crates]]
+name = "optimath"
+source = "crates"
+
+[[crates]]
 name = "oxygen_quark"
 source = "crates"
 
