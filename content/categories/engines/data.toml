@@ -27,6 +27,10 @@ name = "darkengine"
 source = "crates"
 
 [[crates]]
+name = "doryen-rs"
+source = "crates"
+
+[[crates]]
 name = "gate"
 source = "crates"
 
@@ -79,6 +83,10 @@ source = "crates"
 
 [[crates]]
 name = "rg3d"
+source = "crates"
+
+[[crates]]
+name = "rltk"
 source = "crates"
 
 [[crates]]

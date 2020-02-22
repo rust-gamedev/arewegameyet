@@ -35,6 +35,10 @@ name = "lyon"
 source = "crates"
 
 [[crates]]
+name = "miniquad"
+source = "crates"
+
+[[crates]]
 name = "nuklear-rust"
 source = "crates"
 
