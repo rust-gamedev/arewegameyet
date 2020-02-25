@@ -17,18 +17,17 @@ source = "crates"
 [[crates]]
 name = "ncollide"
 source = "crates"
-
-[[crates]]
-name = "nphysics"
-source = "crates"
+homepage = "https://ncollide.org"
 
 [[crates]]
 name = "nphysics2d"
 source = "crates"
+homepage = "https://nphysics.org"
 
 [[crates]]
 name = "nphysics3d"
 source = "crates"
+homepage = "https://nphysics.org"
 
 [[crates]]
 name = "physx"
@@ -38,6 +37,16 @@ homepage = "https://github.com/EmbarkStudios/physx-rs"
 [[crates]]
 name = "rhusics"
 source = "crates"
+
+[[crates]]
+name = "salva2d"
+source = "crates"
+homepage = "https://salva.rs"
+
+[[crates]]
+name = "salva3d"
+source = "crates"
+homepage = "https://salva.rs"
 
 [[crates]]
 name = "wrapped2d"
