@@ -24,6 +24,11 @@ name = "luajit"
 source = "crates"
 
 [[crates]]
+name = "mun-lang/mun"
+source = "github"
+homepage = "https://mun-lang.org"
+
+[[crates]]
 name = "rhai"
 source = "crates"
 
