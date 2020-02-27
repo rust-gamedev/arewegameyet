@@ -31,6 +31,10 @@ name = "doryen-rs"
 source = "crates"
 
 [[crates]]
+name = "duysqubix/MuOxi"
+source = "github"
+
+[[crates]]
 name = "gate"
 source = "crates"
 
