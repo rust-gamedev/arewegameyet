@@ -3,6 +3,11 @@ name = "aspen"
 source = "crates"
 
 [[crates]]
+name = "graco"
+source = "crates"
+homepage = "https://gitlab.com/chrisrabotin/graco/"
+
+[[crates]]
 name = "navmesh"
 source = "crates"
 homepage = "https://github.com/PsichiX/navmesh"
@@ -18,4 +23,3 @@ source = "crates"
 [[crates]]
 name = "steering"
 source = "crates"
-
