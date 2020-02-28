@@ -10,67 +10,62 @@ This one tracks the state of the ecosystem for Game Development in Rust.
 
 Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
 
-_Note:_ All entries should be sorted alphabetically (by the `name` field, ignoring case).
-It's checked by CI.
-
-### Add to the Ecosystem listing
-
-1. Navigate to whichever folder in `/content/categories/` best fits your project.
+1. Navigate to whichever folder in `/content` best fits your project.
 
 2. Edit that folder's `data.toml` file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
-3. (a) If your library has been published to [crates.io](https://crates.io/) then all you need to do is enter the exact name of your crate and set the source to `crates`, like this:
+3. Create a new entry, following the schema described below. Note that all entries should be sorted alphabetically by the `name` field, ignoring case. There is a CI check to ensure this is done correctly - you can use the `sort_data.py` script to automatically fix a file.
+
+**All done!** We do greatly appreciate PRs, but if you're not comfortable with this process, you're welcome to open an issue requesting the addition of your project instead.
+
+### Schema
 
 ```toml
-[[crates]]
-name = "lewton"
+[[items]]
+# The name of the item. Mandatory.
+name = "My crate" 
+
+# A short description of the item. Optional, but recommended.
+description = "My extremely cool Rust crate" 
+
+# The categories that your item should be assigned to. Mandatory.
+categories = ["2drendering", "engines"]
+
+# An image representing the item. Files should be checked in to
+# /static/assets/img/, and the path should be absolute.
+# Optional, but highly recommended for games!.
+image = "/assets/img/logo.png"
+
+# A link to the item's page on Crates.io. Optional.
+crate_url = "https://crates.io/crates/mycrate"
+
+# A link to the item's VCS repository. Optional.
+repository_url = "https://github.com/username/repo"
+
+# A link to the item's homepage. Optional.
+homepage_url = "https://mycrate.com"
+
+# A link to the item's Gitter chat. Optional.
+gitter_url = "https://gitter.im/mycrate"
+```
+
+You can also tell the site to pull data directly from an external source:
+
+```toml
+[[items]]
+# Pull data from Crates.io:
+name = "mycratename"
 source = "crates"
-```
+categories = ["mycategory"]
 
-3. (b) If you haven't published to crates you can link directly to your GitHub code repository instead by setting the name to the `user/project` and setting the source to `github`:
-
-```toml
-[[crates]]
-name = "Gigoteur/UnicornConsole"
+[[items]]
+# Pull data from GitHub:
+name = "username/repo"
 source = "github"
+categories = ["mycategory"]
 ```
 
-4. At this point your PR is ready to be sent. However there's some optional data fields that could be added if applicable.
-
-    `gitter_url = "https://gitter.im/UnicornConsole/Lobby"` takes a full URL. While it's called `gitter_url` feel free to link whichever is the default discussion platform for your project.
-
-    `homepage = "https://gitlab.com/Siebencorgie/jakar-engine"`takes a full URL. Can be used to link to your homepage or a custom URL not yet supported in our default data entries, e.g. like the GitLab link above.
-
-**All done!** We do greatly appreciate PRs, but if you're not comfortable with this process you're welcome to open an issue requesting the addition of your project instead.
-
-### Add a Game
-
-Edit the `content/games/data.toml` file.
-A name, link, image, and description are required:
-
-```toml
-[[games]]
-name = "Llamassacre"
-link = "//rap2hpoutre.github.io/llamassacre-website/"
-image = "assets/img/llamassacre.png"
-description = "A jump and bump game for two players made with ggez"
-```
-
-Images must be added to the `/static/assets/img/` directory.
-Please, don't use heavy images.
-
-### Add a Resource
-
-Edit the `content/resources/data.toml` file.
-A name, link, description, and type are required:
-
-```toml
-[[resources]]
-name = "The Rust Book"
-link = "//doc.rust-lang.org/book/"
-description = "The Rust language official book"
-type = "book"
-```
+Extra keys can be added to items that are pulled from external data (e.g. to add a homepage URL, or override some of the fetched data).
 
 ### Enhance this website
 

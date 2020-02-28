@@ -25,3 +25,8 @@ name = "ozkriff"
 links = { twitter = "ozkriff", github = "ozkriff", home = "https://ozkriff.games" }
 about = "System programmer, hobby game developer"
 description = "Writes turn-based games in Rust (<a href=https://github.com/ozkriff/zemeroth>Zemeroth</a> atm), runs the <a href=https://twitter.com/rust_gamedev>@rust_gamedev</a> twitter account."
+
+[[contributors]]
+name = "17cupsofcoffee"
+links = { twitter = "17cupsofcoffee", github = "17cupsofcoffee", home = "https://www.seventeencups.net/" }
+about = "Software engineer, hobbyist game dev"
