@@ -341,6 +341,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "hecs"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "hephaestus"
 source = "crates"
 categories = ["3drendering"]
@@ -676,6 +681,11 @@ categories = ["math"]
 name = "quicksilver"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "quinn"
+source = "crates"
+categories = ["networking"]
 
 [[items]]
 name = "raylib"
