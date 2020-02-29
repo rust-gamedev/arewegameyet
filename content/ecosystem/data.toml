@@ -835,6 +835,11 @@ source = "crates"
 categories = ["ai"]
 
 [[items]]
+name = "superluminal-perf"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "tcod"
 source = "crates"
 categories = ["tools"]
