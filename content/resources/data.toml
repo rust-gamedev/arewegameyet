@@ -11,10 +11,28 @@ categories = ["lists"]
 homepage_url = "//github.com/kud1ing/awesome-rust"
 
 [[items]]
+name = "Awesome wgpu"
+description = "A curated list of wgpu code and resources"
+categories = ["lists"]
+homepage_url = "//github.com/rofrol/awesome-wgpu"
+
+[[items]]
 name = "Developing a game with Rust beginners"
 description = "Some thoughts on tools and libraries"
 categories = ["articles"]
 homepage_url = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
+
+[[items]]
+name = "Game Server in 150 lines of Rust"
+description = "This tutorial will show you how to write a simple game server"
+categories = ["tutorials"]
+homepage_url = "//medium.com/@buterajay/game-server-in-150-lines-of-rust-ce1782199907"
+
+[[items]]
+name = "Graphics by Squares"
+description = "A gfx-rs tutorial"
+categories = ["tutorials"]
+homepage_url = "//suhr.github.io/gsgt"
 
 [[items]]
 name = "Learn OpenGL with Rust"
@@ -29,9 +47,15 @@ categories = ["articles"]
 homepage_url = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
 
 [[items]]
+name = "Rocket - a Rust Game Running on WASM"
+description = "A writeup on the making of the WASM port of a game Rocket"
+categories = ["article"]
+homepage_url = "//aochagavia.github.io/blog/rocket---a-rust-game-running-on-wasm"
+
+[[items]]
 name = "Roguelike Tutorial in Rust + tcod"
-description = "This tutorial will show you how to write a roguelike in the Rust programming language and the libtcod library."
-categories = ["articles"]
+description = "This tutorial will show you how to write a roguelike in the Rust programming language and the libtcod library"
+categories = ["tutorials"]
 homepage_url = "//tomassedovic.github.io/roguelike-tutorial/"
 
 [[items]]
