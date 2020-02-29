@@ -341,6 +341,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "hecs"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "hephaestus"
 source = "crates"
 categories = ["3drendering"]
