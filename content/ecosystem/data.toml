@@ -339,6 +339,7 @@ categories = ["audio"]
 name = "graco"
 source = "crates"
 homepage = "https://gitlab.com/chrisrabotin/graco"
+categories = ["ai"]
 
 [[items]]
 name = "grr"
