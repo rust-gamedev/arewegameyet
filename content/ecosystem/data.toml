@@ -683,6 +683,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "quinn"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "raylib"
 source = "crates"
 categories = ["engines"]
