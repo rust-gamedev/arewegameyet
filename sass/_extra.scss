@@ -1,11 +1,3 @@
-.top.fixed.menu {
-    display: none;
-}
-
-.masthead .ui.menu .ui.button {
-    margin-left: 0.5em;
-}
-
 .masthead .text.container {
     margin: 3em 0;
 }
@@ -18,30 +10,35 @@
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
+    margin: 1.2em 0;
 }
 
-.vertical.stripe {
+.masthead .ui.menu .toc.item {
+    display: none;
+}
+
+.horizontal.divider.header {
+    margin: 0;
+}
+
+.horizontal.divider.header a {
+    padding: 2em 1em; 
+}
+
+.vertical.stripe, .vertical.stripe .text.container {
     margin: 8em 0em;
-}
-
-.vertical.stripe h3 {
-    font-size: 2em;
 }
 
 .vertical.stripe .text.container p {
     font-size: 1.33em;
 }
 
-.vertical.stripe .text.container {
-    margin: 8em 0em;
+.vertical.stripe h3 {
+    font-size: 2em;
 }
 
 .footer.segment {
     padding: 5em 0em;
-}
-
-.secondary.pointing.menu .toc.item {
-    display: none;
 }
 
 .ui.card .image {
@@ -55,14 +52,23 @@
     border-radius: 0;
 }
 
-@media only screen and (max-width: 700px) {
-    .secondary.pointing.menu .item,
-    .secondary.pointing.menu .menu {
+.ui.horizontal.list > .item {
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+
+@media only screen and (max-width: 991px) {
+    .masthead .ui.menu a.item {
         display: none;
     }
 
-    .secondary.pointing.menu .toc.item {
-        display: block;
+    .masthead .ui.menu .toc.item {
+        display: flex;
+        border-radius: 0;
+    }
+
+    .masthead .ui.menu .toc.item .icon {
+        margin: 0;
     }
 
     .masthead h1.header {
@@ -71,6 +77,14 @@
 
     .masthead h2 {
         font-size: 1.5em;
+    }
+
+    .vertical.stripe, .vertical.stripe .text.container {
+        margin: 4em 0em;
+    }
+
+    .vertical.stripe .text.container p {
+        font-size: 1.1em;
     }
 }
 

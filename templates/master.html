@@ -31,25 +31,6 @@
 </head>
 
 <body>
-    <div class="ui large top fixed hidden menu">
-        <div class="ui container">
-            <a class="item" href="/">Home</a>
-            <a class="item" href="/#chat">Chat</a>
-            <a class="item" href="/#ecosystem">Ecosystem</a>
-            <a class="item" href="/#games">Games</a>
-            <a class="item" href="/#curators">Curators</a>
-            <a class="item" href="/#about">About</a>
-            <div class="right menu">
-                <div class="item">
-                    <a class="ui button" href="/#res">Resources</a>
-                </div>
-                <div class="item">
-                    <a class="ui primary button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu">
         <a class="item" href="/">Home</a>
@@ -57,13 +38,14 @@
         <a class="item" href="/#ecosystem">Ecosystem</a>
         <a class="item" href="/#games">Games</a>
         <a class="item" href="/#curators">Curators</a>
+        <a class="item" href="/#resources">Resources</a>
         <a class="item" href="/#about">About</a>
     </div>
 
     <div class="pusher">
         <div class="ui inverted vertical masthead center aligned segment">
             <div class="ui container">
-                <div class="ui large secondary inverted pointing menu">
+                <div class="ui large borderless inverted menu">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
@@ -72,18 +54,18 @@
                     <a class="item" href="/#news">News</a>
                     <a class="item" href="/#ecosystem">Ecosystem</a>
                     <a class="item" href="/#games">Games</a>
+                    <a class="item" href="/#resources">Resources</a>
                     <a class="item" href="/#curators">Curators</a>
                     <a class="item" href="/#about">About</a>
-                    <div class="right item">
-                        <a class="ui inverted button" href="/#res">Resources</a>
-                        <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
+                    <div class="right menu">
+                        <div class="item">
+                            <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="ui text container">
-                
-
                 {% block masthead %}
                     <h2 class="ui inverted header">
                         Are we game yet?
@@ -93,25 +75,25 @@
         </div>
 
         {% block content %} {% endblock %}
-    </div>
 
-    <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="three wide column">
-                    <h4 class="ui inverted header">About</h4>
-                    <div class="ui inverted link list">
-                        <a href="/#about" class="item">Contact Us</a>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="/#about" class="item">Contact Us</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ten wide column">
-                    <h4 class="ui inverted header">Arewegameyet?</h4>
-                    <p>CC-BY 2016</p>
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Get involved</h4>
-                    <div class="ui inverted link list">
-                        <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
+                    <div class="ten wide column">
+                        <h4 class="ui inverted header">Arewegameyet?</h4>
+                        <p>CC-BY 2016</p>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Get involved</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,7 +126,14 @@
             });
 
             // create sidebar and attach to menu open
-            $('.ui.sidebar').sidebar('attach events', '.toc.item');
+            $('.ui.sidebar')
+                .sidebar('setting', 'transition', 'overlay')
+                .sidebar('setting', 'mobileTransition', 'overlay')
+                .sidebar('attach events', '.toc.item');
+
+            $('.ui.sidebar .item').on('click', function (event) {
+                $('.ui.sidebar').sidebar('hide');
+            })
         });
     </script>
     
