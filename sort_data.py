@@ -2,7 +2,7 @@
 
 import sys
 
-import toml
+import pytoml
 
 for path in sys.argv[1:]:
     path = path.strip()
@@ -14,9 +14,15 @@ for path in sys.argv[1:]:
     else:
         print(f"'{path}'")
 
-    data = toml.load(path)
-    for (name, entries) in data.items():
-        entries.sort(key=lambda entry: entry['name'].lower())
-    with open(path, 'w') as f:
-        toml.dump(data, f)
+    output = ''
 
+    with open(path, 'r') as file:
+        data = pytoml.load(file)
+
+        for (name, entries) in data.items():
+            entries.sort(key=lambda entry: entry['name'].lower())
+
+        output = pytoml.dumps(data)
+
+    with open(path, 'w') as file:
+        file.write(output)

@@ -1,29 +1,80 @@
+{% macro category_list(section) %}
+    <h4 class="ui horizontal divider header">
+        <a href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}">
+            <i class="icon big {{ section.extra.icon }}"></i>
+            {{ section.title }}
+        </a>
+    </h4>
+
+    <div class="ui vertical stripe">
+        {% if section.description %}
+            <div class="ui text container">
+                <p>{{ section.description }}</p>
+            </div>
+        {% endif %}
+
+        <div class="ui container">
+            <div class="ui four stackable cards">
+                {% set data = load_data(path="content/" ~ section.path ~ "data.toml") %}
+
+                {% for category in section.pages %}
+                    {# This isn't very pretty/efficient, but it's about as good as we can do with Zola's current feature set #}
+
+                    {% set_global count = 0 %}
+                    {% for item in data.items %}
+                        {% if item.categories is containing(category.slug) %}
+                            {% set_global count = count + 1 %}
+                        {% endif %}
+                    {% endfor %}
+
+                    <a class="ui card" href="{{ category.permalink }}">
+                        <div class="content">
+                            <div class="header">{{ category.title }}</div>
+                            <div class="description">{{ category.description }}</div>
+                        </div>
+                        <div class="extra content">
+                            <i class="icon {{ section.extra.icon }}"></i>
+                            {{ count }} {{ count | pluralize(singular=section.extra.single, plural=section.extra.plural) }}
+                        </div>
+                        <div class="ui bottom primary attached button">
+                            Browse
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
 {% macro contributors(contributors) %}
     {% for c in contributors %}
         <div class="ui card">
             <div class="content">
-                <div class="header">@{{ c.name }}</div>
-                {% for name, link in c.links %}
-                    {# special links for social websites with icons #}
-                    {% if name == "twitter" or name == "github" %}
-                        <a href="https://{{name}}.com/{{link}}" aria-label="{{name}} link for {{ c.name }}">
-                            <i class="{{name}} icon large"></i>
-                        </a>
-                    {% elif name == "home" %}
-                        <a href="{{link}}" aria-label="Website link for {{ c.name }}">
-                            <i class="{{name}} icon large"></i>
-                        </a>
-                    {# any other website #}
-                    {% else %}
-                        <a href="{{link}}" title="{{name}} link for {{ c.name }}">
-                            <i class="world icon large"></i>
-                        </a>
-                    {% endif %}
-                {% endfor %}
-                <div class="meta">{{ c.about }}</div>
+                <div class="center aligned header">@{{ c.name }}</div>
+                <div class="center aligned meta">
+                    {% for name, link in c.links %}
+                        {# special links for social websites with icons #}
+                        {% if name == "twitter" or name == "github" %}
+                            <a href="https://{{name}}.com/{{link}}" aria-label="{{name}} link for {{ c.name }}">
+                                <i class="{{name}} icon large"></i>
+                            </a>
+                        {% elif name == "home" %}
+                            <a href="{{link}}" aria-label="Website link for {{ c.name }}">
+                                <i class="{{name}} icon large"></i>
+                            </a>
+                        {# any other website #}
+                        {% else %}
+                            <a href="{{link}}" title="{{name}} link for {{ c.name }}">
+                                <i class="world icon large"></i>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+
+                    <p>{{ c.about }}</p>
+                </div>
 
                 {% if c.description %}
-                    <div class="description">
+                    <div class="center aligned description">
                         {{ c.description | safe }}
                     </div>
                 {% endif %}
