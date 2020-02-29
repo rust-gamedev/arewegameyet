@@ -502,7 +502,8 @@ categories = ["audio"]
 [[items]]
 name = "miniquad"
 source = "crates"
-categories = ["2drendering"]
+categories = ["2drendering", "3drendering"]
+homepage_url = "https://github.com/not-fl3/miniquad"
 
 [[items]]
 name = "mint"
