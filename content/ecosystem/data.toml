@@ -394,6 +394,12 @@ source = "github"
 categories = ["math"]
 
 [[items]]
+name = "iced"
+source = "crates"
+categories = ["ui"]
+gitter_url = "https://iced.zulipchat.com"
+
+[[items]]
 name = "image"
 source = "crates"
 categories = ["2drendering"]
@@ -812,6 +818,11 @@ categories = ["tools"]
 name = "shipyard"
 source = "crates"
 categories = ["ecs"]
+
+[[items]]
+name = "shipyard"
+source = "crates"
+categories = ["ecs"]
 gitter_url = "https://gitter.im/leudz-shipyard/community"
 
 [[items]]
@@ -837,6 +848,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "splines"
+source = "crates"
+categories = ["math"]
+
+[[items]]
 name = "steering"
 source = "crates"
 categories = ["ai"]
@@ -855,6 +871,11 @@ categories = ["tools"]
 name = "tetra"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "texture-synthesis"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "three"
