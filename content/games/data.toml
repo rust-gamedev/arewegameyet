@@ -48,6 +48,13 @@ homepage_url = "//tryjumping.com/dose-response-roguelike/"
 image = "/assets/img/dose-response.png"
 
 [[items]]
+name = "Everpuzzle"
+description = "A realtime action-puzzle game like Tetris Attack"
+categories = ["action", "puzzle"]
+repository_url = "//github.com/Skytrias/everpuzzle/"
+image = "/assets/img/everpuzzle.png"
+
+[[items]]
 name = "Evoli"
 description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium."
 categories = ["simulation"]
