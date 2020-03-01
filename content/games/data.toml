@@ -249,3 +249,10 @@ description = "A turn-based hexagonal strategy game"
 categories = ["strategy"]
 repository_url = "//github.com/ozkriff/zoc/"
 image = "/assets/img/zone-of-control.png"
+
+[[items]]
+name = "Everpuzzle"
+description = "A realtime action-puzzle game like Tetris Attack"
+categories = ["action", "puzzle"]
+repository_url = "//github.com/Skytrias/everpuzzle/"
+image = "/assets/img/everpuzzle.png"
