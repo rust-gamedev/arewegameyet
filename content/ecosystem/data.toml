@@ -981,3 +981,8 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "skulpin"
+source = "crates"
+categories = ["2drendering"]
