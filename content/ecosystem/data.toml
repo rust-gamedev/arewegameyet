@@ -832,6 +832,11 @@ categories = ["engines"]
 homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
 
 [[items]]
+name = "skulpin"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "specs"
 source = "crates"
 categories = ["ecs"]
@@ -981,8 +986,3 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
-
-[[items]]
-name = "skulpin"
-source = "crates"
-categories = ["2drendering"]
