@@ -671,6 +671,11 @@ source = "crates"
 categories = ["windowing"]
 
 [[items]]
+name = "pixels"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "portmidi"
 source = "crates"
 categories = ["audio"]
