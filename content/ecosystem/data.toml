@@ -635,6 +635,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "pareen"
+source = "crates"
+categories = ["animation"]
+
+[[items]]
 name = "pathfinding"
 source = "crates"
 categories = ["ai"]
