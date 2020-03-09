@@ -216,6 +216,13 @@ homepage_url = "//sulisgame.com/"
 image = "/assets/img/sulis.png"
 
 [[items]]
+name = "Twenty Asteroids"
+description = "A modern asteroids-like game with procedural destruction"
+categories = ["action"]
+homepage_url = "//pum-purum-pum-pum.itch.io/twenty-asteroids"
+image = "/assets/img/twenty-asteroids.png"
+
+[[items]]
 name = "UniverCity"
 description = "An isometric university management game"
 categories = ["released", "strategy", "simulation"]
