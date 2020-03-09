@@ -17,6 +17,12 @@ categories = ["lists"]
 homepage_url = "//github.com/rofrol/awesome-wgpu"
 
 [[items]]
+name = "Creating a Pong clone with Rust and Tetra"
+description = "A beginner-friendly guide to building games in Rust"
+categories = ["tutorials"]
+homepage_url = "//tetra.seventeencups.net/tutorial"
+
+[[items]]
 name = "Developing a game with Rust beginners"
 description = "Some thoughts on tools and libraries"
 categories = ["articles"]
