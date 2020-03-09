@@ -195,6 +195,13 @@ homepage_url = "//sharonos.com/"
 image = "/assets/img/sharbringer-icon.jpg"
 
 [[items]]
+name = "Slavic Castles"
+description = "A card game inspired by Arcomage"
+categories = ["card", "strategy"]
+homepage_url = "//leinnan.itch.io/slavic-castles"
+image = "/assets/img/slavic-castles.jpg"
+
+[[items]]
 name = "Solitaire"
 description = "A remake of the Shenzhen Solitaire variant"
 categories = ["card"]
