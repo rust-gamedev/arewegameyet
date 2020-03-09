@@ -252,6 +252,13 @@ homepage_url = "//store.steampowered.com/app/1110620/Way_of_Rhea"
 image = "/assets/img/way_of_rhea.gif"
 
 [[items]]
+name = "YAVSS"
+description = "Yet Another Vertical Scrolling Shooter"
+categories = ["action"]
+repository_url = "https://github.com/batonius/yavss"
+image = "/assets/img/yavss.gif"
+
+[[items]]
 name = "Zemeroth"
 description = "A small 2D turn-based hexagonal tactical game made with ggez engine"
 categories = ["strategy"]
