@@ -104,6 +104,14 @@ repository_url = "//github.com/rsaarelm/magog"
 image = "/assets/img/magog.png"
 
 [[items]]
+name = "Meters Below the Ground"
+description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/meters-below-the-ground"
+repository_url = "//github.com/stevebob/meters-below-the-ground"
+image = "/assets/img/meters-below-ground.png"
+
+[[items]]
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
 categories = ["puzzle", "released"]
