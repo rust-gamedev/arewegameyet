@@ -181,6 +181,13 @@ repository_url = "//github.com/itadinanta/rust-oids"
 image = "/assets/img/rustoids.png"
 
 [[items]]
+name = "Rusted Ruins"
+description = "An extensible open world rogue like game with pixel art"
+categories = ["open-world", "rpg"]
+repository_url = "//github.com/garkimasera/rusted-ruins"
+image = "/assets/img/rusted-ruins.png"
+
+[[items]]
 name = "RustyVolley"
 description = "A rewrite of Blobby Volley 2 written in Rust, a blazingly fast, memory safe, thread safe language."
 categories = ["other"]
