@@ -217,6 +217,14 @@ homepage_url = "//leinnan.itch.io/slavic-castles"
 image = "/assets/img/slavic-castles.jpg"
 
 [[items]]
+name = "slime99"
+description = "Roguelike where combat outcomes are pre-determined and known by the player. Set in a neon sewer!"
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/slime99"
+repository_url = "//github.com/stevebob/slime99"
+image = "/assets/img/slime99.png"
+
+[[items]]
 name = "Solitaire"
 description = "A remake of the Shenzhen Solitaire variant"
 categories = ["card"]
