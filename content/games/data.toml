@@ -104,6 +104,14 @@ repository_url = "//github.com/rsaarelm/magog"
 image = "/assets/img/magog.png"
 
 [[items]]
+name = "Meters Below the Ground"
+description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/meters-below-the-ground"
+repository_url = "//github.com/stevebob/meters-below-the-ground"
+image = "/assets/img/meters-below-ground.png"
+
+[[items]]
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
 categories = ["puzzle", "released"]
@@ -181,6 +189,13 @@ repository_url = "//github.com/itadinanta/rust-oids"
 image = "/assets/img/rustoids.png"
 
 [[items]]
+name = "Rusted Ruins"
+description = "An extensible open world rogue like game with pixel art"
+categories = ["open-world", "rpg"]
+repository_url = "//github.com/garkimasera/rusted-ruins"
+image = "/assets/img/rusted-ruins.png"
+
+[[items]]
 name = "RustyVolley"
 description = "A rewrite of Blobby Volley 2 written in Rust, a blazingly fast, memory safe, thread safe language."
 categories = ["other"]
@@ -193,6 +208,13 @@ description = "Network shooter with physics and destructions"
 categories = ["action"]
 homepage_url = "//sharonos.com/"
 image = "/assets/img/sharbringer-icon.jpg"
+
+[[items]]
+name = "Slavic Castles"
+description = "A card game inspired by Arcomage"
+categories = ["card", "strategy"]
+homepage_url = "//leinnan.itch.io/slavic-castles"
+image = "/assets/img/slavic-castles.jpg"
 
 [[items]]
 name = "Solitaire"
@@ -214,6 +236,13 @@ description = "An RPG with turn based, tactical combat, deep character customiza
 categories = ["rpg", "strategy"]
 homepage_url = "//sulisgame.com/"
 image = "/assets/img/sulis.png"
+
+[[items]]
+name = "Twenty Asteroids"
+description = "A modern asteroids-like game with procedural destruction"
+categories = ["action"]
+homepage_url = "//pum-purum-pum-pum.itch.io/twenty-asteroids"
+image = "/assets/img/twenty-asteroids.png"
 
 [[items]]
 name = "UniverCity"
@@ -250,6 +279,13 @@ description = "A puzzle platformer that takes place in a world where you can onl
 categories = ["puzzle"]
 homepage_url = "//store.steampowered.com/app/1110620/Way_of_Rhea"
 image = "/assets/img/way_of_rhea.gif"
+
+[[items]]
+name = "YAVSS"
+description = "Yet Another Vertical Scrolling Shooter"
+categories = ["action"]
+repository_url = "https://github.com/batonius/yavss"
+image = "/assets/img/yavss.gif"
 
 [[items]]
 name = "Zemeroth"
