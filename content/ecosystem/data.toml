@@ -614,6 +614,11 @@ source = "crates"
 categories = ["vr"]
 
 [[items]]
+name = "openxr"
+source = "crates"
+categories = ["vr"]
+
+[[items]]
 name = "optimath"
 source = "crates"
 categories = ["math"]
