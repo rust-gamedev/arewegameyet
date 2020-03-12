@@ -721,6 +721,11 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "rectangle-pack"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "rendology"
 source = "crates"
 categories = ["3drendering"]
