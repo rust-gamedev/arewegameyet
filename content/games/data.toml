@@ -55,6 +55,13 @@ homepage_url = "//tryjumping.com/dose-response-roguelike/"
 image = "/assets/img/dose-response.png"
 
 [[items]]
+name = "Dwarf World"
+description = "World's most acurate dwarven simulation."
+categories = ["simulation", "strategy"]
+homepage_url = "//dwarf.world"
+image = "/assets/img/dwarf-world.png"
+
+[[items]]
 name = "Everpuzzle"
 description = "A realtime action-puzzle game like Tetris Attack"
 categories = ["action", "puzzle"]
