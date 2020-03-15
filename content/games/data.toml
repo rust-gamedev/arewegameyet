@@ -1,4 +1,12 @@
 [[items]]
+name = "12 Seconds Awake"
+description = "A small 2D top-down physics-based tank war game with worms-like turn mechanics written using Oxygengine"
+categories = ["action"]
+homepage_url = "//12-seconds-awake.psichix.io"
+repository_url = "//github.com/PsichiX/Oxygengine/tree/master/demos/demo-web-game"
+image = "/assets/img/12-seconds-awake.jpeg"
+
+[[items]]
 name = "A Snake's Tale"
 description = "A (100% Rust) puzzle game about snakes in cramped places"
 categories = ["puzzle", "released"]
