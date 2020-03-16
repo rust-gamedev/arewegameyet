@@ -254,6 +254,13 @@ repository_url = "//github.com/Swampsoft/solitaire"
 image = "/assets/img/solitaire.jpg"
 
 [[items]]
+name = "Sphere Game"
+description = "You control a sphere in a bowl-shaped 2D space. Your goal is to hit the other spheres as hard as possible to shatter them into pieces!"
+categories = ["action"]
+homepage_url = "//coffejunkstudio.itch.io/spheregame"
+image = "/assets/img/spheres-game.png"
+
+[[items]]
 name = "Stacked Worlds"
 description = "A game prototype written in Rust, shows how to use specs and nphysics."
 categories = ["platformer"]
