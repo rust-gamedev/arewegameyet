@@ -112,6 +112,13 @@ homepage_url = "//store.steampowered.com/app/884160/HyperZen_Training/"
 image = "/assets/img/hyperzentraining.png"
 
 [[items]]
+name = "Le Train Dispatcher"
+description = "Direct the trains in the delivery areas."
+categories = ["simulation"]
+homepage_url = "//athorus.itch.io/ltd"
+image = "/assets/img/ltd.gif"
+
+[[items]]
 name = "Llamassacre"
 description = "A jump and bump game for two players made with ggez"
 categories = ["action"]
