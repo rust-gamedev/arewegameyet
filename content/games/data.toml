@@ -56,13 +56,6 @@ homepage_url = "//nativesystems.itch.io/colony"
 image = "/assets/img/colony-genesis.png"
 
 [[items]]
-name = "DynaMaze"
-description = "A multiplayer strategy-puzzle game about traversing a shifting maze"
-categories = ["puzzle", "strategy"]
-homepage_url = "//boringcactus.itch.io/dynamaze"
-repository_url = "//github.com/boringcactus/dynamaze"
-
-[[items]]
 name = "dose response"
 description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
 categories = ["rpg"]
@@ -75,6 +68,13 @@ description = "World's most acurate dwarven simulation."
 categories = ["simulation", "strategy"]
 homepage_url = "//dwarf.world"
 image = "/assets/img/dwarf-world.png"
+
+[[items]]
+name = "DynaMaze"
+description = "A multiplayer strategy-puzzle game about traversing a shifting maze"
+categories = ["puzzle", "strategy"]
+homepage_url = "//boringcactus.itch.io/dynamaze"
+repository_url = "//github.com/boringcactus/dynamaze"
 
 [[items]]
 name = "Everpuzzle"
