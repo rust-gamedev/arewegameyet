@@ -70,6 +70,14 @@ homepage_url = "//dwarf.world"
 image = "/assets/img/dwarf-world.png"
 
 [[items]]
+name = "DynaMaze"
+description = "A multiplayer strategy-puzzle game about traversing a shifting maze"
+categories = ["puzzle", "strategy"]
+homepage_url = "//boringcactus.itch.io/dynamaze"
+repository_url = "//github.com/boringcactus/dynamaze"
+image = "/assets/img/DynaMaze.png"
+
+[[items]]
 name = "Everpuzzle"
 description = "A realtime action-puzzle game like Tetris Attack"
 categories = ["action", "puzzle"]
