@@ -75,6 +75,7 @@ description = "A multiplayer strategy-puzzle game about traversing a shifting ma
 categories = ["puzzle", "strategy"]
 homepage_url = "//boringcactus.itch.io/dynamaze"
 repository_url = "//github.com/boringcactus/dynamaze"
+image = "/assets/img/DynaMaze.png"
 
 [[items]]
 name = "Everpuzzle"
