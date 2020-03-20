@@ -264,6 +264,14 @@ repository_url = "//github.com/RustyVolley/RustyVolleySrc"
 image = "/assets/img/rustyvolley.png"
 
 [[items]]
+name = "Sandspiel"
+description = "A pixel physics simulation sandbox where you can paint with elements, conduct experiments and build your own world!"
+categories = ["simulation"]
+homepage_url = "//maxbittker.itch.io/sandspiel"
+repository_url = "//github.com/MaxBittker/sandspiel"
+image = "/assets/img/sandspiel.png"
+
+[[items]]
 name = "SHAR"
 description = "Network shooter with physics and destructions"
 categories = ["action"]
