@@ -40,6 +40,11 @@ source = "crates"
 categories = ["ai"]
 
 [[items]]
+name = "assets_manager"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "benzene-2d"
 source = "crates"
 categories = ["2drendering"]
