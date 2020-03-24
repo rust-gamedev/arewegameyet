@@ -22,6 +22,14 @@ repository_url = "//github.com/Ratysz/ludumdare42"
 image = "/assets/img/apocalypse-post.gif"
 
 [[items]]
+name = "Ascension 2"
+description = "Hop your way through bite sized levels while dodging spikes, turrets, lasers, and more. Then, change the direction of gravity, and do it all again!"
+categories = ["platformer"]
+homepage_url = "//outkine.itch.io/ascension-2"
+repository_url = "//github.com/outkine/ascension-rust"
+image = "/assets/img/ascension2.png"
+
+[[items]]
 name = "Astra Terra"
 description = "A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story"
 categories = ["strategy", "simulation"]
