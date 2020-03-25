@@ -309,6 +309,13 @@ repository_url = "//github.com/Swampsoft/solitaire"
 image = "/assets/img/solitaire.jpg"
 
 [[items]]
+name = "Space Invaders"
+description = "A remake of the original Space Invaders written in rust"
+categories = ["action"]
+repository_url = "//github.com/bgaster/rusty-space-invaders"
+image = "/assets/img/spaceinvaders.gif"
+
+[[items]]
 name = "Sphere Game"
 description = "You control a sphere in a bowl-shaped 2D space. Your goal is to hit the other spheres as hard as possible to shatter them into pieces!"
 categories = ["action"]
