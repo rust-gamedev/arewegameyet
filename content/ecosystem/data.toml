@@ -120,6 +120,11 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "const-tweaker"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "corange-rs"
 source = "crates"
 categories = ["engines"]
@@ -781,6 +786,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "rotsprite"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "rovr"
 source = "crates"
 categories = ["vr"]
@@ -835,6 +845,11 @@ categories = ["2drendering", "engines"]
 homepage = "https://github.com/jeremyletang/rust-sfml"
 
 [[items]]
+name = "sfxr"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "sharecart1000"
 source = "crates"
 categories = ["tools"]
@@ -881,6 +896,11 @@ categories = ["shader"]
 name = "splines"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "sprite"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "steering"
