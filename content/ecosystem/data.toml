@@ -822,6 +822,11 @@ source = "crates"
 categories = ["2drendering", "tools"]
 
 [[items]]
+name = "rusty_engine"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "salva2d"
 source = "crates"
 categories = ["physics"]
