@@ -337,6 +337,13 @@ homepage_url = "//sulisgame.com/"
 image = "/assets/img/sulis.png"
 
 [[items]]
+name = "Time Spiders"
+description = "They live, work, and die on a time machine they didn't invent and can't control. You are their Overlord. Help them learn, grow, and thrive."
+categories = ["simulation", "strategy"]
+homepage_url = "//anachronidia.itch.io/time-spiders"
+image = "/assets/img/time-spiders.png"
+
+[[items]]
 name = "Twenty Asteroids"
 description = "A modern asteroids-like game with procedural destruction"
 categories = ["action"]
