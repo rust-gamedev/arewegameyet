@@ -973,6 +973,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "usfx"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "vecmath"
 source = "crates"
 categories = ["math"]
