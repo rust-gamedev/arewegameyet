@@ -856,7 +856,7 @@ categories = ["audio"]
 
 [[items]]
 name = "shaderc"
-source = "crates
+source = "crates"
 categories = ["shader"]
 
 [[items]]
