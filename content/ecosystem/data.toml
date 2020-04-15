@@ -855,6 +855,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "shaderc"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "sharecart1000"
 source = "crates"
 categories = ["tools"]
