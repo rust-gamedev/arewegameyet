@@ -77,6 +77,13 @@ categories = ["tutorials"]
 homepage_url = "//github.com/sunjay/rust-simple-game-dev-tutorial"
 
 [[items]]
+name = "Rust Roguelike Tutorial by Herbert Wolverson"
+description = "A deep and detailed tutorial about designing and implementing roguelike games in Rust"
+categories = ["books", "tutorials"]
+homepage_url = "//bfnightly.bracketproductions.com/rustbook"
+repository_url = "//github.com/thebracket/rustrogueliketutorial"
+
+[[items]]
 name = "The Rust Book"
 description = "The Rust language official book"
 categories = ["books"]
