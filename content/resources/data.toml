@@ -17,6 +17,12 @@ categories = ["lists"]
 homepage_url = "//github.com/rofrol/awesome-wgpu"
 
 [[items]]
+name = "Building WebGPU with Rust"
+description = "A talk about wgpu's architecture and implementation (FOSDEM 2020)"
+categories = ["videos"]
+homepage_url = "//fosdem.org/2020/schedule/event/rust_webgpu"
+
+[[items]]
 name = "Creating a Pong clone with Rust and Tetra"
 description = "A beginner-friendly guide to building games in Rust"
 categories = ["tutorials"]
