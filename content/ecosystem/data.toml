@@ -868,11 +868,6 @@ categories = ["tools"]
 name = "shipyard"
 source = "crates"
 categories = ["ecs"]
-
-[[items]]
-name = "shipyard"
-source = "crates"
-categories = ["ecs"]
 gitter_url = "https://gitter.im/leudz-shipyard/community"
 
 [[items]]
