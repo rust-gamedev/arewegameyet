@@ -45,6 +45,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "beehive"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "benzene-2d"
 source = "crates"
 categories = ["2drendering"]
