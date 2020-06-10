@@ -125,6 +125,11 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "console_engine"
+source = "crates"
+categories = ["engines", "tools"]
+
+[[items]]
 name = "const-tweaker"
 source = "crates"
 categories = ["tools"]
