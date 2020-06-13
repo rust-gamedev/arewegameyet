@@ -188,6 +188,14 @@ repository_url = "//github.com/stevebob/meters-below-the-ground"
 image = "/assets/img/meters-below-ground.png"
 
 [[items]]
+name = "orb.farm"
+description = "A virtual ecosystem where different species of creature can live, grow and die as part of a self-contained food chain."
+categories = ["simulation"]
+homepage_url = "//orb.farm"
+repository_url = "//github.com/MaxBittker/orb.farm"
+image = "/assets/img/orb-farm.jpeg"
+
+[[items]]
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
 categories = ["puzzle", "released"]
