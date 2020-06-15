@@ -2,7 +2,7 @@ title = "Are we game yet?"
 description = "A guide to the Rust game development ecosystem."
 
 # The URL the site will be built for
-base_url = "https://arewegameyet.com/"
+base_url = "https://arewegameyet.rs/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
