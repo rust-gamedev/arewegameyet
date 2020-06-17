@@ -968,6 +968,11 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
+name = "torchbear"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "trex"
 source = "crates"
 categories = ["ecs"]
