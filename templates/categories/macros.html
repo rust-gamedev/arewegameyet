@@ -45,9 +45,15 @@
 
 <div class="ui card">
     {% if item.image %}
+        {% if primary_url %}
+            <a href="{{ primary_url }}">
+        {% endif %}
         <div class="image">
             <img src="{{ item.image }}" alt="Picture of {{ name }}">
         </div>
+        {% if primary_url %}
+            </a>
+        {% endif %}
     {% endif %}
 
     <div class="content">
