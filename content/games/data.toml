@@ -217,6 +217,14 @@ repository_url = "//github.com/OsnaCS/plantex"
 image = "/assets/img/plantex.jpg"
 
 [[items]]
+name = "Pushin' Boxes"
+description = "Play as a little robot (named プシン) as it pushes boxes around inside a warehouse to organize them"
+categories = ["puzzle", "released"]
+homepage_url = "//septum.io/games/pushin-boxes/"
+repository_url = "//gitlab.com/septum___/pushin_boxes"
+image = "/assets/img/pushin_boxes.png"
+
+[[items]]
 name = "Q³"
 description = "A Quake 3 like game with voxelized destructible maps"
 categories = ["fps"]
