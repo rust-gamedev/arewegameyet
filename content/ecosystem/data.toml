@@ -60,6 +60,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "bevy"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "blend"
 source = "crates"
 categories = ["2drendering", "3dformatloaders"]
