@@ -65,6 +65,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "big-brain"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "blend"
 source = "crates"
 categories = ["2drendering", "3dformatloaders"]
