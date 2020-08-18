@@ -923,6 +923,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "inline-spirv"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "splines"
 source = "crates"
 categories = ["math"]
