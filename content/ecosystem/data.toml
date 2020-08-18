@@ -130,7 +130,7 @@ source = "crates"
 categories = ["physics"]
 
 [[items]]
-name = "conrod"
+name = "conrod_core"
 source = "crates"
 categories = ["ui"]
 
