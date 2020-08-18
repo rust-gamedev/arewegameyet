@@ -460,6 +460,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "inline-spirv"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "ketos"
 source = "crates"
 categories = ["scripting"]
