@@ -170,6 +170,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "datachannel"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "dces"
 source = "crates"
 categories = ["ecs"]
