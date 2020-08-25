@@ -90,6 +90,13 @@ homepage_url = "//bfnightly.bracketproductions.com/rustbook"
 repository_url = "//github.com/thebracket/rustrogueliketutorial"
 
 [[items]]
+name = "Rust Sokoban Tutorial by Olivia Ifrim"
+description = "A tutorial about making a simple Sokoban game using ECS, GGEZ and specs"
+categories = ["books", "tutorials"]
+homepage_url = "//sokoban.iolivia.me"
+repository_url = "//github.com/iolivia/rust-sokoban"
+
+[[items]]
 name = "The Rust Book"
 description = "The Rust language official book"
 categories = ["books"]
