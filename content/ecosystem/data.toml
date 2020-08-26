@@ -354,6 +354,11 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
+name = "glsp"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "gltf"
 source = "crates"
 categories = ["3dformatloaders"]
