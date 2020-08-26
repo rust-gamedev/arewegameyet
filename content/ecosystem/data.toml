@@ -594,6 +594,11 @@ categories = ["scripting"]
 homepage = "https://mun-lang.org"
 
 [[items]]
+name = "naia-rs/naia"
+source = "github"
+categories = ["networking"]
+
+[[items]]
 name = "nalgebra"
 source = "crates"
 categories = ["math"]
