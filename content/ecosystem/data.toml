@@ -354,6 +354,11 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
+name = "glsp"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "gltf"
 source = "crates"
 categories = ["3dformatloaders"]
@@ -587,6 +592,11 @@ name = "mun-lang/mun"
 source = "github"
 categories = ["scripting"]
 homepage = "https://mun-lang.org"
+
+[[items]]
+name = "naia-rs/naia"
+source = "github"
+categories = ["networking"]
 
 [[items]]
 name = "nalgebra"
@@ -1041,6 +1051,11 @@ categories = ["3drendering"]
 name = "vorbis"
 source = "crates"
 categories = ["audio"]
+
+[[items]]
+name = "voronator"
+source = "crates"
+categories = ["tools", "mesh"]
 
 [[items]]
 name = "vulkano"
