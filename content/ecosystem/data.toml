@@ -927,6 +927,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "soloud"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "specs"
 source = "crates"
 categories = ["ecs"]
