@@ -87,6 +87,13 @@ repository_url = "//github.com/puppetmaster-/compact-space"
 image = "/assets/img/compact-space.png"
 
 [[items]]
+name = "Crate Before Attack"
+description = "A multiplayer grappling-hook strategy about frogs."
+categories = ["action", "strategy"]
+homepage_url = "//cratebeforeattack.com"
+image = "/assets/img/crate-before-attack.gif"
+
+[[items]]
 name = "dose response"
 description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
 categories = ["rpg"]
