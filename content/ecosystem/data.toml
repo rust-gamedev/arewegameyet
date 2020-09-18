@@ -659,6 +659,12 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
+name = "olson-sean-k/plexus"
+source = "github"
+categories = ["mesh"]
+homepage = "https://plexus.rs"
+
+[[items]]
 name = "openvr"
 source = "crates"
 categories = ["vr"]
@@ -734,12 +740,6 @@ categories = ["windowing"]
 name = "pixels"
 source = "crates"
 categories = ["2drendering"]
-
-[[items]]
-name = "plexus"
-source = "crates"
-categories = ["mesh"]
-homepage = "https://plexus.rs"
 
 [[items]]
 name = "portmidi"
