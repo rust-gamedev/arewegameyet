@@ -736,6 +736,12 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "plexus"
+source = "crates"
+categories = ["mesh"]
+homepage = "https://plexus.rs"
+
+[[items]]
 name = "portmidi"
 source = "crates"
 categories = ["audio"]
