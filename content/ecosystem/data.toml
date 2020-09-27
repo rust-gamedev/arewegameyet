@@ -668,6 +668,7 @@ homepage = "https://plexus.rs"
 name = "openvr"
 source = "crates"
 categories = ["vr"]
+gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
 
 [[items]]
 name = "openxr"
@@ -850,12 +851,6 @@ categories = ["ui"]
 name = "rsoundio"
 source = "crates"
 categories = ["audio"]
-
-[[items]]
-name = "rust-openvr/rust-openvr"
-source = "github"
-categories = ["vr"]
-gitter_url = "https://gitter.im/rust-openvr/rust-openvr"
 
 [[items]]
 name = "rust-webvr"
