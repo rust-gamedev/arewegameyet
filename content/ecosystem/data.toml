@@ -858,6 +858,11 @@ source = "crates"
 categories = ["vr"]
 
 [[items]]
+name = "rustpython"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "rusttype"
 source = "crates"
 categories = ["2drendering", "tools"]
