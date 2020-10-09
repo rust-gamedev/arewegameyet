@@ -374,6 +374,14 @@ homepage_url = "//sulisgame.com/"
 image = "/assets/img/sulis.png"
 
 [[items]]
+name = "Tetris Bane"
+description = "A Tetris clone with a deliberately frustrating set of blocks. There's also a classic mode for the purists, an ultra hard metal mode and even a chill mode."
+categories = ["puzzle"]
+homepage_url = "//andrew-jones.itch.io/tetris-bane"
+repository_url = "github.com/andii1701/tetris-bane"
+image = "/assets/img/tetris-bane.png"
+
+[[items]]
 name = "Time Spiders"
 description = "They live, work, and die on a time machine they didn't invent and can't control. You are their Overlord. Help them learn, grow, and thrive."
 categories = ["simulation", "strategy"]
