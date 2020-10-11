@@ -885,6 +885,11 @@ categories = ["physics"]
 homepage = "https://salva.rs"
 
 [[items]]
+name = "sciter-rs"
+source = "crates"
+categories = ["ui"]
+
+[[items]]
 name = "sdl2"
 source = "crates"
 categories = ["2drendering", "audio", "engines", "input", "windowing"]
