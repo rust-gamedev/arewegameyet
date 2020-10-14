@@ -137,6 +137,14 @@ repository_url = "//github.com/ucarion/gaia"
 image = "/assets/img/gaia.jpg"
 
 [[items]]
+name = "Galangua"
+description = "A dynamic 2D shoot 'em up game, written using SDL2"
+categories = ["action"]
+homepage_url = "//tyfkda.github.io/galangua"
+repository_url = "//github.com/tyfkda/galangua"
+image = "/assets/img/galangua.png"
+
+[[items]]
 name = "Garden"
 description = "A game centered around really detailed plant growth simulation"
 categories = ["simulation"]
