@@ -45,6 +45,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "audir"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "beehive"
 source = "crates"
 categories = ["2drendering"]
@@ -158,6 +163,11 @@ categories = ["audio"]
 name = "crayon"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "crevice"
+source = "crates"
+categories = ["shader"]
 
 [[items]]
 name = "crow"
@@ -400,6 +410,11 @@ categories = ["3drendering"]
 name = "hex2d"
 source = "crates"
 categories = ["2drendering"]
+
+[[items]]
+name = "hexasphere"
+source = "crates"
+categories = ["tools", "mesh"]
 
 [[items]]
 name = "hlua"
