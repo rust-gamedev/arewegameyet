@@ -230,6 +230,11 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "egui"
+source = "crates"
+categories = ["ui"]
+
+[[items]]
 name = "elmesque"
 source = "crates"
 categories = ["2drendering"]
