@@ -206,7 +206,7 @@ image = "/assets/img/meters-below-ground.png"
 name = "Nox Futura"
 description = "An open-source game combining elements of Dwarf Fortress, Civilization, Warhammer, Douglas Adams, and more."
 categories = ["simulation", "strategy"]
-repository_url = "//github.com/thebracket/bgame"
+repository_url = "//github.com/thebracket/noxfutura"
 image = "/assets/img/nox-futura.jpeg"
 
 [[items]]
