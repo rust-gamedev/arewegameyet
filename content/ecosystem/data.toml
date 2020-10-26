@@ -873,6 +873,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "rune"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "rust-webvr"
 source = "crates"
 categories = ["vr"]
