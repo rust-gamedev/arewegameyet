@@ -291,6 +291,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "fontdue"
+source = "crates"
+categories = ["ui", "2drendering", "tools"]
+
+[[items]]
 name = "froggy"
 source = "crates"
 categories = ["ecs"]
