@@ -490,6 +490,16 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "keeshond"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
+name = "keeshond_datapack"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "ketos"
 source = "crates"
 categories = ["scripting"]
