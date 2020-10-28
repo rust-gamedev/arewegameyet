@@ -35,6 +35,12 @@ categories = ["articles"]
 homepage_url = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
 
 [[items]]
+name = "Framebuffers, WGPU and Rust"
+description = "Introduction to WGPU and high-level rendering terminology"
+categories = ["articles"]
+homepage_url = "//nyxtom.dev/2020/10/08/framebuffers/"
+
+[[items]]
 name = "Game Server in 150 lines of Rust"
 description = "This tutorial will show you how to write a simple game server"
 categories = ["tutorials"]
@@ -107,6 +113,12 @@ name = "Using Rust For Game Development, by Catherine West"
 description = "Making games using Rust, Lua and the ECS design pattern"
 categories = ["articles", "videos"]
 homepage_url = "//kyren.github.io/2018/09/14/rustconf-talk.html"
+
+[[items]]
+name = "Winit Rust and Pixels"
+description = "Introduction to Winit Rust and Pixels (hardware accelerated framebuffer)"
+categories = ["articles"]
+homepage_url = "//nyxtom.dev/2020/10/07/winit-rust/"
 
 [[items]]
 name = "Writing a Raytracer in Rust"
