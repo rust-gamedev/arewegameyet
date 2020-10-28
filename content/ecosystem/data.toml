@@ -1,4 +1,9 @@
 [[items]]
+name = "ab_glyph"
+source = "crates"
+categories = ["ui", "2drendering", "textrendering"]
+
+[[items]]
 name = "alto"
 source = "crates"
 categories = ["audio"]
@@ -293,7 +298,7 @@ categories = ["audio"]
 [[items]]
 name = "fontdue"
 source = "crates"
-categories = ["ui", "2drendering", "tools"]
+categories = ["ui", "2drendering", "textrendering"]
 
 [[items]]
 name = "froggy"
@@ -905,7 +910,7 @@ categories = ["scripting"]
 [[items]]
 name = "rusttype"
 source = "crates"
-categories = ["2drendering", "tools"]
+categories = ["ui", "2drendering", "textrendering"]
 
 [[items]]
 name = "rusty_engine"
