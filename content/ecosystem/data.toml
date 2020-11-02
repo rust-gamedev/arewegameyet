@@ -1152,3 +1152,8 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "dot_vox"
+source = "crates"
+categories = ["3dformatloaders"]
