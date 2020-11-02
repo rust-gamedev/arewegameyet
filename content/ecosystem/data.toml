@@ -813,6 +813,16 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "rapier2d"
+source = "crates"
+categories = ["physics"]
+
+[[items]]
+name = "rapier3d"
+source = "crates"
+categories = ["physics"]
+
+[[items]]
 name = "raylib"
 source = "crates"
 categories = ["engines"]
