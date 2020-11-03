@@ -200,6 +200,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "dot_vox"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "dual_quaternion"
 source = "crates"
 categories = ["math"]
