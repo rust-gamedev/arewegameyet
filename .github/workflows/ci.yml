@@ -9,8 +9,8 @@ jobs:
       BASE_URL: https://github.com/getzola/zola/releases/download
       VERS: v0.10.1
       ARCH: x86_64-unknown-linux-gnu
-      # https://github.com/marketplace/actions/github-pages#warning-limitation
-      GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      # https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-623202206
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v1
     - name: Install Zola
