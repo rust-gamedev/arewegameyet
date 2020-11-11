@@ -1,6 +1,10 @@
 name: Zola
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * MON' # Weekly, Mondays at 00:00
 
 jobs:
   zola:
