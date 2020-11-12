@@ -53,6 +53,12 @@ categories = ["tutorials"]
 homepage_url = "//suhr.github.io/gsgt"
 
 [[items]]
+name = "How to: Rust + SDL2 + OpenGL on the web"
+description = "How to port games to the web using Emscripten"
+categories = ["articles", "tutorials"]
+homepage_url = "//blog.therocode.net/2020/10/a-guide-to-rust-sdl2-emscripten"
+
+[[items]]
 name = "Learn OpenGL with Rust"
 description = "A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com"
 categories = ["tutorials"]
