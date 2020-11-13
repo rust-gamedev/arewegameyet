@@ -704,6 +704,11 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
+name = "ogmo3"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "olson-sean-k/plexus"
 source = "github"
 categories = ["mesh"]
