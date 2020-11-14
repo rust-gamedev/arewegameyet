@@ -65,6 +65,12 @@ categories = ["tutorials"]
 homepage_url = "//github.com/bwasty/learn-opengl-rs"
 
 [[items]]
+name = "Learn Wgpu"
+description = "Tutorial for learning Rust graphics programming using the wgpu-rs library"
+categories = ["tutorials"]
+homepage_url = "//sotrh.github.io/learn-wgpu"
+
+[[items]]
 name = "Overview of Open Source Game Engines in Rust"
 description = "An overview of which engines and libraries to use"
 categories = ["articles"]
