@@ -90,6 +90,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "building-blocks"
+source = "crates"
+categories = ["tools", "mesh"]
+
+[[items]]
 name = "bvh"
 source = "crates"
 categories = ["math"]
@@ -193,6 +198,16 @@ categories = ["networking"]
 name = "dces"
 source = "crates"
 categories = ["ecs"]
+
+[[items]]
+name = "density-mesh-core"
+source = "crates"
+categories = ["tools", "mesh"]
+
+[[items]]
+name = "density-mesh-image"
+source = "crates"
+categories = ["tools", "mesh"]
 
 [[items]]
 name = "doryen-rs"
@@ -760,6 +775,11 @@ categories = ["ai"]
 name = "peacock"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "physme"
+source = "crates"
+categories = ["physics"]
 
 [[items]]
 name = "physx"
