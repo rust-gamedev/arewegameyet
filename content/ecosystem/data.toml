@@ -525,6 +525,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "kira"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "kiss3d"
 source = "crates"
 categories = ["3drendering"]
