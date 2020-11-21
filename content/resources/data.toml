@@ -53,6 +53,12 @@ categories = ["tutorials"]
 homepage_url = "//suhr.github.io/gsgt"
 
 [[items]]
+name = "Hands-On Rust Effective Learning through 2D Game Development and Play by Herbert Wolverson"
+description = "Make fun games as you learn Rust through a series of hands-on gamedev tutorials and real-world use of core language skills"
+categories = ["books", "tutorials"]
+homepage_url = "//pragprog.com/titles/hwrust/hands-on-rust"
+
+[[items]]
 name = "How to: Rust + SDL2 + OpenGL on the web"
 description = "How to port games to the web using Emscripten"
 categories = ["articles", "tutorials"]
