@@ -596,6 +596,12 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "macroquad"
+source = "crates"
+categories = ["2drendering", "engines"]
+homepage_url = "https://github.com/not-fl3/miniquad"
+
+[[items]]
 name = "meshopt"
 source = "crates"
 categories = ["mesh"]
