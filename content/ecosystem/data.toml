@@ -1,7 +1,7 @@
 [[items]]
 name = "ab_glyph"
 source = "crates"
-categories = ["ui", "2drendering", "textrendering"]
+categories = ["textrendering"]
 
 [[items]]
 name = "alto"
@@ -12,11 +12,6 @@ categories = ["audio"]
 name = "ambisonic"
 source = "crates"
 categories = ["audio"]
-
-[[items]]
-name = "ameda"
-source = "crates"
-categories = ["tools"]
 
 [[items]]
 name = "amethyst"
@@ -40,11 +35,6 @@ categories = ["3drendering"]
 gitter_url = "https://gitter.im/MaikKlein/ash"
 
 [[items]]
-name = "aspen"
-source = "crates"
-categories = ["ai"]
-
-[[items]]
 name = "assets_manager"
 source = "crates"
 categories = ["tools"]
@@ -57,12 +47,7 @@ categories = ["audio"]
 [[items]]
 name = "beehive"
 source = "crates"
-categories = ["2drendering"]
-
-[[items]]
-name = "benzene-2d"
-source = "crates"
-categories = ["2drendering"]
+categories = ["tools"]
 
 [[items]]
 name = "beryllium"
@@ -82,7 +67,7 @@ categories = ["ai"]
 [[items]]
 name = "blend"
 source = "crates"
-categories = ["2drendering", "3dformatloaders"]
+categories = ["3dformatloaders"]
 
 [[items]]
 name = "blit"
@@ -118,11 +103,6 @@ categories = ["math"]
 name = "ChariotEngine/Chariot"
 source = "github"
 categories = ["engines"]
-
-[[items]]
-name = "chipmunk"
-source = "crates"
-categories = ["physics"]
 
 [[items]]
 name = "claxon"
@@ -185,11 +165,6 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
-name = "darkengine"
-source = "crates"
-categories = ["engines"]
-
-[[items]]
 name = "datachannel"
 source = "crates"
 categories = ["networking"]
@@ -240,39 +215,14 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
-name = "eccles"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
-name = "ecs"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
-name = "ecs-rs"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
 name = "egui"
 source = "crates"
 categories = ["ui"]
 
 [[items]]
-name = "elmesque"
-source = "crates"
-categories = ["2drendering"]
-
-[[items]]
 name = "enet"
 source = "crates"
 categories = ["networking"]
-
-[[items]]
-name = "entity_rust"
-source = "crates"
-categories = ["ecs"]
 
 [[items]]
 name = "euc"
@@ -296,11 +246,6 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
-name = "fbx_direct"
-source = "crates"
-categories = ["3dformatloaders"]
-
-[[items]]
 name = "fbxcel-dom"
 source = "crates"
 categories = ["3dformatloaders"]
@@ -318,7 +263,7 @@ categories = ["audio"]
 [[items]]
 name = "fontdue"
 source = "crates"
-categories = ["ui", "2drendering", "textrendering"]
+categories = ["textrendering"]
 
 [[items]]
 name = "froggy"
@@ -394,6 +339,11 @@ categories = ["3drendering"]
 gitter_url = "https://gitter.im/tomaka/glium"
 
 [[items]]
+name = "glow"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "glsp"
 source = "crates"
 categories = ["scripting"]
@@ -437,14 +387,9 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
-name = "hephaestus"
-source = "crates"
-categories = ["3drendering"]
-
-[[items]]
 name = "hex2d"
 source = "crates"
-categories = ["2drendering"]
+categories = ["tools"]
 
 [[items]]
 name = "hexasphere"
@@ -472,11 +417,6 @@ source = "github"
 categories = ["tools"]
 gitter_url = "https://dust3d.discourse.group/"
 homepage = "https://dust3d.org/"
-
-[[items]]
-name = "huxingyi/meshlite"
-source = "github"
-categories = ["mesh"]
 
 [[items]]
 name = "I3ck/rust-3d"
@@ -603,7 +543,7 @@ categories = ["2drendering"]
 [[items]]
 name = "macroquad"
 source = "crates"
-categories = ["2drendering", "engines"]
+categories = ["engines"]
 homepage_url = "https://github.com/not-fl3/miniquad"
 
 [[items]]
@@ -681,21 +621,16 @@ categories = ["ai"]
 homepage = "https://github.com/PsichiX/navmesh"
 
 [[items]]
-name = "ncollide"
+name = "ncollide2d"
 source = "crates"
 categories = ["physics"]
 homepage = "https://ncollide.org"
 
 [[items]]
-name = "nitric"
+name = "ncollide3d"
 source = "crates"
-categories = ["ecs"]
-
-[[items]]
-name = "nitro"
-source = "crates"
-categories = ["engines"]
-gitter_url = "https://gitter.im/nitro-game-engine/nitro"
+categories = ["physics"]
+homepage = "https://ncollide.org"
 
 [[items]]
 name = "noise"
@@ -879,11 +814,6 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
-name = "recs"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
 name = "rectangle-pack"
 source = "crates"
 categories = ["tools"]
@@ -971,7 +901,7 @@ categories = ["scripting"]
 [[items]]
 name = "rusttype"
 source = "crates"
-categories = ["ui", "2drendering", "textrendering"]
+categories = ["textrendering"]
 
 [[items]]
 name = "rusty_engine"
@@ -1105,11 +1035,6 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
-name = "tinyecs"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
 name = "tobj"
 source = "crates"
 categories = ["3dformatloaders"]
@@ -1118,11 +1043,6 @@ categories = ["3dformatloaders"]
 name = "torchbear"
 source = "crates"
 categories = ["scripting"]
-
-[[items]]
-name = "trex"
-source = "crates"
-categories = ["ecs"]
 
 [[items]]
 name = "turbine"
