@@ -23,10 +23,24 @@ categories = ["videos"]
 homepage_url = "//fosdem.org/2020/schedule/event/rust_webgpu"
 
 [[items]]
+name = "Chess game in Rust using Bevy"
+description = "A tutorial on writing a chess game, with the Bevy game engine"
+categories = ["tutorials"]
+homepage_url = "//caballerocoll.com/blog/bevy-chess-tutorial/"
+repository_url = "//github.com/guimcaballero/bevy_chess"
+
+[[items]]
 name = "Creating a Pong clone with Rust and Tetra"
 description = "A beginner-friendly guide to building games in Rust"
 categories = ["tutorials"]
 homepage_url = "//tetra.seventeencups.net/tutorial"
+
+[[items]]
+name = "Creating a Snake Clone With Bevy"
+description = "A tutorial about cloning the snake game, with the Bevy game engine"
+categories = ["tutorials"]
+homepage_url = "//mbuffett.com/posts/bevy-snake-tutorial/"
+repository_url = "//github.com/marcusbuffett/bevy_snake"
 
 [[items]]
 name = "Developing a game with Rust beginners"
