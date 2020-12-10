@@ -1015,6 +1015,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "tessellation"
+source = "crates"
+categories = ["mesh"]
+
+[[items]]
 name = "tetra"
 source = "crates"
 categories = ["engines"]
@@ -1033,6 +1038,11 @@ categories = ["3drendering"]
 name = "tiled"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "tiny-skia"
+source = "crates"
+categories = ["2drendering"]
 
 [[items]]
 name = "tobj"
@@ -1056,6 +1066,11 @@ categories = ["tools"]
 
 [[items]]
 name = "ultraviolet"
+source = "crates"
+categories = ["math"]
+
+[[items]]
+name = "uniform-cubic-splines"
 source = "crates"
 categories = ["math"]
 
