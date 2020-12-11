@@ -764,6 +764,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "polyhedron-ops"
+source = "crates"
+categories = ["mesh"]
+
+[[items]]
 name = "portmidi"
 source = "crates"
 categories = ["audio"]
