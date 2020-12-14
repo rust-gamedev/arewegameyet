@@ -195,14 +195,14 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
-name = "lowenware/dotrix"
-source = "github"
-categories = ["3drendering", "engines", "ecs"]
-
-[[items]]
 name = "dual_quaternion"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "lowenware/dotrix"
+source = "github"
+categories = ["3drendering", "engines", "ecs"]
 
 [[items]]
 name = "duysqubix/MuOxi"
