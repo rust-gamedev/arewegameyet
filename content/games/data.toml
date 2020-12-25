@@ -44,6 +44,13 @@ homepage_url = "//christopherdumas.org/astraterra"
 image = "/assets/img/AstraTerra-icon.jpg"
 
 [[items]]
+name = "Call of Ferris"
+description = "A thrilling action game where your favorite Ferris the crab and the rust mascot got guns and has taken up the duty to find evildoer languages while managing to keep itself alive. Take part in this awesome adventure and help Ferris be the best ever!"
+categories = ["platformer", "action", "other"]
+repository_url = "//github.com/Andy-Python-Programmer/CallOfFerris"
+image = "/assets/img/call_of_ferris.gif"
+
+[[items]]
 name = "carambolage"
 description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
 categories = ["racing"]
@@ -424,13 +431,6 @@ description = "Rusty Vangers clone"
 categories = ["racing", "rpg", "open-world"]
 repository_url = "//github.com/kvark/vange-rs"
 image = "/assets/img/rustyroad.png"
-
-[[items]]
-name = "Call of Ferris"
-description = "A thrilling action game where your favorite Ferris the crab and the rust mascot got guns and has taken up the duty to find evildoer languages while managing to keep itself alive. Take part in this awesome adventure and help Ferris be the best ever!"
-categories = ["platformer", "action", "other"]
-repository_url = "//github.com/Andy-Python-Programmer/CallOfFerris"
-image = "/assets/img/call_of_ferris.gif"
 
 [[items]]
 name = "Veloren"
