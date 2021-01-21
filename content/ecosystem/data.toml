@@ -378,7 +378,7 @@ categories = ["audio"]
 [[items]]
 name = "graco"
 source = "crates"
-homepage = "https://gitlab.com/chrisrabotin/graco"
+homepage_url = "https://gitlab.com/chrisrabotin/graco"
 categories = ["ai"]
 
 [[items]]
@@ -421,7 +421,7 @@ name = "huxingyi/dust3d"
 source = "github"
 categories = ["tools"]
 gitter_url = "https://dust3d.discourse.group/"
-homepage = "https://dust3d.org/"
+homepage_url = "https://dust3d.org/"
 
 [[items]]
 name = "I3ck/rust-3d"
@@ -607,7 +607,7 @@ categories = ["engines"]
 name = "mun-lang/mun"
 source = "github"
 categories = ["scripting"]
-homepage = "https://mun-lang.org"
+homepage_url = "https://mun-lang.org"
 
 [[items]]
 name = "naia-rs/naia"
@@ -623,19 +623,19 @@ categories = ["math"]
 name = "navmesh"
 source = "crates"
 categories = ["ai"]
-homepage = "https://github.com/PsichiX/navmesh"
+homepage_url = "https://github.com/PsichiX/navmesh"
 
 [[items]]
 name = "ncollide2d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://ncollide.org"
+homepage_url = "https://ncollide.org"
 
 [[items]]
 name = "ncollide3d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://ncollide.org"
+homepage_url = "https://ncollide.org"
 
 [[items]]
 name = "noise"
@@ -646,13 +646,13 @@ categories = ["tools"]
 name = "nphysics2d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://nphysics.org"
+homepage_url = "https://nphysics.org"
 
 [[items]]
 name = "nphysics3d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://nphysics.org"
+homepage_url = "https://nphysics.org"
 
 [[items]]
 name = "nuklear-rust"
@@ -683,7 +683,7 @@ categories = ["tools"]
 name = "olson-sean-k/plexus"
 source = "github"
 categories = ["mesh"]
-homepage = "https://plexus.rs"
+homepage_url = "https://plexus.rs"
 
 [[items]]
 name = "openvr"
@@ -710,7 +710,7 @@ categories = ["math"]
 name = "oxygengine"
 source = "crates"
 categories = ["engines"]
-homepage = "https://github.com/PsichiX/Oxygengine"
+homepage_url = "https://github.com/PsichiX/Oxygengine"
 
 [[items]]
 name = "palette"
@@ -741,7 +741,7 @@ categories = ["physics"]
 name = "physx"
 source = "crates"
 categories = ["physics"]
-homepage = "https://github.com/EmbarkStudios/physx-rs"
+homepage_url = "https://github.com/EmbarkStudios/physx-rs"
 
 [[items]]
 name = "piston"
@@ -922,13 +922,13 @@ categories = ["engines"]
 name = "salva2d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://salva.rs"
+homepage_url = "https://salva.rs"
 
 [[items]]
 name = "salva3d"
 source = "crates"
 categories = ["physics"]
-homepage = "https://salva.rs"
+homepage_url = "https://salva.rs"
 
 [[items]]
 name = "sciter-rs"
@@ -949,7 +949,7 @@ categories = ["2drendering", "audio", "engines", "input", "windowing"]
 name = "sfml"
 source = "crates"
 categories = ["2drendering", "engines"]
-homepage = "https://github.com/jeremyletang/rust-sfml"
+homepage_url = "https://github.com/jeremyletang/rust-sfml"
 
 [[items]]
 name = "sfxr"
@@ -976,7 +976,7 @@ gitter_url = "https://gitter.im/leudz-shipyard/community"
 name = "Siebencorgie/jakar-engine"
 source = "github"
 categories = ["engines"]
-homepage = "https://gitlab.com/Siebencorgie/jakar-engine"
+homepage_url = "https://gitlab.com/Siebencorgie/jakar-engine"
 
 [[items]]
 name = "skulpin"
