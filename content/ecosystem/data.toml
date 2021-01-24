@@ -19,6 +19,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "amethyst/naia"
+source = "github"
+categories = ["networking"]
+
+[[items]]
 name = "amethyst_network"
 source = "crates"
 categories = ["networking"]
@@ -608,11 +613,6 @@ name = "mun-lang/mun"
 source = "github"
 categories = ["scripting"]
 homepage_url = "https://mun-lang.org"
-
-[[items]]
-name = "naia-rs/naia"
-source = "github"
-categories = ["networking"]
 
 [[items]]
 name = "nalgebra"
