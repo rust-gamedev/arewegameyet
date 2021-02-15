@@ -50,6 +50,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "basis-universal"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "beehive"
 source = "crates"
 categories = ["tools"]
@@ -822,6 +827,11 @@ categories = ["engines"]
 name = "quinn"
 source = "crates"
 categories = ["networking"]
+
+[[items]]
+name = "rafx"
+source = "crates"
+categories = ["2drendering", "3drendering"]
 
 [[items]]
 name = "rapier2d"
