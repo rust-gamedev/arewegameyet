@@ -675,6 +675,11 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
+name = "oddio"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "ogmo3"
 source = "crates"
 categories = ["tools"]
