@@ -738,6 +738,11 @@ source = "crates"
 categories = ["animation"]
 
 [[items]]
+name = "passerine"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "pathfinding"
 source = "crates"
 categories = ["ai"]
