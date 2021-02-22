@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="ui vertical stripe">
+<section class="ui vertical stripe">
     <h2 class="ui center aligned icon header">
         <i class="circular game icon"></i>
         <a href="#get-started" id="get-started">
@@ -39,106 +39,118 @@
             or <a href="#chat"><i class="icon chat small"></i>Chat</a>.
         </p>
     </div>
-</div>
+</section>
 
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#chat" id="chat">
+            <i class="chat icon big"></i>
+            Chat
+        </a>
+    </h4>
 
-<h4 class="ui horizontal divider header">
-    <a href="#chat" id="chat">
-        <i class="chat icon big"></i>
-        Chat
-    </a>
-</h4>
-
-<div class="ui vertical stripe">
-    <div class="ui text container">
-        <p>
-            The main meeting places for people doing gamedev in Rust are on <a href="https://discordapp.com/">Discord</a>
-            - there's a #games-and-graphics channel on the <a href="https://bit.ly/rust-community">Rust Community server</a>,
-            as well as a dedicated <a href="https://discord.gg/yNtPTb2">Game Development in Rust server</a>.
-        </p>
-        <p>Many libraries have their own lively gitter chats, which you can find in their descriptions.</p>
-        <p>Also see the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>.</p>
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>
+                The main meeting places for people doing gamedev in Rust are on <a href="https://discordapp.com/">Discord</a>
+                - there's a #games-and-graphics channel on the <a href="https://bit.ly/rust-community">Rust Community server</a>,
+                as well as a dedicated <a href="https://discord.gg/yNtPTb2">Game Development in Rust server</a>.
+            </p>
+            <p>Many libraries have their own lively gitter chats, which you can find in their descriptions.</p>
+            <p>Also see the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>.</p>
+        </div>
     </div>
-</div>
+</section>
 
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#news" id="news">
+            <i class="newspaper icon big"></i>
+            News
+        </a>
+    </h4>
 
-<h4 class="ui horizontal divider header">
-    <a href="#news" id="news">
-        <i class="newspaper icon big"></i>
-        News
-    </a>
-</h4>
-
-<div class="ui vertical stripe">
-    <div class="ui text container">
-        <p>
-            The latest Rust gamedev news are available at:
-            the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>,
-            the monthly  <a href="https://rust-gamedev.github.io/"><i class="icon newspaper small"></i>newsletter</a>,
-            and the <a href="https://twitter.com/rust_gamedev"><i class="icon twitter small"></i>@rust_gamedev</a> Twitter feed.
-        </p>
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>
+                The latest Rust gamedev news are available at:
+                the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>,
+                the monthly  <a href="https://rust-gamedev.github.io/"><i class="icon newspaper small"></i>newsletter</a>,
+                and the <a href="https://twitter.com/rust_gamedev"><i class="icon twitter small"></i>@rust_gamedev</a> Twitter feed.
+            </p>
+        </div>
     </div>
-</div>
+</section>
 
-{% set ecosystem = get_section(path="ecosystem/_index.md") %}
-{{ macros::category_list(section=ecosystem) }}
+<section>
+    {% set ecosystem = get_section(path="ecosystem/_index.md") %}
+    {{ macros::category_list(section=ecosystem) }}
+</section>
 
-{% set games = get_section(path="games/_index.md") %}
-{{ macros::category_list(section=games) }}
+<section>
+    {% set games = get_section(path="games/_index.md") %}
+    {{ macros::category_list(section=games) }}
+</section>
 
-{% set resources = get_section(path="resources/_index.md") %}
-{{ macros::category_list(section=resources) }}
+<section>
+    {% set resources = get_section(path="resources/_index.md") %}
+    {{ macros::category_list(section=resources) }}
+</section>
 
-<h4 class="ui horizontal divider header">
-    <a href="#curators" id="curators">
-        <i class="users icon big"></i>
-        Curators
-    </a>
-</h4>
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#curators" id="curators">
+            <i class="users icon big"></i>
+            Curators
+        </a>
+    </h4>
 
-<div class="ui vertical stripe">
-    <div class="ui text container">
-        <p>
-            The people that help maintain this site.
-        </p>
-    </div>
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>
+                The people that help maintain this site.
+            </p>
+        </div>
 
-    <div class="ui container">
-        <div class="ui three stackable cards">
-            {% set data = load_data(path="content/contributors/data.toml") %}
-            {{ macros::contributors(contributors=data.contributors) }} 
+        <div class="ui container">
+            <div class="ui three stackable cards">
+                {% set data = load_data(path="content/contributors/data.toml") %}
+                {{ macros::contributors(contributors=data.contributors) }} 
 
-            <div class="ui card">
-                <div class="content">
-                    <div class="center aligned description">
-                        Contribute to the site, and add your name here!
+                <div class="ui card">
+                    <div class="content">
+                        <div class="center aligned description">
+                            Contribute to the site, and add your name here!
+                        </div>
                     </div>
+                    <a href="https://github.com/rust-gamedev/arewegameyet" class="ui bottom primary attached button">
+                        <i class="github icon" aria-hidden="true"></i>
+                        Go to GitHub
+                    </a>
                 </div>
-                <a href="https://github.com/rust-gamedev/arewegameyet" class="ui bottom primary attached button">
-                    <i class="github icon" aria-hidden="true"></i>
-                    Go to GitHub
-                </a>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<h4 class="ui horizontal divider header">
-    <a href="#about" id="about">
-        <i class="user icon big"></i>
-        About
-    </a>
-</h4>
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#about" id="about">
+            <i class="user icon big"></i>
+            About
+        </a>
+    </h4>
 
-<div class="ui vertical stripe">
-    <div class="ui text container">
-        <p>
-            <strong>Arewegameyet?</strong> is made by <a href="https://twitter.com/doppioslash"><i class="twitter icon"></i>@doppioslash</a>
-            and powered by <a href="https://github.com/getzola/zola">Zola</a>, a Rust static site generator.
-        </p>
-        <p>
-            Inspired by <a href="https://www.arewewebyet.org/">arewewebyet</a>, and <a href="https://www.arewelearningyet.com/">arewelearningyet</a>.
-        </p>
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>
+                <strong>Arewegameyet?</strong> is made by <a href="https://twitter.com/doppioslash"><i class="twitter icon"></i>@doppioslash</a>
+                and powered by <a href="https://github.com/getzola/zola">Zola</a>, a Rust static site generator.
+            </p>
+            <p>
+                Inspired by <a href="https://www.arewewebyet.org/">arewewebyet</a>, and <a href="https://www.arewelearningyet.com/">arewelearningyet</a>.
+            </p>
+        </div>
     </div>
-</div>
+</section>
 {% endblock content %}

@@ -21,7 +21,7 @@
 {% set columns = section.extra.columns | default(value = "one") %}
 
 {# Heading #}
-<div class="ui vertical stripe">
+<section class="ui vertical stripe">
     <h2 class="ui center aligned icon header">
         <i class="circular icon {{ section.extra.icon }}"></i>
         {{ page.title }}
@@ -29,51 +29,54 @@
     <div class="ui text container">
         <p>{{ page.description }}</p>
     </div>
-</div>
+</section>
 
 {# list all content #}
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
+            <i class="list icon big"></i>
+            {{ section.extra.plural | title }}
+        </a>
+    </h4>
 
-<h4 class="ui horizontal divider header">
-    <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
-        <i class="list icon big"></i>
-        {{ section.extra.plural | title }}
-    </a>
-</h4>
+    <div class="ui vertical stripe">
+        <div class="ui container">
+            <div class="ui stackable cards {{ columns }}">
+                {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
 
-<div class="ui vertical stripe">
-    <div class="ui container">
-        <div class="ui stackable cards {{ columns }}">
-            {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
-
-            {% if config.items %}
-                {% for item in config.items %}
-                    {% if item.categories is containing(page.slug) %}
-                        {{ category_macros::info(item=item, section=section) }}
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
+                {% if config.items %}
+                    {% for item in config.items %}
+                        {% if item.categories is containing(page.slug) %}
+                            {{ category_macros::info(item=item, section=section) }}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-<h4 class="ui horizontal divider header">
-    <a href="#contribute" id="contribute">
-        <i class="chat icon big"></i>
-        Contribute
-    </a>
-</h4>
+<section>
+    <h4 class="ui horizontal divider header">
+        <a href="#contribute" id="contribute">
+            <i class="chat icon big"></i>
+            Contribute
+        </a>
+    </h4>
 
-<div class="ui vertical stripe">
-    <div class="ui text container">
-        <p>Do you know about a missing {{ section.extra.single }}? Did you launch a new {{ section.extra.single }}?</p>
-        <p>
-            Please create a
-            <a href="https://github.com/rust-gamedev/arewegameyet#contribute">pull request</a>
-            or an 
-            <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+{{ section.extra.single }}:+NAME&amp;body=Please+add+{{ section.extra.single }}+to+category:+{{ page.title }}">issue</a>
-            on our GitHub!
-        </p>
-        <p>Looking for a {{ section.extra.single }} you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>Do you know about a missing {{ section.extra.single }}? Did you launch a new {{ section.extra.single }}?</p>
+            <p>
+                Please create a
+                <a href="https://github.com/rust-gamedev/arewegameyet#contribute">pull request</a>
+                or an 
+                <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+{{ section.extra.single }}:+NAME&amp;body=Please+add+{{ section.extra.single }}+to+category:+{{ page.title }}">issue</a>
+                on our GitHub!
+            </p>
+            <p>Looking for a {{ section.extra.single }} you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+        </div>
     </div>
-</div>
+</section>
 {% endblock content %}
