@@ -115,3 +115,14 @@ a {
 nav a:not(.button) {
     height: 100%;
 }
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+
+    &:hover, &:focus {
+        color: rgba($color: #fff, $alpha: 0.5);
+        text-decoration: underline;
+    }
+}
