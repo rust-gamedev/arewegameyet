@@ -42,7 +42,7 @@
 
     <div class="ui vertical stripe">
         <div class="ui container">
-            <div class="ui stackable cards {{ columns }}">
+            <ul class="ui stackable cards nolist {{ columns }}">
                 {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
 
                 {% if config.items %}
@@ -52,7 +52,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-            </div>
+            </ul>
         </div>
     </div>
 </section>
