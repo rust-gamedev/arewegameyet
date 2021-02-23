@@ -1,10 +1,10 @@
 {% macro category_list(section) %}
-    <h4 class="ui horizontal divider header">
+    <h3 class="ui horizontal divider small header">
         <a href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}">
             <i class="icon big {{ section.extra.icon }}"></i>
             {{ section.title }}
         </a>
-    </h4>
+    </h3>
 
     <div class="ui vertical stripe">
         {% if section.description %}

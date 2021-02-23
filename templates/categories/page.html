@@ -22,10 +22,10 @@
 
 {# Heading #}
 <section class="ui vertical stripe">
-    <h2 class="ui center aligned icon header">
+    <h1 class="ui center aligned icon header">
         <i class="circular icon {{ section.extra.icon }}"></i>
         {{ page.title }}
-    </h2>
+    </h1>
     <div class="ui text container">
         <p>{{ page.description }}</p>
     </div>
@@ -33,12 +33,12 @@
 
 {# list all content #}
 <section>
-    <h4 class="ui horizontal divider header">
+    <h2 class="ui horizontal divider small header">
         <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
             <i class="list icon big"></i>
             {{ section.extra.plural | title }}
         </a>
-    </h4>
+    </h2>
 
     <div class="ui vertical stripe">
         <div class="ui container">
@@ -58,12 +58,12 @@
 </section>
 
 <section>
-    <h4 class="ui horizontal divider header">
+    <h2 class="ui horizontal divider small header">
         <a href="#contribute" id="contribute">
             <i class="chat icon big"></i>
             Contribute
         </a>
-    </h4>
+    </h2>
 
     <div class="ui vertical stripe">
         <div class="ui text container">
