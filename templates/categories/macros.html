@@ -43,7 +43,7 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
-<div class="ui card">
+<li class="ui card">
     {% if item.image %}
          {% if primary_url %}
             <a class="image" href="{{ primary_url }}">
@@ -150,5 +150,5 @@
             </div>
         </div>
     {% endif %}
-</div>
+</li>
 {% endmacro info %}

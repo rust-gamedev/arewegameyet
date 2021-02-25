@@ -42,40 +42,60 @@
     </div>
 
     <div class="pusher">
-        <div class="ui inverted vertical masthead center aligned segment">
-            <div class="ui container">
-                <div class="ui large borderless inverted menu">
-                    <a class="toc item">
-                        <i class="sidebar icon"></i>
-                    </a>
-                    <a class="item" href="/">Home</a>
-                    <a class="item" href="/#chat">Chat</a>
-                    <a class="item" href="/#news">News</a>
-                    <a class="item" href="/#ecosystem">Ecosystem</a>
-                    <a class="item" href="/#games">Games</a>
-                    <a class="item" href="/#resources">Resources</a>
-                    <a class="item" href="/#curators">Curators</a>
-                    <a class="item" href="/#about">About</a>
-                    <div class="right menu">
+        <header class="ui inverted vertical masthead center aligned segment">
+            <nav class="ui container" aria-label="site">
+                <ul class="ui large borderless inverted menu nolist">
+                    <li>
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#chat">Chat</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#news">News</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#ecosystem">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#games">Games</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#curators">Curators</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#about">About</a>
+                    </li>
+                    <li class="right menu">
                         <div class="item">
                             <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </li>
+                </ul>
+            </nav>
 
             <div class="ui text container">
                 {% block masthead %}
-                    <h2 class="ui inverted header">
+                    <p class="ui inverted large header">
                         Are we game yet?
-                    </h2>
+                    </p>
                 {% endblock %}
             </div>
-        </div>
+        </header>
 
-        {% block content %} {% endblock %}
+        <main>
+            {% block content %} {% endblock %}
+        </main>
 
-        <div class="ui inverted vertical footer segment">
+        <footer class="ui inverted vertical footer segment">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
                     <div class="three wide column">
@@ -96,7 +116,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 
     <a href="https://github.com/rust-gamedev/arewegameyet" class="github-corner" aria-label="View source on Github">
