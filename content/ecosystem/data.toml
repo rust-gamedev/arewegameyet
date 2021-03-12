@@ -220,6 +220,11 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "EmbarkStudios/rust-gpu"
+source = "github"
+categories = ["shader"]
+
+[[items]]
 name = "enet"
 source = "crates"
 categories = ["networking"]
