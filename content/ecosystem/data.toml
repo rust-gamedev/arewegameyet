@@ -120,6 +120,11 @@ source = "github"
 categories = ["engines"]
 
 [[items]]
+name = "chess-engine"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "claxon"
 source = "crates"
 categories = ["audio"]
