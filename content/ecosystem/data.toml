@@ -200,6 +200,11 @@ source = "crates"
 categories = ["tools", "mesh"]
 
 [[items]]
+name = "distill"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "doryen-rs"
 source = "crates"
 categories = ["engines"]
