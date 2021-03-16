@@ -141,6 +141,12 @@ categories = ["books"]
 homepage_url = "//doc.rust-lang.org/book/"
 
 [[items]]
+name = "Triangle from Scratch"
+description = "A series about drawing a triangle without using any outside crates"
+categories = ["tutorials", "books"]
+homepage_url = "//rust-tutorials.github.io/triangle-from-scratch"
+
+[[items]]
 name = "Using Rust For Game Development, by Catherine West"
 description = "Making games using Rust, Lua and the ECS design pattern"
 categories = ["articles", "videos"]
