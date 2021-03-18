@@ -159,6 +159,13 @@ homepage_url = "//www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_wr
 image = "/assets/img/garden.jpg"
 
 [[items]]
+name = "Helix Repair"
+description = "In Helix Repair, your task is to repair a broken DNA sequence by correcting nucleobases. You have 20 seconds!"
+categories = ["puzzle", "released"]
+homepage_url = "//coffejunkstudio.itch.io/helix-repair"
+image = "/assets/img/helix-repair.gif"
+
+[[items]]
 name = "hematite"
 description = "A simple Minecraft written in Rust with the Piston game engine"
 categories = ["rpg", "open-world"]
