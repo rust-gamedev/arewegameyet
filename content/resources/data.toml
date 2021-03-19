@@ -97,7 +97,7 @@ categories = ["articles"]
 homepage_url = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
 
 [[items]]
-name = "Project Necromancy: How to Revive a Dead Rust Project "
+name = "Project Necromancy: How to Revive a Dead Rust Project"
 description = "A talk about reviving space_shooter_rs through effective planning, refactoring, and documentation (RustFest Global 2020)"
 categories = ["videos"]
 homepage_url = "//youtu.be/qoCryIy4bFE"
