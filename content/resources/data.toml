@@ -159,6 +159,12 @@ categories = ["articles", "videos"]
 homepage_url = "//kyren.github.io/2018/09/14/rustconf-talk.html"
 
 [[items]]
+name = "Why Rust is the Future of Game Development"
+description = "Details why Rust has the potential to be significant for the future of programming in games"
+categories = ["articles"]
+homepage_url = "//thefuntastic.com/blog/why-rust-is-the-future-game-dev"
+
+[[items]]
 name = "Winit Rust and Pixels"
 description = "Introduction to Winit Rust and Pixels (hardware accelerated framebuffer)"
 categories = ["articles"]
