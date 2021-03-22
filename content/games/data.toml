@@ -407,14 +407,14 @@ name = "Tetris Bane"
 description = "A Tetris clone with a deliberately frustrating set of blocks. There's also a classic mode for the purists, an ultra hard metal mode and even a chill mode."
 categories = ["puzzle"]
 homepage_url = "//andrew-jones.itch.io/tetris-bane"
-repository_url = "github.com/andii1701/tetris-bane"
+repository_url = "//github.com/andii1701/tetris-bane"
 image = "/assets/img/tetris-bane.png"
 
 [[items]]
 name = "Theta Wave"
 description = "A space shooter game that strives to be an entry point for new game developers to make their first contributions."
 categories = ["action"]
-repository_url = "github.com/amethyst/theta-wave"
+repository_url = "//github.com/amethyst/theta-wave"
 image = "/assets/img/theta-wave.png"
 
 [[items]]
