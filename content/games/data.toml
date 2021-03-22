@@ -411,6 +411,13 @@ repository_url = "github.com/andii1701/tetris-bane"
 image = "/assets/img/tetris-bane.png"
 
 [[items]]
+name = "Theta Wave"
+description = "A space shooter game that strives to be an entry point for new game developers to make their first contributions."
+categories = ["action"]
+repository_url = "github.com/amethyst/theta-wave"
+image = "/assets/img/theta-wave.png"
+
+[[items]]
 name = "Time Spiders"
 description = "They live, work, and die on a time machine they didn't invent and can't control. You are their Overlord. Help them learn, grow, and thrive."
 categories = ["simulation", "strategy"]
