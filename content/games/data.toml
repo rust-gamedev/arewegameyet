@@ -253,6 +253,14 @@ repository_url = "//github.com/OsnaCS/plantex"
 image = "/assets/img/plantex.jpg"
 
 [[items]]
+name = "Portal explorer"
+description = "A web visualization of mind-blowing portals using ray-tracing"
+categories = ["other", "simulation"]
+homepage_url = "//optozorax.github.io/portal"
+repository_url = "//github.com/optozorax/portal"
+image = "/assets/img/portal.gif"
+
+[[items]]
 name = "Pushin' Boxes"
 description = "Play as a little robot (named プシン) as it pushes boxes around inside a warehouse to organize them"
 categories = ["puzzle", "released"]
