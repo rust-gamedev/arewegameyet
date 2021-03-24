@@ -232,6 +232,14 @@ repository_url = "//github.com/MaxBittker/orb.farm"
 image = "/assets/img/orb-farm.jpeg"
 
 [[items]]
+name = "Orbital Decay"
+description = "A turn-based tactical roguelike with a focus on ranged combat. Deal enough damage to enemies to get through their armour without breaching the hull of the station, or risk being pulled into the void."
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/orbital-decay"
+repository_url = "//github.com/stevebob/orbital-decay"
+image = "/assets/img/orbital-decay.png"
+
+[[items]]
 name = "Oxidator"
 description = "A real-time strategy game/engine written with Rust and WebGPU."
 categories = ["strategy"]
