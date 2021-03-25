@@ -412,6 +412,13 @@ repository_url = "//github.com/andreivasiliu/stacked-worlds"
 image = "/assets/img/stacked_worlds.gif"
 
 [[items]]
+name = "Stellary"
+description = "Stellary is a fast-paced artillery game that promises exciting battles and real-time gravity physics."
+categories = ["simulation", "action"]
+homepage_url = "//coffejunkstudio.itch.io/stellary"
+image = "/assets/img/stellary.png"
+
+[[items]]
 name = "Sulis"
 description = "An RPG with turn based, tactical combat, deep character customization and an engaging storyline."
 categories = ["rpg", "strategy"]
