@@ -485,10 +485,10 @@ image = "/assets/img/vigilant-steel.png"
 
 [[items]]
 name = "Way of Rhea"
-description = "A puzzle platformer that takes place in a world where you can only interact with objects that match your current color."
+description = "Way of Rhea is a picturesque puzzle platformer—without the platforming."
 categories = ["puzzle"]
-homepage_url = "//store.steampowered.com/app/1110620/Way_of_Rhea"
-image = "/assets/img/way_of_rhea.gif"
+homepage_url = "//store.steampowered.com/app/1110620?utm_campaign=ambient&utm_source=awgy"
+image = "/assets/img/way_of_rhea.png"
 
 [[items]]
 name = "YAVSS"
