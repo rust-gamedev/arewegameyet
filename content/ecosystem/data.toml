@@ -587,6 +587,12 @@ source = "crates"
 categories = ["mesh"]
 
 [[items]]
+name = "message-io"
+source = "crates"
+categories = ["networking"]
+homepage_url = "https://github.com/lemunozm/message-io"
+
+[[items]]
 name = "mgf"
 source = "crates"
 categories = ["physics"]
