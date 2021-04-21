@@ -722,6 +722,11 @@ categories = ["mesh"]
 homepage_url = "https://plexus.rs"
 
 [[items]]
+name = "opensubdiv-petite"
+source = "crates"
+categories = ["mesh", "3drendering"]
+
+[[items]]
 name = "openvr"
 source = "crates"
 categories = ["vr"]
