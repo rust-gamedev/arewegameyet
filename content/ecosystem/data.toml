@@ -619,6 +619,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "mlua"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "mod_player"
 source = "crates"
 categories = ["audio"]
