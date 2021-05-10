@@ -250,7 +250,7 @@ image = "/assets/img/oxidator.gif"
 name = "Pascal Penguin"
 description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
 categories = ["puzzle", "released"]
-homepage_url = "//www.luduminis.com/pascal/about/"
+homepage_url = "http://www.luduminis.com/pascal/about/"
 image = "/assets/img/pascal_penguin.png"
 
 [[items]]
