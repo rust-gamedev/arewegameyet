@@ -70,6 +70,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "bevy_ecs"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
