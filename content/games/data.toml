@@ -426,6 +426,13 @@ homepage_url = "//sulisgame.com/"
 image = "/assets/img/sulis.png"
 
 [[items]]
+name = "Super Jeff"
+description = "Small 2d platformer game using SDL2 and glam. Mostly to make fun of my friends if I'm being honest :)"
+categories = ["action", "platformer"]
+repository_url = "//github.com/fabiojmendes/super-jeff"
+image = "/assets/img/super-jeff.gif"
+
+[[items]]
 name = "Tetris Bane"
 description = "A Tetris clone with a deliberately frustrating set of blocks. There's also a classic mode for the purists, an ultra hard metal mode and even a chill mode."
 categories = ["puzzle"]
