@@ -661,6 +661,12 @@ categories = ["scripting"]
 homepage_url = "https://mun-lang.org"
 
 [[items]]
+name = "naga"
+source = "crates"
+categories = ["shader"]
+homepage_url = "https://github.com/gfx-rs/naga"
+
+[[items]]
 name = "nalgebra"
 source = "crates"
 categories = ["math"]
