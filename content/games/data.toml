@@ -94,6 +94,13 @@ repository_url = "//github.com/puppetmaster-/compact-space"
 image = "/assets/img/compact-space.png"
 
 [[items]]
+name = "Crab Sweeper"
+description = "A mine-sweeper clone."
+categories = ["puzzle"]
+repository_url = "//github.com/SethRAH/crab_sweeper"
+image = "/assets/img/crab-sweeper.png"
+
+[[items]]
 name = "Crate Before Attack"
 description = "A multiplayer grappling-hook strategy about frogs."
 categories = ["action", "strategy"]
