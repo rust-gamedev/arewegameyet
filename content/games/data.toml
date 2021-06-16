@@ -98,7 +98,7 @@ name = "Crab Sweeper"
 description = "A mine-sweeper clone."
 categories = ["puzzle"]
 repository_url = "//github.com/SethRAH/crab_sweeper"
-image = "/assets/img/crate-before-attack.gif"
+image = "/assets/img/crab-sweeper.png"
 
 [[items]]
 name = "Crate Before Attack"
