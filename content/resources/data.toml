@@ -11,6 +11,12 @@ categories = ["lists"]
 homepage_url = "//github.com/bevyengine/awesome-bevy"
 
 [[items]]
+name = "Awesome Quads"
+description = "A curated list of links to miniquad/macroquad-related code & resources"
+categories = ["lists"]
+homepage_url = "//github.com/ozkriff/awesome-quads"
+
+[[items]]
 name = "Awesome Rust"
 description = "A curated list of Rust code and resources, inspired by other awesome lists"
 categories = ["lists"]
