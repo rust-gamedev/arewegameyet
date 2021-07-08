@@ -255,6 +255,15 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "Ellie Language"
+description = "A type-safe scripting language"
+categories = ["scripting"]
+image = "/assets/img/ellie_language.png"
+repository_url = "https://github.com/behemehal/Ellie-Language"
+homepage_url = "https://ellie.behemehal.net"
+gitter_url = "https://gitter.im/ellie-lang/community"
+
+[[items]]
 name = "EmbarkStudios/rust-gpu"
 source = "github"
 categories = ["shader"]
@@ -1230,15 +1239,6 @@ categories = ["windowing"]
 name = "wlambda"
 source = "crates"
 categories = ["scripting"]
-
-[[items]]
-name = "Ellie Language"
-description = "A type-safe scripting language"
-categories = ["scripting"]
-image = "/assets/img/ellie_language.png"
-repository_url = "https://github.com/behemehal/Ellie-Language"
-homepage_url = "https://ellie.behemehal.net"
-gitter_url = "https://gitter.im/ellie-lang/community"
 
 [[items]]
 name = "wrapped2d"
