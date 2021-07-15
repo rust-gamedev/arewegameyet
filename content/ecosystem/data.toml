@@ -1249,3 +1249,8 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "quilkin"
+source = "crates"
+categories = ["networking"]
