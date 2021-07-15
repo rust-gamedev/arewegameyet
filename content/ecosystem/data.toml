@@ -885,6 +885,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "quilkin"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "quinn"
 source = "crates"
 categories = ["networking"]
@@ -1249,8 +1254,3 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
-
-[[items]]
-name = "quilkin"
-source = "crates"
-categories = ["networking"]
