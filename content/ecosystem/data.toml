@@ -885,6 +885,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "quilkin"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "quinn"
 source = "crates"
 categories = ["networking"]
