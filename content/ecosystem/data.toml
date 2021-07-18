@@ -190,6 +190,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "crystalorb"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "datachannel"
 source = "crates"
 categories = ["networking"]
