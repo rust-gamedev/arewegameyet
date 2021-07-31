@@ -1146,6 +1146,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "throne"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "tiled"
 source = "crates"
 categories = ["tools"]
