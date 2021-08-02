@@ -486,7 +486,7 @@ image = "/assets/img/rustyroad.png"
 [[items]]
 name = "Veloren"
 description = "An open source multiplayer voxel RPG game currently in alpha development."
-categories = ["rpg", "open-world"]
+categories = ["rpg", "open-world", "simulation"]
 homepage_url = "//veloren.net"
 image = "/assets/img/veloren.jpg"
 
