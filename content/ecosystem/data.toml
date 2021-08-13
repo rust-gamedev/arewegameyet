@@ -75,6 +75,11 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "bgfx-rs"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
