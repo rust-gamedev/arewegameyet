@@ -920,6 +920,12 @@ source = "crates"
 categories = ["physics"]
 
 [[items]]
+name = "raui"
+source = "crates"
+categories = ["ui"]
+homepage_url = "https://raui-labs.github.io/raui/"
+
+[[items]]
 name = "raylib"
 source = "crates"
 categories = ["engines"]
