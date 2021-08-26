@@ -97,7 +97,7 @@ categories = ["2drendering"]
 [[items]]
 name = "blue_engine"
 source = "crates"
-categories = ["game engine", "2drendering", "3drendering"]
+categories = ["engines", "2drendering", "3drendering"]
 
 [[items]]
 name = "bmfont"
