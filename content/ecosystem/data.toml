@@ -95,6 +95,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "blue_engine"
+source = "crates"
+categories = ["engines", "2drendering", "3drendering"]
+
+[[items]]
 name = "bmfont"
 source = "crates"
 categories = ["textrendering"]
