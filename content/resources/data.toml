@@ -165,6 +165,12 @@ categories = ["tutorials", "books"]
 homepage_url = "//rust-tutorials.github.io/triangle-from-scratch"
 
 [[items]]
+name = "Trig-less Line of Sight Algorithm in Two Dimensions"
+description = "A tutorial on how to write a line of sight algorithm for 2D games without using trigonometry or square roots"
+categories = ["tutorials"]
+homepage_url = "//basstabs.github.io/2d-line-of-sight"
+
+[[items]]
 name = "Using Rust For Game Development, by Catherine West"
 description = "Making games using Rust, Lua and the ECS design pattern"
 categories = ["articles", "videos"]
