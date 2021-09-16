@@ -376,6 +376,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "ggrs"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "Gigoteur/UnicornConsole"
 source = "github"
 categories = ["engines"]
