@@ -19,11 +19,6 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
-name = "amethyst/naia"
-source = "github"
-categories = ["networking"]
-
-[[items]]
 name = "amethyst_network"
 source = "crates"
 categories = ["networking"]
@@ -694,6 +689,11 @@ name = "naga"
 source = "crates"
 categories = ["shader"]
 homepage_url = "https://github.com/gfx-rs/naga"
+
+[[items]]
+name = "naia-rs/naia"
+source = "github"
+categories = ["networking"]
 
 [[items]]
 name = "nalgebra"
