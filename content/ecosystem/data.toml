@@ -1036,6 +1036,14 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "ruwren"
+description = "A Rustified binding for Wren"
+source = "crates"
+categories = ["scripting"]
+repository_url = "https://github.com/Jengamon/ruwren"
+homepage_url = "http://wren.io"
+
+[[items]]
 name = "salva2d"
 source = "crates"
 categories = ["physics"]
