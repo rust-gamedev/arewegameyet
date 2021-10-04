@@ -224,6 +224,14 @@ repository_url = "//github.com/stevebob/meters-below-the-ground"
 image = "/assets/img/meters-below-ground.png"
 
 [[items]]
+name = "Mk48.io" 
+description = "Mk48.io is an online multiplayer naval combat game" 
+categories = ["action", "strategy", "simulation", "released"]
+image = "/assets/img/mk48io.png"
+repository_url = "https://github.com/SoftbearStudios/mk48"
+homepage_url = "https://mk48.io"
+
+[[items]]
 name = "Nox Futura"
 description = "An open-source game combining elements of Dwarf Fortress, Civilization, Warhammer, Douglas Adams, and more."
 categories = ["simulation", "strategy"]
