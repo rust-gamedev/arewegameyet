@@ -1041,7 +1041,7 @@ description = "A Rustified binding for Wren"
 source = "crates"
 categories = ["scripting"]
 repository_url = "https://github.com/Jengamon/ruwren"
-homepage_url = "http://wren.io"
+homepage_url = "https://wren.io"
 
 [[items]]
 name = "salva2d"
