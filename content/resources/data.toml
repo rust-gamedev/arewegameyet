@@ -5,12 +5,6 @@ categories = ["article"]
 homepage_url = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
 
 [[items]]
-name = "Awesome Bevy"
-description = "An awesome-style list of cool Bevy projects"
-categories = ["lists"]
-homepage_url = "//github.com/bevyengine/awesome-bevy"
-
-[[items]]
 name = "Awesome Quads"
 description = "A curated list of links to miniquad/macroquad-related code & resources"
 categories = ["lists"]
@@ -27,6 +21,12 @@ name = "Awesome wgpu"
 description = "A curated list of wgpu code and resources"
 categories = ["lists"]
 homepage_url = "//github.com/rofrol/awesome-wgpu"
+
+[[items]]
+name = "Bevy Assets"
+description = "A collection of Bevy assets, plugins, learning resources, and apps made by Bevy's community"
+categories = ["lists"]
+homepage_url = "//bevyengine.org/assets"
 
 [[items]]
 name = "Building WebGPU with Rust"
