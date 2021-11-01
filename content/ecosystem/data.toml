@@ -1175,6 +1175,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "three-d"
+source = "crates"
+categories = ["3drendering", "2drendering"]
+
+[[items]]
 name = "throne"
 source = "crates"
 categories = ["scripting"]
@@ -1198,6 +1203,11 @@ categories = ["3dformatloaders"]
 name = "torchbear"
 source = "crates"
 categories = ["scripting"]
+
+[[items]]
+name = "tri-mesh"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "turbine"
