@@ -139,6 +139,12 @@ categories = ["tutorials"]
 homepage_url = "//github.com/sunjay/rust-simple-game-dev-tutorial"
 
 [[items]]
+name = "Rust GameDev Frameworks and Libraries"
+description = "List of curated frameworks by the Game Development in Rust Discord server"
+categories = ["lists"]
+homepage_url = "//github.com/dasifefe/rust-game-development-frameworks"
+
+[[items]]
 name = "Rust Roguelike Tutorial by Herbert Wolverson"
 description = "A deep and detailed tutorial about designing and implementing roguelike games in Rust"
 categories = ["books", "tutorials"]
