@@ -1308,3 +1308,18 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "turbulence"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
+name = "netstack"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
+name = "jaynus/netcode.io"
+source = "github"
+categories = ["networking"]
