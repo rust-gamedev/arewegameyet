@@ -86,6 +86,13 @@ homepage_url = "//nativesystems.itch.io/colony"
 image = "/assets/img/colony-genesis.png"
 
 [[items]]
+name = "Color Columns"
+description = "A falling-blocks-type 2D game with a simple but addictive gameplay"
+categories = ["puzzle"]
+repository_url = "//github.com/rdrmic/color-columns"
+image = "/assets/img/color-columns.png"
+
+[[items]]
 name = "Compact Space"
 description = "How long can you stay alive?"
 categories = ["action"]
