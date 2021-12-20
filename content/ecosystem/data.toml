@@ -1323,3 +1323,8 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "vulkanalia"
+source = "crates"
+categories = ["3drendering"]
