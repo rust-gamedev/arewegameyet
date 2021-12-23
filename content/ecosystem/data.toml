@@ -711,6 +711,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "nannou"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "navmesh"
 source = "crates"
 categories = ["ai"]
