@@ -544,6 +544,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "EmbarkStudios/kajiya"
+source = "github"
+categories = ["3drendering"]
+
+[[items]]
 name = "keeshond_datapack"
 source = "crates"
 categories = ["tools"]
