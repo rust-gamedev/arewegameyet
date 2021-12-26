@@ -274,6 +274,11 @@ homepage_url = "https://ellie.behemehal.net"
 gitter_url = "https://gitter.im/ellie-lang/community"
 
 [[items]]
+name = "EmbarkStudios/kajiya"
+source = "github"
+categories = ["3drendering"]
+
+[[items]]
 name = "EmbarkStudios/rust-gpu"
 source = "github"
 categories = ["shader"]
@@ -704,6 +709,11 @@ categories = ["networking"]
 name = "nalgebra"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "nannou"
+source = "crates"
+categories = ["engines"]
 
 [[items]]
 name = "navmesh"
