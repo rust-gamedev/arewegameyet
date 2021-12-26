@@ -274,6 +274,11 @@ homepage_url = "https://ellie.behemehal.net"
 gitter_url = "https://gitter.im/ellie-lang/community"
 
 [[items]]
+name = "EmbarkStudios/kajiya"
+source = "github"
+categories = ["3drendering"]
+
+[[items]]
 name = "EmbarkStudios/rust-gpu"
 source = "github"
 categories = ["shader"]
@@ -704,6 +709,11 @@ categories = ["networking"]
 name = "nalgebra"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "nannou"
+source = "crates"
+categories = ["engines"]
 
 [[items]]
 name = "navmesh"
@@ -1285,6 +1295,11 @@ source = "crates"
 categories = ["tools", "mesh"]
 
 [[items]]
+name = "vulkanalia"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "vulkano"
 source = "crates"
 categories = ["3drendering"]
@@ -1325,6 +1340,6 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
-name = "vulkanalia"
-source = "crates"
-categories = ["3drendering"]
+name = "ziyasal/natura"
+source = "github"
+categories = ["animation"]
