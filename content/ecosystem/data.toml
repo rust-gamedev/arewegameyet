@@ -1295,6 +1295,11 @@ source = "crates"
 categories = ["tools", "mesh"]
 
 [[items]]
+name = "vulkanalia"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "vulkano"
 source = "crates"
 categories = ["3drendering"]
