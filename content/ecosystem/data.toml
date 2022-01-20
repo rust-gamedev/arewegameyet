@@ -1128,7 +1128,7 @@ name = "skulpin"
 source = "crates"
 categories = ["2drendering"]
 
-[[items]
+[[items]]
 name = ["softbuffer"]
 source = ["crates"]
 categories = ["windowing", "ui", "tools"]
