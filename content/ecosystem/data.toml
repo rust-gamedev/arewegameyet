@@ -1175,6 +1175,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "tachyon-networking"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "tcod"
 source = "crates"
 categories = ["tools"]
