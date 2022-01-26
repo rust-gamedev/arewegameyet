@@ -966,6 +966,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "rend3"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "rendology"
 source = "crates"
 categories = ["3drendering"]
