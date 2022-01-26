@@ -274,6 +274,11 @@ homepage_url = "https://ellie.behemehal.net"
 gitter_url = "https://gitter.im/ellie-lang/community"
 
 [[items]]
+name = "EmbarkStudios/kajiya"
+source = "github"
+categories = ["3drendering"]
+
+[[items]]
 name = "EmbarkStudios/rust-gpu"
 source = "github"
 categories = ["shader"]
@@ -706,6 +711,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "nannou"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "navmesh"
 source = "crates"
 categories = ["ai"]
@@ -1119,6 +1129,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "softbuffer"
+source = "crates"
+categories = ["windowing", "ui", "tools"]
+
+[[items]]
 name = "soloud"
 source = "crates"
 categories = ["audio"]
@@ -1163,6 +1178,11 @@ categories = ["ai"]
 name = "superluminal-perf"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "tachyon-networking"
+source = "crates"
+categories = ["networking"]
 
 [[items]]
 name = "tcod"
@@ -1285,6 +1305,11 @@ source = "crates"
 categories = ["tools", "mesh"]
 
 [[items]]
+name = "vulkanalia"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "vulkano"
 source = "crates"
 categories = ["3drendering"]
@@ -1323,3 +1348,8 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "ziyasal/natura"
+source = "github"
+categories = ["animation"]
