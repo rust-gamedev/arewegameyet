@@ -781,6 +781,13 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "off-rs"
+source = "crates"
+categories = ["3dformatloaders"]
+crate_url = "https://crates.io/crates/off-rs"
+repository_url = "https://github.com/michidk/off-rs"
+
+[[items]]
 name = "ogmo3"
 source = "crates"
 categories = ["tools"]
