@@ -781,6 +781,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "off-rs"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "ogmo3"
 source = "crates"
 categories = ["tools"]
