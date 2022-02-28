@@ -1185,6 +1185,11 @@ source = "crates"
 categories = ["ai"]
 
 [[items]]
+name = "stick"
+source = "crates"
+categories = ["input"]
+
+[[items]]
 name = "superluminal-perf"
 source = "crates"
 categories = ["tools"]
