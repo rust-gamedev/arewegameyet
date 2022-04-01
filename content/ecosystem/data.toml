@@ -1350,6 +1350,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "wgpu_tokio"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "winit"
 source = "crates"
 categories = ["windowing"]
