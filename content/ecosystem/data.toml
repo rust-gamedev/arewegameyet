@@ -284,6 +284,11 @@ source = "github"
 categories = ["shader"]
 
 [[items]]
+name = "encase"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "enet"
 source = "crates"
 categories = ["networking"]
