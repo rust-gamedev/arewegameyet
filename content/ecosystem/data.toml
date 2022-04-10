@@ -1076,6 +1076,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "rusty-d3d12"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "ruwren"
 description = "A Rustified binding for Wren"
 source = "crates"
