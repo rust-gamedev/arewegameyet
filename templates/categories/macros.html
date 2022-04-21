@@ -6,7 +6,7 @@
 
 {% if item.source %}
     {% if item.source == 'crates' %}
-        {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name, format="json") %}
+        {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name ~ "?include=", format="json", headers=["User-Agent=arewegameyet (gamedev-wg@rust-lang.org)"]) %}
         {# human readable name #}
         {% set name = data.crate.name %}
         {# Github/Gitlab/Etc. repository #}
