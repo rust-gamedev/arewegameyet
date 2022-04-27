@@ -1071,14 +1071,14 @@ source = "crates"
 categories = ["textrendering"]
 
 [[items]]
-name = "rusty_engine"
-source = "crates"
-categories = ["engines"]
-
-[[items]]
 name = "rusty-d3d12"
 source = "crates"
 categories = ["3drendering"]
+
+[[items]]
+name = "rusty_engine"
+source = "crates"
+categories = ["engines"]
 
 [[items]]
 name = "ruwren"
