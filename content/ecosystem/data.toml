@@ -355,6 +355,16 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "fyrox"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
+name = "fyrox-sound"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "gate"
 source = "crates"
 categories = ["engines"]
@@ -994,16 +1004,6 @@ categories = ["3drendering"]
 name = "rendy"
 source = "crates"
 categories = ["3drendering"]
-
-[[items]]
-name = "rg3d"
-source = "crates"
-categories = ["engines"]
-
-[[items]]
-name = "rg3d-sound"
-source = "crates"
-categories = ["audio"]
 
 [[items]]
 name = "rhai"
