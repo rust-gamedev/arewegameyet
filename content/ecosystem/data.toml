@@ -646,6 +646,12 @@ categories = ["engines"]
 homepage_url = "https://github.com/not-fl3/miniquad"
 
 [[items]]
+name = "markusmoenig/Eldiron"
+source = "github"
+categories = ["engines"]
+homepage_url = "https://eldiron.com/"
+
+[[items]]
 name = "meshopt"
 source = "crates"
 categories = ["mesh"]
