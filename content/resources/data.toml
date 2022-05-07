@@ -67,6 +67,12 @@ categories = ["articles"]
 homepage_url = "//nyxtom.dev/2020/10/08/framebuffers/"
 
 [[items]]
+name = "Game Development with Rust and WebAssembly by Eric Smith"
+description = "Learn how to run Rust on the web while building an endless runner"
+categories = ["books", "tutorials"]
+homepage_url = "https://subscription.packtpub.com/product/game_development/9781801070973"
+
+[[items]]
 name = "Game Server in 150 lines of Rust"
 description = "This tutorial will show you how to write a simple game server"
 categories = ["tutorials"]
