@@ -14,16 +14,6 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
-name = "amethyst"
-source = "crates"
-categories = ["engines"]
-
-[[items]]
-name = "amethyst_network"
-source = "crates"
-categories = ["networking"]
-
-[[items]]
 name = "aseprite"
 source = "crates"
 categories = ["tools"]
