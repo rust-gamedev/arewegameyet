@@ -1311,6 +1311,12 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "vach"
+description = "A simple modular archiving format, written in pure Rust"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "vecmath"
 source = "crates"
 categories = ["math"]
