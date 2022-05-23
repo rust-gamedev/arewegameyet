@@ -559,6 +559,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "inline_tweak"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "jaynus/netcode.io"
 source = "github"
 categories = ["networking"]
