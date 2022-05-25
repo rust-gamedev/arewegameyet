@@ -145,6 +145,12 @@ categories = ["books"]
 homepage_url = "//doc.rust-lang.org/stable/rust-by-example/"
 
 [[items]]
+name = "Rust Game Development 2022"
+description = "A talk by Herbert Wolverson (Rust Würzburg)"
+categories = ["videos"]
+homepage_url = "https://youtube.com/watch?v=UPO8hPp9MLo"
+
+[[items]]
 name = "Rust game development tutorial with specs ECS and SDL2"
 description = "Each commit in this repo is a step in a game development tutorial"
 categories = ["tutorials"]
