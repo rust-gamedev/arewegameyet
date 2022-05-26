@@ -501,6 +501,11 @@ source = "github"
 categories = ["engines"]
 
 [[items]]
+name = "hotham"
+source = "crates"
+categories = ["engines", "vr"]
+
+[[items]]
 name = "hound"
 source = "crates"
 categories = ["audio"]
