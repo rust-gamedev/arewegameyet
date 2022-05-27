@@ -725,6 +725,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "molt"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "mun-lang/mun"
 source = "github"
 categories = ["scripting"]
