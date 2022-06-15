@@ -785,6 +785,12 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "notan"
+source = "crates"
+categories = ["2drendering", "audio", "engines", "textrendering", "input", "windowing"]
+homepage_url = "https://nazariglez.github.io/notan-web/"
+
+[[items]]
 name = "nphysics2d"
 source = "crates"
 categories = ["physics"]
