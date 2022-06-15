@@ -1415,3 +1415,8 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name = "npc-engine-core"
+source = "crates"
+categories = ["ai"]
