@@ -791,6 +791,11 @@ categories = ["2drendering", "audio", "engines", "textrendering", "input", "wind
 homepage_url = "https://nazariglez.github.io/notan-web/"
 
 [[items]]
+name = "npc-engine-core"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "nphysics2d"
 source = "crates"
 categories = ["physics"]
