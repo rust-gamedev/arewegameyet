@@ -775,11 +775,6 @@ categories = ["physics"]
 homepage_url = "https://ncollide.org"
 
 [[items]]
-name = "npc-engine-core"
-source = "crates"
-categories = ["ai"]
-
-[[items]]
 name = "netstack"
 source = "crates"
 categories = ["networking"]
@@ -788,6 +783,11 @@ categories = ["networking"]
 name = "noise"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "npc-engine-core"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "nphysics2d"
