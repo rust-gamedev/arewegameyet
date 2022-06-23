@@ -1426,3 +1426,23 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name = "sierra"
+source = "crates"
+categories = ["2drendering", "3drendering"]
+
+[[items]]
+name = "evoke"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
+name = "edict"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
+name = "arcana-engine/arcana"
+source = "github"
+categories = ["engines"]
