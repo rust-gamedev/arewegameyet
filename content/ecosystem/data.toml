@@ -24,6 +24,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "arcana-engine/arcana"
+source = "github"
+categories = ["engines"]
+
+[[items]]
 name = "aseprite"
 source = "crates"
 categories = ["tools"]
@@ -260,6 +265,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "edict"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "egui"
 source = "crates"
 categories = ["ui"]
@@ -313,6 +323,11 @@ name = "euler"
 source = "crates"
 categories = ["math"]
 gitter_url = "https://gitter.im/euler-rs/Lobby"
+
+[[items]]
+name = "evoke"
+source = "crates"
+categories = ["networking"]
 
 [[items]]
 name = "ezing"
@@ -1181,6 +1196,11 @@ categories = ["engines"]
 homepage_url = "https://gitlab.com/Siebencorgie/jakar-engine"
 
 [[items]]
+name = "sierra"
+source = "crates"
+categories = ["2drendering", "3drendering"]
+
+[[items]]
 name = "skulpin"
 source = "crates"
 categories = ["2drendering"]
@@ -1426,23 +1446,3 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
-
-[[items]]
-name = "sierra"
-source = "crates"
-categories = ["2drendering", "3drendering"]
-
-[[items]]
-name = "evoke"
-source = "crates"
-categories = ["networking"]
-
-[[items]]
-name = "edict"
-source = "crates"
-categories = ["ecs"]
-
-[[items]]
-name = "arcana-engine/arcana"
-source = "github"
-categories = ["engines"]
