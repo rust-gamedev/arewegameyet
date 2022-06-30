@@ -14,8 +14,9 @@ This one tracks the state of the ecosystem for Game Development in Rust.
 ## Contribute
 
 Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and
-[zola](https://github.com/getzola/zola), the Rust static site generator. To get
-started with adding your own project, you can do the following:
+[zola](https://github.com/getzola/zola), the Rust static site generator. The
+site currently builds with Zola 0.15.3. To get started with adding your own
+project, you can do the following:
 
 1. Navigate to whichever folder in `/content` best fits your project.
 2. Edit that folder's `data.toml` file in any plain text editor or straight
