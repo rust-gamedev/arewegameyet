@@ -91,7 +91,7 @@
 
         <div class="meta">
             {% for category in item.categories %}
-                {% set category_data = get_page(path=section.path ~ category ~ ".md") %}
+                {% set category_data = get_page(path="." ~ section.path ~ category ~ ".md") %}
 
                 <a href="{{ category_data.permalink }}">{{ category_data.title }}</a>
                 {% if not loop.last %}<span>·</span>{% endif %}
