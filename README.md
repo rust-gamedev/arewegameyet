@@ -1,22 +1,36 @@
-# README
+# Are We Game Yet
 
 ## What is this?
 
-The Rust community has a number of websites dedicated to keeping track of the state of the ecosystem for specific purposes. (e.g. [arewewebyet](https://www.arewewebyet.org) and [arewelearningyet](https://www.arewelearningyet.com))
+The Rust community has a number of websites dedicated to keeping track of the
+state of the ecosystem for specific purposes. (e.g. [arewewebyet] and
+[arewelearningyet])
 
 This one tracks the state of the ecosystem for Game Development in Rust.
 
+[arewewebyet]: https://www.arewewebyet.org
+[arewelearningyet]: https://www.arewelearningyet.com
+
 ## Contribute
 
-Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
+Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and
+[zola](https://github.com/getzola/zola), the Rust static site generator. To get
+started with adding your own project, you can do the following:
 
 1. Navigate to whichever folder in `/content` best fits your project.
+2. Edit that folder's `data.toml` file in any plain text editor or straight
+   through [GitHub's editor][github-editor-docs].
+3. Create a new entry, following the schema described below. Note that all
+   entries should be sorted alphabetically by the `name` field, ignoring case.
+   There is a CI check to ensure this is done correctly - you can use the
+   `sort_data.py` script to automatically fix a file.
 
-2. Edit that folder's `data.toml` file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
+**All done!** We do greatly appreciate PRs, but if you're not comfortable with
+this process, you're welcome to [open an issue][open-an-issue] requesting the addition of your
+project instead.
 
-3. Create a new entry, following the schema described below. Note that all entries should be sorted alphabetically by the `name` field, ignoring case. There is a CI check to ensure this is done correctly - you can use the `sort_data.py` script to automatically fix a file.
-
-**All done!** We do greatly appreciate PRs, but if you're not comfortable with this process, you're welcome to open an issue requesting the addition of your project instead.
+[github-editor-docs]: https://help.github.com/articles/editing-files-in-another-user-s-repository/
+[open-an-issue]: https://github.com/rust-gamedev/arewegameyet/issues/new/choose
 
 ### Schema
 
@@ -65,14 +79,20 @@ source = "github"
 categories = ["mycategory"]
 ```
 
-Extra keys can be added to items that are pulled from external data (e.g. to add a homepage URL, or override some of the fetched data).
+Extra keys can be added to items that are pulled from external data (e.g. to add
+a homepage URL, or override some of the fetched data).
 
 ### Enhance this website
 
-If you're comfortable with semantic-ui and Zola please reach out to us in the Issues with your enhancement ideas or just to state your willingness to contribute.
+If you're comfortable with semantic-ui and Zola please reach out to us in the
+Issues with your enhancement ideas or just to state your willingness to
+contribute.
+
+[awgy-issues]: 
 
 ### Errors
 
-It's very likely there are mistakes around, if you find one please file an issue.
+It's very likely there are mistakes around, if you find one please file an
+issue.
 
 *Thanks for helping us map the Rust game development ecosystem!*
