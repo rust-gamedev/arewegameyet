@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BASE_URL: https://github.com/getzola/zola/releases/download
-      VERS: v0.10.1
+      VERS: v0.15.3
       ARCH: x86_64-unknown-linux-gnu
       # https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-623202206
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
