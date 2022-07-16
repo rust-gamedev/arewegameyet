@@ -1053,6 +1053,11 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "renet"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "rhai"
 source = "crates"
 categories = ["scripting"]
