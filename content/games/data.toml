@@ -44,6 +44,13 @@ homepage_url = "//christopherdumas.org/astraterra"
 image = "/assets/img/AstraTerra-icon.jpg"
 
 [[items]]
+name = "Bitgun"
+description = "An action roguelite zombie shooter with difficult and satisfying combat you can learn and master. Guns break quickly and you lose all your gear when you die."
+categories = ["action", "released"]
+image = "/assets/img/bitgun.jpg"
+homepage_url = "https://store.steampowered.com/app/1673940/BITGUN"
+
+[[items]]
 name = "Call of Ferris"
 description = "A thrilling action game where your favorite Ferris the crab and the rust mascot got guns and has taken up the duty to find evildoer languages while managing to keep itself alive. Take part in this awesome adventure and help Ferris be the best ever!"
 categories = ["platformer", "action", "other"]
