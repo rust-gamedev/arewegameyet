@@ -245,6 +245,11 @@ source = "crates"
 categories = ["3drendering", "engines", "ecs"]
 
 [[items]]
+name = "dsa-lib"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "dual_quaternion"
 source = "crates"
 categories = ["math"]
