@@ -47,7 +47,7 @@ image = "/assets/img/AstraTerra-icon.jpg"
 name = "Bitgun"
 description = "An action roguelite zombie shooter with difficult and satisfying combat you can learn and master. Guns break quickly and you lose all your gear when you die."
 categories = ["action", "released"]
-image = "/assets/img/bitgun.jpg"
+image = "/assets/img/bitgun.gif"
 homepage_url = "https://store.steampowered.com/app/1673940/BITGUN"
 
 [[items]]
