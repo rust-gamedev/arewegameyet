@@ -5,6 +5,12 @@ categories = ["article"]
 homepage_url = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
 
 [[items]]
+name = "Ashen Aetna"
+description = "A tutorial on/in/about/with 3D graphics, Rust, Vulkan, ash"
+categories = ["tutorials"]
+homepage_url = "//hoj-senna.github.io/ashen-aetna"
+
+[[items]]
 name = "Awesome Quads"
 description = "A curated list of links to miniquad/macroquad-related code & resources"
 categories = ["lists"]
