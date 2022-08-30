@@ -159,7 +159,7 @@ image = "/assets/img/evoli-prealpha.gif"
 
 [[items]]
 name = "Fiiish! RS"
-description = "A simple remake if the Fiiish endless swimmer in Rust."
+description = "A simple remake of the Fiiish endless swimmer in Rust."
 categories = ["action","released"]
 homepage_url = "//omni-mad.itch.io/fiiish"
 repository_url = "//github.com/AndreasOM/fiiish-rs/"
