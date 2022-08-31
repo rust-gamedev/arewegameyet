@@ -158,6 +158,14 @@ repository_url = "//github.com/amethyst/evoli/"
 image = "/assets/img/evoli-prealpha.gif"
 
 [[items]]
+name = "Fiiish! RS"
+description = "A simple remake of the Fiiish endless swimmer in Rust."
+categories = ["action", "released"]
+homepage_url = "//omni-mad.itch.io/fiiish"
+repository_url = "//github.com/AndreasOM/fiiish-rs/"
+image = "/assets/img/fiiish-rs.png"
+
+[[items]]
 name = "Gaia"
 description = "A program that lets you view the world"
 categories = ["simulation"]
