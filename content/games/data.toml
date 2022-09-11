@@ -217,6 +217,13 @@ repository_url = "//github.com/Ratysz/ludumdare42"
 image = "/assets/img/its-not-cool.png"
 
 [[items]]
+name = "Kiomet.com"
+description = "An online, real-time strategy game in which you expand your territory by capturing and upgrading towers."
+categories = ["strategy", "released"]
+homepage_url = "https://kiomet.com"
+image = "/assets/img/kiomet.png"
+
+[[items]]
 name = "Le Train Dispatcher"
 description = "Direct the trains in the delivery areas."
 categories = ["simulation"]
