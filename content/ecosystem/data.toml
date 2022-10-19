@@ -639,6 +639,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "libfmod"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "libovr"
 source = "crates"
 categories = ["vr"]
