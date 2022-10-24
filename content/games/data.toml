@@ -561,3 +561,11 @@ description = "A turn-based hexagonal strategy game"
 categories = ["strategy"]
 repository_url = "//github.com/ozkriff/zoc/"
 image = "/assets/img/zone-of-control.png"
+
+[[items]]
+name = "Tataku"
+description = "An osu! clone written in rust!"
+categories = ["action"]
+homepage_url = "//tataku.ca"
+repository_url = "//gitlab.ayyeve.xyz/tataku/tataku-client"
+image = "/assets/img/tataku.gif"
