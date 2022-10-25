@@ -477,6 +477,14 @@ repository_url = "//github.com/fabiojmendes/super-jeff"
 image = "/assets/img/super-jeff.gif"
 
 [[items]]
+name = "Tataku"
+description = "An osu! clone written in rust!"
+categories = ["action"]
+homepage_url = "//tataku.ca"
+repository_url = "//gitlab.ayyeve.xyz/tataku/tataku-client"
+image = "/assets/img/tataku.gif"
+
+[[items]]
 name = "Tetris Bane"
 description = "A Tetris clone with a deliberately frustrating set of blocks. There's also a classic mode for the purists, an ultra hard metal mode and even a chill mode."
 categories = ["puzzle"]
@@ -561,11 +569,3 @@ description = "A turn-based hexagonal strategy game"
 categories = ["strategy"]
 repository_url = "//github.com/ozkriff/zoc/"
 image = "/assets/img/zone-of-control.png"
-
-[[items]]
-name = "Tataku"
-description = "An osu! clone written in rust!"
-categories = ["action"]
-homepage_url = "//tataku.ca"
-repository_url = "//gitlab.ayyeve.xyz/tataku/tataku-client"
-image = "/assets/img/tataku.gif"
