@@ -122,6 +122,15 @@ homepage_url = "//cratebeforeattack.com"
 image = "/assets/img/crate-before-attack.gif"
 
 [[items]]
+name = "Digital Extinction"
+description = "A 3D real-time strategy game."
+categories = ["strategy"]
+image = "/assets/img/digital-extinction.png"
+crate_url = "https://crates.io/crates/de_game"
+repository_url = "https://github.com/DigitalExtinction/Game"
+homepage_url = "https://de-game.org/"
+
+[[items]]
 name = "dose response"
 description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
 categories = ["rpg"]
