@@ -6,6 +6,8 @@ The Rust community has a number of websites dedicated to keeping track of the st
 
 This one tracks the state of the ecosystem for Game Development in Rust.
 
+You can find the site at [arewegameyet.rs](https://arewegameyet.rs/).
+
 ## Contribute
 
 Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
