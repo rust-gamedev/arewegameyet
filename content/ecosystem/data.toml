@@ -1073,6 +1073,11 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
+name = "rhachis"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "rhusics"
 source = "crates"
 categories = ["physics"]
