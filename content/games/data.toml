@@ -37,13 +37,6 @@ repository_url = "//github.com/outkine/ascension-rust"
 image = "/assets/img/ascension2.png"
 
 [[items]]
-name = "Astra Terra"
-description = "A real-time base-building strategy game with procedurally generated worlds and an emphasis on simulation and story"
-categories = ["strategy", "simulation"]
-homepage_url = "//christopherdumas.org/astraterra"
-image = "/assets/img/AstraTerra-icon.jpg"
-
-[[items]]
 name = "Bitgun"
 description = "An action roguelite zombie shooter with difficult and satisfying combat you can learn and master. Guns break quickly and you lose all your gear when you die."
 categories = ["action", "released"]
