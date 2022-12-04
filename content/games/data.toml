@@ -509,6 +509,13 @@ homepage_url = "//anachronidia.itch.io/time-spiders"
 image = "/assets/img/time-spiders.png"
 
 [[items]]
+name = "Triverse"
+description = "A pausable RTS with units built from triangle parts."
+categories = ["strategy"]
+homepage_url = "//cragwind.itch.io/triverse"
+image = "/assets/img/triverse.gif"
+
+[[items]]
 name = "Twenty Asteroids"
 description = "A modern asteroids-like game with procedural destruction"
 categories = ["action"]
