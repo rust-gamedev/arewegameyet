@@ -1068,14 +1068,14 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
-name = "rhai"
-source = "crates"
-categories = ["scripting"]
-
-[[items]]
 name = "rhachis"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "rhai"
+source = "crates"
+categories = ["scripting"]
 
 [[items]]
 name = "rhusics"
