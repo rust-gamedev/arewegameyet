@@ -105,6 +105,11 @@ source = "crates"
 categories = ["textrendering"]
 
 [[items]]
+name = "brood"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "building-blocks"
 source = "crates"
 categories = ["tools", "mesh"]
