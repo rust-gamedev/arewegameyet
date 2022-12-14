@@ -509,6 +509,13 @@ homepage_url = "//anachronidia.itch.io/time-spiders"
 image = "/assets/img/time-spiders.png"
 
 [[items]]
+name = "Tiny Glade"
+description = "A small relaxing game about doodling castles. Explore gridless building chemistry, and watch the game carefully assemble every brick, pebble and plank."
+categories = ["simulation", "other"]
+homepage_url = "//store.steampowered.com/app/2198150/Tiny_Glade"
+image = "/assets/img/tinyglade.jpg"
+
+[[items]]
 name = "Triverse"
 description = "A pausable RTS with units built from triangle parts."
 categories = ["strategy"]
