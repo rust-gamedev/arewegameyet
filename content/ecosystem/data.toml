@@ -1257,6 +1257,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "shader-reflect"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "spirv-reflect"
 source = "crates"
 categories = ["shader"]
