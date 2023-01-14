@@ -1199,12 +1199,12 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
-name = "shaderc"
+name = "shader-reflect"
 source = "crates"
 categories = ["shader"]
 
 [[items]]
-name = "shader-reflect"
+name = "shaderc"
 source = "crates"
 categories = ["shader"]
 
