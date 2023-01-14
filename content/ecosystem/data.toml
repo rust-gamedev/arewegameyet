@@ -1204,6 +1204,11 @@ source = "crates"
 categories = ["shader"]
 
 [[items]]
+name = "shader-reflect"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "sharecart1000"
 source = "crates"
 categories = ["tools"]
@@ -1253,11 +1258,6 @@ gitter_url = "https://gitter.im/slide-rs/specs"
 
 [[items]]
 name = "spirq"
-source = "crates"
-categories = ["shader"]
-
-[[items]]
-name = "shader-reflect"
 source = "crates"
 categories = ["shader"]
 
