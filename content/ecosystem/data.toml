@@ -24,6 +24,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "apecs"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "arcana-engine/arcana"
 source = "github"
 categories = ["engines"]
