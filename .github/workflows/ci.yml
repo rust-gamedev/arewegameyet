@@ -16,21 +16,21 @@ jobs:
       # https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-623202206
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Install Zola
       run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
     - run: ./zola --version
     - run: ./zola build
     - name: Deploy
       if: github.ref == 'refs/heads/master'
-      uses: crazy-max/ghaction-github-pages@v1
+      uses: crazy-max/ghaction-github-pages@v3
       with:
         build_dir: public
 
   fmt:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - run: pip3 install pytoml
     - run: find . -name data.toml | xargs ./sort_data.py
     - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
