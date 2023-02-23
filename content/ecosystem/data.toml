@@ -9,6 +9,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "AmbientRun/Ambient"
+source = "github"
+categories = ["engines"]
+
+[[items]]
 name = "ambisonic"
 source = "crates"
 categories = ["audio"]
