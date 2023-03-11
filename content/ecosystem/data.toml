@@ -9,6 +9,13 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "AmbientRun/Ambient"
+source = "github"
+categories = ["engines"]
+repository_url = "https://github.com/AmbientRun/Ambient"
+homepage_url = "https://www.ambient.run"
+
+[[items]]
 name = "ambisonic"
 source = "crates"
 categories = ["audio"]
