@@ -44,6 +44,14 @@ image = "/assets/img/bitgun.gif"
 homepage_url = "https://store.steampowered.com/app/1673940/BITGUN"
 
 [[items]]
+name = "Boat Journey"
+description = "Boat Journey is a turn-based game where you drive a boat through a procedurally-generated landscape on a voyage along a river destined for the ocean. Accept passengers to have them help you on your journey. Fight monsters, collect junk, trade the junk for fuel, use the fuel to travel to the ocean."
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/boat-journey"
+repository_url = "//github.com/gridbugs/boat-journey"
+image = "/assets/img/boat-journey.png"
+
+[[items]]
 name = "Call of Ferris"
 description = "A thrilling action game where your favorite Ferris the crab and the rust mascot got guns and has taken up the duty to find evildoer languages while managing to keep itself alive. Take part in this awesome adventure and help Ferris be the best ever!"
 categories = ["platformer", "action", "other"]
