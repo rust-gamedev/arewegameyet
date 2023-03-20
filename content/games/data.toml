@@ -25,7 +25,7 @@ name = "Apocalypse Post"
 description = "a procedurally-generated, turn-based tactical shooter set in a post-apocalyptic future, where you carry mail between survivor camps in your trusty delivery van, all the while fending off attacks from bandits and zombies."
 categories = ["strategy", "rpg"]
 homepage_url = "//gridbugs.itch.io/apocalypse-post"
-repository_url = "//github.com/Ratysz/ludumdare42"
+repository_url = "//github.com/gridbugs/apocalypse-post"
 image = "/assets/img/apocalypse-post.gif"
 
 [[items]]
@@ -251,7 +251,7 @@ name = "Meters Below the Ground"
 description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
 categories = ["rpg"]
 homepage_url = "//gridbugs.itch.io/meters-below-the-ground"
-repository_url = "//github.com/stevebob/meters-below-the-ground"
+repository_url = "//github.com/gridbugs/meters-below-the-ground"
 image = "/assets/img/meters-below-ground.png"
 
 [[items]]
@@ -282,7 +282,7 @@ name = "Orbital Decay"
 description = "A turn-based tactical roguelike with a focus on ranged combat. Deal enough damage to enemies to get through their armour without breaching the hull of the station, or risk being pulled into the void."
 categories = ["rpg"]
 homepage_url = "//gridbugs.itch.io/orbital-decay"
-repository_url = "//github.com/stevebob/orbital-decay"
+repository_url = "//github.com/gridbugs/orbital-decay"
 image = "/assets/img/orbital-decay.png"
 
 [[items]]
@@ -426,7 +426,7 @@ name = "slime99"
 description = "Roguelike where combat outcomes are pre-determined and known by the player. Set in a neon sewer!"
 categories = ["rpg"]
 homepage_url = "//gridbugs.itch.io/slime99"
-repository_url = "//github.com/stevebob/slime99"
+repository_url = "//github.com/gridbugs/slime99"
 image = "/assets/img/slime99.png"
 
 [[items]]
