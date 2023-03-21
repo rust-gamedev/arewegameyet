@@ -1435,6 +1435,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "vorbis_rs"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "voronator"
 source = "crates"
 categories = ["tools", "mesh"]
