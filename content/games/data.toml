@@ -191,13 +191,6 @@ repository_url = "//github.com/tyfkda/galangua"
 image = "/assets/img/galangua.png"
 
 [[items]]
-name = "Garden"
-description = "A game centered around really detailed plant growth simulation"
-categories = ["simulation"]
-homepage_url = "//www.reddit.com/r/rust/comments/795dg4/i_spent_the_last_year_writing_a_plant/"
-image = "/assets/img/garden.jpg"
-
-[[items]]
 name = "Helix Repair"
 description = "In Helix Repair, your task is to repair a broken DNA sequence by correcting nucleobases. You have 20 seconds!"
 categories = ["puzzle", "released"]
@@ -217,6 +210,13 @@ description = "Experimental minimalist game with a special graphical mecanic"
 categories = ["fps", "released"]
 homepage_url = "//store.steampowered.com/app/884160/HyperZen_Training/"
 image = "/assets/img/hyperzentraining.png"
+
+[[items]]
+name = "Idu"
+description = "A strategic sim about growing self-aware plants"
+categories = ["simulation"]
+homepage_url = "//epcc.itch.io/idu"
+image = "/assets/img/idu.jpg"
 
 [[items]]
 name = "It's Not Cool"
