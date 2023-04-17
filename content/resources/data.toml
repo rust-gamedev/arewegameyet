@@ -48,6 +48,12 @@ homepage_url = "//caballerocoll.com/blog/bevy-chess-tutorial/"
 repository_url = "//github.com/guimcaballero/bevy_chess"
 
 [[items]]
+name = "ChevyRay's list"
+description = "ChevyRay's curated list of cool/useful Rust crates for game development"
+categories = ["lists"]
+homepage_url = "//github.com/chevyray/rust-gamedev"
+
+[[items]]
 name = "Creating a Pong clone with Rust and Tetra"
 description = "A beginner-friendly guide to building games in Rust"
 categories = ["tutorials"]
