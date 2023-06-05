@@ -1237,12 +1237,6 @@ categories = ["ecs"]
 gitter_url = "https://gitter.im/leudz-shipyard/community"
 
 [[items]]
-name = "Siebencorgie/jakar-engine"
-source = "github"
-categories = ["engines"]
-homepage_url = "https://gitlab.com/Siebencorgie/jakar-engine"
-
-[[items]]
 name = "sierra"
 source = "crates"
 categories = ["2drendering", "3drendering"]
