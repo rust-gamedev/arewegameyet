@@ -1499,3 +1499,8 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name = "spaik"
+source = "crates"
+categories = ["scripting"]
