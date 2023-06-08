@@ -1256,6 +1256,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "spaik"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "sparsey"
 source = "crates"
 categories = ["ecs"]
