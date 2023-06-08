@@ -1256,6 +1256,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "spaik"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "sparsey"
 source = "crates"
 categories = ["ecs"]
@@ -1499,8 +1504,3 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
-
-[[items]]
-name = "spaik"
-source = "crates"
-categories = ["scripting"]
