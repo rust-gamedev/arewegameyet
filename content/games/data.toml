@@ -205,6 +205,13 @@ repository_url = "//github.com/PistonDevelopers/hematite"
 image = "/assets/img/hematite.png"
 
 [[items]]
+name = "Hydrofoil Generation"
+description = "A realistic sailing/foiling inshore simulator that puts you in the driving seat of modern competitive sailing"
+categories = ["simulation", "racing", "released"]
+homepage_url = "//store.steampowered.com/app/1448820/Hydrofoil_Generation"
+image = "/assets/img/hydrofoilg.jpg"
+
+[[items]]
 name = "HyperZen Training"
 description = "Experimental minimalist game with a special graphical mecanic"
 categories = ["fps", "released"]
