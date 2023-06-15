@@ -386,6 +386,11 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "frug"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "fungui"
 source = "crates"
 categories = ["ui"]
