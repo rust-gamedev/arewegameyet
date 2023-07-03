@@ -4,11 +4,6 @@ source = "crates"
 categories = ["textrendering"]
 
 [[items]]
-name = "alto"
-source = "crates"
-categories = ["audio"]
-
-[[items]]
 name = "AmbientRun/Ambient"
 source = "github"
 categories = ["engines"]
@@ -63,11 +58,6 @@ categories = ["audio"]
 
 [[items]]
 name = "basis-universal"
-source = "crates"
-categories = ["tools"]
-
-[[items]]
-name = "beehive"
 source = "crates"
 categories = ["tools"]
 
@@ -175,11 +165,6 @@ categories = ["3dformatloaders"]
 name = "collider"
 source = "crates"
 categories = ["physics"]
-
-[[items]]
-name = "conrod_core"
-source = "crates"
-categories = ["ui"]
 
 [[items]]
 name = "console_engine"
@@ -427,11 +412,6 @@ categories = ["3drendering"]
 gitter_url = "https://gitter.im/gfx-rs/gfx"
 
 [[items]]
-name = "gfx-hal"
-source = "crates"
-categories = ["3drendering"]
-
-[[items]]
 name = "ggez"
 source = "crates"
 categories = ["engines"]
@@ -477,11 +457,6 @@ gitter_url = "https://gitter.im/tomaka/glium"
 name = "glow"
 source = "crates"
 categories = ["3drendering"]
-
-[[items]]
-name = "glsp"
-source = "crates"
-categories = ["scripting"]
 
 [[items]]
 name = "gltf"
@@ -535,11 +510,6 @@ categories = ["tools", "mesh"]
 name = "hlua"
 source = "crates"
 categories = ["scripting"]
-
-[[items]]
-name = "Hossein-Noroozpour/vulkust"
-source = "github"
-categories = ["engines"]
 
 [[items]]
 name = "hotham"
@@ -814,18 +784,6 @@ categories = ["ai"]
 homepage_url = "https://github.com/PsichiX/navmesh"
 
 [[items]]
-name = "ncollide2d"
-source = "crates"
-categories = ["physics"]
-homepage_url = "https://ncollide.org"
-
-[[items]]
-name = "ncollide3d"
-source = "crates"
-categories = ["physics"]
-homepage_url = "https://ncollide.org"
-
-[[items]]
 name = "netstack"
 source = "crates"
 categories = ["networking"]
@@ -845,18 +803,6 @@ homepage_url = "https://nazariglez.github.io/notan-web/"
 name = "npc-engine-core"
 source = "crates"
 categories = ["ai"]
-
-[[items]]
-name = "nphysics2d"
-source = "crates"
-categories = ["physics"]
-homepage_url = "https://nphysics.org"
-
-[[items]]
-name = "nphysics3d"
-source = "crates"
-categories = ["physics"]
-homepage_url = "https://nphysics.org"
 
 [[items]]
 name = "nuklear-rust"
@@ -921,11 +867,6 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
-name = "oxygen_quark"
-source = "crates"
-categories = ["math"]
-
-[[items]]
 name = "oxygengine"
 source = "crates"
 categories = ["engines"]
@@ -955,11 +896,6 @@ categories = ["ai"]
 name = "peacock"
 source = "crates"
 categories = ["engines"]
-
-[[items]]
-name = "physme"
-source = "crates"
-categories = ["physics"]
 
 [[items]]
 name = "physx"
@@ -1011,11 +947,6 @@ categories = ["audio"]
 name = "profiling"
 source = "crates"
 categories = ["tools"]
-
-[[items]]
-name = "pyro"
-source = "crates"
-categories = ["ecs"]
 
 [[items]]
 name = "pyxel"
@@ -1139,19 +1070,9 @@ source = "github"
 categories = ["ui"]
 
 [[items]]
-name = "rsoundio"
-source = "crates"
-categories = ["audio"]
-
-[[items]]
 name = "rune"
 source = "crates"
 categories = ["scripting"]
-
-[[items]]
-name = "rust-webvr"
-source = "crates"
-categories = ["vr"]
 
 [[items]]
 name = "rustpython"
@@ -1343,11 +1264,6 @@ categories = ["engines"]
 name = "texture-synthesis"
 source = "crates"
 categories = ["tools"]
-
-[[items]]
-name = "three"
-source = "crates"
-categories = ["3drendering"]
 
 [[items]]
 name = "three-d"
