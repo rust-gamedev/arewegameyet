@@ -227,6 +227,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "davnotdev/mepeyew"
+source = "github"
+categories = ["3drendering"]
+
+[[items]]
 name = "dces"
 source = "crates"
 categories = ["ecs"]
