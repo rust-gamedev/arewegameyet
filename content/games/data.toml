@@ -238,6 +238,7 @@ name = "Kiomet.com"
 description = "An online, real-time strategy game in which you expand your territory by capturing and upgrading towers."
 categories = ["strategy", "released"]
 homepage_url = "https://kiomet.com"
+repository_url = "https://github.com/SoftbearStudios/kiomet"
 image = "/assets/img/kiomet.png"
 
 [[items]]
