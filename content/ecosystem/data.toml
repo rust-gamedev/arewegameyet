@@ -1514,3 +1514,8 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name = "gemini-engine" 
+source = "crates"
+categories = ["2drendering", "3drendering", "engines"]
