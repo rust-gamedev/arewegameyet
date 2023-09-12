@@ -1,4 +1,4 @@
-{% macro info(item, section) %}
+{% macro info(item, section, archived=false) %}
 
 {% if item.name %}
     {% set name = item.name %}
@@ -43,7 +43,7 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
-<li class="ui card">
+<li class="ui card{% if archived %} archived{% endif %}">
     {% if item.image %}
          {% if primary_url %}
             <a class="image" href="{{ primary_url }}">
