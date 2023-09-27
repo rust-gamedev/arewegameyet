@@ -229,3 +229,15 @@ name = "Writing a Raytracer in Rust"
 description = "3-part series of posts on writing a simple raytracer in Rust"
 categories = ["articles"]
 homepage_url = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
+
+[[items]]
+name = "A Guide to Rust Graphics Libraries (2019)"
+description = "A quick overview of a few graphics libraries, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGraphicsLibraries2019"
+
+[[items]]
+name = "A Guide To Rust Game Frameworks (2019)"
+description = "A quick overview of a few frameworks for developing games, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGameFrameworks2019"
