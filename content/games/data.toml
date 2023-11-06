@@ -279,6 +279,13 @@ repository_url = "https://github.com/SoftbearStudios/mk48"
 homepage_url = "https://mk48.io"
 
 [[items]]
+name = "Netquel"
+description = "Netquel is an online multiplayer space combat game"
+categories = ["action", "strategy", "simulation", "released"]
+image = "/assets/img/netquel.png"
+homepage_url = "https://netquel.com"
+
+[[items]]
 name = "Nox Futura"
 description = "An open-source game combining elements of Dwarf Fortress, Civilization, Warhammer, Douglas Adams, and more."
 categories = ["simulation", "strategy"]
