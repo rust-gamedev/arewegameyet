@@ -426,6 +426,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "gemini-engine" 
+source = "crates"
+categories = ["2drendering", "3drendering", "engines"]
+
+[[items]]
 name = "gfx"
 source = "crates"
 categories = ["3drendering"]
