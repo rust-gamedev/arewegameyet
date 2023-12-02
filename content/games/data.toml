@@ -263,6 +263,13 @@ repository_url = "//github.com/rsaarelm/magog"
 image = "/assets/img/magog.png"
 
 [[items]]
+name = "Makiomino"
+description = "Tile-matching puzzle game based on mix of classical mechanics."
+categories = ["puzzle", "released"]
+homepage_url = "//store.steampowered.com/app/1177840/Makiomino/"
+image = "/assets/img/makiomino.gif"
+
+[[items]]
 name = "Meters Below the Ground"
 description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
 categories = ["rpg"]
@@ -608,10 +615,3 @@ description = "A turn-based hexagonal strategy game"
 categories = ["strategy"]
 repository_url = "//github.com/ozkriff/zoc/"
 image = "/assets/img/zone-of-control.png"
-
-[[items]]
-name = "Makiomino"
-description = "Tile-matching puzzle game based on mix of classical mechanics."
-categories = ["puzzle", "released"]
-homepage_url = "//store.steampowered.com/app/1177840/Makiomino/"
-image = "/assets/img/makiomino.gif"
