@@ -421,14 +421,14 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "gemini-engine"
+source = "crates"
+categories = ["2drendering", "3drendering", "engines"]
+
+[[items]]
 name = "generic-matrix"
 source = "crates"
 categories = ["math"]
-
-[[items]]
-name = "gemini-engine" 
-source = "crates"
-categories = ["2drendering", "3drendering", "engines"]
 
 [[items]]
 name = "gfx"
