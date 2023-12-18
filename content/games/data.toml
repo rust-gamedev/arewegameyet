@@ -539,6 +539,13 @@ homepage_url = "//anachronidia.itch.io/time-spiders"
 image = "/assets/img/time-spiders.png"
 
 [[items]]
+name = "Times of Progress"
+description = "A City Builder set during the Industrial Revolution. Build industries to extract natural resources. Produce goods to satisfy the population. Manage transportation routes and trade with nearby cities."
+categories = ["strategy"]
+homepage_url = "//store.steampowered.com/app/2628450/Times_of_Progress"
+image = "/assets/img/times_of_progress.gif"
+
+[[items]]
 name = "Tiny Glade"
 description = "A small relaxing game about doodling castles. Explore gridless building chemistry, and watch the game carefully assemble every brick, pebble and plank."
 categories = ["simulation", "other"]
