@@ -1524,3 +1524,8 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name = "space_editor"
+source = "crates"
+categories = ["engines", "tools"]
