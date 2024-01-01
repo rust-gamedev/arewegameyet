@@ -1276,6 +1276,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "space_editor"
+source = "crates"
+categories = ["engines", "tools"]
+
+[[items]]
 name = "spaik"
 source = "crates"
 categories = ["scripting"]
@@ -1524,8 +1529,3 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
-
-[[items]]
-name = "space_editor"
-source = "crates"
-categories = ["engines", "tools"]
