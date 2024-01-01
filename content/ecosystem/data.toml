@@ -7,6 +7,7 @@ categories = ["textrendering"]
 name = "alto"
 source = "crates"
 categories = ["audio"]
+archived = true
 
 [[items]]
 name = "AmbientRun/Ambient"
@@ -70,6 +71,7 @@ categories = ["tools"]
 name = "beehive"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "beryllium"
@@ -185,6 +187,7 @@ categories = ["physics"]
 name = "conrod_core"
 source = "crates"
 categories = ["ui"]
+archived = true
 
 [[items]]
 name = "console_engine"
@@ -445,6 +448,7 @@ gitter_url = "https://gitter.im/gfx-rs/gfx"
 name = "gfx-hal"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "ggez"
@@ -497,6 +501,7 @@ categories = ["3drendering"]
 name = "glsp"
 source = "crates"
 categories = ["scripting"]
+archived = true
 
 [[items]]
 name = "gltf"
@@ -833,12 +838,14 @@ name = "ncollide2d"
 source = "crates"
 categories = ["physics"]
 homepage_url = "https://ncollide.org"
+archived = true
 
 [[items]]
 name = "ncollide3d"
 source = "crates"
 categories = ["physics"]
 homepage_url = "https://ncollide.org"
+archived = true
 
 [[items]]
 name = "netstack"
@@ -939,6 +946,7 @@ categories = ["math"]
 name = "oxygen_quark"
 source = "crates"
 categories = ["math"]
+archived = true
 
 [[items]]
 name = "oxygengine"
@@ -975,6 +983,7 @@ categories = ["engines"]
 name = "physme"
 source = "crates"
 categories = ["physics"]
+archived = true
 
 [[items]]
 name = "physx"
@@ -1031,6 +1040,7 @@ categories = ["tools"]
 name = "pyro"
 source = "crates"
 categories = ["ecs"]
+archived = true
 
 [[items]]
 name = "pyxel"
@@ -1157,6 +1167,7 @@ categories = ["ui"]
 name = "rsoundio"
 source = "crates"
 categories = ["audio"]
+archived = true
 
 [[items]]
 name = "rune"
@@ -1167,6 +1178,7 @@ categories = ["scripting"]
 name = "rust-webvr"
 source = "crates"
 categories = ["vr"]
+archived = true
 
 [[items]]
 name = "rustpython"
@@ -1363,6 +1375,7 @@ categories = ["tools"]
 name = "three"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "three-d"
