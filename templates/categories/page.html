@@ -32,6 +32,22 @@
 </section>
 
 {# list all content #}
+
+{% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
+
+{% set crates = [] %}
+{% set archived = [] %}
+
+{% for item in config.items %}
+    {% if item.categories is containing(page.slug) %}
+        {% if item.archived %}
+            {% set_global archived = archived | concat(with=item) %}
+        {% else %}
+            {% set_global crates = crates | concat(with=item) %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
 <section>
     <h2 class="ui horizontal divider small header">
         <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
@@ -43,19 +59,39 @@
     <div class="ui vertical stripe">
         <div class="ui container">
             <ul class="ui stackable cards nolist {{ columns }}">
-                {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
-
-                {% if config.items %}
-                    {% for item in config.items %}
-                        {% if item.categories is containing(page.slug) %}
-                            {{ category_macros::info(item=item, section=section) }}
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
+                {% for item in crates %}
+                    {{ category_macros::info(item=item, section=section) }}
+                {% endfor %}
             </ul>
         </div>
     </div>
 </section>
+
+{% if archived | length > 0 %}
+    <section>
+        <h2 class="ui horizontal divider small header">
+            <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
+                <i class="bed icon big"></i>
+                Archived
+            </a>
+        </h2>
+
+        <div class="ui vertical stripe">
+            <div class="ui container">
+                <div class="ui message">
+                    <i class="info circle icon"></i>
+                    These {{ section.extra.plural }} are no longer maintained, but may still be of interest.
+                </div>
+
+                <ul class="ui stackable cards nolist {{ columns }}">
+                    {% for item in archived %}
+                        {{ category_macros::info(item=item, section=section, archived=true) }}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endif %}
 
 <section>
     <h2 class="ui horizontal divider small header">
