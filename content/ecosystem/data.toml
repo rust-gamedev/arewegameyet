@@ -1276,6 +1276,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "space_editor"
+source = "crates"
+categories = ["engines", "tools"]
+
+[[items]]
 name = "spaik"
 source = "crates"
 categories = ["scripting"]
