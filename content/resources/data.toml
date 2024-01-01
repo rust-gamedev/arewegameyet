@@ -5,6 +5,20 @@ categories = ["article"]
 homepage_url = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
 
 [[items]]
+name = "A Guide to Rust Game Frameworks (2019)"
+description = "A quick overview of a few frameworks for developing games, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGameFrameworks2019"
+archived = true
+
+[[items]]
+name = "A Guide to Rust Graphics Libraries (2019)"
+description = "A quick overview of a few graphics libraries, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGraphicsLibraries2019"
+archived = true
+
+[[items]]
 name = "Ashen Aetna"
 description = "A tutorial on/in/about/with 3D graphics, Rust, Vulkan, ash"
 categories = ["tutorials"]
