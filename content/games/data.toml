@@ -374,6 +374,15 @@ repository_url = "//github.com/tedsta/reforge"
 image = "/assets/img/reforge_screeny.png"
 
 [[items]]
+name = "Rezcraft"
+description = "Minecraft like voxel game using wgpu, supporting both native targets and wasm"
+categories = ["open-world"]
+image = "/assets/img/rezcraft.png"
+crate_url = "https://crates.io/crates/rezcraft"
+homepage_url = "https://shapur1234.github.io/Rezcraft-Demo/"
+repository_url = "https://github.com/Shapur1234/Rezcraft"
+
+[[items]]
 name = "Robo Instructus"
 description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
 categories = ["puzzle", "released"]
