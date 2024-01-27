@@ -384,6 +384,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "fimg"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "fmod"
 source = "crates"
 categories = ["audio"]
