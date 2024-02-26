@@ -700,6 +700,11 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
+name = "lightyear"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "liquidfun"
 source = "crates"
 categories = ["physics"]
