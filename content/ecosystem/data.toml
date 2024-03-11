@@ -965,6 +965,11 @@ categories = ["engines"]
 homepage_url = "https://github.com/PsichiX/Oxygengine"
 
 [[items]]
+name = "SlimeYummy/ozz-animation-rs"
+source = "github"
+categories = ["animation"]
+
+[[items]]
 name = "palette"
 source = "crates"
 categories = ["math"]
