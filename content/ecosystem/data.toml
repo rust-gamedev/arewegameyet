@@ -359,6 +359,11 @@ categories = ["math"]
 gitter_url = "https://gitter.im/euler-rs/Lobby"
 
 [[items]]
+name = "evenio"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "evoke"
 source = "crates"
 categories = ["networking"]
