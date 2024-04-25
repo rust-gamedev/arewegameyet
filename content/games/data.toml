@@ -271,7 +271,7 @@ image = "/assets/img/makiomino.gif"
 
 [[items]]
 name = "Mazean"
-description = "Mazean is an online multipayer FPS"
+description = "Mazean is an online multiplayer FPS"
 categories = ["fps", "action", "released"]
 image = "/assets/img/mazean.png"
 homepage_url = "https://mazean.com"
