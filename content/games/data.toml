@@ -270,6 +270,13 @@ homepage_url = "//store.steampowered.com/app/1177840/Makiomino/"
 image = "/assets/img/makiomino.gif"
 
 [[items]]
+name = "Mazean"
+description = "Mazean is an online multipayer FPS"
+categories = ["fps", "action", "released"]
+image = "/assets/img/mazean.png"
+homepage_url = "https://mazean.com"
+
+[[items]]
 name = "Meters Below the Ground"
 description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
 categories = ["rpg"]
