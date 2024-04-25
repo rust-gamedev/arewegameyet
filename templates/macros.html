@@ -17,7 +17,7 @@
             <div class="ui four stackable cards">
                 {% set data = load_data(path="content/" ~ section.path ~ "data.toml") %}
 
-                {% for category in section.pages %}
+                {% for category in section.pages | sort(attribute="title") %}
                     {# This isn't very pretty/efficient, but it's about as good as we can do with Zola's current feature set #}
 
                     {% set_global count = 0 %}
