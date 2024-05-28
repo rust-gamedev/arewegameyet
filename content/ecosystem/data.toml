@@ -42,6 +42,23 @@ source = "github"
 categories = ["engines"]
 
 [[items]]
+name = "ascending_graphics"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
+name = "Ascending Client"
+categories = ["engines"]
+description = "Open Source Client and Server 2D Game Engine."
+repository_url = "https://github.com/AscendingCreations/AscendingClient"
+homepage_url = "https://github.com/AscendingCreations/AscendingClient"
+
+[[items]]
+name = "ascending_input"
+source = "crates"
+categories = ["input"]
+
+[[items]]
 name = "aseprite"
 source = "crates"
 categories = ["tools"]
@@ -1567,20 +1584,3 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
-
-[[items]]
-name = "ascending_graphics"
-source = "crates"
-categories = ["2drendering"]
-
-[[items]]
-name = "Ascending Client"
-categories = ["engines"]
-description = "Open Source Client and Server 2D Game Engine."
-repository_url = "https://github.com/AscendingCreations/AscendingClient"
-homepage_url = "https://github.com/AscendingCreations/AscendingClient"
-
-[[items]]
-name = "ascending_input"
-source = "crates"
-categories = ["input"]
