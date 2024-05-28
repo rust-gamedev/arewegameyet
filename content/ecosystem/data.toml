@@ -164,6 +164,11 @@ source = "crates"
 categories = ["ai"]
 
 [[items]]
+name = "chuot"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "claxon"
 source = "crates"
 categories = ["audio"]
