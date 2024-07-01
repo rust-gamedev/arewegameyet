@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Math | Are we game yet?</title>
+
+    <meta property="og:title" content="Math">
+    <meta property="og:url" content="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">
+    <meta property="og:description" content="Linear algebra libraries, quaternions, color conversion and more">
+    <link rel="canonical" href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arewegameyet.rs/assets/img/rust-logo-128x128-blk-v2.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:site_name" content="Are we game yet?">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/main.css">
+    
+     
+</head>
+
+<body>
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="item" href="/">Home</a>
+        <a class="item" href="/#chat">Chat</a>
+        <a class="item" href="/#ecosystem">Ecosystem</a>
+        <a class="item" href="/#games">Games</a>
+        <a class="item" href="/#curators">Curators</a>
+        <a class="item" href="/#resources">Resources</a>
+        <a class="item" href="/#about">About</a>
+    </div>
+
+    <div class="pusher">
+        <header class="ui inverted vertical masthead center aligned segment">
+            <nav class="ui container" aria-label="site">
+                <ul class="ui large borderless inverted menu nolist">
+                    <li>
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#chat">Chat</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#news">News</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#ecosystem">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#games">Games</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#curators">Curators</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#about">About</a>
+                    </li>
+                    <li class="right menu">
+                        <div class="item">
+                            <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="ui text container">
+                
+                    <p class="ui inverted large header">
+                        Are we game yet?
+                    </p>
+                
+            </div>
+        </header>
+
+        <main>
+            
+
+
+
+
+<section class="ui vertical stripe">
+    <h1 class="ui center aligned icon header">
+        <i class="circular icon cubes"></i>
+        Math
+    </h1>
+    <div class="ui text container">
+        <p>Linear algebra libraries, quaternions, color conversion and more</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<section>
+    <h2 class="ui horizontal divider small header">
+        <a href="#crates" id="crates">
+            <i class="list icon big"></i>
+            Crates
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui container">
+            <ul class="ui stackable cards nolist one">
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#bvh" id="bvh" aria-label="Permanent link for bvh">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;svenstaro&#x2F;bvh" aria-label="Github link for bvh">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bvh" aria-label="Crates.io link for bvh">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bvh">bvh</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A fast BVH using SAH</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/bvh">
+                                <img src="https://img.shields.io/crates/v/bvh.svg?maxAge=2592000" alt="Crates.io link for bvh">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/bvh">
+                                <img src="https://img.shields.io/crates/d/bvh.svg?maxAge=2592000" alt="Download count for bvh">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/bvh">
+                                <img src="https://img.shields.io/crates/dr/bvh.svg?maxAge=2592000" alt="Recent download count for bvh">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/bvh">
+                                <img src="https://img.shields.io/crates/l/bvh.svg?maxAge=2592000" alt="License for bvh">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#cgmath" id="cgmath" aria-label="Permanent link for cgmath">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;rustgd&#x2F;cgmath" aria-label="Github link for cgmath">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;cgmath" aria-label="Crates.io link for cgmath">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;rustgd&#x2F;cgmath" aria-label="Website link for cgmath">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;cgmath">cgmath</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A linear algebra and mathematics library for computer graphics.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/cgmath">
+                                <img src="https://img.shields.io/crates/v/cgmath.svg?maxAge=2592000" alt="Crates.io link for cgmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/cgmath">
+                                <img src="https://img.shields.io/crates/d/cgmath.svg?maxAge=2592000" alt="Download count for cgmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/cgmath">
+                                <img src="https://img.shields.io/crates/dr/cgmath.svg?maxAge=2592000" alt="Recent download count for cgmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/cgmath">
+                                <img src="https://img.shields.io/crates/l/cgmath.svg?maxAge=2592000" alt="License for cgmath">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#dual-quaternion" id="dual-quaternion" aria-label="Permanent link for dual_quaternion">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PistonDevelopers&#x2F;dual_quaternion" aria-label="Github link for dual_quaternion">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dual_quaternion" aria-label="Crates.io link for dual_quaternion">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PistonDevelopers&#x2F;dual_quaternion" aria-label="Website link for dual_quaternion">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dual_quaternion">dual_quaternion</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A type-agnostic dual-quaternion math library</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dual_quaternion">
+                                <img src="https://img.shields.io/crates/v/dual_quaternion.svg?maxAge=2592000" alt="Crates.io link for dual_quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dual_quaternion">
+                                <img src="https://img.shields.io/crates/d/dual_quaternion.svg?maxAge=2592000" alt="Download count for dual_quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dual_quaternion">
+                                <img src="https://img.shields.io/crates/dr/dual_quaternion.svg?maxAge=2592000" alt="Recent download count for dual_quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dual_quaternion">
+                                <img src="https://img.shields.io/crates/l/dual_quaternion.svg?maxAge=2592000" alt="License for dual_quaternion">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#euclid" id="euclid" aria-label="Permanent link for euclid">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;euclid" aria-label="Github link for euclid">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euclid" aria-label="Crates.io link for euclid">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euclid">euclid</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Geometry primitives</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euclid">
+                                <img src="https://img.shields.io/crates/v/euclid.svg?maxAge=2592000" alt="Crates.io link for euclid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euclid">
+                                <img src="https://img.shields.io/crates/d/euclid.svg?maxAge=2592000" alt="Download count for euclid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euclid">
+                                <img src="https://img.shields.io/crates/dr/euclid.svg?maxAge=2592000" alt="Recent download count for euclid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euclid">
+                                <img src="https://img.shields.io/crates/l/euclid.svg?maxAge=2592000" alt="License for euclid">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#euler" id="euler" aria-label="Permanent link for euler">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;alteous&#x2F;euler" aria-label="Github link for euler">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euler" aria-label="Crates.io link for euler">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;alteous&#x2F;euler" aria-label="Website link for euler">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euler">euler</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Mathematics library for 3D computer graphics</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euler">
+                                <img src="https://img.shields.io/crates/v/euler.svg?maxAge=2592000" alt="Crates.io link for euler">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euler">
+                                <img src="https://img.shields.io/crates/d/euler.svg?maxAge=2592000" alt="Download count for euler">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euler">
+                                <img src="https://img.shields.io/crates/dr/euler.svg?maxAge=2592000" alt="Recent download count for euler">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/euler">
+                                <img src="https://img.shields.io/crates/l/euler.svg?maxAge=2592000" alt="License for euler">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https:&#x2F;&#x2F;gitter.im&#x2F;euler-rs&#x2F;Lobby" target="_blank">
+                                <img src="/assets/badges/chat.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#generic-matrix" id="generic-matrix" aria-label="Permanent link for generic-matrix">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;gifnksm&#x2F;generic-matrix-rs" aria-label="Github link for generic-matrix">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;generic-matrix" aria-label="Crates.io link for generic-matrix">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;generic-matrix">generic-matrix</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Manipulations and data types that represent 2d matrix.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/generic-matrix">
+                                <img src="https://img.shields.io/crates/v/generic-matrix.svg?maxAge=2592000" alt="Crates.io link for generic-matrix">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/generic-matrix">
+                                <img src="https://img.shields.io/crates/d/generic-matrix.svg?maxAge=2592000" alt="Download count for generic-matrix">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/generic-matrix">
+                                <img src="https://img.shields.io/crates/dr/generic-matrix.svg?maxAge=2592000" alt="Recent download count for generic-matrix">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/generic-matrix">
+                                <img src="https://img.shields.io/crates/l/generic-matrix.svg?maxAge=2592000" alt="License for generic-matrix">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#glam" id="glam" aria-label="Permanent link for glam">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;bitshifter&#x2F;glam-rs" aria-label="Github link for glam">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glam" aria-label="Crates.io link for glam">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glam">glam</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A simple and fast 3D math library for games and graphics</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glam">
+                                <img src="https://img.shields.io/crates/v/glam.svg?maxAge=2592000" alt="Crates.io link for glam">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glam">
+                                <img src="https://img.shields.io/crates/d/glam.svg?maxAge=2592000" alt="Download count for glam">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glam">
+                                <img src="https://img.shields.io/crates/dr/glam.svg?maxAge=2592000" alt="Recent download count for glam">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glam">
+                                <img src="https://img.shields.io/crates/l/glam.svg?maxAge=2592000" alt="License for glam">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+            
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#rust-3d" id="rust-3d" aria-label="Permanent link for rust-3d">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;I3ck&#x2F;rust-3d" aria-label="Github link for rust-3d">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;I3ck&#x2F;rust-3d">rust-3d</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>3D&#x2F;2D library written in Rust</p>
+        </div>
+    </div>
+    
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#mint" id="mint" aria-label="Permanent link for mint">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;kvark&#x2F;mint" aria-label="Github link for mint">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;mint" aria-label="Crates.io link for mint">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;mint">mint</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Math interoperability standard types</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mint">
+                                <img src="https://img.shields.io/crates/v/mint.svg?maxAge=2592000" alt="Crates.io link for mint">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mint">
+                                <img src="https://img.shields.io/crates/d/mint.svg?maxAge=2592000" alt="Download count for mint">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mint">
+                                <img src="https://img.shields.io/crates/dr/mint.svg?maxAge=2592000" alt="Recent download count for mint">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mint">
+                                <img src="https://img.shields.io/crates/l/mint.svg?maxAge=2592000" alt="License for mint">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#nalgebra" id="nalgebra" aria-label="Permanent link for nalgebra">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;dimforge&#x2F;nalgebra" aria-label="Github link for nalgebra">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;nalgebra" aria-label="Crates.io link for nalgebra">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;nalgebra.org" aria-label="Website link for nalgebra">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;nalgebra">nalgebra</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>General-purpose linear algebra library with transformations and statically-sized or dynamically-sized matrices.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/nalgebra">
+                                <img src="https://img.shields.io/crates/v/nalgebra.svg?maxAge=2592000" alt="Crates.io link for nalgebra">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/nalgebra">
+                                <img src="https://img.shields.io/crates/d/nalgebra.svg?maxAge=2592000" alt="Download count for nalgebra">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/nalgebra">
+                                <img src="https://img.shields.io/crates/dr/nalgebra.svg?maxAge=2592000" alt="Recent download count for nalgebra">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/nalgebra">
+                                <img src="https://img.shields.io/crates/l/nalgebra.svg?maxAge=2592000" alt="License for nalgebra">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#optimath" id="optimath" aria-label="Permanent link for optimath">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;djugei&#x2F;optimath&#x2F;" aria-label="Github link for optimath">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;optimath" aria-label="Crates.io link for optimath">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;optimath">optimath</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Linear Algebra using const generics for no_std and specialization to enable SIMD.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/optimath">
+                                <img src="https://img.shields.io/crates/v/optimath.svg?maxAge=2592000" alt="Crates.io link for optimath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/optimath">
+                                <img src="https://img.shields.io/crates/d/optimath.svg?maxAge=2592000" alt="Download count for optimath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/optimath">
+                                <img src="https://img.shields.io/crates/dr/optimath.svg?maxAge=2592000" alt="Recent download count for optimath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/optimath">
+                                <img src="https://img.shields.io/crates/l/optimath.svg?maxAge=2592000" alt="License for optimath">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#palette" id="palette" aria-label="Permanent link for palette">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;Ogeon&#x2F;palette" aria-label="Github link for palette">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;palette" aria-label="Crates.io link for palette">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;palette">palette</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Convert and manage colors with a focus on correctness, flexibility and ease of use.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/palette">
+                                <img src="https://img.shields.io/crates/v/palette.svg?maxAge=2592000" alt="Crates.io link for palette">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/palette">
+                                <img src="https://img.shields.io/crates/d/palette.svg?maxAge=2592000" alt="Download count for palette">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/palette">
+                                <img src="https://img.shields.io/crates/dr/palette.svg?maxAge=2592000" alt="Recent download count for palette">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/palette">
+                                <img src="https://img.shields.io/crates/l/palette.svg?maxAge=2592000" alt="License for palette">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#quaternion" id="quaternion" aria-label="Permanent link for quaternion">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PistonDevelopers&#x2F;quaternion.git" aria-label="Github link for quaternion">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;quaternion" aria-label="Crates.io link for quaternion">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PistonDevelopers&#x2F;quaternion" aria-label="Website link for quaternion">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;quaternion">quaternion</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A simple and type agnostic quaternion math library designed for reexporting</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/quaternion">
+                                <img src="https://img.shields.io/crates/v/quaternion.svg?maxAge=2592000" alt="Crates.io link for quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/quaternion">
+                                <img src="https://img.shields.io/crates/d/quaternion.svg?maxAge=2592000" alt="Download count for quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/quaternion">
+                                <img src="https://img.shields.io/crates/dr/quaternion.svg?maxAge=2592000" alt="Recent download count for quaternion">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/quaternion">
+                                <img src="https://img.shields.io/crates/l/quaternion.svg?maxAge=2592000" alt="License for quaternion">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#splines" id="splines" aria-label="Permanent link for splines">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;phaazon&#x2F;splines" aria-label="Github link for splines">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;splines" aria-label="Crates.io link for splines">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;phaazon&#x2F;splines" aria-label="Website link for splines">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;splines">splines</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Spline interpolation made easy</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/splines">
+                                <img src="https://img.shields.io/crates/v/splines.svg?maxAge=2592000" alt="Crates.io link for splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/splines">
+                                <img src="https://img.shields.io/crates/d/splines.svg?maxAge=2592000" alt="Download count for splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/splines">
+                                <img src="https://img.shields.io/crates/dr/splines.svg?maxAge=2592000" alt="Recent download count for splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/splines">
+                                <img src="https://img.shields.io/crates/l/splines.svg?maxAge=2592000" alt="License for splines">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#ultraviolet" id="ultraviolet" aria-label="Permanent link for ultraviolet">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;termhn&#x2F;ultraviolet" aria-label="Github link for ultraviolet">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ultraviolet" aria-label="Crates.io link for ultraviolet">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ultraviolet">ultraviolet</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A crate to do linear algebra, fast.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ultraviolet">
+                                <img src="https://img.shields.io/crates/v/ultraviolet.svg?maxAge=2592000" alt="Crates.io link for ultraviolet">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ultraviolet">
+                                <img src="https://img.shields.io/crates/d/ultraviolet.svg?maxAge=2592000" alt="Download count for ultraviolet">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ultraviolet">
+                                <img src="https://img.shields.io/crates/dr/ultraviolet.svg?maxAge=2592000" alt="Recent download count for ultraviolet">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ultraviolet">
+                                <img src="https://img.shields.io/crates/l/ultraviolet.svg?maxAge=2592000" alt="License for ultraviolet">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#uniform-cubic-splines" id="uniform-cubic-splines" aria-label="Permanent link for uniform-cubic-splines">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;virtualritz&#x2F;uniform-cubic-splines&#x2F;" aria-label="Github link for uniform-cubic-splines">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;uniform-cubic-splines" aria-label="Crates.io link for uniform-cubic-splines">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;uniform-cubic-splines">uniform-cubic-splines</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Simple uniform cubic spline evaluation and inversion.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/uniform-cubic-splines">
+                                <img src="https://img.shields.io/crates/v/uniform-cubic-splines.svg?maxAge=2592000" alt="Crates.io link for uniform-cubic-splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/uniform-cubic-splines">
+                                <img src="https://img.shields.io/crates/d/uniform-cubic-splines.svg?maxAge=2592000" alt="Download count for uniform-cubic-splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/uniform-cubic-splines">
+                                <img src="https://img.shields.io/crates/dr/uniform-cubic-splines.svg?maxAge=2592000" alt="Recent download count for uniform-cubic-splines">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/uniform-cubic-splines">
+                                <img src="https://img.shields.io/crates/l/uniform-cubic-splines.svg?maxAge=2592000" alt="License for uniform-cubic-splines">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#vecmath" id="vecmath" aria-label="Permanent link for vecmath">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;pistondevelopers&#x2F;vecmath.git" aria-label="Github link for vecmath">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vecmath" aria-label="Crates.io link for vecmath">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;pistondevelopers&#x2F;vecmath" aria-label="Website link for vecmath">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vecmath">vecmath</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A simple and type agnostic library for vector math designed for reexporting</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vecmath">
+                                <img src="https://img.shields.io/crates/v/vecmath.svg?maxAge=2592000" alt="Crates.io link for vecmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vecmath">
+                                <img src="https://img.shields.io/crates/d/vecmath.svg?maxAge=2592000" alt="Download count for vecmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vecmath">
+                                <img src="https://img.shields.io/crates/dr/vecmath.svg?maxAge=2592000" alt="Recent download count for vecmath">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vecmath">
+                                <img src="https://img.shields.io/crates/l/vecmath.svg?maxAge=2592000" alt="License for vecmath">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#vek" id="vek" aria-label="Permanent link for vek">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;yoanlcq&#x2F;vek" aria-label="Github link for vek">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vek" aria-label="Crates.io link for vek">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vek">vek</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Generic 2D-3D math swiss army knife for game engines, with SIMD support and focus on convenience.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vek">
+                                <img src="https://img.shields.io/crates/v/vek.svg?maxAge=2592000" alt="Crates.io link for vek">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vek">
+                                <img src="https://img.shields.io/crates/d/vek.svg?maxAge=2592000" alt="Download count for vek">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vek">
+                                <img src="https://img.shields.io/crates/dr/vek.svg?maxAge=2592000" alt="Recent download count for vek">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/vek">
+                                <img src="https://img.shields.io/crates/l/vek.svg?maxAge=2592000" alt="License for vek">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section>
+        <h2 class="ui horizontal divider small header">
+            <a href="#crates" id="crates">
+                <i class="bed icon big"></i>
+                Archived
+            </a>
+        </h2>
+
+        <div class="ui vertical stripe">
+            <div class="ui container">
+                <div class="ui message">
+                    <i class="info circle icon"></i>
+                    These crates are no longer maintained, but may still be of interest.
+                </div>
+
+                <ul class="ui stackable cards nolist one">
+                    
+                        
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <a href="#oxygen-quark" id="oxygen-quark" aria-label="Permanent link for oxygen_quark">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;Avekvist&#x2F;oxygen-engine" aria-label="Github link for oxygen_quark">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;oxygen_quark" aria-label="Crates.io link for oxygen_quark">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="http:&#x2F;&#x2F;oxygen.avekvist.com&#x2F;quark&#x2F;" aria-label="Website link for oxygen_quark">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;oxygen_quark">oxygen_quark</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;math&#x2F;">Math</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Oxygen Quark is a maths library mainly developed for the Oxygen Engine. </p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/oxygen_quark">
+                                <img src="https://img.shields.io/crates/v/oxygen_quark.svg?maxAge=2592000" alt="Crates.io link for oxygen_quark">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/oxygen_quark">
+                                <img src="https://img.shields.io/crates/d/oxygen_quark.svg?maxAge=2592000" alt="Download count for oxygen_quark">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/oxygen_quark">
+                                <img src="https://img.shields.io/crates/dr/oxygen_quark.svg?maxAge=2592000" alt="Recent download count for oxygen_quark">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/oxygen_quark">
+                                <img src="https://img.shields.io/crates/l/oxygen_quark.svg?maxAge=2592000" alt="License for oxygen_quark">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+<section>
+    <h2 class="ui horizontal divider small header">
+        <a href="#contribute" id="contribute">
+            <i class="chat icon big"></i>
+            Contribute
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>Do you know about a missing crate? Did you launch a new crate?</p>
+            <p>
+                Please create a
+                <a href="https://github.com/rust-gamedev/arewegameyet#contribute">pull request</a>
+                or an 
+                <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+crate:+NAME&amp;body=Please+add+crate+to+category:+Math">issue</a>
+                on our GitHub!
+            </p>
+            <p>Looking for a crate you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <footer class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="/#about" class="item">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="ten wide column">
+                        <h4 class="ui inverted header">Arewegameyet?</h4>
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Get involved</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="https://github.com/rust-gamedev/arewegameyet" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/semantic/js/visibility.min.js"></script>
+    <script src="/assets/semantic/js/transition.min.js"></script>
+    <script src="/assets/semantic/js/sidebar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // fix menu when passed
+            $('.masthead').visibility({
+                once: false,
+                onBottomPassed: function () {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function () {
+                    $('.fixed.menu').transition('fade out');
+                }
+            });
+
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('setting', 'transition', 'overlay')
+                .sidebar('setting', 'mobileTransition', 'overlay')
+                .sidebar('attach events', '.toc.item');
+
+            $('.ui.sidebar .item').on('click', function (event) {
+                $('.ui.sidebar').sidebar('hide');
+            })
+        });
+    </script>
+    
+     
+</body>
+
+</html>

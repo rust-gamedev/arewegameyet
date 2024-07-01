@@ -1,0 +1,648 @@
+[[items]]
+name = "12 Seconds Awake"
+description = "A small 2D top-down physics-based tank war game with worms-like turn mechanics written using Oxygengine"
+categories = ["action"]
+homepage_url = "//12-seconds-awake.psichix.io"
+repository_url = "//github.com/PsichiX/Oxygengine/tree/master/demos/demo-web-game"
+image = "/assets/img/12-seconds-awake.jpeg"
+
+[[items]]
+name = "A Snake's Tale"
+description = "A (100% Rust) puzzle game about snakes in cramped places"
+categories = ["puzzle", "released"]
+homepage_url = "//m12y.com/a-snakes-tale/"
+image = "/assets/img/a-snakes-tale.png"
+
+[[items]]
+name = "A/B Street"
+description = "A traffic simulation game exploring how small changes to roads affect cyclists, transit users, pedestrians, and drivers"
+categories = ["simulation"]
+repository_url = "//github.com/dabreegster/abstreet"
+image = "/assets/img/ab-street.png"
+
+[[items]]
+name = "Apocalypse Post"
+description = "a procedurally-generated, turn-based tactical shooter set in a post-apocalyptic future, where you carry mail between survivor camps in your trusty delivery van, all the while fending off attacks from bandits and zombies."
+categories = ["strategy", "rpg"]
+homepage_url = "//gridbugs.itch.io/apocalypse-post"
+repository_url = "//github.com/gridbugs/apocalypse-post"
+image = "/assets/img/apocalypse-post.gif"
+
+[[items]]
+name = "Ascension 2"
+description = "Hop your way through bite sized levels while dodging spikes, turrets, lasers, and more. Then, change the direction of gravity, and do it all again!"
+categories = ["platformer"]
+homepage_url = "//outkine.itch.io/ascension-2"
+repository_url = "//github.com/outkine/ascension-rust"
+image = "/assets/img/ascension2.png"
+
+[[items]]
+name = "Bitgun"
+description = "An action roguelite zombie shooter with difficult and satisfying combat you can learn and master. Guns break quickly and you lose all your gear when you die."
+categories = ["action", "released"]
+image = "/assets/img/bitgun.gif"
+homepage_url = "https://store.steampowered.com/app/1673940/BITGUN"
+
+[[items]]
+name = "Boat Journey"
+description = "Boat Journey is a turn-based game where you drive a boat through a procedurally-generated landscape on a voyage along a river destined for the ocean. Accept passengers to have them help you on your journey. Fight monsters, collect junk, trade the junk for fuel, use the fuel to travel to the ocean."
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/boat-journey"
+repository_url = "//github.com/gridbugs/boat-journey"
+image = "/assets/img/boat-journey.png"
+
+[[items]]
+name = "Call of Ferris"
+description = "A thrilling action game where your favorite Ferris the crab and the rust mascot got guns and has taken up the duty to find evildoer languages while managing to keep itself alive. Take part in this awesome adventure and help Ferris be the best ever!"
+categories = ["platformer", "action", "other"]
+repository_url = "//github.com/Andy-Python-Programmer/CallOfFerris"
+image = "/assets/img/call_of_ferris.gif"
+
+[[items]]
+name = "carambolage"
+description = "Cartoonish style racing game using Rust and OpenGL - highly experimental at its current state"
+categories = ["racing"]
+repository_url = "//github.com/K4ugummi/carambolage"
+image = "/assets/img/carambolage.jpg"
+
+[[items]]
+name = "chirperjax"
+description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
+categories = ["platformer"]
+repository_url = "//github.com/SergiusIW/chirperjax"
+image = "/assets/img/chirperjax.png"
+
+[[items]]
+name = "Citybound"
+description = "A new city-building game that dares to go beyond everything in its genre"
+categories = ["simulation", "strategy"]
+homepage_url = "//cityboundsim.com/"
+image = "/assets/img/Citybound_Cover_art_photo.jpg"
+
+[[items]]
+name = "colonize"
+description = "A Dwarf Fortress/Rimworld-like game written in Rust"
+categories = ["simulation", "strategy"]
+repository_url = "//github.com/indiv0/colonize"
+image = "/assets/img/colonize.png"
+
+[[items]]
+name = "Colony Genesis"
+description = "Establish a new ant colony and help it grow or let it develop on its own."
+categories = ["simulation", "strategy"]
+homepage_url = "//nativesystems.itch.io/colony"
+image = "/assets/img/colony-genesis.png"
+
+[[items]]
+name = "Color Columns"
+description = "A falling-blocks-type 2D game with a simple but addictive gameplay"
+categories = ["puzzle"]
+repository_url = "//github.com/rdrmic/color-columns"
+image = "/assets/img/color-columns.png"
+
+[[items]]
+name = "Compact Space"
+description = "How long can you stay alive?"
+categories = ["action"]
+homepage_url = "//puppetmaster.itch.io/compact-space"
+repository_url = "//github.com/puppetmaster-/compact-space"
+image = "/assets/img/compact-space.png"
+
+[[items]]
+name = "Crab Sweeper"
+description = "A mine-sweeper clone."
+categories = ["puzzle"]
+repository_url = "//github.com/SethRAH/crab_sweeper"
+image = "/assets/img/crab-sweeper.png"
+
+[[items]]
+name = "Crate Before Attack"
+description = "A multiplayer grappling-hook strategy about frogs."
+categories = ["action", "strategy"]
+homepage_url = "//cratebeforeattack.com"
+image = "/assets/img/crate-before-attack.gif"
+
+[[items]]
+name = "Digital Extinction"
+description = "A 3D real-time strategy game."
+categories = ["strategy"]
+image = "/assets/img/digital-extinction.png"
+crate_url = "https://crates.io/crates/de_game"
+repository_url = "https://github.com/DigitalExtinction/Game"
+homepage_url = "https://de-game.org/"
+
+[[items]]
+name = "dose response"
+description = "Dose Response is a roguelike game where you play an addict. Avoid the dangers threatening your mind and body while desperately looking for the next fix."
+categories = ["rpg"]
+homepage_url = "//tryjumping.com/dose-response-roguelike/"
+image = "/assets/img/dose-response.png"
+
+[[items]]
+name = "Dwarf World"
+description = "World's most acurate dwarven simulation."
+categories = ["simulation", "strategy"]
+homepage_url = "//dwarf.world"
+image = "/assets/img/dwarf-world.png"
+
+[[items]]
+name = "DynaMaze"
+description = "A multiplayer strategy-puzzle game about traversing a shifting maze"
+categories = ["puzzle", "strategy"]
+homepage_url = "//boringcactus.itch.io/dynamaze"
+repository_url = "//github.com/boringcactus/dynamaze"
+image = "/assets/img/DynaMaze.png"
+
+[[items]]
+name = "Everpuzzle"
+description = "A realtime action-puzzle game like Tetris Attack"
+categories = ["action", "puzzle"]
+repository_url = "//github.com/Skytrias/everpuzzle/"
+image = "/assets/img/everpuzzle.png"
+
+[[items]]
+name = "Evoli"
+description = "An ecosystem simulation game. Achieve the greatest possible eco-diversity without disrupting the equilibrium."
+categories = ["simulation"]
+repository_url = "//github.com/amethyst/evoli/"
+image = "/assets/img/evoli-prealpha.gif"
+
+[[items]]
+name = "Fiiish! RS"
+description = "A simple remake of the Fiiish endless swimmer in Rust."
+categories = ["action", "released"]
+homepage_url = "//omni-mad.itch.io/fiiish"
+repository_url = "//github.com/AndreasOM/fiiish-rs/"
+image = "/assets/img/fiiish-rs.png"
+
+[[items]]
+name = "Gaia"
+description = "A program that lets you view the world"
+categories = ["simulation"]
+repository_url = "//github.com/ucarion/gaia"
+image = "/assets/img/gaia.jpg"
+
+[[items]]
+name = "Galangua"
+description = "A dynamic 2D shoot 'em up game, written using SDL2"
+categories = ["action"]
+homepage_url = "//tyfkda.github.io/galangua"
+repository_url = "//github.com/tyfkda/galangua"
+image = "/assets/img/galangua.png"
+
+[[items]]
+name = "Helix Repair"
+description = "In Helix Repair, your task is to repair a broken DNA sequence by correcting nucleobases. You have 20 seconds!"
+categories = ["puzzle", "released"]
+homepage_url = "//coffejunkstudio.itch.io/helix-repair"
+image = "/assets/img/helix-repair.gif"
+
+[[items]]
+name = "hematite"
+description = "A simple Minecraft written in Rust with the Piston game engine"
+categories = ["rpg", "open-world"]
+repository_url = "//github.com/PistonDevelopers/hematite"
+image = "/assets/img/hematite.png"
+
+[[items]]
+name = "Hydrofoil Generation"
+description = "A realistic sailing/foiling inshore simulator that puts you in the driving seat of modern competitive sailing"
+categories = ["simulation", "racing", "released"]
+homepage_url = "//store.steampowered.com/app/1448820/Hydrofoil_Generation"
+image = "/assets/img/hydrofoilg.jpg"
+
+[[items]]
+name = "HyperZen Training"
+description = "Experimental minimalist game with a special graphical mecanic"
+categories = ["fps", "released"]
+homepage_url = "//store.steampowered.com/app/884160/HyperZen_Training/"
+image = "/assets/img/hyperzentraining.png"
+
+[[items]]
+name = "Idu"
+description = "A strategic sim about growing self-aware plants"
+categories = ["simulation"]
+homepage_url = "//epcc.itch.io/idu"
+image = "/assets/img/idu.jpg"
+
+[[items]]
+name = "It's Not Cool"
+description = "Assume role of the mayor of a small coastal city, caught in the middle of hilariously rapid global warming spurt."
+categories = ["strategy"]
+homepage_url = "//ratys.itch.io/its-not-cool"
+repository_url = "//github.com/Ratysz/ludumdare42"
+image = "/assets/img/its-not-cool.png"
+
+[[items]]
+name = "Kiomet.com"
+description = "An online, real-time strategy game in which you expand your territory by capturing and upgrading towers."
+categories = ["strategy", "released"]
+homepage_url = "https://kiomet.com"
+repository_url = "https://github.com/SoftbearStudios/kiomet"
+image = "/assets/img/kiomet.png"
+
+[[items]]
+name = "Le Train Dispatcher"
+description = "Direct the trains in the delivery areas."
+categories = ["simulation"]
+homepage_url = "//athorus.itch.io/ltd"
+image = "/assets/img/ltd.gif"
+
+[[items]]
+name = "Llamassacre"
+description = "A jump and bump game for two players made with ggez"
+categories = ["action"]
+homepage_url = "//rap2hpoutre.github.io/llamassacre-website/"
+image = "/assets/img/llamassacre.png"
+
+[[items]]
+name = "magog"
+description = "A roguelike game in Rust"
+categories = ["rpg"]
+repository_url = "//github.com/rsaarelm/magog"
+image = "/assets/img/magog.png"
+
+[[items]]
+name = "Makiomino"
+description = "Tile-matching puzzle game based on mix of classical mechanics."
+categories = ["puzzle", "released"]
+homepage_url = "//store.steampowered.com/app/1177840/Makiomino/"
+image = "/assets/img/makiomino.gif"
+
+[[items]]
+name = "Mazean"
+description = "Mazean is an online multiplayer FPS"
+categories = ["fps", "action", "released"]
+image = "/assets/img/mazean.png"
+homepage_url = "https://mazean.com"
+
+[[items]]
+name = "Meters Below the Ground"
+description = "A short tactical dungeon-crawler about escaping from an insectoid-infested facility"
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/meters-below-the-ground"
+repository_url = "//github.com/gridbugs/meters-below-the-ground"
+image = "/assets/img/meters-below-ground.png"
+
+[[items]]
+name = "mirr/orb"
+description = "A puzzle game about bouncing lasers off mirrors to activate orbs"
+categories = ["puzzle", "released"]
+homepage_url = "http://mirrorb.io"
+repository_url = "//github.com/Syn-Nine/mirrorb"
+image = "/assets/img/mirrorb.png"
+
+[[items]]
+name = "Mk48.io"
+description = "Mk48.io is an online multiplayer naval combat game"
+categories = ["action", "strategy", "simulation", "released"]
+image = "/assets/img/mk48io.png"
+repository_url = "https://github.com/SoftbearStudios/mk48"
+homepage_url = "https://mk48.io"
+
+[[items]]
+name = "Netquel"
+description = "Netquel is an online multiplayer space combat game"
+categories = ["action", "strategy", "simulation", "released"]
+image = "/assets/img/netquel.png"
+homepage_url = "https://netquel.com"
+
+[[items]]
+name = "Nox Futura"
+description = "An open-source game combining elements of Dwarf Fortress, Civilization, Warhammer, Douglas Adams, and more."
+categories = ["simulation", "strategy"]
+repository_url = "//github.com/thebracket/noxfutura"
+image = "/assets/img/nox-futura.jpeg"
+
+[[items]]
+name = "orb.farm"
+description = "A virtual ecosystem where different species of creature can live, grow and die as part of a self-contained food chain."
+categories = ["simulation"]
+homepage_url = "//orb.farm"
+repository_url = "//github.com/MaxBittker/orb.farm"
+image = "/assets/img/orb-farm.jpeg"
+
+[[items]]
+name = "Orbital Decay"
+description = "A turn-based tactical roguelike with a focus on ranged combat. Deal enough damage to enemies to get through their armour without breaching the hull of the station, or risk being pulled into the void."
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/orbital-decay"
+repository_url = "//github.com/gridbugs/orbital-decay"
+image = "/assets/img/orbital-decay.png"
+
+[[items]]
+name = "Oxidator"
+description = "A real-time strategy game/engine written with Rust and WebGPU."
+categories = ["strategy"]
+repository_url = "//github.com/Ruddle/oxidator"
+image = "/assets/img/oxidator.gif"
+
+[[items]]
+name = "Pascal Penguin"
+description = "Pascal Penguin is a 2D grid-based puzzle game with levels designed around slippery ice."
+categories = ["puzzle", "released"]
+homepage_url = "http://www.luduminis.com/pascal/about/"
+image = "/assets/img/pascal_penguin.png"
+
+[[items]]
+name = "plantex"
+description = "Open-world exploration game with plants. Everything is procedurally generated"
+categories = ["open-world"]
+repository_url = "//github.com/OsnaCS/plantex"
+image = "/assets/img/plantex.jpg"
+
+[[items]]
+name = "Portal explorer"
+description = "A web visualization of mind-blowing portals using ray-tracing"
+categories = ["other", "simulation"]
+homepage_url = "//optozorax.github.io/portal"
+repository_url = "//github.com/optozorax/portal"
+image = "/assets/img/portal.gif"
+
+[[items]]
+name = "Pushin' Boxes"
+description = "Play as a little robot (named プシン) as it pushes boxes around inside a warehouse to organize them"
+categories = ["puzzle", "released"]
+homepage_url = "//septum.io/games/pushin-boxes/"
+repository_url = "//gitlab.com/septum___/pushin_boxes"
+image = "/assets/img/pushin_boxes.png"
+
+[[items]]
+name = "Q³"
+description = "A Quake 3 like game with voxelized destructible maps"
+categories = ["fps"]
+repository_url = "//github.com/Jeaye/q3"
+image = "/assets/img/q3.png"
+
+[[items]]
+name = "realm.one"
+description = "A tiled based game written in Rust, uses the Amethyst game engine!"
+categories = ["other"]
+repository_url = "//github.com/Machine-Hum/realm.one"
+image = "/assets/img/realmone.png"
+
+[[items]]
+name = "Reforge"
+description = "Online multiplayer sandbox space ship combat game"
+categories = ["strategy"]
+repository_url = "//github.com/tedsta/reforge"
+image = "/assets/img/reforge_screeny.png"
+
+[[items]]
+name = "Rezcraft"
+description = "Minecraft like voxel game using wgpu, supporting both native targets and wasm"
+categories = ["open-world"]
+image = "/assets/img/rezcraft.png"
+crate_url = "https://crates.io/crates/rezcraft"
+homepage_url = "https://shapur1234.github.io/Rezcraft-Demo/"
+repository_url = "https://github.com/Shapur1234/Rezcraft"
+
+[[items]]
+name = "Robo Instructus"
+description = "A puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language"
+categories = ["puzzle", "released"]
+homepage_url = "//www.roboinstruct.us/"
+image = "/assets/img/roboinstructus.gif"
+
+[[items]]
+name = "Rocket"
+description = "A toy game in Rust, using Piston. The code is thoroughly commented in order to help people to follow it easily"
+categories = ["action"]
+repository_url = "//github.com/aochagavia/rocket"
+image = "/assets/img/rocket.png"
+
+[[items]]
+name = "Rostige Schlange"
+description = "Rostige Schlange (\"Rusty Snake\" in German apparently) is a small snake clone, using OpenGL for rendering"
+categories = ["action"]
+repository_url = "//github.com/Dooskington/Rostige-Schlange"
+image = "/assets/img/rostigeschlange.png"
+
+[[items]]
+name = "ruga"
+description = "A game made in rust"
+categories = ["action"]
+repository_url = "//github.com/thiolliere/ruga"
+image = "/assets/img/ruga.gif"
+
+[[items]]
+name = "Rust Doom"
+description = "A Doom Renderer written in Rust"
+categories = ["fps"]
+repository_url = "//github.com/cristicbz/rust-doom"
+image = "/assets/img/rust-doom.png"
+
+[[items]]
+name = "Rust-oids"
+description = "A-life simulator sandbox"
+categories = ["simulation"]
+repository_url = "//github.com/itadinanta/rust-oids"
+image = "/assets/img/rustoids.png"
+
+[[items]]
+name = "Rusted Ruins"
+description = "An extensible open world rogue like game with pixel art"
+categories = ["open-world", "rpg"]
+repository_url = "//github.com/garkimasera/rusted-ruins"
+image = "/assets/img/rusted-ruins.png"
+
+[[items]]
+name = "RustyVolley"
+description = "A rewrite of Blobby Volley 2 written in Rust, a blazingly fast, memory safe, thread safe language."
+categories = ["other"]
+repository_url = "//github.com/RustyVolley/RustyVolleySrc"
+image = "/assets/img/rustyvolley.png"
+
+[[items]]
+name = "Sandspiel"
+description = "A pixel physics simulation sandbox where you can paint with elements, conduct experiments and build your own world!"
+categories = ["simulation"]
+homepage_url = "//maxbittker.itch.io/sandspiel"
+repository_url = "//github.com/MaxBittker/sandspiel"
+image = "/assets/img/sandspiel.png"
+
+[[items]]
+name = "SHAR"
+description = "Network shooter with physics and destructions"
+categories = ["action"]
+homepage_url = "//sharonos.com/"
+image = "/assets/img/sharbringer-icon.jpg"
+
+[[items]]
+name = "Slavic Castles"
+description = "A card game inspired by Arcomage"
+categories = ["card", "strategy"]
+homepage_url = "//leinnan.itch.io/slavic-castles"
+image = "/assets/img/slavic-castles.jpg"
+
+[[items]]
+name = "slime99"
+description = "Roguelike where combat outcomes are pre-determined and known by the player. Set in a neon sewer!"
+categories = ["rpg"]
+homepage_url = "//gridbugs.itch.io/slime99"
+repository_url = "//github.com/gridbugs/slime99"
+image = "/assets/img/slime99.png"
+
+[[items]]
+name = "Solitaire"
+description = "A remake of the Shenzhen Solitaire variant"
+categories = ["card"]
+repository_url = "//github.com/Swampsoft/solitaire"
+image = "/assets/img/solitaire.jpg"
+
+[[items]]
+name = "Space Invaders"
+description = "A remake of the original Space Invaders written in rust"
+categories = ["action"]
+repository_url = "//github.com/bgaster/rusty-space-invaders"
+image = "/assets/img/spaceinvaders.gif"
+
+[[items]]
+name = "Sphere Game"
+description = "You control a sphere in a bowl-shaped 2D space. Your goal is to hit the other spheres as hard as possible to shatter them into pieces!"
+categories = ["action"]
+homepage_url = "//coffejunkstudio.itch.io/spheregame"
+image = "/assets/img/spheres-game.png"
+
+[[items]]
+name = "Stacked Worlds"
+description = "A game prototype written in Rust, shows how to use specs and nphysics."
+categories = ["platformer"]
+repository_url = "//github.com/andreivasiliu/stacked-worlds"
+image = "/assets/img/stacked_worlds.gif"
+
+[[items]]
+name = "Stellary"
+description = "Stellary is a fast-paced artillery game that promises exciting battles and real-time gravity physics."
+categories = ["simulation", "action"]
+homepage_url = "//coffejunkstudio.itch.io/stellary"
+image = "/assets/img/stellary.png"
+
+[[items]]
+name = "Sulis"
+description = "An RPG with turn based, tactical combat, deep character customization and an engaging storyline."
+categories = ["rpg", "strategy"]
+homepage_url = "//sulisgame.com/"
+image = "/assets/img/sulis.png"
+
+[[items]]
+name = "Super Jeff"
+description = "Small 2d platformer game using SDL2 and glam. Mostly to make fun of my friends if I'm being honest :)"
+categories = ["action", "platformer"]
+repository_url = "//github.com/fabiojmendes/super-jeff"
+image = "/assets/img/super-jeff.gif"
+
+[[items]]
+name = "Tataku"
+description = "An osu! clone written in rust!"
+categories = ["action"]
+homepage_url = "//tataku.ca"
+repository_url = "//gitlab.ayyeve.xyz/tataku/tataku-client"
+image = "/assets/img/tataku.gif"
+
+[[items]]
+name = "Tetris Bane"
+description = "A Tetris clone with a deliberately frustrating set of blocks. There's also a classic mode for the purists, an ultra hard metal mode and even a chill mode."
+categories = ["puzzle"]
+homepage_url = "//andrew-jones.itch.io/tetris-bane"
+repository_url = "//github.com/andii1701/tetris-bane"
+image = "/assets/img/tetris-bane.png"
+
+[[items]]
+name = "Theta Wave"
+description = "A space shooter game that strives to be an entry point for new game developers to make their first contributions."
+categories = ["action"]
+repository_url = "//github.com/amethyst/theta-wave"
+image = "/assets/img/theta-wave.png"
+
+[[items]]
+name = "Time Spiders"
+description = "They live, work, and die on a time machine they didn't invent and can't control. You are their Overlord. Help them learn, grow, and thrive."
+categories = ["simulation", "strategy"]
+homepage_url = "//anachronidia.itch.io/time-spiders"
+image = "/assets/img/time-spiders.png"
+
+[[items]]
+name = "Times of Progress"
+description = "A City Builder set during the Industrial Revolution. Build industries to extract natural resources. Produce goods to satisfy the population. Manage transportation routes and trade with nearby cities."
+categories = ["strategy"]
+homepage_url = "//store.steampowered.com/app/2628450/Times_of_Progress"
+image = "/assets/img/times_of_progress.gif"
+
+[[items]]
+name = "Tiny Glade"
+description = "A small relaxing game about doodling castles. Explore gridless building chemistry, and watch the game carefully assemble every brick, pebble and plank."
+categories = ["simulation", "other"]
+homepage_url = "//store.steampowered.com/app/2198150/Tiny_Glade"
+image = "/assets/img/tinyglade.jpg"
+
+[[items]]
+name = "Triverse"
+description = "A pausable RTS with units built from triangle parts."
+categories = ["strategy"]
+homepage_url = "//cragwind.itch.io/triverse"
+image = "/assets/img/triverse.gif"
+
+[[items]]
+name = "Twenty Asteroids"
+description = "A modern asteroids-like game with procedural destruction"
+categories = ["action"]
+homepage_url = "//pum-purum-pum-pum.itch.io/twenty-asteroids"
+image = "/assets/img/twenty-asteroids.png"
+
+[[items]]
+name = "UniverCity"
+description = "An isometric university management game"
+categories = ["released", "strategy", "simulation"]
+homepage_url = "//store.steampowered.com/app/808160/UniverCity"
+repository_url = "//github.com/Thinkofname/UniverCity"
+image = "/assets/img/univercity.gif"
+
+[[items]]
+name = "Vange-rs"
+description = "Rusty Vangers clone"
+categories = ["racing", "rpg", "open-world"]
+repository_url = "//github.com/kvark/vange-rs"
+image = "/assets/img/rustyroad.png"
+
+[[items]]
+name = "Veloren"
+description = "An open source multiplayer voxel RPG game currently in alpha development."
+categories = ["rpg", "open-world", "simulation"]
+homepage_url = "//veloren.net"
+image = "/assets/img/veloren.jpg"
+
+[[items]]
+name = "Vigilant Steel"
+description = "A space game using Rust & Piston"
+categories = ["action"]
+repository_url = "//gitlab.com/remram44/vigilant-steel"
+image = "/assets/img/vigilant-steel.png"
+
+[[items]]
+name = "Way of Rhea"
+description = "A color changing puzzle adventure. Hard puzzles, forgiving mechanics."
+categories = ["puzzle"]
+homepage_url = "//store.steampowered.com/app/1110620?utm_campaign=ambient&utm_source=awgy"
+image = "/assets/img/way_of_rhea.png"
+
+[[items]]
+name = "YAVSS"
+description = "Yet Another Vertical Scrolling Shooter"
+categories = ["action"]
+repository_url = "https://github.com/batonius/yavss"
+image = "/assets/img/yavss.gif"
+
+[[items]]
+name = "Zemeroth"
+description = "A small 2D turn-based hexagonal tactical game made with ggez engine"
+categories = ["strategy"]
+repository_url = "//github.com/ozkriff/zemeroth/"
+image = "/assets/img/zemeroth.gif"
+
+[[items]]
+name = "Zone of Control"
+description = "A turn-based hexagonal strategy game"
+categories = ["strategy"]
+repository_url = "//github.com/ozkriff/zoc/"
+image = "/assets/img/zone-of-control.png"

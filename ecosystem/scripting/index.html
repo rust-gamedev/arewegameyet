@@ -1,0 +1,3353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Scripting Languages | Are we game yet?</title>
+
+    <meta property="og:title" content="Scripting Languages">
+    <meta property="og:url" content="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">
+    <meta property="og:description" content="Scripting languages embeddable in a Rust game">
+    <link rel="canonical" href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arewegameyet.rs/assets/img/rust-logo-128x128-blk-v2.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:site_name" content="Are we game yet?">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/main.css">
+    
+     
+</head>
+
+<body>
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="item" href="/">Home</a>
+        <a class="item" href="/#chat">Chat</a>
+        <a class="item" href="/#ecosystem">Ecosystem</a>
+        <a class="item" href="/#games">Games</a>
+        <a class="item" href="/#curators">Curators</a>
+        <a class="item" href="/#resources">Resources</a>
+        <a class="item" href="/#about">About</a>
+    </div>
+
+    <div class="pusher">
+        <header class="ui inverted vertical masthead center aligned segment">
+            <nav class="ui container" aria-label="site">
+                <ul class="ui large borderless inverted menu nolist">
+                    <li>
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#chat">Chat</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#news">News</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#ecosystem">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#games">Games</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#curators">Curators</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#about">About</a>
+                    </li>
+                    <li class="right menu">
+                        <div class="item">
+                            <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="ui text container">
+                
+                    <p class="ui inverted large header">
+                        Are we game yet?
+                    </p>
+                
+            </div>
+        </header>
+
+        <main>
+            
+
+
+
+
+<section class="ui vertical stripe">
+    <h1 class="ui center aligned icon header">
+        <i class="circular icon cubes"></i>
+        Scripting Languages
+    </h1>
+    <div class="ui text container">
+        <p>Scripting languages embeddable in a Rust game</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+
+<section>
+    <h2 class="ui horizontal divider small header">
+        <a href="#crates" id="crates">
+            <i class="list icon big"></i>
+            Crates
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui container">
+            <ul class="ui stackable cards nolist one">
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#dyon" id="dyon" aria-label="Permanent link for dyon">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;pistondevelopers&#x2F;dyon.git" aria-label="Github link for dyon">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dyon" aria-label="Crates.io link for dyon">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;pistondevelopers&#x2F;dyon" aria-label="Website link for dyon">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dyon">dyon</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A rusty dynamically typed scripting language</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dyon">
+                                <img src="https://img.shields.io/crates/v/dyon.svg?maxAge=2592000" alt="Crates.io link for dyon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dyon">
+                                <img src="https://img.shields.io/crates/d/dyon.svg?maxAge=2592000" alt="Download count for dyon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dyon">
+                                <img src="https://img.shields.io/crates/dr/dyon.svg?maxAge=2592000" alt="Recent download count for dyon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/dyon">
+                                <img src="https://img.shields.io/crates/l/dyon.svg?maxAge=2592000" alt="License for dyon">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+
+
+            
+
+                  
+                        
+                     
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#ellie-language" id="ellie-language" aria-label="Permanent link for Ellie Language">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;behemehal&#x2F;Ellie-Language" aria-label="Github link for Ellie Language">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+
+        
+            <a href="https:&#x2F;&#x2F;www.ellie-lang.org&#x2F;" aria-label="Website link for Ellie Language">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;www.ellie-lang.org&#x2F;">Ellie Language</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A type-safe scripting language</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https:&#x2F;&#x2F;gitter.im&#x2F;ellie-lang&#x2F;community" target="_blank">
+                                <img src="/assets/badges/chat.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#gluon" id="gluon" aria-label="Permanent link for gluon">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;gluon-lang&#x2F;gluon" aria-label="Github link for gluon">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gluon" aria-label="Crates.io link for gluon">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;gluon-lang.org" aria-label="Website link for gluon">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gluon">gluon</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A static, type inferred programming language for application embedding</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/gluon">
+                                <img src="https://img.shields.io/crates/v/gluon.svg?maxAge=2592000" alt="Crates.io link for gluon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/gluon">
+                                <img src="https://img.shields.io/crates/d/gluon.svg?maxAge=2592000" alt="Download count for gluon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/gluon">
+                                <img src="https://img.shields.io/crates/dr/gluon.svg?maxAge=2592000" alt="Recent download count for gluon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/gluon">
+                                <img src="https://img.shields.io/crates/l/gluon.svg?maxAge=2592000" alt="License for gluon">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https:&#x2F;&#x2F;gitter.im&#x2F;gluon-lang&#x2F;gluon" target="_blank">
+                                <img src="/assets/badges/chat.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#hlua" id="hlua" aria-label="Permanent link for hlua">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;tomaka&#x2F;hlua" aria-label="Github link for hlua">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;hlua" aria-label="Crates.io link for hlua">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;hlua">hlua</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Zero-cost high-level wrapper for Lua</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/hlua">
+                                <img src="https://img.shields.io/crates/v/hlua.svg?maxAge=2592000" alt="Crates.io link for hlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/hlua">
+                                <img src="https://img.shields.io/crates/d/hlua.svg?maxAge=2592000" alt="Download count for hlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/hlua">
+                                <img src="https://img.shields.io/crates/dr/hlua.svg?maxAge=2592000" alt="Recent download count for hlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/hlua">
+                                <img src="https://img.shields.io/crates/l/hlua.svg?maxAge=2592000" alt="License for hlua">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#ketos" id="ketos" aria-label="Permanent link for ketos">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;murarth&#x2F;ketos" aria-label="Github link for ketos">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ketos" aria-label="Crates.io link for ketos">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;murarth&#x2F;ketos" aria-label="Website link for ketos">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ketos">ketos</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Lisp dialect scripting and extension language</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ketos">
+                                <img src="https://img.shields.io/crates/v/ketos.svg?maxAge=2592000" alt="Crates.io link for ketos">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ketos">
+                                <img src="https://img.shields.io/crates/d/ketos.svg?maxAge=2592000" alt="Download count for ketos">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ketos">
+                                <img src="https://img.shields.io/crates/dr/ketos.svg?maxAge=2592000" alt="Recent download count for ketos">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ketos">
+                                <img src="https://img.shields.io/crates/l/ketos.svg?maxAge=2592000" alt="License for ketos">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#lichen" id="lichen" aria-label="Permanent link for lichen">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;viperscape&#x2F;lichen" aria-label="Github link for lichen">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;lichen" aria-label="Crates.io link for lichen">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;lichen">lichen</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Scripting DSL (for Dialogue Graphs, et al)</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/lichen">
+                                <img src="https://img.shields.io/crates/v/lichen.svg?maxAge=2592000" alt="Crates.io link for lichen">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/lichen">
+                                <img src="https://img.shields.io/crates/d/lichen.svg?maxAge=2592000" alt="Download count for lichen">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/lichen">
+                                <img src="https://img.shields.io/crates/dr/lichen.svg?maxAge=2592000" alt="Recent download count for lichen">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/lichen">
+                                <img src="https://img.shields.io/crates/l/lichen.svg?maxAge=2592000" alt="License for lichen">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#luajit" id="luajit" aria-label="Permanent link for luajit">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;Dreae&#x2F;luajit-rs" aria-label="Github link for luajit">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;luajit" aria-label="Crates.io link for luajit">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;luajit">luajit</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Rust crate for calling LuaJIT from Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/luajit">
+                                <img src="https://img.shields.io/crates/v/luajit.svg?maxAge=2592000" alt="Crates.io link for luajit">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/luajit">
+                                <img src="https://img.shields.io/crates/d/luajit.svg?maxAge=2592000" alt="Download count for luajit">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/luajit">
+                                <img src="https://img.shields.io/crates/dr/luajit.svg?maxAge=2592000" alt="Recent download count for luajit">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/luajit">
+                                <img src="https://img.shields.io/crates/l/luajit.svg?maxAge=2592000" alt="License for luajit">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#mlua" id="mlua" aria-label="Permanent link for mlua">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;khvzak&#x2F;mlua" aria-label="Github link for mlua">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;mlua" aria-label="Crates.io link for mlua">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;mlua">mlua</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>High level bindings to Lua 5.4&#x2F;5.3&#x2F;5.2&#x2F;5.1 (including LuaJIT) and Roblox Luau
+with async&#x2F;await features and support of writing native Lua modules in Rust.
+</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mlua">
+                                <img src="https://img.shields.io/crates/v/mlua.svg?maxAge=2592000" alt="Crates.io link for mlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mlua">
+                                <img src="https://img.shields.io/crates/d/mlua.svg?maxAge=2592000" alt="Download count for mlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mlua">
+                                <img src="https://img.shields.io/crates/dr/mlua.svg?maxAge=2592000" alt="Recent download count for mlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/mlua">
+                                <img src="https://img.shields.io/crates/l/mlua.svg?maxAge=2592000" alt="License for mlua">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#molt" id="molt" aria-label="Permanent link for molt">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;wduquette&#x2F;molt" aria-label="Github link for molt">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;molt" aria-label="Crates.io link for molt">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;wduquette.github.io&#x2F;" aria-label="Website link for molt">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;molt">molt</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Embeddable TCL interpreter for Rust applications</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/molt">
+                                <img src="https://img.shields.io/crates/v/molt.svg?maxAge=2592000" alt="Crates.io link for molt">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/molt">
+                                <img src="https://img.shields.io/crates/d/molt.svg?maxAge=2592000" alt="Download count for molt">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/molt">
+                                <img src="https://img.shields.io/crates/dr/molt.svg?maxAge=2592000" alt="Recent download count for molt">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/molt">
+                                <img src="https://img.shields.io/crates/l/molt.svg?maxAge=2592000" alt="License for molt">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+            
+        
+        
+    
+
+
+
+
+
+                  
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#mun" id="mun" aria-label="Permanent link for mun">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;mun-lang&#x2F;mun" aria-label="Github link for mun">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+
+        
+            <a href="https:&#x2F;&#x2F;mun-lang.org" aria-label="Website link for mun">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;mun-lang.org">mun</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Source code for the Mun language and runtime.</p>
+        </div>
+    </div>
+    
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#passerine" id="passerine" aria-label="Permanent link for passerine">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;vrtbl&#x2F;passerine" aria-label="Github link for passerine">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;passerine" aria-label="Crates.io link for passerine">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;passerine">passerine</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A small extensible functional scripting language designed for concise expression with little code.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/passerine">
+                                <img src="https://img.shields.io/crates/v/passerine.svg?maxAge=2592000" alt="Crates.io link for passerine">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/passerine">
+                                <img src="https://img.shields.io/crates/d/passerine.svg?maxAge=2592000" alt="Download count for passerine">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/passerine">
+                                <img src="https://img.shields.io/crates/dr/passerine.svg?maxAge=2592000" alt="Recent download count for passerine">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/passerine">
+                                <img src="https://img.shields.io/crates/l/passerine.svg?maxAge=2592000" alt="License for passerine">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#rhai" id="rhai" aria-label="Permanent link for rhai">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;rhaiscript&#x2F;rhai" aria-label="Github link for rhai">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rhai" aria-label="Crates.io link for rhai">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;rhai.rs" aria-label="Website link for rhai">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rhai">rhai</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Embedded scripting for Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rhai">
+                                <img src="https://img.shields.io/crates/v/rhai.svg?maxAge=2592000" alt="Crates.io link for rhai">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rhai">
+                                <img src="https://img.shields.io/crates/d/rhai.svg?maxAge=2592000" alt="Download count for rhai">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rhai">
+                                <img src="https://img.shields.io/crates/dr/rhai.svg?maxAge=2592000" alt="Recent download count for rhai">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rhai">
+                                <img src="https://img.shields.io/crates/l/rhai.svg?maxAge=2592000" alt="License for rhai">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#rlua" id="rlua" aria-label="Permanent link for rlua">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;mlua-rs&#x2F;rlua" aria-label="Github link for rlua">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rlua" aria-label="Crates.io link for rlua">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rlua">rlua</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>High level bindings to Lua 5.x</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rlua">
+                                <img src="https://img.shields.io/crates/v/rlua.svg?maxAge=2592000" alt="Crates.io link for rlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rlua">
+                                <img src="https://img.shields.io/crates/d/rlua.svg?maxAge=2592000" alt="Download count for rlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rlua">
+                                <img src="https://img.shields.io/crates/dr/rlua.svg?maxAge=2592000" alt="Recent download count for rlua">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rlua">
+                                <img src="https://img.shields.io/crates/l/rlua.svg?maxAge=2592000" alt="License for rlua">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#rune" id="rune" aria-label="Permanent link for rune">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;rune-rs&#x2F;rune" aria-label="Github link for rune">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rune" aria-label="Crates.io link for rune">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;rune-rs&#x2F;rune" aria-label="Website link for rune">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rune">rune</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>The Rune Language, an embeddable dynamic programming language for Rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rune">
+                                <img src="https://img.shields.io/crates/v/rune.svg?maxAge=2592000" alt="Crates.io link for rune">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rune">
+                                <img src="https://img.shields.io/crates/d/rune.svg?maxAge=2592000" alt="Download count for rune">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rune">
+                                <img src="https://img.shields.io/crates/dr/rune.svg?maxAge=2592000" alt="Recent download count for rune">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rune">
+                                <img src="https://img.shields.io/crates/l/rune.svg?maxAge=2592000" alt="License for rune">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#rustpython" id="rustpython" aria-label="Permanent link for rustpython">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;RustPython&#x2F;RustPython" aria-label="Github link for rustpython">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rustpython" aria-label="Crates.io link for rustpython">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rustpython">rustpython</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A python interpreter written in rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rustpython">
+                                <img src="https://img.shields.io/crates/v/rustpython.svg?maxAge=2592000" alt="Crates.io link for rustpython">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rustpython">
+                                <img src="https://img.shields.io/crates/d/rustpython.svg?maxAge=2592000" alt="Download count for rustpython">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rustpython">
+                                <img src="https://img.shields.io/crates/dr/rustpython.svg?maxAge=2592000" alt="Recent download count for rustpython">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/rustpython">
+                                <img src="https://img.shields.io/crates/l/rustpython.svg?maxAge=2592000" alt="License for rustpython">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+            
+
+                  
+
+                     
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#ruwren" id="ruwren" aria-label="Permanent link for ruwren">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;Jengamon&#x2F;ruwren" aria-label="Github link for ruwren">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ruwren" aria-label="Crates.io link for ruwren">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;wren.io" aria-label="Website link for ruwren">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ruwren">ruwren</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A Rustified binding for Wren</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ruwren">
+                                <img src="https://img.shields.io/crates/v/ruwren.svg?maxAge=2592000" alt="Crates.io link for ruwren">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ruwren">
+                                <img src="https://img.shields.io/crates/d/ruwren.svg?maxAge=2592000" alt="Download count for ruwren">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ruwren">
+                                <img src="https://img.shields.io/crates/dr/ruwren.svg?maxAge=2592000" alt="Recent download count for ruwren">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/ruwren">
+                                <img src="https://img.shields.io/crates/l/ruwren.svg?maxAge=2592000" alt="License for ruwren">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#spaik" id="spaik" aria-label="Permanent link for spaik">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;snyball&#x2F;spaik" aria-label="Github link for spaik">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;spaik" aria-label="Crates.io link for spaik">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;snyball&#x2F;spaik" aria-label="Website link for spaik">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;spaik">spaik</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>The SPAIK Programming Language</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/spaik">
+                                <img src="https://img.shields.io/crates/v/spaik.svg?maxAge=2592000" alt="Crates.io link for spaik">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/spaik">
+                                <img src="https://img.shields.io/crates/d/spaik.svg?maxAge=2592000" alt="Download count for spaik">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/spaik">
+                                <img src="https://img.shields.io/crates/dr/spaik.svg?maxAge=2592000" alt="Recent download count for spaik">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/spaik">
+                                <img src="https://img.shields.io/crates/l/spaik.svg?maxAge=2592000" alt="License for spaik">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#throne" id="throne" aria-label="Permanent link for throne">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;t-mw&#x2F;throne" aria-label="Github link for throne">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;throne" aria-label="Crates.io link for throne">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;throne">throne</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Game scripting language for rapid prototyping and story logic</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/throne">
+                                <img src="https://img.shields.io/crates/v/throne.svg?maxAge=2592000" alt="Crates.io link for throne">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/throne">
+                                <img src="https://img.shields.io/crates/d/throne.svg?maxAge=2592000" alt="Download count for throne">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/throne">
+                                <img src="https://img.shields.io/crates/dr/throne.svg?maxAge=2592000" alt="Recent download count for throne">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/throne">
+                                <img src="https://img.shields.io/crates/l/throne.svg?maxAge=2592000" alt="License for throne">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#torchbear" id="torchbear" aria-label="Permanent link for torchbear">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;foundpatterns&#x2F;torchbear" aria-label="Github link for torchbear">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;torchbear" aria-label="Crates.io link for torchbear">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;torchbear">torchbear</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Lua programming environment in Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/torchbear">
+                                <img src="https://img.shields.io/crates/v/torchbear.svg?maxAge=2592000" alt="Crates.io link for torchbear">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/torchbear">
+                                <img src="https://img.shields.io/crates/d/torchbear.svg?maxAge=2592000" alt="Download count for torchbear">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/torchbear">
+                                <img src="https://img.shields.io/crates/dr/torchbear.svg?maxAge=2592000" alt="Recent download count for torchbear">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/torchbear">
+                                <img src="https://img.shields.io/crates/l/torchbear.svg?maxAge=2592000" alt="License for torchbear">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card">
+    
+
+    <div class="content">
+        <a href="#wlambda" id="wlambda" aria-label="Permanent link for wlambda">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;WeirdConstructor&#x2F;WLambda" aria-label="Github link for wlambda">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wlambda" aria-label="Crates.io link for wlambda">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wlambda">wlambda</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>WLambda is an embeddable scripting language for Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/wlambda">
+                                <img src="https://img.shields.io/crates/v/wlambda.svg?maxAge=2592000" alt="Crates.io link for wlambda">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/wlambda">
+                                <img src="https://img.shields.io/crates/d/wlambda.svg?maxAge=2592000" alt="Download count for wlambda">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/wlambda">
+                                <img src="https://img.shields.io/crates/dr/wlambda.svg?maxAge=2592000" alt="Recent download count for wlambda">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/wlambda">
+                                <img src="https://img.shields.io/crates/l/wlambda.svg?maxAge=2592000" alt="License for wlambda">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section>
+        <h2 class="ui horizontal divider small header">
+            <a href="#crates" id="crates">
+                <i class="bed icon big"></i>
+                Archived
+            </a>
+        </h2>
+
+        <div class="ui vertical stripe">
+            <div class="ui container">
+                <div class="ui message">
+                    <i class="info circle icon"></i>
+                    These crates are no longer maintained, but may still be of interest.
+                </div>
+
+                <ul class="ui stackable cards nolist one">
+                    
+                        
+
+
+    
+
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <a href="#glsp" id="glsp" aria-label="Permanent link for glsp">
+            <i class="right floated hashtag icon"></i>
+        </a>
+
+        
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;fleabitdev&#x2F;glsp&#x2F;" aria-label="Github link for glsp">
+                <i class="right floated github icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glsp" aria-label="Crates.io link for glsp">
+                <i class="right floated cube icon"></i>
+            </a>
+        
+
+        
+            <a href="https:&#x2F;&#x2F;gamelisp.rs&#x2F;" aria-label="Website link for glsp">
+                <i class="right floated home icon"></i>
+            </a>
+        
+        
+        <div class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glsp">glsp</a>
+            
+        </div>
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;scripting&#x2F;">Scripting Languages</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>The GameLisp scripting language</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            
+            
+            <div class="ui horizontal list">
+                
+                    <div class="item">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glsp">
+                                <img src="https://img.shields.io/crates/v/glsp.svg?maxAge=2592000" alt="Crates.io link for glsp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glsp">
+                                <img src="https://img.shields.io/crates/d/glsp.svg?maxAge=2592000" alt="Download count for glsp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glsp">
+                                <img src="https://img.shields.io/crates/dr/glsp.svg?maxAge=2592000" alt="Recent download count for glsp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item" aria-hidden="true">
+                        <div class="content">
+                            <a href="https://crates.io/crates/glsp">
+                                <img src="https://img.shields.io/crates/l/glsp.svg?maxAge=2592000" alt="License for glsp">
+                            </a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+</li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+<section>
+    <h2 class="ui horizontal divider small header">
+        <a href="#contribute" id="contribute">
+            <i class="chat icon big"></i>
+            Contribute
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>Do you know about a missing crate? Did you launch a new crate?</p>
+            <p>
+                Please create a
+                <a href="https://github.com/rust-gamedev/arewegameyet#contribute">pull request</a>
+                or an 
+                <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+crate:+NAME&amp;body=Please+add+crate+to+category:+Scripting Languages">issue</a>
+                on our GitHub!
+            </p>
+            <p>Looking for a crate you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <footer class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="/#about" class="item">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="ten wide column">
+                        <h4 class="ui inverted header">Arewegameyet?</h4>
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Get involved</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="https://github.com/rust-gamedev/arewegameyet" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/semantic/js/visibility.min.js"></script>
+    <script src="/assets/semantic/js/transition.min.js"></script>
+    <script src="/assets/semantic/js/sidebar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // fix menu when passed
+            $('.masthead').visibility({
+                once: false,
+                onBottomPassed: function () {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function () {
+                    $('.fixed.menu').transition('fade out');
+                }
+            });
+
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('setting', 'transition', 'overlay')
+                .sidebar('setting', 'mobileTransition', 'overlay')
+                .sidebar('attach events', '.toc.item');
+
+            $('.ui.sidebar .item').on('click', function (event) {
+                $('.ui.sidebar').sidebar('hide');
+            })
+        });
+    </script>
+    
+     
+</body>
+
+</html>
