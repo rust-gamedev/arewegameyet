@@ -191,6 +191,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "clipline"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
 name = "coffee"
 source = "crates"
 categories = ["engines"]
