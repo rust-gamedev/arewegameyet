@@ -827,6 +827,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "modelz"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "modio"
 source = "crates"
 categories = ["tools"]
