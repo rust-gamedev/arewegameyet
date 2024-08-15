@@ -822,7 +822,7 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
-name = "modelz" 
+name = "modelz"
 source = "crates"
 categories = ["3dformatloaders"]
 
