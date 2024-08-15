@@ -817,14 +817,14 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
-name = "modelz" 
-source = "crates"
-categories = ["3dformatloaders"]
-
-[[items]]
 name = "mod_player"
 source = "crates"
 categories = ["audio"]
+
+[[items]]
+name = "modelz" 
+source = "crates"
+categories = ["3dformatloaders"]
 
 [[items]]
 name = "modio"
