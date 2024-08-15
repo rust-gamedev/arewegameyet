@@ -426,6 +426,14 @@ repository_url = "//github.com/thiolliere/ruga"
 image = "/assets/img/ruga.gif"
 
 [[items]]
+name = "RuggRogue"
+description = "A simple web-playable roguelike made with Rust and SDL."
+categories = ["rpg"]
+homepage_url = "//tungtn.itch.io/ruggrogue"
+repository_url = "//github.com/tung/ruggrogue"
+image = "/assets/img/ruggrogue.png"
+
+[[items]]
 name = "Rust Doom"
 description = "A Doom Renderer written in Rust"
 categories = ["fps"]
