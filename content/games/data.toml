@@ -109,6 +109,14 @@ repository_url = "//github.com/puppetmaster-/compact-space"
 image = "/assets/img/compact-space.png"
 
 [[items]]
+name = "Coric's Quest"
+description = "A small, complete fantasy-themed console-style RPG made with Rust and Miniquad"
+categories = ["rpg"]
+homepage_url = "//tungtn.itch.io/corics-quest"
+repository_url = "//github.com/tung/corics-quest"
+image = "/assets/img/corics-quest.png"
+
+[[items]]
 name = "Crab Sweeper"
 description = "A mine-sweeper clone."
 categories = ["puzzle"]
