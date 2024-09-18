@@ -350,7 +350,7 @@ source = "github"
 categories = ["3drendering"]
 
 [[items]]
-name = "EmbarkStudios/rust-gpu"
+name = "Rust-GPU/rust-gpu"
 source = "github"
 categories = ["shader"]
 
