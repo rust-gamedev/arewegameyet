@@ -350,11 +350,6 @@ source = "github"
 categories = ["3drendering"]
 
 [[items]]
-name = "EmbarkStudios/rust-gpu"
-source = "github"
-categories = ["shader"]
-
-[[items]]
 name = "encase"
 source = "crates"
 categories = ["shader"]
@@ -1230,6 +1225,11 @@ archived = true
 name = "rune"
 source = "crates"
 categories = ["scripting"]
+
+[[items]]
+name = "Rust-GPU/rust-gpu"
+source = "github"
+categories = ["shader"]
 
 [[items]]
 name = "rust-webvr"
