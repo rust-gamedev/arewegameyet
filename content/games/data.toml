@@ -250,6 +250,13 @@ repository_url = "https://github.com/SoftbearStudios/kiomet"
 image = "/assets/img/kiomet.png"
 
 [[items]]
+name = "Krakax"
+description = "Krakax is an online multiplayer archery game"
+categories = ["action", "released"]
+image = "/assets/img/krakax.png"
+homepage_url = "https://krakax.com"
+
+[[items]]
 name = "Le Train Dispatcher"
 description = "Direct the trains in the delivery areas."
 categories = ["simulation"]
