@@ -1,0 +1,56 @@
+name: Check Archive Status
+
+on:
+  schedule:
+    - cron: "0 0 * * MON" # Run weekly on Mondays
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-archives:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for all branches and tags
+
+      # Check if there's already an open PR
+      - name: Check for existing PR
+        id: check_pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pr_count=$(gh pr list --json number --search "is:open is:pr author:app/github-actions head:update-archive-status" --jq length)
+          echo "has_open_pr=$([[ "$pr_count" -gt 0 ]] && echo 'true' || echo 'false')" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        if: steps.check_pr.outputs.has_open_pr != 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        if: steps.check_pr.outputs.has_open_pr != 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytoml
+          gh --version || true
+
+      - name: Check archive status
+        if: steps.check_pr.outputs.has_open_pr != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/workflows/check_archives.py
+
+      - name: Create Pull Request
+        if: steps.check_pr.outputs.has_open_pr != 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Update repository archive status
+          title: Update repository archive status
+          body: |
+            This PR updates the archive status of GitHub repositories based on their current state.
+
+            This is an automated update triggered by the weekly archive status check.
+          branch: update-archive-status
+          base: master # Specify the base branch
+          delete-branch: true
