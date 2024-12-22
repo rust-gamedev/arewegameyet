@@ -854,6 +854,11 @@ categories = ["scripting"]
 homepage_url = "https://mun-lang.org"
 
 [[items]]
+name = "musi_lili"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "naga"
 source = "crates"
 categories = ["shader"]
@@ -1599,8 +1604,3 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
-
-[[items]]
-name = "musi_lili"
-source = "crates"
-categories = ["engines"]
