@@ -4,33 +4,33 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '0 0 * * MON' # Weekly, Mondays at 00:00
+    - cron: "0 0 * * MON" # Weekly, Mondays at 00:00
 
 jobs:
   zola:
     runs-on: ubuntu-latest
     env:
       BASE_URL: https://github.com/getzola/zola/releases/download
-      VERS: v0.15.3
+      VERS: v0.19.0
       ARCH: x86_64-unknown-linux-gnu
       # https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-623202206
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/checkout@v3
-    - name: Install Zola
-      run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
-    - run: ./zola --version
-    - run: ./zola build
-    - name: Deploy
-      if: github.ref == 'refs/heads/master'
-      uses: crazy-max/ghaction-github-pages@v3
-      with:
-        build_dir: public
+      - uses: actions/checkout@v3
+      - name: Install Zola
+        run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
+      - run: ./zola --version
+      - run: ./zola build
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          build_dir: public
 
   fmt:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - run: pip3 install pytoml
-    - run: find . -name data.toml | xargs ./sort_data.py
-    - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
+      - uses: actions/checkout@v3
+      - run: pip3 install pytoml
+      - run: find . -name data.toml | xargs ./sort_data.py
+      - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
