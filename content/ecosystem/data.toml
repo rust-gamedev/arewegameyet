@@ -672,6 +672,12 @@ source = "github"
 categories = ["networking"]
 
 [[items]]
+name = "julianknodt/pars3d"
+description = "obj/fbx/glb/off/ply/stl import & export"
+source = "github"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "keeshond"
 source = "crates"
 categories = ["engines"]
