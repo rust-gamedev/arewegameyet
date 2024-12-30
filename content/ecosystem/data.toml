@@ -672,6 +672,12 @@ source = "github"
 categories = ["networking"]
 
 [[items]]
+name = "julianknodt/pars3d"
+description = "obj/fbx/glb/off/ply/stl import & export"
+source = "github"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "keeshond"
 source = "crates"
 categories = ["engines"]
@@ -1020,13 +1026,6 @@ categories = ["math"]
 name = "pareen"
 source = "crates"
 categories = ["animation"]
-
-[[items]]
-name = "julianknodt/pars3d"
-description = "obj/fbx/glb/off/ply/stl import & export"
-source = "github"
-categories = ["3dformatloaders"]
-repository_url = "https://github.com/JulianKnodt/pars3d"
 
 [[items]]
 name = "passerine"
