@@ -6,13 +6,16 @@
 
 {% if item.source %}
     {% if item.source == 'crates' %}
-        {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name ~ "?include=", format="json", headers=["User-Agent=arewegameyet (gamedev-wg@rust-lang.org)"]) %}
+        {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name ~ "?include=downloads", format="json", headers=["User-Agent=arewegameyet (gamedev-wg@rust-lang.org)"]) %}
         {# human readable name #}
         {% set name = data.crate.name %}
         {# Github/Gitlab/Etc. repository #}
         {% set repository_url = data.crate.repository %}
         {% set crate_url = 'https://crates.io/crates/' ~ name %}
         {% set description = data.crate.description %}
+        {% set latest_version = data.crate.default_version %}
+        {% set downloads = data.crate.downloads %}
+        {% set recent_downloads = data.crate.recent_downloads %}
         {% if data.crate.homepage %}
             {% set homepage_url = data.crate.homepage %}
         {% endif %}
@@ -26,6 +29,8 @@
             {% set homepage_url = data.homepage %}
         {% endif %}
         {% set description = data.description %}
+        {% set stars = data.stargazers_count %}
+        {% set last_commit = data.pushed_at %}
     {% endif %}
 {% endif %}
 
@@ -113,44 +118,44 @@
                     <div class="item">
                         <div class="content">
                             <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000" alt="Crates.io link for {{ name }}">
+                                <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000" alt="Latest version: {{ latest_version }}">
                             </a>
                         </div>
                     </div>
-                    <div class="item" aria-hidden="true">
+                    <div class="item">
                         <div class="content">
                             <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000" alt="Download count for {{ name }}">
+                                <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000" alt="Downloads: {{ downloads }}">
                             </a>
                         </div>
                     </div>
-                    <div class="item" aria-hidden="true">
+                    <div class="item">
                         <div class="content">
                             <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/dr/{{name}}.svg?maxAge=2592000" alt="Recent download count for {{ name }}">
+                                <img src="https://img.shields.io/crates/dr/{{name}}.svg?maxAge=2592000" alt="Recent downloads: {{ recent_downloads }}">
                             </a>
                         </div>
                     </div>
-                    <div class="item" aria-hidden="true">
+                    <div class="item">
                         <div class="content">
                             <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000" alt="License for {{ name }}">
+                                <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000" alt="View license for {{ name }}">
                             </a>
                         </div>
                     </div>
                 {% endif %}
                 {% if item.source and item.source == 'github' %}
-                    <div class="item" aria-hidden="true">
+                    <div class="item">
                         <div class="content">
                             <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/stars/{{owner}}/{{name}}?style=flat" alt="Github Stars for {{ name }}">
+                                <img src="https://img.shields.io/github/stars/{{owner}}/{{name}}?style=flat" alt="Github Stars: {{ stars }}">
                             </a>
                         </div>
                     </div>
-                    <div class="item" aria-hidden="true">
+                    <div class="item">
                         <div class="content">
                             <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/last-commit/{{owner}}/{{name}}" alt="Last commit date for {{ name }}">
+                                <img src="https://img.shields.io/github/last-commit/{{owner}}/{{name}}" alt="Last commit date: {{ last_commit | date }}">
                             </a>
                         </div>
                     </div>
