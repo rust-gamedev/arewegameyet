@@ -45,6 +45,23 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
+{# Extract data for repo info #}
+{% if repository_url is containing("github.com") %}
+    {% set host = "github" %}
+    {% set owner = repository_url | replace(from="https://github.com/", to="") | split("/") | first %}
+    {% set name = repository_url | replace(from="https://github.com/", to="") | split("/") | last %}
+{% endif %}
+{% if repository_url is containing("gitlab.com") %}
+    {% set host = "gitlab" %}
+    {% set owner = repository_url | replace(from="https://gitlab.com/", to="") | split("/") | first %}
+    {% set name = repository_url | replace(from="https://gitlab.com/", to="") | split("/") | last %}
+{% endif %}
+{% if repository_url is containing("gitea.com") %}
+    {% set host = "gitea" %}
+    {% set owner = repository_url | replace(from="https://gitea.com/", to="") | split("/") | first %}
+    {% set name = repository_url | replace(from="https://gitea.com/", to="") | split("/") | last %}
+{% endif %}
+
 <li class="ui card{% if archived %} archived{% endif %}">
     {% if item.image %}
          {% if primary_url %}
@@ -139,18 +156,18 @@
                         </div>
                     </div>
                 {% endif %}
-                {% if item.source and item.source == 'github' %}
+                {% if host %}
                     <div class="item" aria-hidden="true">
                         <div class="content">
-                            <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/stars/{{owner}}/{{name}}?style=flat" alt="Github Stars for {{ name }}">
+                            <a href="{{ repository_url }}">
+                                <img src="https://img.shields.io/{{host}}/stars/{{owner}}/{{name}}?style=flat" alt="{{host | capitalize }} Stars for {{ name }}">
                             </a>
                         </div>
                     </div>
                     <div class="item" aria-hidden="true">
                         <div class="content">
-                            <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/last-commit/{{owner}}/{{name}}" alt="Last commit date for {{ name }}">
+                            <a href="{{ repository_url }}">
+                                <img src="https://img.shields.io/{{host}}/last-commit/{{owner}}/{{name}}" alt="Last commit date for {{ name }}">
                             </a>
                         </div>
                     </div>
