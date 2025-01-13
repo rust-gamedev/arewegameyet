@@ -51,12 +51,12 @@
     {% set owner = repository_url | replace(from="https://github.com/", to="") | split(pat="/") | first %}
     {% set name = repository_url | replace(from="https://github.com/", to="") | split(pat="/") | last %}
 {% endif %}
-{% if repository_url is containing("gitlab.com") %}
+{% if  repository_url and repository_url is containing("gitlab.com") %}
     {% set host = "gitlab" %}
     {% set owner = repository_url | replace(from="https://gitlab.com/", to="") | split(pat="/") | first %}
     {% set name = repository_url | replace(from="https://gitlab.com/", to="") | split(pat="/") | last %}
 {% endif %}
-{% if repository_url is containing("gitea.com") %}
+{% if repository_url and repository_url is containing("gitea.com") %}
     {% set host = "gitea" %}
     {% set owner = repository_url | replace(from="https://gitea.com/", to="") | split(pat="/") | first %}
     {% set name = repository_url | replace(from="https://gitea.com/", to="") | split(pat="/") | last %}
