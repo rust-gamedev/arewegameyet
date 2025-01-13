@@ -46,7 +46,7 @@
 {% endif %}
 
 {# Extract data for repo info #}
-{% if repository_url is containing("github.com") %}
+{% if repository_url and repository_url is containing("github.com") %}
     {% set host = "github" %}
     {% set owner = repository_url | replace(from="https://github.com/", to="") | split(pat="/") | first %}
     {% set name = repository_url | replace(from="https://github.com/", to="") | split(pat="/") | last %}
