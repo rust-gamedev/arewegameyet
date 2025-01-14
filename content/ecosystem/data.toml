@@ -257,6 +257,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "cubecl"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "datachannel"
 source = "crates"
 categories = ["networking"]
@@ -310,6 +315,11 @@ categories = ["shader"]
 name = "dual_quaternion"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "durian"
+source = "crates"
+categories = ["networking"]
 
 [[items]]
 name = "duysqubix/MuOxi"
@@ -713,6 +723,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "leafwing-input-manager"
+source = "crates"
+categories = ["input"]
+
+[[items]]
 name = "legion"
 source = "crates"
 categories = ["ecs"]
@@ -852,6 +867,11 @@ categories = ["engines"]
 name = "molt"
 source = "crates"
 categories = ["scripting"]
+
+[[items]]
+name = "morph3d"
+source = "crates"
+categories = ["3dformatloaders"]
 
 [[items]]
 name = "mun-lang/mun"
