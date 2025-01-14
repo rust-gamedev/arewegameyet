@@ -53,7 +53,9 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
+{# Fetch repository stats #}
 {% if repository_url and repository_url is containing("github.com/") %}
+    {% set repo_icon = "github" %}
     {% set repo_id = repository_url | split(pat="github.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") %}
 
     {% set data = load_data(url="https://api.github.com/repos/" ~ repo_id, headers=["Authorization=Bearer " ~ github_token], format="json", required=false) %}
@@ -62,13 +64,16 @@
         {% set last_activity = data.pushed_at %}
     {% endif %}
 {% elif repository_url and repository_url is containing("gitlab.com/") %}
-    {% set repo_id = repository_url | split(pat="gitlab.com/") | last  | trim_end_matches(pat="/") | trim_end_matches(pat=".git") | urlencode_strict %}
+    {% set repo_icon = "gitlab" %}
+    {% set repo_id = repository_url | split(pat="gitlab.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") | urlencode_strict %}
 
     {% set data = load_data(url="https://gitlab.com/api/v4/projects/" ~ repo_id, format="json", required=false) %}
     {% if data %}
         {% set stars = data.star_count %}
         {% set last_activity = data.last_activity_at %}
     {% endif %}
+{% else %}
+    {% set repo_icon = "code" %}
 {% endif %}
 
 <li class="ui card{% if archived %} archived{% endif %}">
@@ -92,8 +97,8 @@
         </a>
 
         {% if repository_url %}
-            <a class="right floated" href="{{ repository_url }}" aria-label="Github link for {{ name }}">
-                <i class="github icon" aria-hidden="true"></i>
+            <a class="right floated" href="{{ repository_url }}" aria-label="Repository link for {{ name }}">
+                <i class="{{ repo_icon }} icon" aria-hidden="true"></i>
             </a>
         {% endif %}
 
