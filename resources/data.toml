@@ -1,0 +1,245 @@
+[[items]]
+name = "A game in Rust"
+description = "Post-mortem"
+categories = ["article"]
+homepage_url = "//thiolliere.org/jekyll/update/2016/10/29/a-game-in-Rust.html"
+
+[[items]]
+name = "A Guide to Rust Game Frameworks (2019)"
+description = "A quick overview of a few frameworks for developing games, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGameFrameworks2019"
+archived = true
+
+[[items]]
+name = "A Guide to Rust Graphics Libraries (2019)"
+description = "A quick overview of a few graphics libraries, by the author of ggez"
+categories = ["articles"]
+homepage_url = "//wiki.alopex.li/AGuideToRustGraphicsLibraries2019"
+archived = true
+
+[[items]]
+name = "Ashen Aetna"
+description = "A tutorial on/in/about/with 3D graphics, Rust, Vulkan, ash"
+categories = ["tutorials"]
+homepage_url = "//hoj-senna.github.io/ashen-aetna"
+
+[[items]]
+name = "Awesome Quads"
+description = "A curated list of links to miniquad/macroquad-related code & resources"
+categories = ["lists"]
+homepage_url = "//github.com/ozkriff/awesome-quads"
+
+[[items]]
+name = "Awesome Rust"
+description = "A curated list of Rust code and resources, inspired by other awesome lists"
+categories = ["lists"]
+homepage_url = "//github.com/kud1ing/awesome-rust"
+
+[[items]]
+name = "Awesome wgpu"
+description = "A curated list of wgpu code and resources"
+categories = ["lists"]
+homepage_url = "//github.com/rofrol/awesome-wgpu"
+
+[[items]]
+name = "Bevy Assets"
+description = "A collection of Bevy assets, plugins, learning resources, and apps made by Bevy's community"
+categories = ["lists"]
+homepage_url = "//bevyengine.org/assets"
+
+[[items]]
+name = "Building WebGPU with Rust"
+description = "A talk about wgpu's architecture and implementation (FOSDEM 2020)"
+categories = ["videos"]
+homepage_url = "//fosdem.org/2020/schedule/event/rust_webgpu"
+
+[[items]]
+name = "Chess game in Rust using Bevy"
+description = "A tutorial on writing a chess game, with the Bevy game engine"
+categories = ["tutorials"]
+homepage_url = "//caballerocoll.com/blog/bevy-chess-tutorial/"
+repository_url = "//github.com/guimcaballero/bevy_chess"
+
+[[items]]
+name = "ChevyRay's list"
+description = "ChevyRay's curated list of cool/useful Rust crates for game development"
+categories = ["lists"]
+homepage_url = "//github.com/chevyray/rust-gamedev"
+
+[[items]]
+name = "Creating a Pong clone with Rust and Tetra"
+description = "A beginner-friendly guide to building games in Rust"
+categories = ["tutorials"]
+homepage_url = "//tetra.seventeencups.net/tutorial"
+
+[[items]]
+name = "Creating a Snake Clone With Bevy"
+description = "A tutorial about cloning the snake game, with the Bevy game engine"
+categories = ["tutorials"]
+homepage_url = "//mbuffett.com/posts/bevy-snake-tutorial/"
+repository_url = "//github.com/marcusbuffett/bevy_snake"
+
+[[items]]
+name = "Developing a game with Rust beginners"
+description = "Some thoughts on tools and libraries"
+categories = ["articles"]
+homepage_url = "//lukaskalbertodt.github.io/2016/09/01/developing-a-game-with-Rust-beginners-some-thoughts-on-tools-and-libraries.html"
+
+[[items]]
+name = "Framebuffers, WGPU and Rust"
+description = "Introduction to WGPU and high-level rendering terminology"
+categories = ["articles"]
+homepage_url = "//nyxtom.dev/2020/10/08/framebuffers/"
+
+[[items]]
+name = "Game Development with Rust and WebAssembly by Eric Smith"
+description = "Learn how to run Rust on the web while building an endless runner"
+categories = ["books", "tutorials"]
+homepage_url = "https://subscription.packtpub.com/product/game_development/9781801070973"
+
+[[items]]
+name = "Game Server in 150 lines of Rust"
+description = "This tutorial will show you how to write a simple game server"
+categories = ["tutorials"]
+homepage_url = "//medium.com/@buterajay/game-server-in-150-lines-of-rust-ce1782199907"
+
+[[items]]
+name = "Graphics by Squares"
+description = "A gfx-rs tutorial"
+categories = ["tutorials"]
+homepage_url = "//suhr.github.io/gsgt"
+
+[[items]]
+name = "Hands-On Rust Effective Learning through 2D Game Development and Play by Herbert Wolverson"
+description = "Make fun games as you learn Rust through a series of hands-on gamedev tutorials and real-world use of core language skills"
+categories = ["books", "tutorials"]
+homepage_url = "//pragprog.com/titles/hwrust/hands-on-rust"
+
+[[items]]
+name = "How to: Rust + SDL2 + OpenGL on the web"
+description = "How to port games to the web using Emscripten"
+categories = ["articles", "tutorials"]
+homepage_url = "//blog.therocode.net/2020/10/a-guide-to-rust-sdl2-emscripten"
+
+[[items]]
+name = "Learn OpenGL with Rust"
+description = "A Rust port of the code for the excellent OpenGL tutorials at learnopengl.com"
+categories = ["tutorials"]
+homepage_url = "//github.com/bwasty/learn-opengl-rs"
+
+[[items]]
+name = "Learn Wgpu"
+description = "Tutorial for learning Rust graphics programming using the wgpu-rs library"
+categories = ["tutorials"]
+homepage_url = "//sotrh.github.io/learn-wgpu"
+
+[[items]]
+name = "Making a p2p web game with rollback"
+description = "Walkthrough on how to use Matchbox and bevy_ggrs to implement a low-latency multiplayer web game"
+categories = ["tutorials"]
+homepage_url = "//johanhelsing.studio/posts/extreme-bevy"
+
+[[items]]
+name = "Overview of Open Source Game Engines in Rust"
+description = "An overview of which engines and libraries to use"
+categories = ["articles"]
+homepage_url = "//www.shadercat.com/overview-of-open-source-game-engines-in-rust/"
+
+[[items]]
+name = "Project Necromancy: How to Revive a Dead Rust Project"
+description = "A talk about reviving space_shooter_rs through effective planning, refactoring, and documentation (RustFest Global 2020)"
+categories = ["videos"]
+homepage_url = "//youtu.be/qoCryIy4bFE"
+
+[[items]]
+name = "Rocket - a Rust Game Running on WASM"
+description = "A writeup on the making of the WASM port of a game Rocket"
+categories = ["article"]
+homepage_url = "//aochagavia.github.io/blog/rocket---a-rust-game-running-on-wasm"
+
+[[items]]
+name = "Roguelike Tutorial in Rust + tcod"
+description = "This tutorial will show you how to write a roguelike in the Rust programming language and the libtcod library"
+categories = ["tutorials"]
+homepage_url = "//tomassedovic.github.io/roguelike-tutorial/"
+
+[[items]]
+name = "Rust by Example"
+description = "A collection of runnable examples that illustrate various Rust concepts and standard libraries"
+categories = ["books"]
+homepage_url = "//doc.rust-lang.org/stable/rust-by-example/"
+
+[[items]]
+name = "Rust Game Development 2022"
+description = "A talk by Herbert Wolverson (Rust Würzburg)"
+categories = ["videos"]
+homepage_url = "https://youtube.com/watch?v=UPO8hPp9MLo"
+
+[[items]]
+name = "Rust game development tutorial with specs ECS and SDL2"
+description = "Each commit in this repo is a step in a game development tutorial"
+categories = ["tutorials"]
+homepage_url = "//github.com/sunjay/rust-simple-game-dev-tutorial"
+
+[[items]]
+name = "Rust GameDev Frameworks and Libraries"
+description = "List of curated frameworks by the Game Development in Rust Discord server"
+categories = ["lists"]
+homepage_url = "//github.com/dasifefe/rust-game-development-frameworks"
+
+[[items]]
+name = "Rust Roguelike Tutorial by Herbert Wolverson"
+description = "A deep and detailed tutorial about designing and implementing roguelike games in Rust"
+categories = ["books", "tutorials"]
+homepage_url = "//bfnightly.bracketproductions.com/rustbook"
+repository_url = "//github.com/thebracket/rustrogueliketutorial"
+
+[[items]]
+name = "Rust Sokoban Tutorial by Olivia Ifrim"
+description = "A tutorial about making a simple Sokoban game using ECS, GGEZ and specs"
+categories = ["books", "tutorials"]
+homepage_url = "//sokoban.iolivia.me"
+repository_url = "//github.com/iolivia/rust-sokoban"
+
+[[items]]
+name = "The Rust Book"
+description = "The Rust language official book"
+categories = ["books"]
+homepage_url = "//doc.rust-lang.org/book/"
+
+[[items]]
+name = "Triangle from Scratch"
+description = "A series about drawing a triangle without using any outside crates"
+categories = ["tutorials", "books"]
+homepage_url = "//rust-tutorials.github.io/triangle-from-scratch"
+
+[[items]]
+name = "Trig-less Line of Sight Algorithm in Two Dimensions"
+description = "A tutorial on how to write a line of sight algorithm for 2D games without using trigonometry or square roots"
+categories = ["tutorials"]
+homepage_url = "//basstabs.github.io/2d-line-of-sight"
+
+[[items]]
+name = "Using Rust For Game Development, by Catherine West"
+description = "Making games using Rust, Lua and the ECS design pattern"
+categories = ["articles", "videos"]
+homepage_url = "//kyren.github.io/2018/09/14/rustconf-talk.html"
+
+[[items]]
+name = "Why Rust is the Future of Game Development"
+description = "Details why Rust has the potential to be significant for the future of programming in games"
+categories = ["articles"]
+homepage_url = "//thefuntastic.com/blog/why-rust-is-the-future-game-dev"
+
+[[items]]
+name = "Winit Rust and Pixels"
+description = "Introduction to Winit Rust and Pixels (hardware accelerated framebuffer)"
+categories = ["articles"]
+homepage_url = "//nyxtom.dev/2020/10/07/winit-rust/"
+
+[[items]]
+name = "Writing a Raytracer in Rust"
+description = "3-part series of posts on writing a simple raytracer in Rust"
+categories = ["articles"]
+homepage_url = "//bheisler.github.io/post/writing-raytracer-in-rust-part-1/"
