@@ -76,7 +76,7 @@
     {% set repo_icon = "code" %}
 {% endif %}
 
-<li class="ui card{% if archived %} archived{% endif %}">
+<li class="ui card{% if archived %} archived{% endif %}" aria-label="{{ name }}">
     {% if item.image %}
          {% if primary_url %}
             <a class="image" href="{{ primary_url }}">
@@ -138,19 +138,19 @@
     
     {% if item.source or repository_url or gitter_url %}
         <div class="extra content">
-            <div class="ui horizontal list">
+            <ul class="ui horizontal list">
                 {% if gitter_url %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <a class="ui blue label" href="{{ gitter_url }}" target="_blank">
                                 <i class="chat icon" aria-hidden="true"></i>
                                 Chat on Gitter
                             </a>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if latest_version %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="code icon" aria-hidden="true"></i>
@@ -158,10 +158,10 @@
                                 <div class="detail">{{ latest_version }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if downloads %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="download icon" aria-hidden="true"></i>
@@ -169,10 +169,10 @@
                                 <div class="detail">{{ downloads | num_format }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if recent_downloads %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="clock icon" aria-hidden="true"></i>
@@ -180,10 +180,10 @@
                                 <div class="detail">{{ recent_downloads | num_format }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if license %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="balance scale icon" aria-hidden="true"></i>
@@ -191,10 +191,10 @@
                                 <div class="detail">{{ license }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if stars %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="star icon" aria-hidden="true"></i>
@@ -202,10 +202,10 @@
                                 <div class="detail">{{ stars | num_format }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
                 {% if last_activity %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
                             <div class="ui basic label">
                                 <i class="calendar icon" aria-hidden="true"></i>
@@ -213,9 +213,9 @@
                                 <div class="detail">{{ last_activity | date(format="%Y-%m-%d") }}</div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
-            </div>
+            </ul>
         </div>
     {% endif %}
 </li>
