@@ -57,6 +57,14 @@
     margin-right: 0.5em;
 }
 
+ul.ui.horizontal.list {
+    margin: 0;
+}
+
+ul.ui.list li::before {
+    content: none;
+}
+
 .ui.label > .icon {
     margin-right: 0.25em;
 }
