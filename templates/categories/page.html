@@ -23,7 +23,7 @@
 {# Heading #}
 <section class="ui vertical stripe">
     <h1 class="ui center aligned icon header">
-        <i class="circular icon {{ section.extra.icon }}"></i>
+        <i class="circular icon {{ section.extra.icon }}" aria-hidden="true"></i>
         {{ page.title }}
     </h1>
     <div class="ui text container">
@@ -51,7 +51,7 @@
 <section>
     <h2 class="ui horizontal divider small header">
         <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
-            <i class="list icon big"></i>
+            <i class="list icon big" aria-hidden="true"></i>
             {{ section.extra.plural | title }}
         </a>
     </h2>
@@ -71,7 +71,7 @@
     <section>
         <h2 class="ui horizontal divider small header">
             <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
-                <i class="bed icon big"></i>
+                <i class="bed icon big" aria-hidden="true"></i>
                 Archived
             </a>
         </h2>
@@ -79,7 +79,7 @@
         <div class="ui vertical stripe">
             <div class="ui container">
                 <div class="ui message">
-                    <i class="info circle icon"></i>
+                    <i class="info circle icon" aria-hidden="true"></i>
                     These {{ section.extra.plural }} are no longer maintained, but may still be of interest.
                 </div>
 
@@ -96,7 +96,7 @@
 <section>
     <h2 class="ui horizontal divider small header">
         <a href="#contribute" id="contribute">
-            <i class="chat icon big"></i>
+            <i class="chat icon big" aria-hidden="true"></i>
             Contribute
         </a>
     </h2>

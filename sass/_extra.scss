@@ -57,6 +57,22 @@
     margin-right: 0.5em;
 }
 
+ul.ui.horizontal.list {
+    margin: 0;
+}
+
+ul.ui.list li::before {
+    content: none;
+}
+
+.ui.label > .icon {
+    margin-right: 0.25em;
+}
+
+.ui.label > .detail {
+    margin-left: 0.5em;
+}
+
 @media only screen and (max-width: 991px) {
     .masthead .ui.menu a.item {
         display: none;
