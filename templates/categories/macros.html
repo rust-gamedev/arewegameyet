@@ -82,7 +82,7 @@
     {% endif %}
 {% endif %}
 
-<li class="ui card{% if archived %} archived{% endif %}" aria-label="{{ name }}">
+<li class="ui card{% if archived %} archived{% endif %}">
     {% if item.image %}
          {% if primary_url %}
             <a class="image" href="{{ primary_url }}">
@@ -98,6 +98,14 @@
     {% endif %}
 
     <div class="content">
+        <h3 class="header">
+            {% if primary_url %}
+                <a href="{{ primary_url }}">{{ name }}</a>
+            {% else %}
+                {{ name }}
+            {% endif %}
+        </h3>
+
         <a class="right floated" href="#{{ name | slugify }}" id="{{ name | slugify }}" aria-label="Permanent link for {{ name }}">
             <i class="hashtag icon" aria-hidden="true"></i>
         </a>
@@ -119,14 +127,6 @@
                 <i class="home icon" aria-hidden="true"></i>
             </a>
         {% endif %}
-
-        <div class="header">
-            {% if primary_url %}
-                <a href="{{ primary_url }}">{{ name }}</a>
-            {% else %}
-                {{ name }}
-            {% endif %}
-        </div>
 
         <div class="meta">
             {% for category in item.categories %}

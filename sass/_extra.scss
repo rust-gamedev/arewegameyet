@@ -45,6 +45,11 @@
     height: 256px;
 }
 
+.ui.cards > .card > .content > .header:not(.ui), .ui.card > .content > .header:not(.ui) {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
 .ui.card > .image > img, .ui.cards > .card > .image > img {
     object-fit: cover;
     width: 100%;
