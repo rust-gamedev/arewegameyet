@@ -72,8 +72,14 @@
         {% set stars = data.star_count %}
         {% set last_activity = data.last_activity_at %}
     {% endif %}
-{% else %}
-    {% set repo_icon = "code" %}
+{% elif repository_url and repository_url is containing("gitea.com/") %}
+    {% set repo_id = repository_url | split(pat="gitea.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") %}
+
+    {% set data = load_data(url="https://gitea.com/api/v1/repos/" ~ repo_id, format="json", required=false) %}
+    {% if data %}
+        {% set stars = data.stars_count %}
+        {% set last_activity = data.updated_at %}
+    {% endif %}
 {% endif %}
 
 <li class="ui card{% if archived %} archived{% endif %}" aria-label="{{ name }}">
@@ -98,7 +104,7 @@
 
         {% if repository_url %}
             <a class="right floated" href="{{ repository_url }}" aria-label="Repository link for {{ name }}">
-                <i class="{{ repo_icon }} icon" aria-hidden="true"></i>
+                <i class="{{ repo_icon | default(value="code") }} icon" aria-hidden="true"></i>
             </a>
         {% endif %}
 
