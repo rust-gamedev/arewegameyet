@@ -28,7 +28,7 @@
     {% set description = data.description %}
     {% set repository_url = data.html_url %}
 
-    {% if data.license %}
+    {% if data.license and data.license.key != "other"  %}
         {% set license = data.license.name %}
     {% endif %}
     
