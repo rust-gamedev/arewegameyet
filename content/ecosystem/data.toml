@@ -1326,7 +1326,7 @@ categories = ["2drendering", "audio", "engines", "textrendering", "input", "wind
 [[items]]
 name = "sdl3"
 source = "crates"
-categories = ["2drendering", "audio", "engines", "textrendering", "input", "windowing"]
+categories = ["2drendering", "audio", "engines", "3drendering", "input", "windowing"]
 
 [[items]]
 name = "sfml"
