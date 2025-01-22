@@ -1324,6 +1324,11 @@ source = "crates"
 categories = ["2drendering", "audio", "engines", "textrendering", "input", "windowing"]
 
 [[items]]
+name = "sdl3"
+source = "crates"
+categories = ["2drendering", "audio", "engines", "3drendering", "input", "windowing"]
+
+[[items]]
 name = "sfml"
 source = "crates"
 categories = ["2drendering", "engines"]
