@@ -78,6 +78,10 @@ ul.ui.list li::before {
     margin-left: 0.5em;
 }
 
+#sort-menu {
+    margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 991px) {
     .masthead .ui.menu a.item {
         display: none;
