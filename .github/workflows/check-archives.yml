@@ -2,7 +2,7 @@ name: Check Archive Status
 
 on:
   schedule:
-    - cron: "0 0 * * MON" # Run weekly on Mondays
+    - cron: "0 0 * * THU" # Run weekly on Thursdays
   workflow_dispatch: # Allow manual trigger
 
 jobs:
