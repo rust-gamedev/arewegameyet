@@ -45,6 +45,11 @@
     height: 256px;
 }
 
+.ui.cards > .card > .content > .header:not(.ui), .ui.card > .content > .header:not(.ui) {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
 .ui.card > .image > img, .ui.cards > .card > .image > img {
     object-fit: cover;
     width: 100%;
@@ -55,6 +60,22 @@
 .ui.horizontal.list > .item {
     margin-left: 0;
     margin-right: 0.5em;
+}
+
+ul.ui.horizontal.list {
+    margin: 0;
+}
+
+ul.ui.list li::before {
+    content: none;
+}
+
+.ui.label > .icon {
+    margin-right: 0.25em;
+}
+
+.ui.label > .detail {
+    margin-left: 0.5em;
 }
 
 @media only screen and (max-width: 991px) {

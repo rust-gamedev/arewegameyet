@@ -1,31 +1,39 @@
 {% macro info(item, section, archived=false) %}
 
+{% set github_token = get_env(name="GITHUB_TOKEN") %}
+
 {% if item.name %}
     {% set name = item.name %}
 {% endif %}
 
-{% if item.source %}
-    {% if item.source == 'crates' %}
-        {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name ~ "?include=", format="json", headers=["User-Agent=arewegameyet (gamedev-wg@rust-lang.org)"]) %}
-        {# human readable name #}
-        {% set name = data.crate.name %}
-        {# Github/Gitlab/Etc. repository #}
-        {% set repository_url = data.crate.repository %}
-        {% set crate_url = 'https://crates.io/crates/' ~ name %}
-        {% set description = data.crate.description %}
-        {% if data.crate.homepage %}
-            {% set homepage_url = data.crate.homepage %}
-        {% endif %}
-    {% elif item.source == 'github' %}
-        {% set data = load_data(url="https://api.github.com/repos/" ~ item.name, format="json") %}
-        {% set name = data.name %}
-        {% set repository_url = data.html_url %}
-        {# Org or User name #}
-        {% set owner = data.owner.login %}
-        {% if data.homepage != "" %}
-            {% set homepage_url = data.homepage %}
-        {% endif %}
-        {% set description = data.description %}
+{% if item.source and item.source == 'crates' %}
+    {% set data = load_data(url = "https://crates.io/api/v1/crates/" ~ item.name ~ "?include=downloads,default_version", format="json", headers=["User-Agent=arewegameyet (gamedev-wg@rust-lang.org)"]) %}
+
+    {% set name = data.crate.name %}
+    {% set description = data.crate.description %}
+    {% set repository_url = data.crate.repository %}
+    {% set crate_url = 'https://crates.io/crates/' ~ name %}
+    {% set latest_version = data.crate.default_version %}
+    {% set downloads = data.crate.downloads %}
+    {% set recent_downloads = data.crate.recent_downloads %}
+    {% set license = data.versions | first | get(key="license") %}
+
+    {% if data.crate.homepage %}
+        {% set homepage_url = data.crate.homepage %}
+    {% endif %}
+{% elif item.source and item.source == 'github' %}
+    {% set data = load_data(url="https://api.github.com/repos/" ~ item.name, headers=["Authorization=Bearer " ~ github_token], format="json") %}
+    
+    {% set name = data.name %}
+    {% set description = data.description %}
+    {% set repository_url = data.html_url %}
+
+    {% if data.license and data.license.key != "other"  %}
+        {% set license = data.license.name %}
+    {% endif %}
+    
+    {% if data.homepage %}
+        {% set homepage_url = data.homepage %}
     {% endif %}
 {% endif %}
 
@@ -45,6 +53,35 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
+{# Fetch repository stats #}
+{% if repository_url and repository_url is containing("github.com/") %}
+    {% set repo_icon = "github" %}
+    {% set repo_id = repository_url | split(pat="github.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") %}
+
+    {% set data = load_data(url="https://api.github.com/repos/" ~ repo_id, headers=["Authorization=Bearer " ~ github_token], format="json", required=false) %}
+    {% if data %}
+        {% set stars = data.stargazers_count %}
+        {% set last_activity = data.pushed_at %}
+    {% endif %}
+{% elif repository_url and repository_url is containing("gitlab.com/") %}
+    {% set repo_icon = "gitlab" %}
+    {% set repo_id = repository_url | split(pat="gitlab.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") | urlencode_strict %}
+
+    {% set data = load_data(url="https://gitlab.com/api/v4/projects/" ~ repo_id, format="json", required=false) %}
+    {% if data %}
+        {% set stars = data.star_count %}
+        {% set last_activity = data.last_activity_at %}
+    {% endif %}
+{% elif repository_url and repository_url is containing("gitea.com/") %}
+    {% set repo_id = repository_url | split(pat="gitea.com/") | last | trim_end_matches(pat="/") | trim_end_matches(pat=".git") %}
+
+    {% set data = load_data(url="https://gitea.com/api/v1/repos/" ~ repo_id, format="json", required=false) %}
+    {% if data %}
+        {% set stars = data.stars_count %}
+        {% set last_activity = data.updated_at %}
+    {% endif %}
+{% endif %}
+
 <li class="ui card{% if archived %} archived{% endif %}">
     {% if item.image %}
          {% if primary_url %}
@@ -61,35 +98,35 @@
     {% endif %}
 
     <div class="content">
-        <a href="#{{ name | slugify }}" id="{{ name | slugify }}" aria-label="Permanent link for {{ name }}">
-            <i class="right floated hashtag icon"></i>
-        </a>
-
-        {% if repository_url %}
-            <a href="{{ repository_url }}" aria-label="Github link for {{ name }}">
-                <i class="right floated github icon"></i>
-            </a>
-        {% endif %}
-
-        {% if crate_url %}
-            <a href="{{ crate_url }}" aria-label="Crates.io link for {{ name }}">
-                <i class="right floated cube icon"></i>
-            </a>
-        {% endif %}
-
-        {% if homepage_url %}
-            <a href="{{ homepage_url }}" aria-label="Website link for {{ name }}">
-                <i class="right floated home icon"></i>
-            </a>
-        {% endif %}
-        
-        <div class="header">
+        <h3 class="header">
             {% if primary_url %}
                 <a href="{{ primary_url }}">{{ name }}</a>
             {% else %}
                 {{ name }}
             {% endif %}
-        </div>
+        </h3>
+
+        <a class="right floated" href="#{{ name | slugify }}" id="{{ name | slugify }}" aria-label="Permanent link for {{ name }}">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        {% if repository_url %}
+            <a class="right floated" href="{{ repository_url }}" aria-label="Repository link for {{ name }}">
+                <i class="{{ repo_icon | default(value="code") }} icon" aria-hidden="true"></i>
+            </a>
+        {% endif %}
+
+        {% if crate_url %}
+            <a class="right floated" href="{{ crate_url }}" aria-label="Crates.io link for {{ name }}">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        {% endif %}
+
+        {% if homepage_url %}
+            <a class="right floated" href="{{ homepage_url }}" aria-label="Website link for {{ name }}">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        {% endif %}
 
         <div class="meta">
             {% for category in item.categories %}
@@ -105,66 +142,86 @@
         </div>
     </div>
     
-    {% if item.source or gitter_url %}
+    {% if item.source or repository_url or gitter_url %}
         <div class="extra content">
-            
-            <div class="ui horizontal list">
-                {% if item.source and item.source == 'crates' %}
-                    <div class="item">
-                        <div class="content">
-                            <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000" alt="Crates.io link for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item" aria-hidden="true">
-                        <div class="content">
-                            <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000" alt="Download count for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item" aria-hidden="true">
-                        <div class="content">
-                            <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/dr/{{name}}.svg?maxAge=2592000" alt="Recent download count for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item" aria-hidden="true">
-                        <div class="content">
-                            <a href="https://crates.io/crates/{{name}}">
-                                <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000" alt="License for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                {% endif %}
-                {% if item.source and item.source == 'github' %}
-                    <div class="item" aria-hidden="true">
-                        <div class="content">
-                            <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/stars/{{owner}}/{{name}}?style=flat" alt="Github Stars for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item" aria-hidden="true">
-                        <div class="content">
-                            <a href="https://github.com/{{owner}}/{{name}}">
-                                <img src="https://img.shields.io/github/last-commit/{{owner}}/{{name}}" alt="Last commit date for {{ name }}">
-                            </a>
-                        </div>
-                    </div>
-                {% endif %}
+            <ul class="ui horizontal list">
                 {% if gitter_url %}
-                    <div class="item">
+                    <li class="item">
                         <div class="content">
-                            <a href="{{ gitter_url }}" target="_blank">
-                                <img src="/assets/badges/chat.svg"/>
+                            <a class="ui blue label" href="{{ gitter_url }}" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
                             </a>
                         </div>
-                    </div>
+                    </li>
                 {% endif %}
-            </div>
+                {% if latest_version %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">{{ latest_version }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+                {% if downloads %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">{{ downloads | num_format }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+                {% if recent_downloads %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">{{ recent_downloads | num_format }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+                {% if license %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">{{ license }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+                {% if stars %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">{{ stars | num_format }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+                {% if last_activity %}
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">{{ last_activity | date }}</div>
+                            </div>
+                        </div>
+                    </li>
+                {% endif %}
+            </ul>
         </div>
     {% endif %}
 </li>
