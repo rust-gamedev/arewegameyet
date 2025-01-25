@@ -41,16 +41,38 @@
     padding: 5em 0em;
 }
 
+// This is a replacement for Semantic UI's .cards class, using CSS Grid
+// instead of relying on negative margins for layout.
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    margin: 0;
+}
+
+.card-grid.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-grid .ui.card {
+    width: 100%;
+    margin: 0;
+}
+
 .ui.card .image {
     height: 256px;
 }
 
-.ui.cards > .card > .content > .header:not(.ui, .center.aligned), .ui.card > .content > .header:not(.ui, .center.aligned) {
+.ui.card > .content > .header:not(.ui, .center.aligned) {
     display: inline-block;
     margin-bottom: 0;
 }
 
-.ui.card > .image > img, .ui.cards > .card > .image > img {
+.ui.card > .image > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -79,7 +101,7 @@ ul.ui.list li::before {
 }
 
 #sort-menu {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 @media only screen and (max-width: 991px) {
@@ -111,6 +133,10 @@ ul.ui.list li::before {
     .vertical.stripe .text.container p {
         font-size: 1.1em;
     }
+
+    .card-grid.three, .card-grid.four {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Colors overridden to avoid inaccessible contrast levels */
@@ -120,11 +146,8 @@ a {
 }
 
 .ui.card > .extra,
-.ui.cards > .card > .extra,
 .ui.card .meta,
-.ui.cards > .card .meta,
-.ui.card .meta > a:not(.ui),
-.ui.cards > .card .meta > a:not(.ui) {
+.ui.card .meta > a:not(.ui) {
     color: #767676;
 }
 

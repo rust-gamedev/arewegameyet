@@ -1,5 +1,5 @@
 function sortCrates(attribute, numeric, ascending) {
-    var section = $("#crates-section .cards");
+    var section = $("#crates-section .card-grid");
     var cards = section.children(".card");
 
     var default_value = numeric ? 0 : "";
