@@ -21,6 +21,10 @@ jobs:
         run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
       - run: ./zola --version
       - run: ./zola build
+      - uses: actions/upload-artifact@v4
+        with:
+          path: public
+          retention-days: 10
       - name: Deploy
         if: github.ref == 'refs/heads/master'
         uses: crazy-max/ghaction-github-pages@v3

@@ -257,6 +257,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "cubecl"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "datachannel"
 source = "crates"
 categories = ["networking"]
@@ -310,6 +315,11 @@ categories = ["shader"]
 name = "dual_quaternion"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "durian"
+source = "crates"
+categories = ["networking"]
 
 [[items]]
 name = "duysqubix/MuOxi"
@@ -672,6 +682,12 @@ source = "github"
 categories = ["networking"]
 
 [[items]]
+name = "julianknodt/pars3d"
+description = "obj/fbx/glb/off/ply/stl import & export"
+source = "github"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "keeshond"
 source = "crates"
 categories = ["engines"]
@@ -705,6 +721,11 @@ categories = ["3drendering"]
 name = "laminar"
 source = "crates"
 categories = ["networking"]
+
+[[items]]
+name = "leafwing-input-manager"
+source = "crates"
+categories = ["input"]
 
 [[items]]
 name = "legion"
@@ -848,10 +869,20 @@ source = "crates"
 categories = ["scripting"]
 
 [[items]]
+name = "morph3d"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "mun-lang/mun"
 source = "github"
 categories = ["scripting"]
 homepage_url = "https://mun-lang.org"
+
+[[items]]
+name = "musi_lili"
+source = "crates"
+categories = ["engines"]
 
 [[items]]
 name = "naga"
@@ -1291,6 +1322,11 @@ categories = ["3drendering", "engines"]
 name = "sdl2"
 source = "crates"
 categories = ["2drendering", "audio", "engines", "textrendering", "input", "windowing"]
+
+[[items]]
+name = "sdl3"
+source = "crates"
+categories = ["2drendering", "audio", "engines", "3drendering", "input", "windowing"]
 
 [[items]]
 name = "sfml"
