@@ -45,7 +45,7 @@
     height: 256px;
 }
 
-.ui.cards > .card > .content > .header:not(.ui), .ui.card > .content > .header:not(.ui) {
+.ui.cards > .card > .content > .header:not(.ui, .center.aligned), .ui.card > .content > .header:not(.ui, .center.aligned) {
     display: inline-block;
     margin-bottom: 0;
 }
