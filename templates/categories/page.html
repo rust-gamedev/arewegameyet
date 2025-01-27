@@ -58,22 +58,24 @@
 
     <div class="ui vertical stripe">
         <div class="ui container">
-            <div id="sort-menu" class="ui dropdown icon selection">
-                <i class="sort amount down icon" aria-hidden="true"></i>
-                <span class="text">Sort by A-Z</span>
-                <i class="dropdown icon" aria-hidden="true"></i>
+            <div class="crates-toolbar">
+                <div id="sort-menu" class="ui dropdown icon selection">
+                    <i class="sort amount down icon" aria-hidden="true"></i>
+                    <span class="text">Sort by A-Z</span>
+                    <i class="dropdown icon" aria-hidden="true"></i>
 
-                <ul class="menu">
-                    <li class="item" data-value="data-name" data-order="asc">Sort by A-Z</li>
-                    <li class="item" data-value="data-name">Sort by Z-A</li>
+                    <ul class="menu">
+                        <li class="item" data-value="data-name" data-order="asc">Sort by A-Z</li>
+                        <li class="item" data-value="data-name">Sort by Z-A</li>
 
-                    {% if section.extra.plural == "crates" %}
-                        <li class="item" data-value="data-downloads" data-type="num">Sort by Downloads</li>
-                        <li class="item" data-value="data-recent" data-type="num">Sort by Recent Downloads</li>
-                        <li class="item" data-value="data-stars" data-type="num">Sort by Stars</li>
-                        <li class="item" data-value="data-activity">Sort by Last Activity</li>
-                    {% endif %}
-                </ul>
+                        {% if section.extra.plural == "crates" %}
+                            <li class="item" data-value="data-downloads" data-type="num">Sort by Downloads</li>
+                            <li class="item" data-value="data-recent" data-type="num">Sort by Recent Downloads</li>
+                            <li class="item" data-value="data-stars" data-type="num">Sort by Stars</li>
+                            <li class="item" data-value="data-activity">Sort by Last Activity</li>
+                        {% endif %}
+                    </ul>
+                </div>
             </div>
 
             <ul class="ui card-grid nolist {{ columns }}">
