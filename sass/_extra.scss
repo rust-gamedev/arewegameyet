@@ -137,6 +137,10 @@ ul.ui.list li::before {
     .card-grid.three, .card-grid.four {
         grid-template-columns: 1fr;
     }
+
+    #sort-menu {
+        width: 100%;
+    }
 }
 
 /* Colors overridden to avoid inaccessible contrast levels */
