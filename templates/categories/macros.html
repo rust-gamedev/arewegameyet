@@ -82,7 +82,7 @@
     {% endif %}
 {% endif %}
 
-<li class="ui card{% if archived %} archived{% endif %}" data-name="{{ name }}"{% if downloads %} data-downloads="{{ downloads }}"{%endif%}{% if recent_downloads %} data-recent="{{ recent_downloads }}"{% endif %}{% if stars %} data-stars="{{ stars }}"{% endif %}{% if last_activity %} data-activity="{{ last_activity }}"{% endif %}>
+<li {% if archived %}class="ui card archived"{% else %}class="ui card" data-name="{{ name }}"{% if downloads %} data-downloads="{{ downloads }}"{%endif%}{% if recent_downloads %} data-recent="{{ recent_downloads }}"{% endif %}{% if stars %} data-stars="{{ stars }}"{% endif %}{% if last_activity %} data-activity="{{ last_activity }}"{% endif %}{% endif %}>
     {% if item.image %}
          {% if primary_url %}
             <a class="image" href="{{ primary_url }}">
