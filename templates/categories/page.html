@@ -48,7 +48,7 @@
     {% endif %}
 {% endfor %}
 
-<section>
+<section id="crates-section">
     <h2 class="ui horizontal divider small header">
         <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
             <i class="list icon big" aria-hidden="true"></i>
@@ -58,7 +58,27 @@
 
     <div class="ui vertical stripe">
         <div class="ui container">
-            <ul class="ui stackable cards nolist {{ columns }}">
+            <div class="crates-toolbar">
+                <div id="sort-menu" class="ui dropdown icon selection">
+                    <i class="sort amount down icon" aria-hidden="true"></i>
+                    <span class="text">Sort by A-Z</span>
+                    <i class="dropdown icon" aria-hidden="true"></i>
+
+                    <ul class="menu">
+                        <li class="item" data-value="data-name" data-order="asc">Sort by A-Z</li>
+                        <li class="item" data-value="data-name">Sort by Z-A</li>
+
+                        {% if section.extra.plural == "crates" %}
+                            <li class="item" data-value="data-downloads" data-type="num">Sort by Downloads</li>
+                            <li class="item" data-value="data-recent" data-type="num">Sort by Recent Downloads</li>
+                            <li class="item" data-value="data-stars" data-type="num">Sort by Stars</li>
+                            <li class="item" data-value="data-activity">Sort by Last Activity</li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="ui card-grid nolist {{ columns }}">
                 {% for item in crates %}
                     {{ category_macros::info(item=item, section=section) }}
                 {% endfor %}
@@ -83,7 +103,7 @@
                     These {{ section.extra.plural }} are no longer maintained, but may still be of interest.
                 </div>
 
-                <ul class="ui stackable cards nolist {{ columns }}">
+                <ul class="ui card-grid nolist {{ columns }}">
                     {% for item in archived %}
                         {{ category_macros::info(item=item, section=section, archived=true) }}
                     {% endfor %}
@@ -116,3 +136,8 @@
     </div>
 </section>
 {% endblock content %}
+
+{% block footer %}
+    <script src="/assets/semantic/js/dropdown.min.js"></script>
+    <script src="/assets/js/sortCrates.js"></script>
+{% endblock %}

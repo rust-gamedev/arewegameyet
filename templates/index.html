@@ -114,7 +114,7 @@
         </div>
 
         <div class="ui container">
-            <div class="ui three stackable cards">
+            <div class="ui three card-grid">
                 {% set data = load_data(path="content/contributors/data.toml") %}
                 {{ macros::contributors(contributors=data.contributors) }} 
 

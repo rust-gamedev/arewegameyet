@@ -14,7 +14,7 @@
         {% endif %}
 
         <div class="ui container">
-            <div class="ui four stackable cards">
+            <div class="ui four card-grid">
                 {% set data = load_data(path="content/" ~ section.path ~ "data.toml") %}
 
                 {% for category in section.pages | sort(attribute="title") %}
