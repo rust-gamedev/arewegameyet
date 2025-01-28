@@ -158,7 +158,7 @@ categories = ["math"]
 [[items]]
 name = "bytemuck"
 source = "crates"
-categories = ["3drendering"]
+categories = ["shader", "tools"]
 
 [[items]]
 name = "calx-ecs"
@@ -367,7 +367,7 @@ categories = ["3drendering"]
 [[items]]
 name = "encase"
 source = "crates"
-categories = ["shader"]
+categories = ["shader", "tools"]
 
 [[items]]
 name = "enet"
