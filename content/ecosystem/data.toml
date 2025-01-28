@@ -156,6 +156,11 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "bytemuck"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "calx-ecs"
 source = "crates"
 categories = ["ecs"]
@@ -490,6 +495,7 @@ name = "gfx"
 source = "crates"
 categories = ["3drendering"]
 gitter_url = "https://gitter.im/gfx-rs/gfx"
+archived = true
 
 [[items]]
 name = "gfx-hal"
@@ -582,6 +588,11 @@ categories = ["ai"]
 name = "grr"
 source = "crates"
 categories = ["3drendering"]
+
+[[items]]
+name = "hassle-rs"
+source = "crates"
+categories = ["shader"]
 
 [[items]]
 name = "hecs"
@@ -779,6 +790,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "mach-dxcompiler-rs"
+source = "crates"
+categories = ["shader"]
+
+[[items]]
 name = "macroquad"
 source = "crates"
 categories = ["engines"]
@@ -888,7 +904,7 @@ categories = ["engines"]
 name = "naga"
 source = "crates"
 categories = ["shader"]
-homepage_url = "https://github.com/gfx-rs/naga"
+homepage_url = "https://github.com/gfx-rs/wgpu/tree/trunk/naga"
 
 [[items]]
 name = "naia-rs/naia"
@@ -1604,7 +1620,7 @@ categories = ["tools"]
 [[items]]
 name = "wgpu"
 source = "crates"
-categories = ["3drendering"]
+categories = ["2drendering", "3drendering"]
 
 [[items]]
 name = "wgpu_tokio"
