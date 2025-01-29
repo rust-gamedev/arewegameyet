@@ -109,6 +109,7 @@ categories = ["ecs"]
 name = "bgfx-rs"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "big-brain"
@@ -295,6 +296,7 @@ categories = ["tools", "mesh"]
 name = "distill"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "doryen-rs"
@@ -310,6 +312,7 @@ categories = ["3dformatloaders"]
 name = "dotrix"
 source = "crates"
 categories = ["3drendering", "engines", "ecs"]
+repository_url = "https://github.com/lowenware/dotrix"
 
 [[items]]
 name = "dsa-lib"
@@ -378,6 +381,7 @@ categories = ["networking"]
 name = "erupt"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "euc"
@@ -409,6 +413,7 @@ categories = ["networking"]
 name = "ezing"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "fbxcel-dom"
@@ -588,6 +593,7 @@ categories = ["ai"]
 name = "grr"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "hassle-rs"
@@ -783,6 +789,7 @@ name = "luminance"
 source = "crates"
 categories = ["3drendering"]
 gitter_url = "https://gitter.im/phaazon/luminance-rs"
+archived = true
 
 [[items]]
 name = "lyon"
@@ -1201,6 +1208,7 @@ categories = ["tools"]
 name = "rend3"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "rendology"
@@ -1211,6 +1219,7 @@ categories = ["3drendering"]
 name = "rendy"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "renet"
@@ -1298,6 +1307,7 @@ categories = ["textrendering"]
 name = "rusty-d3d12"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "rusty_engine"
@@ -1469,6 +1479,7 @@ categories = ["networking"]
 name = "tcod"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "tessellation"
@@ -1581,6 +1592,7 @@ categories = ["3drendering"]
 name = "vk-sync"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "vorbis"
@@ -1616,6 +1628,7 @@ categories = ["3dformatloaders"]
 name = "weasel"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "wgpu"
@@ -1626,6 +1639,7 @@ categories = ["2drendering", "3drendering"]
 name = "wgpu_tokio"
 source = "crates"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "winit"
