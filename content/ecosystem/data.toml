@@ -31,6 +31,7 @@ archived = true
 name = "amethyst_network"
 source = "crates"
 categories = ["networking"]
+archived = true
 
 [[items]]
 name = "apecs"
@@ -41,6 +42,7 @@ categories = ["ecs"]
 name = "arcana-engine/arcana"
 source = "github"
 categories = ["engines"]
+archived = true
 
 [[items]]
 name = "Ascending Client"
@@ -151,6 +153,7 @@ categories = ["ecs"]
 name = "building-blocks"
 source = "crates"
 categories = ["tools", "mesh"]
+archived = true
 
 [[items]]
 name = "bvh"
@@ -1496,6 +1499,7 @@ categories = ["engines"]
 name = "texture-synthesis"
 source = "crates"
 categories = ["tools"]
+archived = true
 
 [[items]]
 name = "three"
