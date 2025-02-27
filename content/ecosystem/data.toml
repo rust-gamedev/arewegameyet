@@ -174,6 +174,7 @@ categories = ["ecs"]
 name = "caper"
 source = "crates"
 categories = ["engines"]
+archived = true
 
 [[items]]
 name = "cgmath"
