@@ -93,6 +93,13 @@ categories = ["articles"]
 homepage_url = "//nyxtom.dev/2020/10/08/framebuffers/"
 
 [[items]]
+name = "Game Development in Rust with Macroquad book by Olle Wreede"
+description = "A deep and detailed tutorial about designing and implementing roguelike games in Rust"
+categories = ["books", "tutorials"]
+homepage_url = "//mq.agical.se/"
+repository_url = "//github.com/ollej/macroquad-introduktion"
+
+[[items]]
 name = "Game Development with Rust and WebAssembly by Eric Smith"
 description = "Learn how to run Rust on the web while building an endless runner"
 categories = ["books", "tutorials"]
