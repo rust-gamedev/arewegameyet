@@ -78,6 +78,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "audionimbus"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "audir"
 source = "crates"
 categories = ["audio"]
