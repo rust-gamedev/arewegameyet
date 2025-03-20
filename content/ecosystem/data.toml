@@ -1676,3 +1676,9 @@ categories = ["tools"]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
+
+[[items]]
+name  = "wavers"
+source = "crates"
+categories = ["audio"]
+
