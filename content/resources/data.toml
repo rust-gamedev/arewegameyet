@@ -94,7 +94,7 @@ homepage_url = "//nyxtom.dev/2020/10/08/framebuffers/"
 
 [[items]]
 name = "Game Development in Rust with Macroquad book by Olle Wreede"
-description = "A deep and detailed tutorial about designing and implementing roguelike games in Rust"
+description = "A game development guide on how to program a shoot 'em up game with the Rust programming language and the Macroquad game library"
 categories = ["books", "tutorials"]
 homepage_url = "//mq.agical.se/"
 repository_url = "//github.com/ollej/macroquad-introduktion"
