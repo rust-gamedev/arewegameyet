@@ -1636,6 +1636,11 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
+name = "wavers"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "weasel"
 source = "crates"
 categories = ["tools"]
