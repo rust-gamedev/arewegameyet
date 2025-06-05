@@ -397,6 +397,7 @@ description = "A Quake 3 like game with voxelized destructible maps"
 categories = ["fps"]
 repository_url = "//github.com/Jeaye/q3"
 image = "/assets/img/q3.png"
+archived = true
 
 [[items]]
 name = "realm.one"
