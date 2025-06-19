@@ -1221,11 +1221,6 @@ categories = ["3drendering"]
 archived = true
 
 [[items]]
-name = "rendology"
-source = "crates"
-categories = ["3drendering"]
-
-[[items]]
 name = "rendy"
 source = "crates"
 categories = ["3drendering"]
