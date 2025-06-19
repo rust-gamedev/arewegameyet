@@ -790,6 +790,12 @@ source = "crates"
 categories = ["physics"]
 
 [[items]]
+name = "lotus_engine"
+source = "crates"
+repository_url = "https://github.com/zenialexandre/lotus"
+categories = ["engines"]
+
+[[items]]
 name = "luajit"
 source = "crates"
 categories = ["scripting"]
