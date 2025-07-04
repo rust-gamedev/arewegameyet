@@ -199,6 +199,14 @@ repository_url = "//github.com/ucarion/gaia"
 image = "/assets/img/gaia.jpg"
 
 [[items]]
+name = "Gaia Maker"
+description = "Planet and terraforming simulation game"
+categories = ["simulation"]
+homepage_url = "//store.steampowered.com/app/3662040/Gaia_Maker/"
+repository_url = "//github.com/garkimasera/gaia-maker"
+image = "/assets/img/gaia-maker.png"
+
+[[items]]
 name = "Galangua"
 description = "A dynamic 2D shoot 'em up game, written using SDL2"
 categories = ["action"]
