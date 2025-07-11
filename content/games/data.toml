@@ -3,7 +3,7 @@ name = "(the) Gnorp Apologue"
 description = "(the) Gnorp Apologue is the journey of the gnorps as you guide them towards their goal of delightfully excessive wealth accumulation. Made with Tetra."
 categories = ["puzzle", "released"]
 homepage_url = "//store.steampowered.com/app/1473350/the_Gnorp_Apologue/"
-image = "/assets/img/gnorp.png"
+image = "/assets/img/gnorp.jpg"
 
 [[items]]
 name = "12 Seconds Awake"
