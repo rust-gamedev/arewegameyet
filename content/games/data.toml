@@ -613,7 +613,7 @@ image = "/assets/img/times_of_progress.gif"
 [[items]]
 name = "Tiny Glade"
 description = "A small relaxing game about doodling castles. Explore gridless building chemistry, and watch the game carefully assemble every brick, pebble and plank."
-categories = ["simulation", "other"]
+categories = ["simulation", "other", "released"]
 homepage_url = "//store.steampowered.com/app/2198150/Tiny_Glade"
 image = "/assets/img/tinyglade.jpg"
 
