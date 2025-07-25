@@ -1403,11 +1403,6 @@ categories = ["ecs"]
 gitter_url = "https://gitter.im/leudz-shipyard/community"
 
 [[items]]
-name = "sierra"
-source = "crates"
-categories = ["2drendering", "3drendering"]
-
-[[items]]
 name = "skulpin"
 source = "crates"
 categories = ["2drendering"]
