@@ -1406,6 +1406,7 @@ gitter_url = "https://gitter.im/leudz-shipyard/community"
 name = "sierra"
 source = "crates"
 categories = ["2drendering", "3drendering"]
+archived = true
 
 [[items]]
 name = "skulpin"
