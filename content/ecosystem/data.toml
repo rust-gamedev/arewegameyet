@@ -15,6 +15,7 @@ source = "github"
 categories = ["engines"]
 repository_url = "https://github.com/AmbientRun/Ambient"
 homepage_url = "https://www.ambient.run"
+archived = true
 
 [[items]]
 name = "ambisonic"
