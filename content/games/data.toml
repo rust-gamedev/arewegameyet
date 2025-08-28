@@ -229,6 +229,14 @@ repository_url = "//github.com/PistonDevelopers/hematite"
 image = "/assets/img/hematite.png"
 
 [[items]]
+name = "Hnefatafl"
+description = "The game of Hnefatafl, Copenhagen variant. Sometimes called viking chess. An engine, client, and server."
+categories = ["strategy", "released"]
+homepage_url = "//hnefatafl.org"
+repository_url = "//github.com/dcampbell24/hnefatafl"
+image = "/assets/img/hnefatafl-king.png"
+
+[[items]]
 name = "Hydrofoil Generation"
 description = "A realistic sailing/foiling inshore simulator that puts you in the driving seat of modern competitive sailing"
 categories = ["simulation", "racing", "released"]
