@@ -233,6 +233,7 @@ name = "Hnefatafl"
 description = "The game of Hnefatafl, Copenhagen variant. Sometimes called viking chess. An engine, client, and server."
 categories = ["strategy", "released"]
 homepage_url = "//hnefatafl.org"
+repository_url = "//github.com/dcampbell24/hnefatafl"
 image = "/assets/img/hnefatafl-king.png"
 
 [[items]]
