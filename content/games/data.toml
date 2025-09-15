@@ -683,6 +683,13 @@ repository_url = "//gitlab.com/remram44/vigilant-steel"
 image = "/assets/img/vigilant-steel.png"
 
 [[items]]
+name = "Voxmaxa"
+description = "Voxmaxa is an online multiplayer voxel FPS"
+categories = ["fps", "action", "released"]
+image = "/assets/img/voxmaxa.png"
+homepage_url = "https://voxmaxa.com"
+
+[[items]]
 name = "Way of Rhea"
 description = "A color changing puzzle adventure. Hard puzzles, forgiving mechanics."
 categories = ["puzzle"]
