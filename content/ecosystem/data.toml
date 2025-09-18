@@ -1262,6 +1262,7 @@ categories = ["engines"]
 name = "rlua"
 source = "crates"
 categories = ["scripting"]
+archived = true
 
 [[items]]
 name = "rodio"
