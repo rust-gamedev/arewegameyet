@@ -74,6 +74,11 @@ categories = ["3drendering"]
 gitter_url = "https://gitter.im/MaikKlein/ash"
 
 [[items]]
+name = "asset-importer"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "assets_manager"
 source = "crates"
 categories = ["tools"]
