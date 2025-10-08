@@ -582,6 +582,13 @@ repository_url = "//github.com/fabiojmendes/super-jeff"
 image = "/assets/img/super-jeff.gif"
 
 [[items]]
+name = "Tales of Kathay"
+description = "Tales of Kathay is a turn-based role-playing game set in a rich, living world that's entirely procedural and deeply simulated. "
+categories = ["rpg", "open-world"]
+homepage_url = "//jouwee.itch.io/tales-of-kathay"
+image = "/assets/img/tales-of-kathay.gif"
+
+[[items]]
 name = "Tataku"
 description = "An osu! clone written in rust!"
 categories = ["action"]
