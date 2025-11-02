@@ -394,6 +394,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "entity-trait-system"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "erupt"
 source = "crates"
 categories = ["3drendering"]
