@@ -23,6 +23,20 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "amble_engine"
+description = "Fully data-driven text adventure / I.F. game and scripting engine."
+categories = ["engines"]
+crate_url = "https://crates.io/crates/amble_engine"
+repository_url = "https://github.com/pygmy-twylyte/amble"
+
+[[items]]
+name = "amble_script"
+description = "Natural-language-like DSL with compiler and linter for building games with amble_engine ('Amble')."
+categories = ["scripting", "tools"]
+crate_url = "https://crates.io/crates/amble_script"
+repository_url = "https://github.com/pygmy-twylyte/amble"
+
+[[items]]
 name = "amethyst"
 source = "crates"
 categories = ["engines"]
