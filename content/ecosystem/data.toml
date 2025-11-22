@@ -23,8 +23,8 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
-name = "amble_engine" 
-description = "Fully data-driven text adventure / I.F. game and scripting engine." 
+name = "amble_engine"
+description = "Fully data-driven text adventure / I.F. game and scripting engine."
 categories = ["engines"]
 crate_url = "https://crates.io/crates/amble_engine"
 repository_url = "https://github.com/pygmy-twylyte/amble"
