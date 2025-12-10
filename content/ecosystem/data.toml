@@ -795,6 +795,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "libnoise"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "libovr"
 source = "crates"
 categories = ["vr"]
