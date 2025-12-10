@@ -1299,6 +1299,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "roto"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "rotsprite"
 source = "crates"
 categories = ["2drendering"]
