@@ -838,6 +838,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "macaw"
+source = "crates"
+categories = ["math"]
+
+[[items]]
 name = "mach-dxcompiler-rs"
 source = "crates"
 categories = ["shader"]
