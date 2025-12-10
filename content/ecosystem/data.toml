@@ -1716,6 +1716,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "yakui"
+source = "crates"
+categories = ["ui"]
+
+[[items]]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
