@@ -795,6 +795,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "libnoise"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "libovr"
 source = "crates"
 categories = ["vr"]
@@ -836,6 +841,11 @@ archived = true
 name = "lyon"
 source = "crates"
 categories = ["2drendering"]
+
+[[items]]
+name = "macaw"
+source = "crates"
+categories = ["math"]
 
 [[items]]
 name = "mach-dxcompiler-rs"
@@ -1294,6 +1304,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "roto"
+source = "crates"
+categories = ["scripting"]
+
+[[items]]
 name = "rotsprite"
 source = "crates"
 categories = ["2drendering"]
@@ -1709,6 +1724,11 @@ categories = ["physics"]
 name = "wrapping_coords2d"
 source = "crates"
 categories = ["tools"]
+
+[[items]]
+name = "yakui"
+source = "crates"
+categories = ["ui"]
 
 [[items]]
 name = "ziyasal/natura"
