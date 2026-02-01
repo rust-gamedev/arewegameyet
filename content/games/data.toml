@@ -460,6 +460,13 @@ repository_url = "//github.com/Dooskington/Rostige-Schlange"
 image = "/assets/img/rostigeschlange.png"
 
 [[items]]
+name = "RPGFX"
+description = "RPGFX is an open-world exploration action-adventure RPG game with MMORPG features that runs in the browser (rust+wasm), with a built-in game editor."
+categories = ["open-world", "rpg"]
+homepage_url = "//rpgfx.com/"
+image = "/assets/img/rpgfx.png"
+
+[[items]]
 name = "ruga"
 description = "A game made in rust"
 categories = ["action"]
