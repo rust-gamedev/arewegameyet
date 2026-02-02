@@ -380,6 +380,14 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "egor"
+description = "A dead simple cross-platform 2D graphics engine"
+source = "crates"
+categories = ["2drendering", "engines"]
+repository_url = "https://github.com/wick3dr0se/egor"
+crate_url = "https://crates.io/crates/egor"
+
+[[items]]
 name = "egui"
 source = "crates"
 categories = ["ui"]
