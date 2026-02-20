@@ -557,6 +557,11 @@ source = "crates"
 categories = ["engines"]
 
 [[items]]
+name = "ggmath"
+source = "crates"
+categories = ["math"]
+
+[[items]]
 name = "ggrs"
 source = "crates"
 categories = ["networking"]
