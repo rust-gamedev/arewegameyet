@@ -160,6 +160,11 @@ source = "crates"
 categories = ["engines", "2drendering", "3drendering"]
 
 [[items]]
+name = "BlueLupa/RT-Game-Engine"
+source = "github"
+categories = ["engines", "3drendering"]
+
+[[items]]
 name = "bmfont"
 source = "crates"
 categories = ["textrendering"]
