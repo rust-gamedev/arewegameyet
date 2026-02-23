@@ -1,0 +1,7329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>3D Rendering | Are we game yet?</title>
+
+    <meta property="og:title" content="3D Rendering">
+    <meta property="og:url" content="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">
+    <meta property="og:description" content="Graphics APIs, wrappers for and backends to Vulkan and OpenGL, and more">
+    <link rel="canonical" href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arewegameyet.rs/assets/img/rust-logo-128x128-blk-v2.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:site_name" content="Are we game yet?">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/main.css">
+    
+     
+</head>
+
+<body>
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="item" href="/">Home</a>
+        <a class="item" href="/#community">Community</a>
+        <a class="item" href="/#ecosystem">Ecosystem</a>
+        <a class="item" href="/#games">Games</a>
+        <a class="item" href="/#curators">Curators</a>
+        <a class="item" href="/#resources">Resources</a>
+        <a class="item" href="/#about">About</a>
+    </div>
+
+    <div class="pusher">
+        <header class="ui inverted vertical masthead center aligned segment">
+            <nav class="ui container" aria-label="site">
+                <ul class="ui large borderless inverted menu nolist">
+                    <li>
+                        <a class="toc item">
+                            <i class="sidebar icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#community">Community</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#ecosystem">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#games">Games</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#curators">Curators</a>
+                    </li>
+                    <li>
+                        <a class="item" href="/#about">About</a>
+                    </li>
+                    <li class="right menu">
+                        <div class="item">
+                            <a class="ui inverted button" href="https://github.com/rust-gamedev/arewegameyet">Contribute</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="ui text container">
+                
+                    <p class="ui inverted large header">
+                        Are we game yet?
+                    </p>
+                
+            </div>
+        </header>
+
+        <main>
+            
+
+
+
+
+<section class="ui vertical stripe">
+    <h1 class="ui center aligned icon header">
+        <i class="circular icon cubes" aria-hidden="true"></i>
+        3D Rendering
+    </h1>
+    <div class="ui text container">
+        <p>Graphics APIs, wrappers for and backends to Vulkan and OpenGL, and more</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<section id="crates-section">
+    <h2 class="ui horizontal divider small header">
+        <a href="#crates" id="crates">
+            <i class="list icon big" aria-hidden="true"></i>
+            Crates
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui container">
+            <div class="crates-toolbar">
+                <div id="sort-menu" class="ui dropdown icon selection">
+                    <i class="sort amount down icon" aria-hidden="true"></i>
+                    <span class="text">Sort by A-Z</span>
+                    <i class="dropdown icon" aria-hidden="true"></i>
+
+                    <ul class="menu">
+                        <li class="item" data-value="data-name" data-order="asc">Sort by A-Z</li>
+                        <li class="item" data-value="data-name">Sort by Z-A</li>
+
+                        
+                            <li class="item" data-value="data-downloads" data-type="num">Sort by Downloads</li>
+                            <li class="item" data-value="data-recent" data-type="num">Sort by Recent Downloads</li>
+                            <li class="item" data-value="data-stars" data-type="num">Sort by Stars</li>
+                            <li class="item" data-value="data-activity">Sort by Last Activity</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="ui card-grid nolist one">
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="ash" data-downloads="18128846" data-recent="3150633" data-stars="2212" data-activity="2026-02-21T21:21:49Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ash">ash</a>
+            
+        </h3>
+
+        <a class="right floated" href="#ash" id="ash" aria-label="Permanent link for ash">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;ash-rs&#x2F;ash" aria-label="Repository link for ash">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;ash" aria-label="Crates.io link for ash">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Vulkan bindings for Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                    <li class="item">
+                        <div class="content">
+                            <a class="ui blue label" href="https:&#x2F;&#x2F;gitter.im&#x2F;MaikKlein&#x2F;ash" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
+                            </a>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.38.0+1.3.281</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">18,128,846</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,150,633</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">2,212</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="blue_engine" data-downloads="127950" data-recent="1135" data-stars="505" data-activity="2026-02-11T13:06:07Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;blue_engine">blue_engine</a>
+            
+        </h3>
+
+        <a class="right floated" href="#blue-engine" id="blue-engine" aria-label="Permanent link for blue_engine">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;AryanpurTech&#x2F;BlueEngine" aria-label="Repository link for blue_engine">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;blue_engine" aria-label="Crates.io link for blue_engine">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>General-Purpose, Easy-to-use, Fast, and Portable graphics engine</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.10.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">127,950</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">1,135</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">505</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-11</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+    
+    
+    
+    
+
+    
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="RT-Game-Engine" data-stars="3" data-activity="2026-02-21T19:36:21Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;BlueLupa&#x2F;RT-Game-Engine">RT-Game-Engine</a>
+            
+        </h3>
+
+        <a class="right floated" href="#rt-game-engine" id="rt-game-engine" aria-label="Permanent link for RT-Game-Engine">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;BlueLupa&#x2F;RT-Game-Engine" aria-label="Repository link for RT-Game-Engine">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A from-scratch game engine written in Rust using WGPU, featuring real-time Ray Tracing and Physically Based Rendering (PBR)</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT License</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">3</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+    
+    
+    
+    
+
+    
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="mepeyew" data-stars="20" data-activity="2024-04-28T18:17:00Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;davnotdev&#x2F;mepeyew">mepeyew</a>
+            
+        </h3>
+
+        <a class="right floated" href="#mepeyew" id="mepeyew" aria-label="Permanent link for mepeyew">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;davnotdev&#x2F;mepeyew" aria-label="Repository link for mepeyew">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Cross platform, lightweight Rust graphics library</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">BSD 2-Clause &quot;Simplified&quot; License</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">20</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-04-28</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+            
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="dotrix" data-downloads="9831" data-recent="43" data-stars="310" data-activity="2025-06-09T07:15:30Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dotrix">dotrix</a>
+            
+        </h3>
+
+        <a class="right floated" href="#dotrix" id="dotrix" aria-label="Permanent link for dotrix">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;lowenware&#x2F;dotrix" aria-label="Repository link for dotrix">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;dotrix" aria-label="Crates.io link for dotrix">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;ecs&#x2F;">ECS</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>3D Game Engine</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.5.2</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">9,831</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">43</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">310</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-06-09</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+    
+    
+    
+    
+
+    
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="kajiya" data-stars="5276" data-activity="2025-07-07T21:27:20Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;kajiya">kajiya</a>
+            
+        </h3>
+
+        <a class="right floated" href="#kajiya" id="kajiya" aria-label="Permanent link for kajiya">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;kajiya" aria-label="Repository link for kajiya">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>💡 Experimental real-time global illumination renderer 🦀</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache License 2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">5,276</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-07-07</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="euc" data-downloads="113581" data-recent="3252" data-stars="345" data-activity="2024-12-31T12:10:09Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euc">euc</a>
+            
+        </h3>
+
+        <a class="right floated" href="#euc" id="euc" aria-label="Permanent link for euc">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;zesterer&#x2F;euc" aria-label="Repository link for euc">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;euc" aria-label="Crates.io link for euc">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A software rendering crate that lets you write shaders with Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.5.3</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">113,581</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,252</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0 AND MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">345</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-12-31</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="gemini-engine" data-downloads="65481" data-recent="647" data-stars="40" data-activity="2025-03-15T20:00:53Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gemini-engine">gemini-engine</a>
+            
+        </h3>
+
+        <a class="right floated" href="#gemini-engine" id="gemini-engine" aria-label="Permanent link for gemini-engine">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;renpenguin&#x2F;gemini-engine" aria-label="Repository link for gemini-engine">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gemini-engine" aria-label="Crates.io link for gemini-engine">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;renpenguin&#x2F;gemini-engine" aria-label="Website link for gemini-engine">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A 2D&#x2F;3D monospaced ASCII rendering engine for the terminal</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">1.2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">65,481</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">647</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">40</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-03-15</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="gl" data-downloads="2490172" data-recent="260278" data-stars="735" data-activity="2025-11-25T09:08:08Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gl">gl</a>
+            
+        </h3>
+
+        <a class="right floated" href="#gl" id="gl" aria-label="Permanent link for gl">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;brendanzab&#x2F;gl-rs&#x2F;" aria-label="Repository link for gl">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gl" aria-label="Crates.io link for gl">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;brendanzab&#x2F;gl-rs&#x2F;" aria-label="Website link for gl">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>OpenGL bindings</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.14.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">2,490,172</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">260,278</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">735</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-11-25</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="glfw" data-downloads="810849" data-recent="44081" data-stars="681" data-activity="2025-12-06T21:36:59Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glfw">glfw</a>
+            
+        </h3>
+
+        <a class="right floated" href="#glfw" id="glfw" aria-label="Permanent link for glfw">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;bjz&#x2F;glfw-rs" aria-label="Repository link for glfw">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glfw" aria-label="Crates.io link for glfw">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;windowing&#x2F;">Windowing</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>GLFW3 bindings and idiomatic wrapper for Rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.61.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">810,849</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">44,081</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">681</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-12-06</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="glium" data-downloads="2625211" data-recent="106055" data-stars="3607" data-activity="2025-08-19T12:13:24Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glium">glium</a>
+            
+        </h3>
+
+        <a class="right floated" href="#glium" id="glium" aria-label="Permanent link for glium">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;glium&#x2F;glium" aria-label="Repository link for glium">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glium" aria-label="Crates.io link for glium">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Elegant and safe OpenGL wrapper.
+
+Glium is an intermediate layer between OpenGL and your application. You still need to manually handle
+the graphics pipeline, but without having to use OpenGL&#x27;s old and error-prone API.
+
+Its objectives:
+
+ - Be safe to use. Many aspects of OpenGL that can trigger a crash if misused are automatically handled by glium.
+ - Provide an API that enforces good pratices such as RAII or stateless function calls.
+ - Be compatible with all OpenGL versions that support shaders, providing unified API when things diverge.
+ - Avoid all OpenGL errors beforehand.
+ - Produce optimized OpenGL function calls, and allow the user to easily use modern OpenGL techniques.
+</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                    <li class="item">
+                        <div class="content">
+                            <a class="ui blue label" href="https:&#x2F;&#x2F;gitter.im&#x2F;tomaka&#x2F;glium" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
+                            </a>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.36.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">2,625,211</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">106,055</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">3,607</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-08-19</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="glow" data-downloads="20302041" data-recent="3734673" data-stars="1446" data-activity="2025-12-14T03:52:42Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glow">glow</a>
+            
+        </h3>
+
+        <a class="right floated" href="#glow" id="glow" aria-label="Permanent link for glow">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;grovesNL&#x2F;glow" aria-label="Repository link for glow">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glow" aria-label="Crates.io link for glow">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;grovesNL&#x2F;glow.git" aria-label="Website link for glow">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>GL on Whatever: a set of bindings to run GL (Open GL, OpenGL ES, and WebGL) anywhere, and avoid target-specific code.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.16.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">20,302,041</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,734,673</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0 OR Zlib</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,446</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-12-14</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="glutin" data-downloads="20090710" data-recent="3437188" data-stars="2072" data-activity="2026-02-17T14:18:06Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glutin">glutin</a>
+            
+        </h3>
+
+        <a class="right floated" href="#glutin" id="glutin" aria-label="Permanent link for glutin">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;rust-windowing&#x2F;glutin" aria-label="Repository link for glutin">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;glutin" aria-label="Crates.io link for glutin">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;windowing&#x2F;">Windowing</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Cross-platform OpenGL context provider.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                    <li class="item">
+                        <div class="content">
+                            <a class="ui blue label" href="https:&#x2F;&#x2F;gitter.im&#x2F;tomaka&#x2F;glutin" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
+                            </a>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.32.3</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">20,090,710</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,437,188</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">2,072</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-17</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="kiss3d" data-downloads="432699" data-recent="30915" data-stars="1636" data-activity="2026-02-21T18:19:50Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;kiss3d">kiss3d</a>
+            
+        </h3>
+
+        <a class="right floated" href="#kiss3d" id="kiss3d" aria-label="Permanent link for kiss3d">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;dimforge&#x2F;kiss3d" aria-label="Repository link for kiss3d">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;kiss3d" aria-label="Crates.io link for kiss3d">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Keep it simple, stupid, 2D and 3D graphics engine for Rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.40.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">432,699</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">30,915</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">BSD-3-Clause</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,636</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+                  
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="miniquad" data-downloads="1457030" data-recent="141924" data-stars="1951" data-activity="2026-01-01T07:29:02Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;miniquad">miniquad</a>
+            
+        </h3>
+
+        <a class="right floated" href="#miniquad" id="miniquad" aria-label="Permanent link for miniquad">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;miniquad" aria-label="Repository link for miniquad">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;miniquad" aria-label="Crates.io link for miniquad">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;miniquad" aria-label="Website link for miniquad">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Cross-platform window context and rendering library.
+</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.4.8</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">1,457,030</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">141,924</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,951</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-01-01</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="opensubdiv-petite" data-downloads="3153" data-recent="16" data-stars="20" data-activity="2026-02-21T10:17:54Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;opensubdiv-petite">opensubdiv-petite</a>
+            
+        </h3>
+
+        <a class="right floated" href="#opensubdiv-petite" id="opensubdiv-petite" aria-label="Permanent link for opensubdiv-petite">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;virtualritz&#x2F;opensubdiv-petite&#x2F;" aria-label="Repository link for opensubdiv-petite">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;opensubdiv-petite" aria-label="Crates.io link for opensubdiv-petite">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;graphics.pixar.com&#x2F;opensubdiv&#x2F;" aria-label="Website link for opensubdiv-petite">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;mesh&#x2F;">Mesh Tools</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Wrapper around parts of Pixar’s OpenSubdiv</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">3,153</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">16</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">20</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="rafx" data-downloads="53582" data-recent="691" data-stars="717" data-activity="2024-08-04T17:30:43Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rafx">rafx</a>
+            
+        </h3>
+
+        <a class="right floated" href="#rafx" id="rafx" aria-label="Permanent link for rafx">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;aclysma&#x2F;rafx" aria-label="Repository link for rafx">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rafx" aria-label="Crates.io link for rafx">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;aclysma&#x2F;rafx" aria-label="Website link for rafx">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Rendering framework built on an extensible asset pipeline</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.0.16</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">53,582</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">691</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">717</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-08-04</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="screen-13" data-downloads="58718" data-recent="234" data-stars="330" data-activity="2026-02-22T13:37:06Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;screen-13">screen-13</a>
+            
+        </h3>
+
+        <a class="right floated" href="#screen-13" id="screen-13" aria-label="Permanent link for screen-13">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;attackgoat&#x2F;screen-13" aria-label="Repository link for screen-13">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;screen-13" aria-label="Crates.io link for screen-13">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;attackgoat&#x2F;screen-13" aria-label="Website link for screen-13">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>An easy-to-use Vulkan rendering engine in the spirit of QBasic.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.13.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">58,718</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">234</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">330</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-22</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="sdl3" data-downloads="112078" data-recent="17382" data-stars="311" data-activity="2026-02-22T05:51:26Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;sdl3">sdl3</a>
+            
+        </h3>
+
+        <a class="right floated" href="#sdl3" id="sdl3" aria-label="Permanent link for sdl3">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;vhspace&#x2F;sdl3-rs" aria-label="Repository link for sdl3">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;sdl3" aria-label="Crates.io link for sdl3">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;audio&#x2F;">Audio</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;engines&#x2F;">Game Engines</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;input&#x2F;">Input</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;windowing&#x2F;">Windowing</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Cross-platform multimedia</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.17.3</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">112,078</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">17,382</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">311</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-22</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="three-d" data-downloads="250905" data-recent="36645" data-stars="1599" data-activity="2026-02-18T10:54:10Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;three-d">three-d</a>
+            
+        </h3>
+
+        <a class="right floated" href="#three-d" id="three-d" aria-label="Permanent link for three-d">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;asny&#x2F;three-d" aria-label="Repository link for three-d">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;three-d" aria-label="Crates.io link for three-d">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>2D&#x2F;3D renderer - makes it simple to draw stuff across platforms (including web)</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.18.2</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">250,905</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">36,645</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,599</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-18</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="vk-mem" data-downloads="109907" data-recent="9593" data-stars="196" data-activity="2026-01-22T00:52:15Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vk-mem">vk-mem</a>
+            
+        </h3>
+
+        <a class="right floated" href="#vk-mem" id="vk-mem" aria-label="Permanent link for vk-mem">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gwihlidal&#x2F;vk-mem-rs" aria-label="Repository link for vk-mem">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vk-mem" aria-label="Crates.io link for vk-mem">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gwihlidal&#x2F;vk-mem-rs" aria-label="Website link for vk-mem">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Rust ffi bindings and idiomatic wrapper for AMD Vulkan Memory Allocator (VMA)</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.5.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">109,907</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">9,593</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT&#x2F;Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">196</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-01-22</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="vulkanalia" data-downloads="75386" data-recent="4953" data-stars="358" data-activity="2026-02-21T01:43:32Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vulkanalia">vulkanalia</a>
+            
+        </h3>
+
+        <a class="right floated" href="#vulkanalia" id="vulkanalia" aria-label="Permanent link for vulkanalia">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;KyleMayes&#x2F;vulkanalia" aria-label="Repository link for vulkanalia">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vulkanalia" aria-label="Crates.io link for vulkanalia">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Vulkan bindings for Rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.35.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">75,386</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">4,953</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">358</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+
+
+<li class="ui card" data-name="vulkano" data-downloads="1146296" data-recent="159125">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vulkano">vulkano</a>
+            
+        </h3>
+
+        <a class="right floated" href="#vulkano" id="vulkano" aria-label="Permanent link for vulkano">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;vulkano-rs&#x2F;vulkano&#x2F;tree&#x2F;master&#x2F;vulkano" aria-label="Repository link for vulkano">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vulkano" aria-label="Crates.io link for vulkano">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;vulkano.rs" aria-label="Website link for vulkano">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Safe wrapper for the Vulkan graphics API</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.35.2</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">1,146,296</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">159,125</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+                    
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card" data-name="wgpu" data-downloads="16866774" data-recent="3626195" data-stars="16456" data-activity="2026-02-23T01:20:47Z">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wgpu">wgpu</a>
+            
+        </h3>
+
+        <a class="right floated" href="#wgpu" id="wgpu" aria-label="Permanent link for wgpu">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;wgpu" aria-label="Repository link for wgpu">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wgpu" aria-label="Crates.io link for wgpu">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;wgpu.rs&#x2F;" aria-label="Website link for wgpu">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Cross-platform, safe, pure-rust graphics API</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">28.0.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">16,866,774</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,626,195</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">16,456</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2026-02-23</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section>
+        <h2 class="ui horizontal divider small header">
+            <a href="#crates" id="crates">
+                <i class="bed icon big" aria-hidden="true"></i>
+                Archived
+            </a>
+        </h2>
+
+        <div class="ui vertical stripe">
+            <div class="ui container">
+                <div class="ui message">
+                    <i class="info circle icon" aria-hidden="true"></i>
+                    These crates are no longer maintained, but may still be of interest.
+                </div>
+
+                <ul class="ui card-grid nolist one">
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bgfx-rs">bgfx-rs</a>
+            
+        </h3>
+
+        <a class="right floated" href="#bgfx-rs" id="bgfx-rs" aria-label="Permanent link for bgfx-rs">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;emoon&#x2F;bgfx-rs" aria-label="Repository link for bgfx-rs">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bgfx-rs" aria-label="Crates.io link for bgfx-rs">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Bindings for bgfx</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.20.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">27,214</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">268</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">BSD-2-Clause</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">118</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-03-21</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;erupt">erupt</a>
+            
+        </h3>
+
+        <a class="right floated" href="#erupt" id="erupt" aria-label="Permanent link for erupt">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;gitlab.com&#x2F;Friz64&#x2F;erupt" aria-label="Repository link for erupt">
+                <i class="gitlab icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;erupt" aria-label="Crates.io link for erupt">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Vulkan API bindings</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.23.0+213</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">72,244</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">2,489</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Zlib</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">38</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2022-12-01</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gfx">gfx</a>
+            
+        </h3>
+
+        <a class="right floated" href="#gfx" id="gfx" aria-label="Permanent link for gfx">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx" aria-label="Repository link for gfx">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gfx" aria-label="Crates.io link for gfx">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx" aria-label="Website link for gfx">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>A high-performance, bindless graphics API</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                    <li class="item">
+                        <div class="content">
+                            <a class="ui blue label" href="https:&#x2F;&#x2F;gitter.im&#x2F;gfx-rs&#x2F;gfx" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
+                            </a>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.18.3</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">1,367,085</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">83,813</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">5,408</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2023-02-27</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gfx-hal">gfx-hal</a>
+            
+        </h3>
+
+        <a class="right floated" href="#gfx-hal" id="gfx-hal" aria-label="Permanent link for gfx-hal">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx" aria-label="Repository link for gfx-hal">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;gfx-hal" aria-label="Crates.io link for gfx-hal">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx" aria-label="Website link for gfx-hal">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>gfx-rs hardware abstraction layer</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.9.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">1,783,361</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">82,416</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">5,408</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2023-02-27</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;grr">grr</a>
+            
+        </h3>
+
+        <a class="right floated" href="#grr" id="grr" aria-label="Permanent link for grr">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;msiglreith&#x2F;grr" aria-label="Repository link for grr">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;grr" aria-label="Crates.io link for grr">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;msiglreith&#x2F;grr" aria-label="Website link for grr">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Bare metal OpenGL 4.5+ wrapper</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.8.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">14,858</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">177</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">55</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2021-07-22</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+                        
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;luminance">luminance</a>
+            
+        </h3>
+
+        <a class="right floated" href="#luminance" id="luminance" aria-label="Permanent link for luminance">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;phaazon&#x2F;luminance-rs" aria-label="Repository link for luminance">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;luminance" aria-label="Crates.io link for luminance">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;phaazon&#x2F;luminance-rs" aria-label="Website link for luminance">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Stateless and type-safe graphics framework</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                    <li class="item">
+                        <div class="content">
+                            <a class="ui blue label" href="https:&#x2F;&#x2F;gitter.im&#x2F;phaazon&#x2F;luminance-rs" target="_blank">
+                                <i class="chat icon" aria-hidden="true"></i>
+                                Chat on Gitter
+                            </a>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.47.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">212,740</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">3,678</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">BSD-3-Clause</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,113</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2023-03-20</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rend3">rend3</a>
+            
+        </h3>
+
+        <a class="right floated" href="#rend3" id="rend3" aria-label="Permanent link for rend3">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;BVE-Reborn&#x2F;rend3" aria-label="Repository link for rend3">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rend3" aria-label="Crates.io link for rend3">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Easy to use, customizable, efficient 3D renderer library built on wgpu.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.3.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">39,320</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">11,111</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0 OR Zlib</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">1,153</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-07-08</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rendy">rendy</a>
+            
+        </h3>
+
+        <a class="right floated" href="#rendy" id="rendy" aria-label="Permanent link for rendy">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;rendy" aria-label="Repository link for rendy">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rendy" aria-label="Crates.io link for rendy">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Higher-level graphics abstrations based on gfx-hal</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.5.1</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">265,058</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">16,557</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">814</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2022-11-14</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rusty-d3d12">rusty-d3d12</a>
+            
+        </h3>
+
+        <a class="right floated" href="#rusty-d3d12" id="rusty-d3d12" aria-label="Permanent link for rusty-d3d12">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;curldivergence&#x2F;rusty-d3d12" aria-label="Repository link for rusty-d3d12">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rusty-d3d12" aria-label="Crates.io link for rusty-d3d12">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Low-level D3D12 bindings for Rust.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.5.2</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">24,089</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">115</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">20</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2022-08-31</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;sierra">sierra</a>
+            
+        </h3>
+
+        <a class="right floated" href="#sierra" id="sierra" aria-label="Permanent link for sierra">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;zakarumych&#x2F;sierra" aria-label="Repository link for sierra">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;sierra" aria-label="Crates.io link for sierra">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;zakarumych&#x2F;sierra" aria-label="Website link for sierra">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;2drendering&#x2F;">2D Rendering</a>
+                <span>·</span>
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Vulkan-lite graphics API</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.6.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">14,754</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">151</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT OR Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">33</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2024-06-28</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;three">three</a>
+            
+        </h3>
+
+        <a class="right floated" href="#three" id="three" aria-label="Permanent link for three">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;three-rs&#x2F;three" aria-label="Repository link for three">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;three" aria-label="Crates.io link for three">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;three-rs&#x2F;three" aria-label="Website link for three">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Three.js inspired 3D engine in Rust</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.4.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">25,524</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">872</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT&#x2F;Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">561</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2022-09-27</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vk-sync">vk-sync</a>
+            
+        </h3>
+
+        <a class="right floated" href="#vk-sync" id="vk-sync" aria-label="Permanent link for vk-sync">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gwihlidal&#x2F;vk-sync-rs" aria-label="Repository link for vk-sync">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;vk-sync" aria-label="Crates.io link for vk-sync">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;gwihlidal&#x2F;vk-sync-rs" aria-label="Website link for vk-sync">
+                <i class="home icon" aria-hidden="true"></i>
+            </a>
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Simplification of core Vulkan synchronization mechanisms such as pipeline barriers and events.</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.1.6</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">14,044</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">345</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">MIT&#x2F;Apache-2.0</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">58</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2025-07-04</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                        
+
+
+
+
+    
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+        
+        
+    
+
+
+<li class="ui card archived">
+    
+
+    <div class="content">
+        <h3 class="header">
+            
+                <a href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wgpu_tokio">wgpu_tokio</a>
+            
+        </h3>
+
+        <a class="right floated" href="#wgpu-tokio" id="wgpu-tokio" aria-label="Permanent link for wgpu_tokio">
+            <i class="hashtag icon" aria-hidden="true"></i>
+        </a>
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;github.com&#x2F;Joatin&#x2F;wgpu_tokio" aria-label="Repository link for wgpu_tokio">
+                <i class="github icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+            <a class="right floated" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;wgpu_tokio" aria-label="Crates.io link for wgpu_tokio">
+                <i class="cube icon" aria-hidden="true"></i>
+            </a>
+        
+
+        
+
+        <div class="meta">
+            
+                
+
+                <a href="https:&#x2F;&#x2F;arewegameyet.rs&#x2F;ecosystem&#x2F;3drendering&#x2F;">3D Rendering</a>
+                
+            
+        </div>
+
+        <div class="description">
+            <p>Async bindings using tokio for wgpu</p>
+        </div>
+    </div>
+    
+    
+        <div class="extra content">
+            <ul class="ui horizontal list">
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="code icon" aria-hidden="true"></i>
+                                Latest version:
+                                <div class="detail">0.12.6</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="download icon" aria-hidden="true"></i>
+                                Downloads:
+                                <div class="detail">8,819</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="clock icon" aria-hidden="true"></i>
+                                Recent downloads:
+                                <div class="detail">28</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="balance scale icon" aria-hidden="true"></i>
+                                License:
+                                <div class="detail">non-standard</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="star icon" aria-hidden="true"></i>
+                                Stars:
+                                <div class="detail">8</div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                    <li class="item">
+                        <div class="content">
+                            <div class="ui basic label">
+                                <i class="calendar icon" aria-hidden="true"></i>
+                                Last activity:
+                                <div class="detail">2022-12-03</div>
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+<section>
+    <h2 class="ui horizontal divider small header">
+        <a href="#contribute" id="contribute">
+            <i class="chat icon big" aria-hidden="true"></i>
+            Contribute
+        </a>
+    </h2>
+
+    <div class="ui vertical stripe">
+        <div class="ui text container">
+            <p>Do you know about a missing crate? Did you launch a new crate?</p>
+            <p>
+                Please create a
+                <a href="https://github.com/rust-gamedev/arewegameyet#contribute">pull request</a>
+                or an 
+                <a href="https://github.com/rust-gamedev/arewegameyet/issues/new?title=Add+crate:+NAME&amp;body=Please+add+crate+to+category:+3D Rendering">issue</a>
+                on our GitHub!
+            </p>
+            <p>Looking for a crate you can't find here? Try asking on the <a href="/#chat">chat</a>.</p>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <footer class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="/#about" class="item">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="ten wide column">
+                        <h4 class="ui inverted header">Arewegameyet?</h4>
+                        <p>
+                            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+                            <br />
+                            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                            <br />
+                            Page generated at 2026-02-23 01:24.
+                        </p>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Get involved</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="https://github.com/rust-gamedev/arewegameyet" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/semantic/js/visibility.min.js"></script>
+    <script src="/assets/semantic/js/transition.min.js"></script>
+    <script src="/assets/semantic/js/sidebar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // fix menu when passed
+            $('.masthead').visibility({
+                once: false,
+                onBottomPassed: function () {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function () {
+                    $('.fixed.menu').transition('fade out');
+                }
+            });
+
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('setting', 'transition', 'overlay')
+                .sidebar('setting', 'mobileTransition', 'overlay')
+                .sidebar('attach events', '.toc.item');
+
+            $('.ui.sidebar .item').on('click', function (event) {
+                $('.ui.sidebar').sidebar('hide');
+            })
+        });
+    </script>
+    
+    
+    <script src="/assets/semantic/js/dropdown.min.js"></script>
+    <script src="/assets/js/sortCrates.js"></script>
+
+</body>
+
+</html>
