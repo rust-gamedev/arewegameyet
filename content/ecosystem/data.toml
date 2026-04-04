@@ -398,13 +398,6 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
-name = "vectarine"
-description = "A cross-platform game engine focusing on fast prototyping and having fun with hot reloading and an editor"
-categories = ["engines"]
-repository_url = "https://github.com/vanyle/vectarine"
-homepage_url = "https://vectarine.surge.sh"
-
-[[items]]
 name = "Ellie Language"
 description = "A type-safe scripting language"
 categories = ["scripting"]
@@ -1661,6 +1654,13 @@ categories = ["tools"]
 name = "vecmath"
 source = "crates"
 categories = ["math"]
+
+[[items]]
+name = "vectarine"
+description = "A cross-platform game engine focusing on fast prototyping and having fun with hot reloading and an editor"
+categories = ["engines"]
+repository_url = "https://github.com/vanyle/vectarine"
+homepage_url = "https://vectarine.surge.sh"
 
 [[items]]
 name = "vek"
