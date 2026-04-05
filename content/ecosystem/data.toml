@@ -803,6 +803,12 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "leighteg/helmer"
+source = "github"
+categories = ["engines", "2drendering", "3drendering", "audio", "ui", "tools"]
+homepage_url = "https://helmer.leighteg.dev"
+
+[[items]]
 name = "lewton"
 source = "crates"
 categories = ["audio"]
