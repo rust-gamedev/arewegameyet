@@ -143,6 +143,7 @@ archived = true
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
+archived = true
 
 [[items]]
 name = "blend"
@@ -532,6 +533,7 @@ categories = ["engines"]
 name = "gdnative"
 source = "crates"
 categories = ["engines"]
+archived = true
 
 [[items]]
 name = "gemini-engine"
@@ -1362,6 +1364,7 @@ categories = ["scripting"]
 name = "russimp"
 source = "crates"
 categories = ["3dformatloaders"]
+archived = true
 
 [[items]]
 name = "Rust-GPU/rust-gpu"
@@ -1718,6 +1721,7 @@ categories = ["3dformatloaders"]
 name = "wavers"
 source = "crates"
 categories = ["audio"]
+archived = true
 
 [[items]]
 name = "weasel"
