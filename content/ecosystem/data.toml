@@ -143,7 +143,6 @@ archived = true
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
-archived = true
 
 [[items]]
 name = "blend"
