@@ -638,6 +638,11 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "godot"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "graco"
 source = "crates"
 homepage_url = "https://gitlab.com/chrisrabotin/graco"
