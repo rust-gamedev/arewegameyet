@@ -532,6 +532,7 @@ categories = ["engines"]
 name = "gdnative"
 source = "crates"
 categories = ["engines"]
+archived = true
 
 [[items]]
 name = "gemini-engine"
@@ -635,6 +636,11 @@ gitter_url = "https://gitter.im/tomaka/glutin"
 name = "gme"
 source = "crates"
 categories = ["audio"]
+
+[[items]]
+name = "godot"
+source = "crates"
+categories = ["engines"]
 
 [[items]]
 name = "graco"
@@ -1362,6 +1368,7 @@ categories = ["scripting"]
 name = "russimp"
 source = "crates"
 categories = ["3dformatloaders"]
+archived = true
 
 [[items]]
 name = "Rust-GPU/rust-gpu"
@@ -1718,6 +1725,7 @@ categories = ["3dformatloaders"]
 name = "wavers"
 source = "crates"
 categories = ["audio"]
+archived = true
 
 [[items]]
 name = "weasel"
