@@ -114,7 +114,6 @@ categories = ["action"]
 homepage_url = "//puppetmaster.itch.io/compact-space"
 repository_url = "//github.com/puppetmaster-/compact-space"
 image = "/assets/img/compact-space.png"
-archived = true
 
 [[items]]
 name = "Coric's Quest"
@@ -146,7 +145,6 @@ image = "/assets/img/digital-extinction.png"
 crate_url = "https://crates.io/crates/de_game"
 repository_url = "https://github.com/DigitalExtinction/Game"
 homepage_url = "https://de-game.org/"
-archived = true
 
 [[items]]
 name = "dose response"
