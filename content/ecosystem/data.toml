@@ -1643,6 +1643,11 @@ source = "github"
 categories = ["tools"]
 
 [[items]]
+name = "undoredo"
+source = "crates"
+categories = ["tools", "ui"]
+
+[[items]]
 name = "ultraviolet"
 source = "crates"
 categories = ["math"]
