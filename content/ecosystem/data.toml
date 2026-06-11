@@ -1109,6 +1109,11 @@ source = "crates"
 categories = ["mesh", "3drendering"]
 
 [[items]]
+name = "openusd"
+source = "crates"
+categories = ["3dformatloaders"]
+
+[[items]]
 name = "openvr"
 source = "crates"
 categories = ["vr"]
@@ -1723,11 +1728,6 @@ categories = ["3drendering"]
 
 [[items]]
 name = "wavefront_obj"
-source = "crates"
-categories = ["3dformatloaders"]
-
-[[items]]
-name = "openusd"
 source = "crates"
 categories = ["3dformatloaders"]
 
