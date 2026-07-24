@@ -406,6 +406,11 @@ homepage_url = "https://www.ellie-lang.org/"
 gitter_url = "https://gitter.im/ellie-lang/community"
 
 [[items]]
+name = "elura"
+source = "crates"
+categories = ["networking"]
+
+[[items]]
 name = "EmbarkStudios/kajiya"
 source = "github"
 categories = ["3drendering"]
