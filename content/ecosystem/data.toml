@@ -713,6 +713,12 @@ categories = ["ui"]
 gitter_url = "https://iced.zulipchat.com"
 
 [[items]]
+name = "Icemic/moyu"
+source = "github"
+categories = ["engines", "2drendering", "ui"]
+homepage_url = "https://momoyu.ink/en/"
+
+[[items]]
 name = "image"
 source = "crates"
 categories = ["2drendering"]
