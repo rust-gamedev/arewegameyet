@@ -676,6 +676,13 @@ repository_url = "//github.com/Thinkofname/UniverCity"
 image = "/assets/img/univercity.gif"
 
 [[items]]
+name = "Vagabond"
+description = "Medieval action RPG. Twelve civilizations at their historical peak. A world that lives whether you're watching or not."
+categories = ["action", "rpg", "simulation"]
+homepage_url = "https://wildernessinteractive.com/vagabond"
+image = "/assets/img/vagabond.jpg"
+
+[[items]]
 name = "Vange-rs"
 description = "Rusty Vangers clone"
 categories = ["racing", "rpg", "open-world"]
