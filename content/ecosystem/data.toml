@@ -1319,6 +1319,14 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "renew-engine/renew"
+source = "github"
+description = "Deterministic, code-first game engine: fixed-timestep simulation in fixed point, Vulkan rendering, and a command-line face on every capability."
+categories = ["engines"]
+repository_url = "https://github.com/renew-engine/renew"
+homepage_url = "https://renew-engine.github.io/renew/"
+
+[[items]]
 name = "rhachis"
 source = "crates"
 categories = ["engines"]
