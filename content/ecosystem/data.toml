@@ -494,6 +494,13 @@ source = "crates"
 categories = ["ecs"]
 
 [[items]]
+name = "Floptle"
+description = "A game engine for carvable worlds: terrain is a volumetric SDF, so whole planets are diggable at runtime. Built-in editor, Lua scripting, rollback netcode, and in-editor tutorials that check your progress."
+categories = ["engines"]
+repository_url = "https://github.com/Fopull-LLC/Floptle"
+homepage_url = "https://fopull.com/floptle"
+
+[[items]]
 name = "fmod"
 source = "crates"
 categories = ["audio"]
