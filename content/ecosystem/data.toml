@@ -143,6 +143,7 @@ archived = true
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
+archived = true
 
 [[items]]
 name = "blend"
@@ -414,6 +415,7 @@ categories = ["networking"]
 name = "EmbarkStudios/kajiya"
 source = "github"
 categories = ["3drendering"]
+archived = true
 
 [[items]]
 name = "encase"
@@ -1200,6 +1202,7 @@ name = "physx"
 source = "crates"
 categories = ["physics"]
 homepage_url = "https://github.com/EmbarkStudios/physx-rs"
+archived = true
 
 [[items]]
 name = "piston"
