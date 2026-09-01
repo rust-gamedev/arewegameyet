@@ -1334,6 +1334,13 @@ repository_url = "https://github.com/renew-engine/renew"
 homepage_url = "https://renew-engine.github.io/renew/"
 
 [[items]]
+name = "Renzora Engine"
+description = "A feature packed 2D/3D game engine and scene editor using Bevy"
+categories = ["engines"]
+repository_url = "https://github.com/renzora/engine"
+homepage_url = "https://renzora.com"
+
+[[items]]
 name = "rhachis"
 source = "crates"
 categories = ["engines"]
