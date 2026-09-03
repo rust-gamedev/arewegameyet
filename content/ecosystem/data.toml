@@ -934,6 +934,12 @@ source = "crates"
 categories = ["physics"]
 
 [[items]]
+name = "micromegas"
+source = "crates"
+categories = ["tools"]
+homepage_url = "https://micromegas.info/"
+
+[[items]]
 name = "minifb"
 source = "crates"
 categories = ["windowing"]
