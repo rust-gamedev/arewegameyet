@@ -108,6 +108,14 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "balaurengine/balaur"
+description = "A deterministic 2D and 3D game engine with Rune scripting, Rapier physics and a built-in editor"
+source = "github"
+categories = ["engines"]
+repository_url = "https://github.com/balaurengine/balaur"
+homepage_url = "https://balaurengine.org"
+
+[[items]]
 name = "basis-universal"
 source = "crates"
 categories = ["tools"]
