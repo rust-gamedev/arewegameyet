@@ -1091,6 +1091,31 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "nvidia-dlss"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
+name = "nvidia-nrd"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
+name = "nvidia-omm"
+source = "crates"
+categories = ["3drendering", "mesh"]
+
+[[items]]
+name = "nvidia-sdk"
+source = "crates"
+categories = ["tools", "shader"]
+
+[[items]]
+name = "nvidia-streamline"
+source = "crates"
+categories = ["3drendering"]
+
+[[items]]
 name = "obj"
 source = "crates"
 categories = ["3dformatloaders"]
