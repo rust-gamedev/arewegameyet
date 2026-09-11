@@ -98,6 +98,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "asset-lint"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "audionimbus"
 source = "crates"
 categories = ["audio"]
