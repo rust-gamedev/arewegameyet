@@ -93,12 +93,12 @@ source = "crates"
 categories = ["3dformatloaders"]
 
 [[items]]
-name = "assets_manager"
+name = "asset-lint"
 source = "crates"
 categories = ["tools"]
 
 [[items]]
-name = "asset-lint"
+name = "assets_manager"
 source = "crates"
 categories = ["tools"]
 
