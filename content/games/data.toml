@@ -288,6 +288,13 @@ homepage_url = "//athorus.itch.io/ltd"
 image = "/assets/img/ltd.gif"
 
 [[items]]
+name = "Life Sim"
+description = "A deterministic life simulation where every choice shapes your career, relationships, health, finances, and story. Built in Rust and playable on desktop or in the browser through WebAssembly."
+categories = ["simulation", "rpg"]
+homepage_url = "https://x1vi.itch.io/life-sim"
+image = "/assets/img/life-sim.png"
+
+[[items]]
 name = "Llamassacre"
 description = "A jump and bump game for two players made with ggez"
 categories = ["action"]
