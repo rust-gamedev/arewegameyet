@@ -502,6 +502,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "firewheel"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
 name = "flax"
 source = "crates"
 categories = ["ecs"]
