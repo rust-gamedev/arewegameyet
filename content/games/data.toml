@@ -14,6 +14,13 @@ repository_url = "//github.com/PsichiX/Oxygengine/tree/master/demos/demo-web-gam
 image = "/assets/img/12-seconds-awake.jpeg"
 
 [[items]]
+name = "3D Tic-Tac-Toe"
+description = "A three-dimensional tic-tac-toe game (a 3x3x3 grid with gravity) built with Rust and the Bevy engine, where you drop pieces into columns and line up three along the cube's 49 winning lines. Features a negamax AI with three difficulty levels."
+categories = ["puzzle", "released"]
+image = "/assets/img/3d-tic-tac-toe.png"
+repository_url = "https://github.com/jjsalasrivera/3dTicTacToe"
+
+[[items]]
 name = "A Snake's Tale"
 description = "A (100% Rust) puzzle game about snakes in cramped places"
 categories = ["puzzle", "released"]
