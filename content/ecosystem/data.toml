@@ -931,6 +931,13 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "maudio"
+source = "crates"
+categories = ["audio"]
+description = "Safe Rust bindings to miniaudio, with a playback engine and lower-level APIs for audio devices, decoding, and custom processing."
+repository_url = "https://github.com/someotherself/maudio"
+
+[[items]]
 name = "meshopt"
 source = "crates"
 categories = ["mesh"]
