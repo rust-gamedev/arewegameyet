@@ -138,6 +138,13 @@ homepage_url = "//cratebeforeattack.com"
 image = "/assets/img/crate-before-attack.gif"
 
 [[items]]
+name = "DarkQueenZer0"
+description = "An 8x8 Spanish checkers game with an AlphaZero-style neural AI, built with Bevy."
+categories = ["strategy"]
+repository_url = "https://github.com/jjsalasrivera/DarkQueenZer0"
+image = "/assets/img/darkqueenzero.png"
+
+[[items]]
 name = "Digital Extinction"
 description = "A 3D real-time strategy game."
 categories = ["strategy"]
