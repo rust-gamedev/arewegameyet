@@ -612,6 +612,13 @@ repository_url = "//github.com/andii1701/tetris-bane"
 image = "/assets/img/tetris-bane.png"
 
 [[items]]
+name = "The Human Box"
+description = "A free, open-source civilization sandbox that runs in the browser. Tribes invent their own languages, cultures and beliefs and move through 45 eras from the stone age to computers. The simulation is Rust compiled to WebAssembly."
+categories = ["simulation"]
+homepage_url = "//thehumanbox.com"
+repository_url = "//github.com/1homsi/thehumanbox"
+
+[[items]]
 name = "Theta Wave"
 description = "A space shooter game that strives to be an entry point for new game developers to make their first contributions."
 categories = ["action"]
