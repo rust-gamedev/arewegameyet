@@ -215,6 +215,13 @@ repository_url = "//github.com/tyfkda/galangua"
 image = "/assets/img/galangua.png"
 
 [[items]]
+name = "Habet"
+description = "You were sold onto the sand and walked off it free. Now you own men who stand where you stood. Run a gladiator school in Pompeii, 73 BC: arm them, feed them, drill them, stitch them up. Watch from the stands, or take the blade yourself. Built with Rust and Bevy. Coming soon on Steam."
+categories = ["simulation", "strategy"]
+homepage_url = "https://store.steampowered.com/app/5333990/"
+image = "/assets/img/habet.png"
+
+[[items]]
 name = "Helix Repair"
 description = "In Helix Repair, your task is to repair a broken DNA sequence by correcting nucleobases. You have 20 seconds!"
 categories = ["puzzle", "released"]
