@@ -444,6 +444,13 @@ image = "/assets/img/q3.png"
 archived = true
 
 [[items]]
+name = "Razdor"
+description = "An open-source reimplementation of the tactical RPG Discord Times (2004) with turn-based combat, mobile touch controls, and map editor."
+categories = ["strategy", "rpg"]
+repository_url = "https://github.com/indicozy/razdor"
+homepage_url = "https://indicozy.github.io/razdor/"
+
+[[items]]
 name = "realm.one"
 description = "A tiled based game written in Rust, uses the Amethyst game engine!"
 categories = ["other"]
