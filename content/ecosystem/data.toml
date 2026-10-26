@@ -497,6 +497,11 @@ source = "crates"
 categories = ["2drendering"]
 
 [[items]]
+name = "feuclide"
+source = "crates"
+categories = ["engines", "3drendering"]
+
+[[items]]
 name = "fimg"
 source = "crates"
 categories = ["2drendering"]
