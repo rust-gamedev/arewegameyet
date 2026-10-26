@@ -382,6 +382,13 @@ repository_url = "//github.com/thebracket/noxfutura"
 image = "/assets/img/nox-futura.jpeg"
 
 [[items]]
+name = "O'BLOCK"
+description = "A free sneaker-flipping trading game: start with $300 and a shoebox, haggle with buyers who hide (and sometimes lie about) their real price, and work up to selling to billionaires. Built in Rust on proof-engine."
+categories = ["simulation", "strategy", "released"]
+homepage_url = "https://store.steampowered.com/app/5357680/"
+image = "/assets/img/oblock.jpg"
+
+[[items]]
 name = "orb.farm"
 description = "A virtual ecosystem where different species of creature can live, grow and die as part of a self-contained food chain."
 categories = ["simulation"]

@@ -1308,6 +1308,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "proof-engine"
+source = "crates"
+categories = ["engines"]
+
+[[items]]
 name = "pyro"
 source = "crates"
 categories = ["ecs"]
