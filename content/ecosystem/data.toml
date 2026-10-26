@@ -1884,6 +1884,12 @@ source = "crates"
 categories = ["ui"]
 
 [[items]]
+name = "Yoru-KenomoVT/ayatsuri_2d"
+source = "github"
+categories = ["animation", "tools"]
+homepage_url = "https://ayatsuri-2d.org/"
+
+[[items]]
 name = "ziyasal/natura"
 source = "github"
 categories = ["animation"]
