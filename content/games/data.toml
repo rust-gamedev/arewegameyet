@@ -258,6 +258,13 @@ repository_url = "//github.com/dcampbell24/hnefatafl"
 image = "/assets/img/hnefatafl-king.png"
 
 [[items]]
+name = "Hollowmoon"
+description = "A classic roguelike in the ADOM tradition about a moon that is forgetting the world. Each character is the next expedition; the next one finds the last one's grave. Plays in the browser via WebAssembly."
+categories = ["rpg"]
+homepage_url = "//pravin.github.io/hollowmoon/?utm_source=arewegameyet"
+image = "/assets/img/hollowmoon.png"
+
+[[items]]
 name = "Hydrofoil Generation"
 description = "A realistic sailing/foiling inshore simulator that puts you in the driving seat of modern competitive sailing"
 categories = ["simulation", "racing", "released"]
