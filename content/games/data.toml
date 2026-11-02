@@ -396,6 +396,14 @@ homepage_url = "https://store.steampowered.com/app/5357680/"
 image = "/assets/img/oblock.jpg"
 
 [[items]]
+name = "OpenMCM2"
+description = "An open-source engine reimplementation of Motocross Madness 2 (2000). Plays the original tracks, menus, career and bike physics from your own copy of the game, natively on Windows, macOS and Linux. Uses wgpu."
+categories = ["racing", "released"]
+homepage_url = "https://crspytopgn.github.io/openmcm2/"
+repository_url = "https://github.com/crspytopgn/openmcm2"
+image = "/assets/img/openmcm2.jpg"
+
+[[items]]
 name = "orb.farm"
 description = "A virtual ecosystem where different species of creature can live, grow and die as part of a self-contained food chain."
 categories = ["simulation"]
