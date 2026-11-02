@@ -32,11 +32,17 @@ $(document).ready(function () {
     var sortDropdown = $("#sort-menu");
 
     sortDropdown.dropdown({
-        onChange: function (value, text, selected) {
-            var type = selected[0].getAttribute("data-type");
-            var order = selected[0].getAttribute("data-order");
+        onChange: function (value) {
+            let [field, modifier] = value.split("_");
 
-            sortCrates(value, type == "num", order == "asc");
+            sortCrates(field, modifier == "num", modifier == "asc");
+
+            localStorage.setItem("sortPreference", value);
         },
     });
+
+    var sortPreference = localStorage.getItem("sortPreference");
+    if (sortPreference) {
+        sortDropdown.dropdown("set selected", sortPreference);
+    }
 });
