@@ -1407,7 +1407,7 @@ repository_url = "https://github.com/renzora/engine"
 homepage_url = "https://renzora.com"
 
 [[items]]
-name = "repame"
+name = "mlm-games/repame"
 source = "github"
 description = "Game stack on Repose: headless bevy_ecs sim, custom wgpu viewports, Repose UI shell"
 categories = ["engines"]
