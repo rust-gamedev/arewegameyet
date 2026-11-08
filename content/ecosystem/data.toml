@@ -754,6 +754,11 @@ categories = ["engines", "2drendering", "ui"]
 homepage_url = "https://momoyu.ink/en/"
 
 [[items]]
+name = "ifiction"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "image"
 source = "crates"
 categories = ["2drendering"]
