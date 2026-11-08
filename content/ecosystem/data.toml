@@ -559,6 +559,27 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "game-toolkit"
+source = "crates"
+categories = ["2drendering", "3drendering", "animation", "audio", "engines", "input", "shader", "textrendering"]
+homepage_url = "https://game-toolkit.dev/"
+
+[[items]]
+name = "game-toolkit-dosaudio"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
+name = "game-toolkit-dosvideo"
+source = "crates"
+categories = ["2drendering", "audio", "shader"]
+
+[[items]]
+name = "game-toolkit-platformer"
+source = "crates"
+categories = ["animation", "physics"]
+
+[[items]]
 name = "gate"
 source = "crates"
 categories = ["engines"]
