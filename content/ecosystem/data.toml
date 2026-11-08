@@ -1692,6 +1692,18 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "synthie"
+source = "crates"
+categories = ["audio"]
+homepage_url = "https://sunsided.github.io/synth/"
+
+[[items]]
+name = "synthie-trombone"
+source = "crates"
+categories = ["audio"]
+homepage_url = "https://sunsided.github.io/synthie-trombone/"
+
+[[items]]
 name = "tachyon-networking"
 source = "crates"
 categories = ["networking"]
