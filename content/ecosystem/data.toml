@@ -1012,6 +1012,13 @@ source = "crates"
 categories = ["math"]
 
 [[items]]
+name = "mlm-games/repame"
+source = "github"
+description = "Game stack on Repose: headless bevy_ecs sim, custom wgpu viewports, Repose UI shell"
+categories = ["engines"]
+repository_url = "https://github.com/mlm-games/repame"
+
+[[items]]
 name = "mlua"
 source = "crates"
 categories = ["scripting"]
