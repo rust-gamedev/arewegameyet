@@ -1585,6 +1585,11 @@ categories = ["2drendering", "3drendering"]
 archived = true
 
 [[items]]
+name = "sillyecs"
+source = "crates"
+categories = ["ecs"]
+
+[[items]]
 name = "skulpin"
 source = "crates"
 categories = ["2drendering"]
