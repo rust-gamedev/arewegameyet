@@ -65,14 +65,14 @@
                     <i class="dropdown icon" aria-hidden="true"></i>
 
                     <ul class="menu">
-                        <li class="item" data-value="data-name_asc">Sort by A-Z</li>
-                        <li class="item" data-value="data-name">Sort by Z-A</li>
+                        <li class="item" data-value="data-name_alpha_asc">Sort by A-Z</li>
+                        <li class="item" data-value="data-name_alpha_desc">Sort by Z-A</li>
 
                         {% if section.extra.plural == "crates" %}
-                            <li class="item" data-value="data-downloads_num">Sort by Downloads</li>
-                            <li class="item" data-value="data-recent_num">Sort by Recent Downloads</li>
-                            <li class="item" data-value="data-stars_num">Sort by Stars</li>
-                            <li class="item" data-value="data-activity">Sort by Last Activity</li>
+                            <li class="item" data-value="data-downloads_num_desc">Sort by Downloads</li>
+                            <li class="item" data-value="data-recent_num_desc">Sort by Recent Downloads</li>
+                            <li class="item" data-value="data-stars_num_desc">Sort by Stars</li>
+                            <li class="item" data-value="data-activity_alpha_desc">Sort by Last Activity</li>
                         {% endif %}
                     </ul>
                 </div>

@@ -33,9 +33,9 @@ $(document).ready(function () {
 
     sortDropdown.dropdown({
         onChange: function (value) {
-            let [field, modifier] = value.split("_");
+            let [field, type, dir] = value.split("_");
 
-            sortCrates(field, modifier == "num", modifier == "asc");
+            sortCrates(field, type == "num", dir == "asc");
 
             localStorage.setItem("sortPreference", value);
         },
