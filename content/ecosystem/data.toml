@@ -363,6 +363,11 @@ categories = ["3drendering", "engines", "ecs"]
 repository_url = "https://github.com/lowenware/dotrix"
 
 [[items]]
+name = "dramaturge"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "dsa-lib"
 source = "crates"
 categories = ["shader"]
