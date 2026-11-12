@@ -10,6 +10,11 @@ categories = ["audio"]
 archived = true
 
 [[items]]
+name = "amaze"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "AmbientRun/Ambient"
 source = "github"
 categories = ["engines"]
