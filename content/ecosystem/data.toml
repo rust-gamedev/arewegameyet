@@ -12,7 +12,7 @@ archived = true
 [[items]]
 name = "amaze"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 
 [[items]]
 name = "AmbientRun/Ambient"
