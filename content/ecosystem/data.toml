@@ -153,6 +153,11 @@ categories = ["3drendering"]
 archived = true
 
 [[items]]
+name = "bgi-stroked-fonts"
+source = "crates"
+categories = ["textrendering"]
+
+[[items]]
 name = "big-brain"
 source = "crates"
 categories = ["ai"]
