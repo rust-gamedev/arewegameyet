@@ -618,6 +618,14 @@ homepage_url = "//coffejunkstudio.itch.io/spheregame"
 image = "/assets/img/spheres-game.png"
 
 [[items]]
+name = "Sporagon"
+description = "A Hexxagon-style board game in the back of a forgotten fridge: your Penicillium fights the computer's Rhizopus for a cracked egg tray, in 640x480 with 256 colors on an emulated VESA SVGA card."
+categories = ["puzzle", "released"]
+homepage_url = "https://games.markusmayer.dev/sporagon/"
+repository_url = "https://github.com/sunsided/sporagon"
+image = "/assets/img/sporagon.jpg"
+
+[[items]]
 name = "Stacked Worlds"
 description = "A game prototype written in Rust, shows how to use specs and nphysics."
 categories = ["platformer"]
