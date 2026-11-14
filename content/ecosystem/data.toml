@@ -1535,6 +1535,12 @@ categories = ["3drendering"]
 archived = true
 
 [[items]]
+name = "rusty-opus"
+source = "crates"
+categories = ["audio"]
+homepage_url = "https://remadewithrust.com/learn/rusty-opus/"
+
+[[items]]
 name = "rusty_engine"
 source = "crates"
 categories = ["engines"]
