@@ -80,6 +80,13 @@ repository_url = "//github.com/K4ugummi/carambolage"
 image = "/assets/img/carambolage.jpg"
 
 [[items]]
+name = "Cavern Run"
+description = "A single-screen cave platformer: gather the ore in twenty caverns before your air runs out, past crumbling ledges, belts and patrolling guardians. Written from scratch in Rust and played in the browser through WebAssembly, with procedural vector art, synthesised sound and a high-score table checked by replaying each run on the server."
+categories = ["platformer", "released"]
+homepage_url = "https://rodesia.org/cavernrun"
+image = "/assets/img/cavern-run.jpg"
+
+[[items]]
 name = "chirperjax"
 description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
 categories = ["platformer"]
@@ -328,6 +335,13 @@ description = "A jump and bump game for two players made with ggez"
 categories = ["action"]
 homepage_url = "//rap2hpoutre.github.io/llamassacre-website/"
 image = "/assets/img/llamassacre.png"
+
+[[items]]
+name = "MacIago"
+description = "Othello for the Mac (2001 to 2008), back in the browser. The rules and the original computer opponent are ported from C to Rust and run on the server; a small JavaScript client draws the board."
+categories = ["strategy", "released"]
+homepage_url = "https://rodesia.org/maciago"
+image = "/assets/img/maciago.jpg"
 
 [[items]]
 name = "magog"
@@ -695,6 +709,13 @@ description = "A small relaxing game about doodling castles. Explore gridless bu
 categories = ["simulation", "other", "released"]
 homepage_url = "//store.steampowered.com/app/2198150/Tiny_Glade"
 image = "/assets/img/tinyglade.jpg"
+
+[[items]]
+name = "Tourney"
+description = "Joust over the lava: a browser remake of the 1982 arcade game Joust, written from scratch in Rust and compiled to WebAssembly. Procedural vector art, synthesised sound, and a high-score table checked by replaying each run on the server."
+categories = ["action", "released"]
+homepage_url = "https://rodesia.org/tourney"
+image = "/assets/img/tourney.jpg"
 
 [[items]]
 name = "Triverse"
