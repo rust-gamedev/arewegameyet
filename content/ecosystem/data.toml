@@ -639,6 +639,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "ghx_proc_gen"
+source = "crates"
+categories = ["procgen"]
+
+[[items]]
 name = "Gigoteur/UnicornConsole"
 source = "github"
 categories = ["engines"]
@@ -904,7 +909,7 @@ categories = ["audio"]
 [[items]]
 name = "libnoise"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 
 [[items]]
 name = "libovr"
@@ -1139,7 +1144,7 @@ categories = ["networking"]
 [[items]]
 name = "noise"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 
 [[items]]
 name = "notan"
@@ -1752,7 +1757,7 @@ categories = ["engines"]
 [[items]]
 name = "texture-synthesis"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 archived = true
 
 [[items]]
@@ -1883,7 +1888,7 @@ categories = ["audio"]
 [[items]]
 name = "voronator"
 source = "crates"
-categories = ["tools", "mesh"]
+categories = ["tools", "mesh", "procgen"]
 
 [[items]]
 name = "vulkanalia"
