@@ -98,6 +98,13 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "assetc"
+description = "Asset Compiler that source assets (textures, meshes, materials, fonts, custom data) into runtime-friendly binary formats for video games. Also acts as middleware that allows to enrich assets with extra data."
+categories = ["tools"]
+crate_url = "https://crates.io/crates/assetc"
+repository_url = "https://github.com/qbart/assetc"
+
+[[items]]
 name = "assets_manager"
 source = "crates"
 categories = ["tools"]
@@ -151,6 +158,11 @@ name = "bgfx-rs"
 source = "crates"
 categories = ["3drendering"]
 archived = true
+
+[[items]]
+name = "bgi-stroked-fonts"
+source = "crates"
+categories = ["textrendering"]
 
 [[items]]
 name = "big-brain"
@@ -361,6 +373,11 @@ name = "dotrix"
 source = "crates"
 categories = ["3drendering", "engines", "ecs"]
 repository_url = "https://github.com/lowenware/dotrix"
+
+[[items]]
+name = "dramaturge"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "dsa-lib"
@@ -629,6 +646,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "ghx_proc_gen"
+source = "crates"
+categories = ["procgen"]
+
+[[items]]
 name = "Gigoteur/UnicornConsole"
 source = "github"
 categories = ["engines"]
@@ -861,6 +883,13 @@ source = "crates"
 categories = ["3drendering"]
 
 [[items]]
+name = "ktx-rs"
+description = "An unofficial Rust port of Khronos KTX-Software: the libktx library and the ktx command line tool, including the Basis Universal encoders and transcoders."
+categories = ["tools"]
+crate_url = "https://crates.io/crates/ktx-rs"
+repository_url = "https://github.com/qbart/ktx-rs"
+
+[[items]]
 name = "laminar"
 source = "crates"
 categories = ["networking"]
@@ -894,7 +923,7 @@ categories = ["audio"]
 [[items]]
 name = "libnoise"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 
 [[items]]
 name = "libovr"
@@ -915,6 +944,11 @@ categories = ["networking"]
 name = "liquidfun"
 source = "crates"
 categories = ["physics"]
+
+[[items]]
+name = "loremaster"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "lotus_engine"
@@ -977,6 +1011,13 @@ repository_url = "https://github.com/someotherself/maudio"
 name = "meshopt"
 source = "crates"
 categories = ["mesh"]
+
+[[items]]
+name = "meshopt-pure"
+description = "An unofficial pure Rust port of meshoptimizer: the mesh optimization library and its companion projects gltfpack and clusterlod."
+categories = ["mesh"]
+crate_url = "https://crates.io/crates/meshopt-pure"
+repository_url = "https://github.com/qbart/meshopt-pure"
 
 [[items]]
 name = "message-io"
@@ -1124,7 +1165,7 @@ categories = ["networking"]
 [[items]]
 name = "noise"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 
 [[items]]
 name = "notan"
@@ -1336,6 +1377,13 @@ source = "crates"
 categories = ["audio"]
 
 [[items]]
+name = "praxi"
+description = "Video player for games with GPU block-compressed frames, supports Bevy."
+categories = ["tools"]
+crate_url = "https://crates.io/crates/praxi"
+repository_url = "https://github.com/qbart/praxi"
+
+[[items]]
 name = "profiling"
 source = "crates"
 categories = ["tools"]
@@ -1533,6 +1581,12 @@ name = "rusty-d3d12"
 source = "crates"
 categories = ["3drendering"]
 archived = true
+
+[[items]]
+name = "rusty-opus"
+source = "crates"
+categories = ["audio"]
+homepage_url = "https://remadewithrust.com/learn/rusty-opus/"
 
 [[items]]
 name = "rusty_engine"
@@ -1737,7 +1791,7 @@ categories = ["engines"]
 [[items]]
 name = "texture-synthesis"
 source = "crates"
-categories = ["tools"]
+categories = ["tools", "procgen"]
 archived = true
 
 [[items]]
@@ -1868,7 +1922,7 @@ categories = ["audio"]
 [[items]]
 name = "voronator"
 source = "crates"
-categories = ["tools", "mesh"]
+categories = ["tools", "mesh", "procgen"]
 
 [[items]]
 name = "vulkanalia"

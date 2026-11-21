@@ -87,6 +87,13 @@ homepage_url = "https://rodesia.org/cavernrun"
 image = "/assets/img/cavern-run.jpg"
 
 [[items]]
+name = "CHAOS RPG"
+description = "A roguelike where every hit, heal and loot drop is decided by chaining real math (the Lorenz attractor, the Mandelbrot set, the Collatz sequence) instead of a random number. Terminal (Ratatui) and graphical frontends."
+categories = ["rpg", "released"]
+repository_url = "https://github.com/Mattbusel/chaos-rpg"
+image = "/assets/img/chaos-rpg.png"
+
+[[items]]
 name = "chirperjax"
 description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
 categories = ["platformer"]
@@ -630,6 +637,14 @@ description = "You control a sphere in a bowl-shaped 2D space. Your goal is to h
 categories = ["action"]
 homepage_url = "//coffejunkstudio.itch.io/spheregame"
 image = "/assets/img/spheres-game.png"
+
+[[items]]
+name = "Sporagon"
+description = "A Hexxagon-style board game in the back of a forgotten fridge: your Penicillium fights the computer's Rhizopus for a cracked egg tray, in 640x480 with 256 colors on an emulated VESA SVGA card."
+categories = ["puzzle", "released"]
+homepage_url = "https://games.markusmayer.dev/sporagon/"
+repository_url = "https://github.com/sunsided/sporagon"
+image = "/assets/img/sporagon.jpg"
 
 [[items]]
 name = "Stacked Worlds"

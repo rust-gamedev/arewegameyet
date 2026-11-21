@@ -1,7 +1,10 @@
 name: Zola
 
 on:
+  workflow_dispatch:
   push:
+    branches:
+      - master
   pull_request:
   schedule:
     - cron: "0 0 * * MON" # Weekly, Mondays at 00:00
