@@ -80,6 +80,13 @@ repository_url = "//github.com/K4ugummi/carambolage"
 image = "/assets/img/carambolage.jpg"
 
 [[items]]
+name = "CHAOS RPG"
+description = "A roguelike where every hit, heal and loot drop is decided by chaining real math (the Lorenz attractor, the Mandelbrot set, the Collatz sequence) instead of a random number. Terminal (Ratatui) and graphical frontends."
+categories = ["rpg", "released"]
+repository_url = "https://github.com/Mattbusel/chaos-rpg"
+image = "/assets/img/chaos-rpg.png"
+
+[[items]]
 name = "chirperjax"
 description = "A simple 2D platformer game that demonstrates the use of two Rust crates: Gate and Collider."
 categories = ["platformer"]
