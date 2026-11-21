@@ -1456,6 +1456,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "remade-ffmpeg"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "rend3"
 source = "crates"
 categories = ["3drendering"]
@@ -1589,9 +1594,64 @@ categories = ["audio"]
 homepage_url = "https://remadewithrust.com/learn/rusty-opus/"
 
 [[items]]
+name = "rusty_alloc"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
+name = "rusty_av2d"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
+name = "rusty_dds"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
 name = "rusty_engine"
 source = "crates"
 categories = ["engines"]
+
+[[items]]
+name = "rusty_flac"
+source = "crates"
+categories = ["audio"]
+
+[[items]]
+name = "rusty_gif"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
+name = "rusty_h264"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
+name = "rusty_h265"
+source = "crates"
+categories = ["tools"]
+
+[[items]]
+name = "rusty_image"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
+name = "rusty_jpeg"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
+name = "rusty_png"
+source = "crates"
+categories = ["2drendering"]
+
+[[items]]
+name = "rusty_zstd"
+source = "crates"
+categories = ["tools"]
 
 [[items]]
 name = "ruwren"
