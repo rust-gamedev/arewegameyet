@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
 
     {% block seo %}
         <title>{{ config.title }}</title>
@@ -25,6 +26,13 @@
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/main.css">
+    <script>
+        // Apply the saved theme before first paint to avoid a light/dark flash.
+        try {
+            var theme = localStorage.getItem('theme');
+            if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+    </script>
     
     {% block head %} {% endblock %}
 </head>
@@ -116,6 +124,12 @@
                         <div class="ui inverted link list">
                             <a href="https://github.com/rust-gamedev/arewegameyet" class="item">Contribute</a>
                         </div>
+                        <h4 class="ui inverted header">Theme</h4>
+                        <div class="ui inverted basic icon buttons theme-switcher" role="group" aria-label="Color theme">
+                            <button type="button" class="ui button" data-theme-choice="auto" title="Auto (follow system)" aria-label="Auto theme"><i class="adjust icon" aria-hidden="true"></i></button>
+                            <button type="button" class="ui button" data-theme-choice="dark" title="Dark" aria-label="Dark theme"><i class="moon icon" aria-hidden="true"></i></button>
+                            <button type="button" class="ui button" data-theme-choice="light" title="Light" aria-label="Light theme"><i class="sun icon" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,6 +151,26 @@
 
     <script>
         $(document).ready(function () {
+            // Theme switcher: "auto" removes the override and follows prefers-color-scheme.
+            var $themeButtons = $('.theme-switcher [data-theme-choice]');
+            function showTheme(choice) {
+                $themeButtons.each(function () {
+                    var on = this.dataset.themeChoice === choice;
+                    $(this).toggleClass('active', on).attr('aria-pressed', on);
+                });
+            }
+            showTheme(document.documentElement.dataset.theme || 'auto');
+            $themeButtons.on('click', function () {
+                var choice = this.dataset.themeChoice;
+                if (choice === 'auto') delete document.documentElement.dataset.theme;
+                else document.documentElement.dataset.theme = choice;
+                try {
+                    if (choice === 'auto') localStorage.removeItem('theme');
+                    else localStorage.setItem('theme', choice);
+                } catch (e) {}
+                showTheme(choice);
+            });
+
             // fix menu when passed
             $('.masthead').visibility({
                 once: false,
