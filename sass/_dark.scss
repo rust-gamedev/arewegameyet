@@ -1,0 +1,140 @@
+// Dark mode. Follows the OS/browser preference unless the theme switcher in
+// the footer sets `data-theme` on <html>. The masthead, sidebar and footer
+// already use Semantic UI's inverted styles, so only the light content area
+// (everything inside <main>) needs overriding here.
+
+$dark-bg: #111213;
+$dark-surface: #26282a;
+$dark-surface-alt: #1a1b1c;
+$dark-border: #3a3c3e;
+$dark-text: rgba(255, 255, 255, 0.87);
+$dark-text-muted: rgba(255, 255, 255, 0.6);
+$dark-link: #6ca8e0;
+
+@mixin dark-theme {
+    body,
+    body.pushable > .pusher {
+        background: $dark-bg;
+        color: $dark-text;
+    }
+
+    main {
+        a {
+            color: $dark-link;
+        }
+
+        .ui.header,
+        .ui.header .sub.header,
+        .ui.divider,
+        .ui.list > .item,
+        .ui.list .list > .item,
+        .ui.items > .item > .content > .header,
+        .ui.items > .item > .content > .description {
+            color: $dark-text;
+        }
+
+        // The horizontal divider lines are dark PNGs; invert them.
+        .ui.horizontal.divider:before,
+        .ui.horizontal.divider:after {
+            filter: invert(1);
+        }
+
+        .ui.divider:not(.vertical):not(.horizontal) {
+            border-top-color: $dark-border;
+            border-bottom-color: transparent;
+        }
+
+        .ui.card {
+            background: $dark-surface;
+            box-shadow: 0 1px 3px 0 #000, 0 0 0 1px $dark-border;
+
+            &.archived {
+                background-color: $dark-surface-alt;
+            }
+
+            > .content,
+            > .extra {
+                border-top-color: $dark-border;
+            }
+
+            > .content > .header,
+            > .content > a.header,
+            > .content > .description {
+                color: $dark-text;
+            }
+
+            > .extra,
+            > .extra a:not(.ui),
+            .meta,
+            .meta > a:not(.ui) {
+                color: $dark-text-muted;
+            }
+        }
+
+        a.ui.card:hover {
+            background: $dark-surface;
+            box-shadow: 0 1px 3px 0 #000, 0 0 0 1px lighten($dark-border, 15%);
+        }
+
+        .ui.basic.label {
+            background: $dark-surface;
+            border-color: $dark-border;
+            color: $dark-text;
+        }
+
+        .ui.message {
+            background: $dark-surface;
+            color: $dark-text;
+            box-shadow: 0 0 0 1px $dark-border inset;
+
+            .header {
+                color: $dark-text;
+            }
+        }
+
+        .ui.selection.dropdown,
+        .ui.selection.dropdown .menu,
+        .ui.selection.active.dropdown .menu {
+            background: $dark-surface;
+            border-color: $dark-border;
+            color: $dark-text;
+        }
+
+        .ui.dropdown .menu > .item {
+            color: $dark-text;
+            border-top-color: $dark-border;
+
+            &:hover,
+            &.selected {
+                background: lighten($dark-surface, 6%);
+                color: #fff;
+            }
+        }
+
+        .ui.selection.dropdown > .default.text,
+        .ui.dropdown > .text {
+            color: $dark-text;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) {
+        @include dark-theme;
+    }
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    @include dark-theme;
+}
+
+html[data-theme="light"] {
+    color-scheme: light;
+}
+
+// Semantic UI's basic inverted buttons force a transparent background with
+// !important, so the selected state has to as well.
+.ui.basic.inverted.buttons.theme-switcher .button.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
