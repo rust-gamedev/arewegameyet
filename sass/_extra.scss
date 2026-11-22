@@ -191,3 +191,16 @@ footer a {
         text-decoration: underline;
     }
 }
+// Subtle film-grain noise on the hero. Selector must outrank Semantic UI's
+// `.ui.inverted.segment { background: ... }` shorthand, which resets images.
+// Grey noise blended with `overlay` lightens and darkens around the base
+// colour equally, so the hero keeps its original average darkness.
+.ui.inverted.masthead.segment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0.5 0 0 0 0.18 0.5 0 0 0 0.18 0.5 0 0 0 0.18 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-blend-mode: overlay;
+}
+
+// Let the hero noise show through the nav bar.
+.masthead .ui.inverted.menu {
+    background: transparent;
+}
