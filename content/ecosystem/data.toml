@@ -293,6 +293,11 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "constraint-search"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "corange-rs"
 source = "crates"
 categories = ["engines"]
@@ -493,6 +498,11 @@ source = "crates"
 categories = ["networking"]
 
 [[items]]
+name = "evolutionary-planning"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "ezing"
 source = "crates"
 categories = ["tools"]
@@ -595,6 +605,11 @@ categories = ["2drendering", "audio", "shader"]
 name = "game-toolkit-platformer"
 source = "crates"
 categories = ["animation", "physics"]
+
+[[items]]
+name = "game-tree-search"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "gate"
@@ -741,6 +756,11 @@ categories = ["shader"]
 name = "hecs"
 source = "crates"
 categories = ["ecs"]
+
+[[items]]
+name = "heuristic-search"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "hex2d"
@@ -988,6 +1008,11 @@ name = "macroquad"
 source = "crates"
 categories = ["engines"]
 homepage_url = "https://github.com/not-fl3/miniquad"
+
+[[items]]
+name = "mapf-search"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "markusmoenig/Eldiron"
@@ -1488,6 +1513,11 @@ repository_url = "https://github.com/renzora/engine"
 homepage_url = "https://renzora.com"
 
 [[items]]
+name = "resource-timeline"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "rhachis"
 source = "crates"
 categories = ["engines"]
@@ -1751,6 +1781,11 @@ source = "crates"
 categories = ["input"]
 
 [[items]]
+name = "stochastic-search"
+source = "crates"
+categories = ["ai"]
+
+[[items]]
 name = "superluminal-perf"
 source = "crates"
 categories = ["tools"]
@@ -1771,6 +1806,11 @@ homepage_url = "https://sunsided.github.io/synthie-trombone/"
 name = "tachyon-networking"
 source = "crates"
 categories = ["networking"]
+
+[[items]]
+name = "task-allocation"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "tcod"
@@ -1961,6 +2001,11 @@ name = "wgpu_tokio"
 source = "crates"
 categories = ["3drendering"]
 archived = true
+
+[[items]]
+name = "width-search"
+source = "crates"
+categories = ["ai"]
 
 [[items]]
 name = "winit"
