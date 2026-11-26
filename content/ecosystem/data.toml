@@ -1257,6 +1257,12 @@ categories = ["mesh"]
 homepage_url = "https://plexus.rs"
 
 [[items]]
+name = "OpenRage"
+description = "An editor, CLI and library for the asset files of Rockstar's RAGE engine games (models, textures, animation, archives), built on egui and wgpu"
+categories = ["tools"]
+repository_url = "https://github.com/openragee/openrage"
+
+[[items]]
 name = "opensubdiv-petite"
 source = "crates"
 categories = ["mesh", "3drendering"]
