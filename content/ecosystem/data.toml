@@ -1733,6 +1733,20 @@ source = "crates"
 categories = ["tools"]
 
 [[items]]
+name = "ssplayer-bevy"
+description = "Plays SpriteStudio animations as entities in a Bevy app. SpriteStudio is a 2D animation tool: an artist adds bones, mesh deformation and effects to their own illustrations."
+source = "crates"
+categories = ["animation"]
+homepage_url = "https://cri-middleware.github.io/SSPlayerForWgpu/start/bevy/"
+
+[[items]]
+name = "ssplayer-wgpu"
+description = "Plays SpriteStudio animations with wgpu, natively or in the browser. SpriteStudio is a 2D animation tool: an artist adds bones, mesh deformation and effects to their own illustrations."
+source = "crates"
+categories = ["2drendering", "animation"]
+homepage_url = "https://cri-middleware.github.io/SSPlayerForWgpu/"
+
+[[items]]
 name = "steering"
 source = "crates"
 categories = ["ai"]
