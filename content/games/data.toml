@@ -596,6 +596,13 @@ repository_url = "//github.com/MaxBittker/sandspiel"
 image = "/assets/img/sandspiel.png"
 
 [[items]]
+name = "Scissor Games"
+description = "23 card and board games in 3D that run in the browser: 17 kinds of solitaire, chess, checkers, backgammon, mahjong, sudoku and minesweeper. Rust compiled to WebAssembly and drawn with WebGL 2 through web-sys, without a game engine."
+categories = ["card", "puzzle", "released"]
+homepage_url = "https://games.scissor.studio/"
+image = "/assets/img/scissor-games.jpg"
+
+[[items]]
 name = "SHAR"
 description = "Network shooter with physics and destructions"
 categories = ["action"]
